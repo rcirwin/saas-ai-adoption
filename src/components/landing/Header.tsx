@@ -4,11 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig, footerContent } from "./copy";
 
-interface HeaderProps {
-  onRequestAssessment: () => void;
-}
-
-export default function Header({ onRequestAssessment }: HeaderProps) {
+export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -54,12 +50,14 @@ export default function Header({ onRequestAssessment }: HeaderProps) {
               {link.label}
             </a>
           ))}
-          <button
-            onClick={onRequestAssessment}
-            className="btn-shine rounded-xl bg-[var(--color-text-primary)] px-4 py-2 text-[13px] font-medium text-white transition-all hover:bg-[#111C33] hover:shadow-md active:scale-[0.97]"
+          <a
+            href="https://cal.com/futurereadystudio/discovery-call"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-shine rounded-xl bg-[var(--color-text-primary)] px-4 py-2 text-[13px] font-medium text-white transition-all hover:bg-[#111C33] hover:shadow-md active:scale-[0.97] inline-block"
           >
             See If It&apos;s a Fit
-          </button>
+          </a>
         </nav>
 
         {/* Mobile menu button */}
@@ -115,15 +113,15 @@ export default function Header({ onRequestAssessment }: HeaderProps) {
                   {link.label}
                 </a>
               ))}
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onRequestAssessment();
-                }}
-                className="mt-2 w-full rounded-xl bg-[var(--color-text-primary)] px-4 py-2.5 text-sm font-medium text-white"
+              <a
+                href="https://cal.com/futurereadystudio/discovery-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="mt-2 block w-full rounded-xl bg-[var(--color-text-primary)] px-4 py-2.5 text-sm font-medium text-white text-center"
               >
                 See If It&apos;s a Fit
-              </button>
+              </a>
             </nav>
           </motion.div>
         )}

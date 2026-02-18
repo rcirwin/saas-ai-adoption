@@ -27,7 +27,7 @@ export default function Home() {
     <>
       <GridOverlay show={false} />
       <ScrollProgress />
-      <Header onRequestAssessment={openModal} />
+      <Header />
       <main>
         <Hero />
         <ValueSurface />
@@ -35,7 +35,7 @@ export default function Home() {
         <Outcomes />
         <Process />
         <WhoItsFor />
-        <Pricing onRequestAssessment={openModal} />
+        <Pricing />
         <FAQ />
         <FinalCTA />
       </main>
