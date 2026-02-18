@@ -5,11 +5,7 @@ import Section from "./Section";
 import FloatingOrbs from "./FloatingOrbs";
 import { finalCtaContent } from "./copy";
 
-interface FinalCTAProps {
-  onRequestAssessment: () => void;
-}
-
-export default function FinalCTA({ onRequestAssessment }: FinalCTAProps) {
+export default function FinalCTA() {
   const scrollToDeliverables = () => {
     document
       .getElementById("deliverables")
@@ -61,12 +57,14 @@ export default function FinalCTA({ onRequestAssessment }: FinalCTAProps) {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-10 flex flex-wrap justify-center gap-4"
         >
-          <button
-            onClick={onRequestAssessment}
-            className="btn-shine rounded-xl bg-[var(--color-text-primary)] px-8 py-3.5 text-sm font-medium text-white shadow-sm transition-all hover:bg-[#111C33] hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[rgba(46,196,182,0.35)] focus:ring-offset-2 active:scale-[0.97]"
+          <a
+            href="https://cal.com/futurereadystudio/discovery-call"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-shine rounded-xl bg-[var(--color-text-primary)] px-8 py-3.5 text-sm font-medium text-white shadow-sm transition-all hover:bg-[#111C33] hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[rgba(46,196,182,0.35)] focus:ring-offset-2 active:scale-[0.97] inline-block"
           >
             {finalCtaContent.primaryCta}
-          </button>
+          </a>
           <button
             onClick={scrollToDeliverables}
             className="rounded-xl border border-[var(--color-border-strong)] bg-transparent px-8 py-3.5 text-sm font-medium text-[var(--color-text-primary)] transition-all hover:bg-[rgba(15,23,42,0.04)] active:scale-[0.97]"
