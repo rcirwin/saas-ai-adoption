@@ -4,11 +4,7 @@ import { motion } from "framer-motion";
 import Section, { SectionLabel, SectionHeadline } from "./Section";
 import { pricingContent } from "./copy";
 
-interface PricingProps {
-  onRequestAssessment: () => void;
-}
-
-export default function Pricing({ onRequestAssessment }: PricingProps) {
+export default function Pricing() {
   return (
     <Section id="pricing">
       <div className="mx-auto max-w-3xl text-center">
@@ -111,12 +107,14 @@ export default function Pricing({ onRequestAssessment }: PricingProps) {
             </div>
 
             <div className="mt-10 text-center">
-              <button
-                onClick={onRequestAssessment}
-                className="btn-shine rounded-xl bg-[var(--color-text-primary)] px-8 py-3 text-sm font-medium text-white shadow-sm transition-all hover:bg-[#111C33] hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[rgba(46,196,182,0.35)] focus:ring-offset-2 active:scale-[0.97]"
+              <a
+                href="https://cal.com/futurereadystudio/discovery-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-shine rounded-xl bg-[var(--color-text-primary)] px-8 py-3 text-sm font-medium text-white shadow-sm transition-all hover:bg-[#111C33] hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[rgba(46,196,182,0.35)] focus:ring-offset-2 active:scale-[0.97] inline-block"
               >
                 See If It&apos;s a Fit
-              </button>
+              </a>
             </div>
           </div>
         </motion.div>
