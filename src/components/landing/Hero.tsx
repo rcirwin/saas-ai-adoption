@@ -4,11 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { heroContent } from "./copy";
 
-interface HeroProps {
-  onRequestAssessment: () => void;
-}
-
-export default function Hero({ onRequestAssessment }: HeroProps) {
+export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const scrollToDeliverables = () => {

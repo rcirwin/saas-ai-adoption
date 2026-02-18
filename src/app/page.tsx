@@ -29,7 +29,7 @@ export default function Home() {
       <ScrollProgress />
       <Header onRequestAssessment={openModal} />
       <main>
-        <Hero onRequestAssessment={openModal} />
+        <Hero />
         <ValueSurface />
         <Problem />
         <Outcomes />
@@ -37,7 +37,7 @@ export default function Home() {
         <WhoItsFor />
         <Pricing onRequestAssessment={openModal} />
         <FAQ />
-        <FinalCTA onRequestAssessment={openModal} />
+        <FinalCTA />
       </main>
       <Footer />
       <AssessmentModal isOpen={modalOpen} onClose={closeModal} />

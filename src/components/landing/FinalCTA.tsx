@@ -5,11 +5,7 @@ import Section from "./Section";
 import FloatingOrbs from "./FloatingOrbs";
 import { finalCtaContent } from "./copy";
 
-interface FinalCTAProps {
-  onRequestAssessment: () => void;
-}
-
-export default function FinalCTA({ onRequestAssessment }: FinalCTAProps) {
+export default function FinalCTA() {
   const scrollToDeliverables = () => {
     document
       .getElementById("deliverables")
