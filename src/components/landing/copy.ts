@@ -1,37 +1,37 @@
 export const siteConfig = {
   name: "SaaS AI Integration Planning",
-  tagline: "Workflow-First AI Assessment for B2B SaaS",
+  tagline: "AI-Driven Growth Strategy for B2B SaaS",
   url: "https://yourdomain.com",
   email: "hello@yourdomain.com",
 };
 
 export const heroContent = {
   pill: "For B2B SaaS · $500K–$5M ARR",
-  headline: "Prepare your SaaS for\nan AI Agent Future.",
+  headline: "Prepare your SaaS for\nan AI agent future.",
   subheadline:
-    "Get a plan that uncovers what your users actually struggle with, how you can support the larger workflow that your product fits into, and prepare for an agent-driven future.",
+    "Get a plan that uncovers AI-driven workflows to grow revenue per user, keeps your product central as agents reshape your market, and protects your user base from AI-native competitors.",
   primaryCta: "See If It's a Fit",
   secondaryCta: "See Deliverables",
 };
 
 export const problemContent = {
   label: "The problem",
-  headline: "Your SaaS was built for human users.\nThe future runs on agents.",
+  headline: "Your SaaS was built for human users.\nAgents are changing the math.",
   bullets: [
     {
-      title: "New competitors are AI-native from day one.",
+      title: "You're leaving revenue on the table.",
       description:
-        "A new wave of startups is building agentic-first products that own a larger share of your users' workflow. They don't just add AI features to existing software. They reimagine the entire workflow around what agents can do. Your product solves one step. Theirs orchestrate the whole chain.",
+        "Your users hit friction every day — manual steps, context switching, repetitive decisions. In an agent-driven world, each of those moments is an opportunity for AI to keep users inside your product doing more, upgrading faster, and getting deeper value. Instead, agents are routing them elsewhere.",
     },
     {
-      title: "Your product is invisible to AI agents.",
+      title: "AI-native competitors are taking your users.",
       description:
-        "AI agents are already choosing which tools to use on behalf of your users. If your product isn't structured for agent discovery, interaction, and orchestration, agents will route around you. Not because your product is bad, but because it wasn't built to be found and used by non-human actors.",
+        "A new wave of startups is building agentic-first products that own a larger share of your users' workflows. They don't just add AI features — they reimagine the entire workflow around what agents can do. Your product solves one step. Theirs orchestrate the whole chain. And every month, the switching cost drops.",
     },
     {
-      title: "The window to adapt is closing.",
+      title: "Guessing wrong costs more than the assessment.",
       description:
-        "Every month that passes, your users' workflows get more automated and the switching costs to agent-native alternatives get lower. The SaaS companies that prepare now will define how agents interact with their category. The ones that wait will be replaced by the tools agents already know how to use.",
+        "Building the wrong AI feature wastes 3–6 months of engineering and burns credibility with your users. The AI features that actually drive revenue and retention are rarely the ones on your current roadmap. You need clarity before you commit resources to an agent-ready future.",
     },
   ],
 };
@@ -40,57 +40,57 @@ export const outcomesContent = {
   label: "Deliverables",
   headline: "What you walk away with.",
   subheadline:
-    "Four artifacts built from deep user and workflow research. Each one is specific to your product, your users, and their real problems. Not a template.",
+    "Four artifacts built from deep user and workflow research. Each one maps AI opportunities to revenue growth and retention — specific to your product, your users, and the agent-driven future of your market.",
   deliverables: [
     {
       number: "01",
-      title: "Workflow & Pain Point Audit",
+      title: "Workflow & Revenue Opportunity Audit",
       description:
-        "A complete map of your users' workflows, goals, and friction points. Where your product fits in the bigger picture, what users struggle with, and where the highest-impact opportunities live.",
+        "A complete map of your users' workflows, goals, and friction points — scored for revenue impact. Where your product fits in the bigger picture, where users drop off or work around you, and where AI-driven workflows can expand what they do and pay for.",
     },
     {
       number: "02",
       title: "User-Centered Insight Synthesis",
       description:
-        "Key user problems, goals, and workflow friction distilled into a decision framework. Why certain AI interventions will solve real problems, and why others will add noise.",
+        "Key user problems, goals, and workflow friction distilled into a decision framework. Which AI interventions will drive upgrades and expansion revenue, which will reduce churn in an increasingly agentic landscape, and which ones sound exciting but won't move the needle.",
     },
     {
       number: "03",
       title: "Data Readiness & Competitive Moat Assessment",
       description:
-        "What data you have, what gives you a defensible edge, and what needs to be structured before AI features ship. Plus: how to make your product accessible to external AI agents without exposing the advantages that make you irreplaceable.",
+        "What data you have, what gives you a defensible edge, and what needs to be structured before AI features ship. Plus: how to make your product accessible to external AI agents — so they route through you, not around you — without exposing the advantages that make you irreplaceable.",
     },
     {
       number: "04",
-      title: "AI-Enhanced Experience & Agentic Blueprint",
+      title: "AI Growth & Agentic Blueprint",
       description:
-        "A concrete plan for how AI solves the specific problems uncovered in the audit. How agents interact with your product, what they can and cannot do, and how the experience evolves for both human users and AI agents.",
+        "A concrete plan for how AI solves the specific problems uncovered in the audit. Which features grow revenue per user, how agents will interact with your product, and how the experience evolves for both human users and AI agents — keeping you central as your market automates.",
     },
   ],
 };
 
 export const valueSurfaceContent = {
-  label: "Two angles",
-  headline: "Deliver AI experiences.\nBecome agent-ready.",
+  label: "Two dimensions",
+  headline: "Grow revenue per user.\nBecome agent-ready.",
   description:
-    "We prepare you for both sides: building AI experiences that solve real user problems, and structuring your product so AI agents can utilize them in their workflow.",
+    "The agent future creates two imperatives: capture more value from every user through AI-powered workflows, and position your product as the tool agents choose. We prepare you for both.",
   dimensions: [
     {
-      tag: "Angle 1",
-      title: "Deliver agentic experiences to your users",
+      tag: "Growth",
+      title: "AI workflows that expand revenue per user",
       description:
-        "Map real workflow friction and design AI-powered experiences that take action, reduce steps, and compound in value.",
+        "Map real workflow friction and design AI-powered experiences that keep users inside your product longer, automate the steps they currently leave to do, and unlock upgrade paths they didn't know they needed.",
       points: [
-        "AI interventions designed around actual user goals",
-        "Agentic experiences that act, not just suggest",
+        "AI interventions scored for revenue impact",
+        "Deeper workflow integration that reduces churn",
         "Competitive differentiation through workflow intelligence",
       ],
     },
     {
-      tag: "Angle 2",
+      tag: "Defense",
       title: "Ready your product for AI agent consumption",
       description:
-        "The next generation of users won't interact with your product directly. Their agents will. We design the surface that makes your product the tool agents choose.",
+        "The next generation of users won't interact with your product directly — their agents will. We design the surface that makes your product the tool agents discover, interact with, and depend on.",
       points: [
         "Product structured for agent discovery and interaction",
         "APIs and data surfaces designed for agentic orchestration",
@@ -104,31 +104,31 @@ export const processContent = {
   label: "Process",
   headline: "8–12 weeks. Fixed scope.",
   subheadline:
-    "A disciplined, time-boxed engagement designed to produce clarity, not billable hours.",
+    "A disciplined, time-boxed engagement designed to produce clarity and a concrete growth plan — not billable hours.",
   phases: [
     {
       label: "Weeks 1–2",
       title: "Intake & Discovery",
       description:
-        "Product walkthrough, data architecture review, user feedback mining, and stakeholder alignment. We learn how your product works, who uses it, and where the real friction lives.",
+        "Product walkthrough, data architecture review, revenue and usage analytics mining, and stakeholder alignment. We learn how your product works, who pays for what, and where the real friction and revenue gaps live.",
     },
     {
       label: "Weeks 3–5",
       title: "User Research & Workflow Mapping",
       description:
-        "Deep-dive user interviews, workflow decomposition, and pain point identification. We map the full picture: what users are trying to accomplish, where they get stuck, and where AI can genuinely help.",
+        "Deep-dive user interviews, workflow decomposition, and pain point identification. We map what users are trying to accomplish, where they leave your product to get it done, and where AI can genuinely help — both for human users and for the agents acting on their behalf.",
     },
     {
       label: "Weeks 6–9",
       title: "Analysis & Blueprint Development",
       description:
-        "Synthesis of findings into the four deliverables. Workflow audit, insight synthesis, data readiness assessment, and the AI-enhanced experience blueprint take shape.",
+        "Synthesis of findings into the four deliverables. Revenue opportunity scoring, retention risk mapping, data readiness assessment, and the AI growth and agentic blueprint take shape.",
     },
     {
       label: "Weeks 10–12",
       title: "Review Workshop & Final Artifacts",
       description:
-        "Interactive review sessions with your team. Challenge assumptions, refine priorities, and walk away with final deliverables you can act on immediately.",
+        "Interactive review sessions with your team. Challenge assumptions, pressure-test revenue projections, refine priorities, and walk away with final deliverables you can act on immediately.",
     },
   ],
 };
@@ -138,10 +138,10 @@ export const whoContent = {
   headline: "Who this is for. And who it isn't.",
   forItems: [
     "B2B SaaS founders and product leaders at $500K–$5M ARR",
-    "Teams with real users, real workflows, and real data",
+    "Teams seeing users leave to AI-native competitors or agent-driven workarounds",
     "Products where users have complex workflows that AI could simplify",
-    "Leaders who want to solve user problems, not chase AI trends",
-    "Companies thinking about how agents will reshape their market",
+    "Leaders who want to grow ARPU and become agent-ready, not just add AI for the sake of it",
+    "Companies thinking about how agents will reshape their market — and how to profit from it",
   ],
   notForItems: [
     "Pre-revenue startups still exploring product-market fit",
@@ -154,25 +154,25 @@ export const whoContent = {
 
 export const pricingContent = {
   label: "Investment",
-  headline: "Fixed scope. Fixed deliverables.",
+  headline: "Fixed scope. Concrete outcomes.",
   range: "$30,000",
   description:
-    "A fixed-scope engagement helping founders, CEOs, and product leaders navigate an existential technology shift for SaaS.",
+    "One wrong AI feature costs more than this in wasted engineering alone. This engagement gives you the clarity to build the right thing first — the features that grow revenue per user and keep your product central as agents reshape your market.",
   includes: [
     "All 4 deliverable artifacts",
     "8–12 week structured engagement",
     "Review workshop with your team",
     "30 days of follow-up access for questions",
-    "Decision insurance for executive-level clarity",
-    "Risk reduction before committing engineering resources",
-    "Avoidance of wasted effort on the wrong AI features",
-    "Strategic alignment during a generational platform shift",
+    "Revenue opportunity scoring per AI intervention",
+    "Retention risk mapping against agentic competitors",
+    "Prioritized build roadmap your team can execute on",
+    "Shared decision framework for what to build and what to kill",
   ],
   avoids: [
     "Months of internal debate with no resolution",
-    "Building AI features that don't solve real problems",
+    "Building AI features that don't move revenue",
     "Costly wrong-first-move implementations",
-    "Falling behind while competitors become agent-native",
+    "Losing users to competitors who became agent-ready first",
   ],
 };
 
@@ -183,12 +183,17 @@ export const faqContent = {
     {
       question: "Does this include implementation?",
       answer:
-        "No. This assessment produces decision clarity and a concrete blueprint, not code. You'll know exactly what problems to solve, in what order, with what data. Implementation is a separate engagement or something your team can execute with the artifacts we deliver.",
+        "No. This assessment produces decision clarity and a concrete blueprint, not code. You'll know exactly what problems to solve, in what order, with what data — and which features will actually drive revenue in an agent-driven future. Implementation is a separate engagement or something your team can execute with the artifacts we deliver.",
+    },
+    {
+      question: "How is this different from what we could figure out with AI tools ourselves?",
+      answer:
+        "A sharp team with AI tools can sketch a decent roadmap. What they can't do is conduct deep user research across your actual workflow, synthesize cross-domain patterns from real interviews, score revenue impact against retention risk, and design agent interoperability surfaces. The gap between a brainstorm and a research-backed growth plan is where most AI features fail.",
     },
     {
       question: "What access do you need to our data?",
       answer:
-        "We need read-only access to your data schema, product analytics, and user feedback channels. We do not need access to production databases or PII. We'll define the exact access requirements during intake and can work within your security constraints.",
+        "We need read-only access to your data schema, product analytics, revenue metrics, and user feedback channels. We do not need access to production databases or PII. We'll define the exact access requirements during intake and can work within your security constraints.",
     },
     {
       question: "How do you handle security and confidentiality?",
@@ -208,7 +213,7 @@ export const faqContent = {
     {
       question: "What does success look like?",
       answer:
-        "You understand the real problems your users face in their workflows. You have a concrete plan for how AI solves those problems. You know how to prepare your product for an agent-driven future. And your team is aligned on what to build, what to protect, and what to skip.",
+        "You know exactly which AI features will grow revenue per user. You have a concrete plan to keep your product central as agents reshape your users' workflows. Your team is aligned on what to build first, what to protect, and what to skip. And you've avoided burning 3–6 months of engineering on the wrong thing.",
     },
     {
       question: "Is this a one-time engagement or ongoing?",
@@ -218,25 +223,25 @@ export const faqContent = {
     {
       question: "What if we already have AI features in our product?",
       answer:
-        "That gives us a head start. We evaluate what you've already built and planned, identify what's working, what's missing the mark, and where the gaps are. Then we build on that foundation rather than starting from scratch. The goal is to strengthen what exists, fill in blind spots with real workflow research, and connect everything into a coherent strategy for both user-facing AI and agent readiness.",
+        "That gives us a head start. We evaluate what you've already built and planned, identify what's driving value and what's not, and connect everything into a coherent strategy that ties AI features to revenue outcomes and agent readiness. The goal is to strengthen what works and redirect what doesn't.",
     },
     {
       question: "What if we think we already know our pain points?",
       answer:
-        "Most teams do. But workflow mapping consistently reveals friction that was invisible from the inside. The AI opportunities that matter most are almost never the ones on the existing roadmap. This approach also surfaces critical data gaps, things that exist but aren't structured, exposed, or instrumented, before you start building.",
+        "Most teams do. But workflow mapping consistently reveals friction that was invisible from the inside. The AI opportunities that actually move revenue are almost never the ones on the existing roadmap. This process also surfaces the retention risks you can't see until you map how agents are already reshaping your users' workflows.",
     },
     {
       question: "How does this help us decide what not to build?",
       answer:
-        "The hardest part of AI strategy isn't finding opportunities. It's killing the ones that sound exciting but don't solve real problems. When teams see both dimensions, AI for users and agent-ready product, priorities shift. What seemed urgent becomes secondary, and what was invisible becomes the highest-leverage move. The assessment creates a shared framework for saying no.",
+        "The hardest part of AI strategy isn't finding opportunities — it's killing the ones that sound exciting but don't drive revenue or retention. When teams see both dimensions — growth features and agent-readiness — priorities shift. What seemed urgent becomes secondary, and what was invisible becomes the highest-leverage move. The assessment creates a shared framework for saying no with confidence.",
     },
   ],
 };
 
 export const finalCtaContent = {
-  headline: "Start with the problem.\nBuild from clarity.",
+  headline: "The agent future is coming.\nOwn your position in it.",
   description:
-    "8–12 weeks. Four artifacts. A plan built on real user problems, not assumptions about AI.",
+    "8–12 weeks. Four artifacts. A plan built on real user research — tied to the AI features that grow ARPU, protect your user base, and make your product the one agents choose.",
   primaryCta: "See If It's a Fit",
   secondaryCta: "See Deliverables",
 };
