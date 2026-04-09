@@ -16,7 +16,7 @@ export const heroContent = {
 
 export const problemContent = {
   label: "The problem",
-  headline: "Your SaaS was built for human users.\nAgents are changing the math.",
+  headline: "Your SaaS was built for human users.\nThe future runs on agents.",
   bullets: [
     {
       title: "You're leaving revenue on the table.",
@@ -164,9 +164,11 @@ export const pricingContent = {
     "Review workshop with your team",
     "30 days of follow-up access for questions",
     "Revenue opportunity scoring per AI intervention",
-    "Retention risk mapping against agentic competitors",
     "Prioritized build roadmap your team can execute on",
-    "Shared decision framework for what to build and what to kill",
+    "Decision insurance for executive-level clarity",
+    "Risk reduction before committing engineering resources",
+    "Avoidance of wasted effort on the wrong AI features",
+    "Strategic alignment during a generational platform shift",
   ],
   avoids: [
     "Months of internal debate with no resolution",
@@ -188,7 +190,7 @@ export const faqContent = {
     {
       question: "How is this different from what we could figure out with AI tools ourselves?",
       answer:
-        "A sharp team with AI tools can sketch a decent roadmap. What they can't do is conduct deep user research across your actual workflow, synthesize cross-domain patterns from real interviews, score revenue impact against retention risk, and design agent interoperability surfaces. The gap between a brainstorm and a research-backed growth plan is where most AI features fail.",
+        "A sharp team with AI tools can sketch a decent roadmap. What they can't do is conduct deep user research across your actual workflow, synthesize cross-domain patterns from real interviews, score revenue impact against retention risk, and design agent interoperability surfaces. We also bring pattern recognition from working with SaaS companies navigating this shift before — what's worked, what's failed, and what looks promising but wastes resources. The gap between a brainstorm and a research-backed growth plan is where most AI features fail.",
     },
     {
       question: "What access do you need to our data?",
