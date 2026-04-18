@@ -6,18 +6,25 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(__dirname, "..");
 
-// 2x resolution for retina sharpness — LinkedIn displays at 1584x396 logical
+// 2x resolution for retina sharpness
 const SCALE = 2;
 const WIDTH = 1584 * SCALE;
 const HEIGHT = 396 * SCALE;
-const S = SCALE; // shorthand for scaling values
+const S = SCALE;
 
 const logoBuffer = readFileSync(join(rootDir, "public", "logo.png"));
 
-// Layout adjusted for LinkedIn profile photo overlap:
-// Profile photo covers bottom-left ~35% width x ~45% height
-// All important content needs to be ABOVE y=55% on the left side
-// or to the RIGHT of x=35%
+// Layout reasoning:
+// LinkedIn profile photo sits at bottom-left, roughly:
+//   center x ~ 240, center y ~ 400 (extending below banner)
+//   circle radius ~ 180px (at 1584 width)
+//   overlap zone: x = 60-420, y = 200-396
+//
+// New strategy:
+// - Colorful glow orbs concentrated in LEFT-TOP area (above profile photo zone)
+// - All TEXT shifted to center-right (starts at x=480+, well clear of profile photo)
+// - Logo stays on far right
+// - This makes the colorful orbs frame your profile photo from above
 
 const v1Dark = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
@@ -33,11 +40,11 @@ const v1Dark = `<?xml version="1.0" encoding="UTF-8"?>
       <stop offset="100%" stop-color="#E96BC8"/>
     </linearGradient>
     <radialGradient id="glowTeal" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#2EC4B6" stop-opacity="0.7"/>
+      <stop offset="0%" stop-color="#2EC4B6" stop-opacity="0.75"/>
       <stop offset="100%" stop-color="#2EC4B6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowViolet" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#8B6CF6" stop-opacity="0.7"/>
+      <stop offset="0%" stop-color="#8B6CF6" stop-opacity="0.75"/>
       <stop offset="100%" stop-color="#8B6CF6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowMagenta" cx="50%" cy="50%" r="50%">
@@ -53,29 +60,29 @@ const v1Dark = `<?xml version="1.0" encoding="UTF-8"?>
   <!-- Dark background -->
   <rect x="0" y="0" width="${WIDTH}" height="${HEIGHT}" fill="#0A0F1E"/>
 
-  <!-- Glowing orbs -->
-  <circle cx="${820*S}" cy="${200*S}" r="${280*S}" fill="url(#glowTeal)"/>
-  <circle cx="${1000*S}" cy="${220*S}" r="${300*S}" fill="url(#glowViolet)"/>
-  <circle cx="${1150*S}" cy="${160*S}" r="${220*S}" fill="url(#glowMagenta)"/>
-  <circle cx="${900*S}" cy="${320*S}" r="${200*S}" fill="url(#glowBlue)"/>
+  <!-- Glowing orbs concentrated on LEFT side (above where profile photo sits) -->
+  <circle cx="${180*S}" cy="${100*S}" r="${260*S}" fill="url(#glowTeal)"/>
+  <circle cx="${340*S}" cy="${180*S}" r="${280*S}" fill="url(#glowViolet)"/>
+  <circle cx="${100*S}" cy="${250*S}" r="${220*S}" fill="url(#glowBlue)"/>
+  <circle cx="${420*S}" cy="${80*S}" r="${200*S}" fill="url(#glowMagenta)"/>
+  <circle cx="${250*S}" cy="${320*S}" r="${180*S}" fill="url(#glowViolet)"/>
 
   <!-- Top accent bar -->
   <rect x="0" y="0" width="${WIDTH}" height="${4*S}" fill="url(#barGradD)" opacity="1"/>
 
-  <!-- Headline line 1 — pushed up, starts at ~25% height -->
-  <text x="${96*S}" y="${100*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${50*S}" font-weight="700" fill="#FFFFFF" letter-spacing="${-1.8*S}">Prepare your SaaS for</text>
+  <!-- Headline TEXT shifted to center (clear of profile photo zone) -->
+  <text x="${560*S}" y="${162*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${50*S}" font-weight="700" fill="#FFFFFF" letter-spacing="${-1.8*S}">Prepare your SaaS for</text>
 
-  <!-- Headline line 2 (gradient) -->
-  <text x="${96*S}" y="${162*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${50*S}" font-weight="700" fill="url(#textGradD)" letter-spacing="${-1.8*S}">an AI agent future.</text>
+  <text x="${560*S}" y="${224*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${50*S}" font-weight="700" fill="url(#textGradD)" letter-spacing="${-1.8*S}">an AI agent future.</text>
 
   <!-- Accent gradient bar -->
-  <rect x="${96*S}" y="${182*S}" width="${220*S}" height="${3*S}" rx="${1.5*S}" fill="url(#barGradD)"/>
+  <rect x="${560*S}" y="${244*S}" width="${220*S}" height="${3*S}" rx="${1.5*S}" fill="url(#barGradD)"/>
 
-  <!-- Subtext — moved to the right of profile photo zone (x > 35% of width) -->
-  <text x="${560*S}" y="${310*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${15*S}" font-weight="500" fill="#94A3B8" letter-spacing="${0.2*S}">AI-Driven Growth Strategy for SaaS · $500K–$5M ARR</text>
+  <!-- Subtext -->
+  <text x="${560*S}" y="${288*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${17*S}" font-weight="500" fill="#94A3B8" letter-spacing="${0.2*S}">AI-Driven Growth Strategy for SaaS · $500K–$5M ARR</text>
 
-  <!-- Website URL — also right of profile photo zone -->
-  <text x="${560*S}" y="${350*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${16*S}" font-weight="600" fill="#35C3C9" letter-spacing="${0.1*S}">futurereadystudio.com</text>
+  <!-- Website URL -->
+  <text x="${560*S}" y="${325*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${18*S}" font-weight="600" fill="#35C3C9" letter-spacing="${0.1*S}">futurereadystudio.com</text>
 
   <!-- Bottom accent bar -->
   <rect x="0" y="${HEIGHT - 4*S}" width="${WIDTH}" height="${4*S}" fill="url(#barGradD)"/>
@@ -84,12 +91,12 @@ const v1Dark = `<?xml version="1.0" encoding="UTF-8"?>
 const svgLayer = Buffer.from(v1Dark);
 
 const resizedLogo = await sharp(logoBuffer)
-  .resize({ width: 300 * S, withoutEnlargement: true })
+  .resize({ width: 280 * S, withoutEnlargement: true })
   .png()
   .toBuffer();
 
 const logoInfo = await sharp(resizedLogo).metadata();
-const logoX = Math.round(WIDTH * 0.87) - Math.round(logoInfo.width / 2);
+const logoX = Math.round(WIDTH * 0.90) - Math.round(logoInfo.width / 2);
 const logoY = Math.round(HEIGHT / 2) - Math.round(logoInfo.height / 2);
 
 await sharp({
