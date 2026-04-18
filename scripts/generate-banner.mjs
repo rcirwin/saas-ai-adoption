@@ -99,7 +99,7 @@ const v1Dark = `<?xml version="1.0" encoding="UTF-8"?>
   <text x="96" y="150" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="50" font-weight="700" fill="#FFFFFF" letter-spacing="-1.8">Prepare your SaaS for</text>
   <text x="96" y="212" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="50" font-weight="700" fill="url(#textGradD)" letter-spacing="-1.8">an AI agent future.</text>
   <rect x="96" y="234" width="220" height="3" rx="1.5" fill="url(#barGradD)"/>
-  <text x="96" y="278" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="17" font-weight="500" fill="#94A3B8" letter-spacing="0.2">AI-Driven Growth Strategy for B2B SaaS · $500K–$5M ARR</text>
+  <text x="96" y="278" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="17" font-weight="500" fill="#94A3B8" letter-spacing="0.2">AI-Driven Growth Strategy for SaaS · $500K–$5M ARR</text>
   <text x="96" y="320" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#35C3C9" letter-spacing="0.1">futurereadystudio.com</text>
   <rect x="0" y="${HEIGHT - 3}" width="${WIDTH}" height="3" fill="url(#barGradD)"/>
 </svg>`;
