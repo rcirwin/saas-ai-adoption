@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "description": "Prospect CRM. All FRS agents read/write. Git-tracked for audit trail. Migrate to Google Sheet later if needed.",
+  "entry_format": {
+    "id": "string (company-slug)",
+    "company": "string",
+    "website": "string (URL)",
+    "category": "string (SaaS category: analytics, CRM, devtools, etc.)",
+    "arr_estimate": "string (<500K, 500K-1M, 1M-3M, 3M-5M, 5M+, unknown)",
+    "employee_count": "number or null",
+    "source": "string (appsumo, producthunt, linkedin, referral, inbound, job-board-signal, conference)",
+    "contacts": [
+      {
+        "name": "string",
+        "role": "string (CEO, CTO, VP Product, etc.)",
+        "linkedin": "string (URL)",
+        "email": "string or null"
+      }
+    ],
+    "ai_posture": "string (none, exploring, bolt-on, strategic, agent-ready)",
+    "fit_score": "number (1-5, 5=perfect fit)",
+    "fit_notes": "string (why this score)",
+    "status": "string (identified, researched, outreach-sent, connected, call-scheduled, call-completed, proposal-sent, closed-won, closed-lost, not-a-fit)",
+    "research_summary": "string (written by prospect-researcher)",
+    "outreach_log": [
+      {
+        "date": "YYYY-MM-DD",
+        "channel": "string (linkedin-connect, linkedin-dm, email, referral)",
+        "message_ref": "string (path to draft or template used)",
+        "response": "string (pending, accepted, replied, no-response, declined)"
+      }
+    ],
+    "notes": "string (free-form)",
+    "created_at": "YYYY-MM-DD",
+    "updated_at": "YYYY-MM-DD"
+  },
+  "prospects": []
+}

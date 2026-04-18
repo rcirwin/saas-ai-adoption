@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "description": "Global outreach activity log. Tracks all messages sent across all prospects. Outreach Writer writes, all agents read for dedup and cadence.",
+  "entry_format": {
+    "id": "string (date-prospect-channel)",
+    "prospect_id": "string (matches prospects.json id)",
+    "date": "YYYY-MM-DD",
+    "channel": "linkedin-connect | linkedin-dm | email | referral",
+    "template_used": "string (path to template or 'custom')",
+    "personalization_notes": "string (what was customized and why)",
+    "status": "sent | pending-review | approved | declined-to-send",
+    "response_status": "pending | accepted | replied | no-response | declined",
+    "response_date": "YYYY-MM-DD or null",
+    "follow_up_due": "YYYY-MM-DD or null",
+    "draft_path": "string (path to the actual message draft file)"
+  },
+  "entries": []
+}
