@@ -52,11 +52,11 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   <!-- Dark background -->
   <rect x="0" y="0" width="${WIDTH}" height="${HEIGHT}" fill="#0A0F1E"/>
 
-  <!-- Glowing orbs spread across the banner -->
-  <circle cx="${620*S}" cy="${95*S}" r="${180*S}" fill="url(#glowTeal)"/>
-  <circle cx="${770*S}" cy="${100*S}" r="${200*S}" fill="url(#glowViolet)"/>
-  <circle cx="${920*S}" cy="${80*S}" r="${160*S}" fill="url(#glowMagenta)"/>
-  <circle cx="${690*S}" cy="${150*S}" r="${140*S}" fill="url(#glowBlue)"/>
+  <!-- Glowing orbs clustered left, above where the profile photo sits -->
+  <circle cx="${90*S}" cy="${40*S}" r="${160*S}" fill="url(#glowTeal)"/>
+  <circle cx="${180*S}" cy="${70*S}" r="${180*S}" fill="url(#glowViolet)"/>
+  <circle cx="${30*S}" cy="${90*S}" r="${140*S}" fill="url(#glowMagenta)"/>
+  <circle cx="${240*S}" cy="${110*S}" r="${130*S}" fill="url(#glowBlue)"/>
 
   <!-- Top accent bar -->
   <rect x="0" y="0" width="${WIDTH}" height="${3*S}" fill="url(#barGradD)" opacity="1"/>
