@@ -34,7 +34,7 @@ Explicitly NOT given: Bash, WebFetch, WebSearch, Edit. If research is needed, it
 - If the draft would make claims that aren't backed by the experience in voice-guide.md
 
 ## Model
-Sonnet — voice quality matters. Haiku tends to produce generic LinkedIn-speak.
+Opus 4.7 — all agents in this system run on Opus for maximum quality. Token efficiency comes from file-based I/O and subagent isolation, not model downgrades.
 
 ## Output Format (returned to main context)
 ```

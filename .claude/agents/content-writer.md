@@ -2,7 +2,7 @@
 name: content-writer
 description: Drafts LinkedIn posts in Ryan's voice for Future Ready Studio. Invoke when the user asks to draft a post, write LinkedIn content, or generate content for a specific pillar. Do NOT use for planning a content calendar (use content-planner) or for editing an already-drafted post.
 tools: Read, Grep, Write
-model: sonnet
+model: opus
 ---
 
 # Content Writer Agent

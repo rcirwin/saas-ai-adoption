@@ -27,11 +27,14 @@ agents/
 
 ## Token Optimization Principles
 
-1. **Model routing**: Haiku for extraction/routing, Sonnet for writing/reasoning, Opus only when genuinely needed.
-2. **File-based I/O**: Subagents write to files, return paths + short summaries. Main context stays light.
-3. **Minimum tools**: Each subagent gets 3-4 tools max.
-4. **Structured outputs**: JSON or tight bullets, not prose.
-5. **Lean reference files**: Agents grep/read only what they need.
+All agents run on **Opus 4.7** for maximum quality. Token efficiency comes from system design, not model downgrades:
+
+1. **File-based I/O**: Subagents write to files, return paths + short summaries. Main context stays light.
+2. **Minimum tools**: Each subagent gets 3-4 tools max (reduces decision overhead per call).
+3. **Structured outputs**: JSON or tight bullets, not prose.
+4. **Lean reference files**: Agents grep/read only what they need — voice guide ~2k tokens, pillar section ~500 tokens.
+5. **Subagent isolation**: Heavy work (drafting, research) runs in subagent context that gets discarded. Main context doesn't accumulate.
+6. **Cache-friendly paths**: Reference files at stable paths so prompt caching activates across runs.
 
 ## Linear Integration
 
