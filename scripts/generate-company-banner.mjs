@@ -16,7 +16,7 @@ const logoBuffer = readFileSync(join(rootDir, "public", "logo.png"));
 
 // LinkedIn overlays a ~130px circular profile logo anchored near the bottom-left
 // (roughly x:24-160, y:85-191 at 1x). Reserve that zone so nothing gets clipped.
-const TEXT_X = 200;
+const TEXT_X = 270;
 
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
