@@ -26,115 +26,139 @@ const svg = `
       <stop offset="100%" stop-color="#E96BC8"/>
     </linearGradient>
 
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F0F6F5"/>
-      <stop offset="50%" stop-color="#F6F7F8"/>
-      <stop offset="100%" stop-color="#F2F0FA"/>
-    </linearGradient>
+    <!-- Proper radial gradient zones - clean color, no muddy blur -->
+    <radialGradient id="tealZone" cx="10%" cy="30%" r="55%" fx="10%" fy="30%">
+      <stop offset="0%" stop-color="#2EC4B6" stop-opacity="0.42"/>
+      <stop offset="40%" stop-color="#2EC4B6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#2EC4B6" stop-opacity="0"/>
+    </radialGradient>
 
-    <filter id="orbBlurLg">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="80"/>
-    </filter>
-    <filter id="orbBlurMd">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="55"/>
-    </filter>
-    <filter id="orbBlurSm">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="40"/>
-    </filter>
+    <radialGradient id="blueZone" cx="35%" cy="85%" r="40%" fx="35%" fy="85%">
+      <stop offset="0%" stop-color="#49BDF2" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#49BDF2" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#49BDF2" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="violetZone" cx="75%" cy="20%" r="50%" fx="75%" fy="20%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.32"/>
+      <stop offset="50%" stop-color="#7C5CFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="magentaZone" cx="95%" cy="80%" r="45%" fx="95%" fy="80%">
+      <stop offset="0%" stop-color="#E96BC8" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#E96BC8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#E96BC8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="violetZone2" cx="60%" cy="60%" r="35%" fx="60%" fy="60%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
 
     <filter id="grain">
-      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" stitchTiles="stitch"/>
       <feColorMatrix type="saturate" values="0"/>
       <feBlend in="SourceGraphic" mode="multiply" result="grainBlend"/>
       <feComponentTransfer>
-        <feFuncA type="linear" slope="0.025"/>
+        <feFuncA type="linear" slope="0.02"/>
       </feComponentTransfer>
       <feComposite in2="SourceGraphic" operator="in"/>
       <feBlend in2="SourceGraphic" mode="multiply"/>
     </filter>
   </defs>
 
-  <!-- Background with subtle warm-cool gradient -->
-  <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#bgGrad)"/>
+  <!-- Clean white base -->
+  <rect width="${WIDTH}" height="${HEIGHT}" fill="#FBFBFC"/>
 
-  <!-- Bold gradient orbs — rich and colorful -->
-  <circle cx="120" cy="80" r="280" fill="#2EC4B6" opacity="0.22" filter="url(#orbBlurLg)"/>
-  <circle cx="500" cy="380" r="220" fill="#49BDF2" opacity="0.16" filter="url(#orbBlurMd)"/>
-  <circle cx="900" cy="50" r="200" fill="#7C5CFF" opacity="0.14" filter="url(#orbBlurMd)"/>
-  <circle cx="1350" cy="300" r="260" fill="#7C5CFF" opacity="0.18" filter="url(#orbBlurLg)"/>
-  <circle cx="1500" cy="80" r="200" fill="#E96BC8" opacity="0.12" filter="url(#orbBlurMd)"/>
-  <circle cx="700" cy="200" r="160" fill="#E96BC8" opacity="0.08" filter="url(#orbBlurSm)"/>
-  <circle cx="1100" cy="180" r="180" fill="#2EC4B6" opacity="0.10" filter="url(#orbBlurMd)"/>
+  <!-- Stacked radial gradient zones - each a distinct color region -->
+  <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#tealZone)"/>
+  <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#blueZone)"/>
+  <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#violetZone)"/>
+  <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#magentaZone)"/>
+  <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#violetZone2)"/>
 
-  <!-- Grain overlay -->
-  <rect width="${WIDTH}" height="${HEIGHT}" filter="url(#grain)" opacity="0.35"/>
+  <!-- Subtle grain overlay -->
+  <rect width="${WIDTH}" height="${HEIGHT}" filter="url(#grain)" opacity="0.3"/>
+
+  <!-- Top thin gradient bar accent -->
+  <rect x="0" y="0" width="${WIDTH}" height="3" fill="url(#barGrad)" opacity="0.85"/>
 
   <!-- Headline line 1 -->
-  <text x="88" y="148" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="46" font-weight="600" fill="#0F172A" letter-spacing="-1.5">
+  <text x="96" y="150" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="50" font-weight="700" fill="#0F172A" letter-spacing="-1.8">
     Prepare your SaaS for
   </text>
 
   <!-- Headline line 2 (gradient) -->
-  <text x="88" y="205" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="46" font-weight="600" fill="url(#textGrad)" letter-spacing="-1.5">
+  <text x="96" y="212" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="50" font-weight="700" fill="url(#textGrad)" letter-spacing="-1.8">
     an AI agent future.
   </text>
 
   <!-- Accent gradient bar -->
-  <rect x="88" y="224" width="200" height="3" rx="1.5" fill="url(#barGrad)" opacity="0.8"/>
+  <rect x="96" y="234" width="220" height="3" rx="1.5" fill="url(#barGrad)" opacity="0.9"/>
 
   <!-- Subtext -->
-  <text x="88" y="262" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="15" font-weight="400" fill="#64748B" letter-spacing="0.3">
-    AI-Driven Growth Strategy for B2B SaaS
+  <text x="96" y="278" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="17" font-weight="500" fill="#334155" letter-spacing="0.2">
+    AI-Driven Growth Strategy for B2B SaaS · $500K–$5M ARR
   </text>
 
-  <!-- Future Ready Studio — plain text, bigger -->
-  <text x="88" y="296" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="17" font-weight="600" fill="#2EC4B6" letter-spacing="0.3">
-    Future Ready Studio
+  <!-- Website URL only -->
+  <text x="96" y="320" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#2EC4B6" letter-spacing="0.1">
+    futurereadystudio.com
   </text>
 
-  <!-- Decorative agent nodes on right -->
-  <circle cx="1180" cy="198" r="5" fill="#2EC4B6" opacity="0.55"/>
-  <circle cx="1250" cy="138" r="4" fill="#7C5CFF" opacity="0.5"/>
-  <circle cx="1270" cy="248" r="4.5" fill="#49BDF2" opacity="0.5"/>
-  <circle cx="1130" cy="138" r="3.5" fill="#E96BC8" opacity="0.45"/>
-  <circle cx="1130" cy="268" r="4" fill="#2EC4B6" opacity="0.45"/>
-  <circle cx="1320" cy="188" r="3.5" fill="#7C5CFF" opacity="0.45"/>
-  <circle cx="1200" cy="280" r="3" fill="#E96BC8" opacity="0.35"/>
-  <circle cx="1310" cy="128" r="3" fill="#49BDF2" opacity="0.35"/>
+  <!-- Right side: agent node constellation positioned around logo -->
+  <g>
+    <!-- Far outer nodes - framing the logo area -->
+    <circle cx="1040" cy="100" r="4" fill="#E96BC8" opacity="0.7"/>
+    <circle cx="1020" cy="290" r="3.5" fill="#2EC4B6" opacity="0.7"/>
+    <circle cx="1500" cy="100" r="4" fill="#49BDF2" opacity="0.65"/>
+    <circle cx="1520" cy="300" r="4" fill="#7C5CFF" opacity="0.7"/>
+    <circle cx="1080" cy="200" r="3" fill="#49BDF2" opacity="0.55"/>
+    <circle cx="1540" cy="200" r="3.5" fill="#E96BC8" opacity="0.6"/>
 
-  <!-- Connecting lines -->
-  <line x1="1180" y1="198" x2="1250" y2="138" stroke="#7C5CFF" stroke-width="1" opacity="0.25"/>
-  <line x1="1180" y1="198" x2="1270" y2="248" stroke="#49BDF2" stroke-width="1" opacity="0.25"/>
-  <line x1="1180" y1="198" x2="1130" y2="138" stroke="#E96BC8" stroke-width="1" opacity="0.2"/>
-  <line x1="1180" y1="198" x2="1130" y2="268" stroke="#2EC4B6" stroke-width="1" opacity="0.25"/>
-  <line x1="1250" y1="138" x2="1320" y2="188" stroke="#7C5CFF" stroke-width="1" opacity="0.2"/>
-  <line x1="1270" y1="248" x2="1320" y2="188" stroke="#49BDF2" stroke-width="1" opacity="0.2"/>
-  <line x1="1130" y1="268" x2="1200" y2="280" stroke="#E96BC8" stroke-width="0.8" opacity="0.18"/>
-  <line x1="1250" y1="138" x2="1310" y2="128" stroke="#49BDF2" stroke-width="0.8" opacity="0.18"/>
+    <!-- Mid-ring nodes -->
+    <circle cx="1100" cy="60" r="3" fill="#2EC4B6" opacity="0.6"/>
+    <circle cx="1450" cy="60" r="3.5" fill="#7C5CFF" opacity="0.6"/>
+    <circle cx="1100" cy="340" r="3.5" fill="#49BDF2" opacity="0.6"/>
+    <circle cx="1450" cy="340" r="3" fill="#E96BC8" opacity="0.55"/>
+
+    <!-- Connecting lines forming a network mesh around logo -->
+    <line x1="1040" y1="100" x2="1100" y2="60" stroke="#E96BC8" stroke-width="1" opacity="0.25"/>
+    <line x1="1100" y1="60" x2="1450" y2="60" stroke="#2EC4B6" stroke-width="1" opacity="0.2"/>
+    <line x1="1450" y1="60" x2="1500" y2="100" stroke="#7C5CFF" stroke-width="1" opacity="0.25"/>
+    <line x1="1500" y1="100" x2="1540" y2="200" stroke="#49BDF2" stroke-width="1" opacity="0.25"/>
+    <line x1="1540" y1="200" x2="1520" y2="300" stroke="#E96BC8" stroke-width="1" opacity="0.25"/>
+    <line x1="1520" y1="300" x2="1450" y2="340" stroke="#7C5CFF" stroke-width="1" opacity="0.25"/>
+    <line x1="1450" y1="340" x2="1100" y2="340" stroke="#E96BC8" stroke-width="1" opacity="0.2"/>
+    <line x1="1100" y1="340" x2="1020" y2="290" stroke="#49BDF2" stroke-width="1" opacity="0.25"/>
+    <line x1="1020" y1="290" x2="1080" y2="200" stroke="#2EC4B6" stroke-width="1" opacity="0.25"/>
+    <line x1="1080" y1="200" x2="1040" y2="100" stroke="#49BDF2" stroke-width="1" opacity="0.25"/>
+  </g>
 
   <!-- Bottom accent line -->
-  <rect x="0" y="${HEIGHT - 3}" width="${WIDTH}" height="3" fill="url(#barGrad)" opacity="0.6"/>
+  <rect x="0" y="${HEIGHT - 3}" width="${WIDTH}" height="3" fill="url(#barGrad)" opacity="0.85"/>
 </svg>
 `;
 
 const svgLayer = Buffer.from(svg);
 
 const resizedLogo = await sharp(logoBuffer)
-  .resize({ width: 240, withoutEnlargement: true })
+  .resize({ width: 280, withoutEnlargement: true })
   .png()
   .toBuffer();
 
 const logoInfo = await sharp(resizedLogo).metadata();
 
-const logoX = 1280 - Math.round(logoInfo.width / 2);
-const logoY = Math.round(HEIGHT / 2) - Math.round(logoInfo.height / 2) - 10;
+const logoX = 1270 - Math.round(logoInfo.width / 2);
+const logoY = Math.round(HEIGHT / 2) - Math.round(logoInfo.height / 2);
 
 await sharp({
   create: {
     width: WIDTH,
     height: HEIGHT,
     channels: 4,
-    background: { r: 246, g: 247, b: 248, alpha: 1 },
+    background: { r: 251, g: 251, b: 252, alpha: 1 },
   },
 })
   .composite([
