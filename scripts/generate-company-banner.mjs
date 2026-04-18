@@ -14,8 +14,9 @@ const S = SCALE;
 
 const logoBuffer = readFileSync(join(rootDir, "public", "logo.png"));
 
-// Company page has NO profile photo overlap, so we can use the full space.
-// Adapting the dark v1 design to this wider/shorter aspect ratio.
+// LinkedIn overlays a ~130px circular profile logo anchored near the bottom-left
+// (roughly x:24-160, y:85-191 at 1x). Reserve that zone so nothing gets clipped.
+const TEXT_X = 200;
 
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
@@ -52,27 +53,27 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   <rect x="0" y="0" width="${WIDTH}" height="${HEIGHT}" fill="#0A0F1E"/>
 
   <!-- Glowing orbs spread across the banner -->
-  <circle cx="${550*S}" cy="${95*S}" r="${180*S}" fill="url(#glowTeal)"/>
-  <circle cx="${700*S}" cy="${100*S}" r="${200*S}" fill="url(#glowViolet)"/>
-  <circle cx="${850*S}" cy="${80*S}" r="${160*S}" fill="url(#glowMagenta)"/>
-  <circle cx="${620*S}" cy="${150*S}" r="${140*S}" fill="url(#glowBlue)"/>
+  <circle cx="${620*S}" cy="${95*S}" r="${180*S}" fill="url(#glowTeal)"/>
+  <circle cx="${770*S}" cy="${100*S}" r="${200*S}" fill="url(#glowViolet)"/>
+  <circle cx="${920*S}" cy="${80*S}" r="${160*S}" fill="url(#glowMagenta)"/>
+  <circle cx="${690*S}" cy="${150*S}" r="${140*S}" fill="url(#glowBlue)"/>
 
   <!-- Top accent bar -->
   <rect x="0" y="0" width="${WIDTH}" height="${3*S}" fill="url(#barGradD)" opacity="1"/>
 
   <!-- Headline (scaled for shorter height) -->
-  <text x="${72*S}" y="${72*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${30*S}" font-weight="700" fill="#FFFFFF" letter-spacing="${-1.2*S}">Prepare your SaaS for</text>
+  <text x="${TEXT_X*S}" y="${60*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${30*S}" font-weight="700" fill="#FFFFFF" letter-spacing="${-1.2*S}">Prepare your SaaS for</text>
 
-  <text x="${72*S}" y="${112*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${30*S}" font-weight="700" fill="url(#textGradD)" letter-spacing="${-1.2*S}">an AI agent future.</text>
+  <text x="${TEXT_X*S}" y="${100*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${30*S}" font-weight="700" fill="url(#textGradD)" letter-spacing="${-1.2*S}">an AI agent future.</text>
 
   <!-- Accent gradient bar -->
-  <rect x="${72*S}" y="${126*S}" width="${140*S}" height="${2*S}" rx="${1*S}" fill="url(#barGradD)"/>
+  <rect x="${TEXT_X*S}" y="${118*S}" width="${140*S}" height="${2*S}" rx="${1*S}" fill="url(#barGradD)"/>
 
   <!-- Subtext -->
-  <text x="${72*S}" y="${154*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${11*S}" font-weight="500" fill="#94A3B8" letter-spacing="${0.2*S}">AI-Driven Growth Strategy for SaaS · $500K-$5M ARR</text>
+  <text x="${TEXT_X*S}" y="${146*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${11*S}" font-weight="500" fill="#94A3B8" letter-spacing="${0.2*S}">AI-Driven Growth Strategy for SaaS · $500K-$5M ARR</text>
 
   <!-- Website URL -->
-  <text x="${72*S}" y="${176*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${12*S}" font-weight="600" fill="#35C3C9" letter-spacing="${0.1*S}">futurereadystudio.com</text>
+  <text x="${TEXT_X*S}" y="${170*S}" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="${12*S}" font-weight="600" fill="#35C3C9" letter-spacing="${0.1*S}">futurereadystudio.com</text>
 
   <!-- Bottom accent bar -->
   <rect x="0" y="${HEIGHT - 3*S}" width="${WIDTH}" height="${3*S}" fill="url(#barGradD)"/>
@@ -81,12 +82,12 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
 const svgLayer = Buffer.from(svg);
 
 const resizedLogo = await sharp(logoBuffer)
-  .resize({ width: 160 * S, withoutEnlargement: true })
+  .resize({ width: 130 * S, withoutEnlargement: true })
   .png()
   .toBuffer();
 
 const logoInfo = await sharp(resizedLogo).metadata();
-const logoX = Math.round(WIDTH * 0.88) - Math.round(logoInfo.width / 2);
+const logoX = WIDTH - logoInfo.width - Math.round(40 * S);
 const logoY = Math.round(HEIGHT / 2) - Math.round(logoInfo.height / 2);
 
 await sharp({
