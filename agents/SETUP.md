@@ -1,14 +1,15 @@
 # FRS Agentic System — Setup Guide
 
-One-time setup for API keys, MCP servers, and environment variables. Follow this before running any agents for the first time.
+Setup for API keys, MCP servers, and environment variables. Two paths: **local** (Claude Code desktop) or **cloud** (Claude Code on the web for scheduled/off-hours runs).
 
-## 1. Google Sheets CRM
+## 1. Google Sheets
 
-FRS agents use a Google Sheet as the prospect CRM so you can review, edit, and sort prospects through a familiar UI.
+FRS agents use a Google Sheet as the shared data layer (CRM + content history) so you can review, edit, and sort through a familiar UI.
 
 ### Step 1a: Create the Sheet
 
-Create a new Google Sheet titled `FRS Prospect CRM` with the structure defined in `agents/data/prospects-sheet-schema.md`.
+Create a new Google Sheet titled `FRS Agentic System` with 6 tabs matching the structure in `agents/data/prospects-sheet-schema.md`:
+- `prospects`, `outreach_log`, `research_cache`, `config`, `posts`, `post_ideas`
 
 Copy the Sheet ID from the URL:
 ```
@@ -30,22 +31,22 @@ https://docs.google.com/spreadsheets/d/<SHEET_ID>/edit
 
 ### Step 1c: Set Environment Variables
 
-Add these to your shell profile (`~/.zshrc`, `~/.bashrc`, or `.env` if using direnv):
+#### Local (desktop Claude Code)
+
+Add to your shell profile (`~/.zshrc`):
 
 ```bash
 export FRS_GOOGLE_CREDENTIALS="$HOME/.frs/service-account.json"
 export FRS_PROSPECTS_SHEET_ID="<your_sheet_id_here>"
 ```
 
-Reload your shell (`source ~/.zshrc` or restart your terminal).
+Reload your shell (`source ~/.zshrc`).
 
 **Why `FRS_GOOGLE_CREDENTIALS` and not `GOOGLE_APPLICATION_CREDENTIALS`?**
 
-Most Google SDKs auto-read the standard `GOOGLE_APPLICATION_CREDENTIALS` variable. If you already have another agentic system that sets it, adding a second export would collide — whichever runs last wins.
+Most Google SDKs auto-read the standard `GOOGLE_APPLICATION_CREDENTIALS` variable. If you already have another agentic system that sets it, adding a second export would collide.
 
-FRS uses a namespaced variable (`FRS_GOOGLE_CREDENTIALS`). The `.mcp.json` in this repo maps it into the MCP subprocess as `GOOGLE_APPLICATION_CREDENTIALS`, so only the FRS Google Sheets MCP sees it. Your global variable stays untouched.
-
-You can keep both side by side:
+FRS uses a namespaced variable. The `.mcp.json` maps it into the MCP subprocess as `GOOGLE_APPLICATION_CREDENTIALS`, so only the FRS Google Sheets MCP sees it. Both coexist:
 
 ```bash
 # Other system (unchanged)
@@ -55,6 +56,22 @@ export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.other-system/creds.json"
 export FRS_GOOGLE_CREDENTIALS="$HOME/.frs/service-account.json"
 export FRS_PROSPECTS_SHEET_ID="<your_sheet_id_here>"
 ```
+
+#### Cloud (Claude Code on the web)
+
+In the cloud sandbox, there's no `~/.frs/` directory. Instead:
+
+1. Base64-encode your service account JSON:
+   ```bash
+   base64 -i ~/.frs/service-account.json | pbcopy
+   ```
+2. In your Claude Code web project settings, add these **project secrets**:
+   - `FRS_GOOGLE_CREDENTIALS_B64` = the base64 string you just copied
+   - `FRS_GOOGLE_CREDENTIALS` = `/tmp/frs-service-account.json`
+   - `FRS_PROSPECTS_SHEET_ID` = your Sheet ID
+3. The `SessionStart` hook (`scripts/session-start.sh`) will automatically decode the base64 secret and write it to `/tmp/frs-service-account.json` on every session boot.
+
+You do NOT need to modify `.mcp.json` — it already references `${FRS_GOOGLE_CREDENTIALS}`, which works in both environments.
 
 ### Step 1d: Verify
 
@@ -72,7 +89,27 @@ Linear MCP is already connected via Claude Code. Agents reference the **Future R
 
 No action needed — but if agents can't see Linear, verify in Claude Code settings that the Linear MCP is enabled for this project.
 
-## 3. Secrets Handling
+## 3. Session Hooks (cloud runs)
+
+Two hooks in `.claude/settings.json` handle the cloud lifecycle:
+
+| Hook | Script | What it does |
+|------|--------|-------------|
+| `SessionStart` | `scripts/session-start.sh` | `git pull origin main`, materialize creds from `FRS_GOOGLE_CREDENTIALS_B64`, verify env |
+| `Stop` | `scripts/session-stop.sh` | Auto-commit artifacts in `agents/drafts/`, `agents/plans/`, `.claude/agent-memory/` → push to main |
+
+These hooks also work on desktop (harmless no-ops for the cred bootstrap if `FRS_GOOGLE_CREDENTIALS_B64` isn't set).
+
+### Scheduling off-hours runs
+
+Use Claude Code on the web's scheduled sessions to run agents during off-hours:
+
+- **Sunday 8pm**: `/frs-plan-week` → creates next week's content plan + Linear issues
+- **Mon/Wed/Fri 6am**: `/frs-draft-post <pillar from this week's plan>` → drafts posts for review before your day starts
+
+Each session: boots → SessionStart pulls latest main → agent runs → Stop commits artifacts → pushes to main → sandbox dies. The next session picks up right where the previous one left off because memory + context are all in git.
+
+## 4. Secrets Handling
 
 **Never commit**:
 - Service account JSON files
@@ -81,7 +118,7 @@ No action needed — but if agents can't see Linear, verify in Claude Code setti
 
 Verify `.gitignore` covers these (see `/.gitignore`).
 
-## 4. Per-Agent Env Var Reference
+## 5. Per-Agent Env Var Reference
 
 | Agent | Needs | Env Var |
 |-------|-------|---------|
@@ -91,7 +128,9 @@ Verify `.gitignore` covers these (see `/.gitignore`).
 | `frs-prospect-researcher` | Sheets, web | `FRS_PROSPECTS_SHEET_ID`, `FRS_GOOGLE_CREDENTIALS` |
 | `frs-outreach-writer` | Sheets | `FRS_PROSPECTS_SHEET_ID`, `FRS_GOOGLE_CREDENTIALS` |
 
-## 5. Troubleshooting
+For cloud, add `FRS_GOOGLE_CREDENTIALS_B64` to project secrets (see Step 1c above).
+
+## 6. Troubleshooting
 
 **"Sheet not found"**: Verify `FRS_PROSPECTS_SHEET_ID` matches the actual Sheet ID, and the service account email has Editor access.
 
@@ -100,5 +139,9 @@ Verify `.gitignore` covers these (see `/.gitignore`).
 **"MCP server not connected"**: Run `claude mcp list` to see connection status. Check that `FRS_GOOGLE_CREDENTIALS` points to a valid JSON file and that the path is absolute (no `~`).
 
 **"Auth error but my other Google agent still works"**: That's the point — `FRS_GOOGLE_CREDENTIALS` is isolated to this repo's `.mcp.json`. If it's unset, check `echo $FRS_GOOGLE_CREDENTIALS` in the same shell you launched Claude Code from.
+
+**"Creds not materialized" (cloud)**: Check that `FRS_GOOGLE_CREDENTIALS_B64` is set as a project secret. Run `echo $FRS_GOOGLE_CREDENTIALS_B64 | head -c 20` to verify it exists. The SessionStart hook will log a warning if it's missing.
+
+**"Push failed on session stop"**: The stop hook retries 4 times with exponential backoff. If it still fails, artifacts are committed locally but not pushed. Next session's `git pull` will pick them up, but you may need to resolve a conflict if two sessions ran concurrently.
 
 **Agents can't see the Sheet**: Each agent that needs Sheet access must declare `mcpServers: [google-sheets]` in its frontmatter. Check the agent definition.

@@ -86,6 +86,11 @@ agents/
   plans/
     <YYYY>-W<WW>.md                Weekly content plans
 
+scripts/
+  session-start.sh                 SessionStart hook (pull + cred bootstrap)
+  session-stop.sh                  Stop hook (auto-commit + push main)
+
+.claude/settings.json              Hook configuration
 .mcp.json                          MCP server config (Google Sheets)
 ```
 
@@ -147,9 +152,65 @@ All agents run on **Opus 4.7**. Efficiency comes from system design:
 7. **Single source of truth** — no duplicated lists that force agents to reconcile
 8. **Filtered Sheet queries** — never fetch whole tabs; always filter by column
 
+## Cloud Sessions (off-hours / scheduled runs)
+
+The system works on both local (desktop) and cloud (Claude Code on the web). Cloud sessions are ephemeral — sandboxes die after each run — so two hooks keep state in sync:
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    CLOUD SESSION                         │
+│                                                          │
+│  SessionStart hook                                       │
+│  ├── git pull origin main (get latest context + memory)  │
+│  └── decode FRS_GOOGLE_CREDENTIALS_B64 → /tmp/creds.json │
+│                                                          │
+│  ┌────────────────────┐                                  │
+│  │  Agent runs         │                                 │
+│  │  (draft, plan, etc) │                                 │
+│  └────────┬───────────┘                                  │
+│           │                                              │
+│  Stop hook                                               │
+│  ├── git add agents/drafts/ agents/plans/ .claude/memory │
+│  ├── git commit (auto-message)                           │
+│  └── git push origin main                                │
+│                                                          │
+│  Sandbox destroyed                                       │
+└─────────────────────────────────────────────────────────┘
+```
+
+**Scheduling**: Use Claude Code on the web's scheduled sessions:
+- Sunday 8pm → `/frs-plan-week` → plan for the week + Linear issues
+- Mon/Wed/Fri 6am → `/frs-draft-post <pillar>` → drafts ready for morning review
+
+Each session is self-contained. Memory + drafts + plans persist via git, engagement data lives in Google Sheets. No state is lost when sandboxes die.
+
+See `agents/SETUP.md` § 3 for full cloud setup.
+
+## Structure
+
+```
+scripts/
+  session-start.sh                 SessionStart hook (pull + cred bootstrap)
+  session-stop.sh                  Stop hook (auto-commit artifacts + push main)
+```
+
+## Token Optimization
+
+All agents run on **Opus 4.7**. Efficiency comes from system design:
+
+1. **Thin dispatchers** — commands have no logic, just invoke agents
+2. **File/Sheet-based I/O** — agents write artifacts, return paths + short summaries
+3. **Minimum tools** — 3-4 native tools per agent + only the MCP servers they need
+4. **Context caching** — stable file paths = prompt cache hits across runs
+5. **Subagent isolation** — heavy work in discardable context
+6. **Persistent memory** — corrections accumulate, not repeated in prompts
+7. **Single source of truth** — no duplicated lists that force agents to reconcile
+8. **Filtered Sheet queries** — never fetch whole tabs; always filter by column
+9. **Scheduled cloud sessions** — off-hours runs use separate token budgets, keep daytime usage light
+
 ## Phase Plan
 
 - **Phase 1** (live): `frs-content-writer` + `/frs-draft-post`
-- **Phase 2** (live): `frs-content-planner` + `/frs-plan-week` + Linear integration
+- **Phase 2** (live): `frs-content-planner` + `/frs-plan-week` + Linear integration + cloud hooks
 - **Phase 3**: `frs-prospect-researcher` + `/frs-research` (Google Sheets CRM writes)
 - **Phase 4**: `frs-prospect-sourcer` + `frs-outreach-writer` + full lead-gen pipeline
