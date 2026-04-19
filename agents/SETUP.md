@@ -33,11 +33,28 @@ https://docs.google.com/spreadsheets/d/<SHEET_ID>/edit
 Add these to your shell profile (`~/.zshrc`, `~/.bashrc`, or `.env` if using direnv):
 
 ```bash
-export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.frs/service-account.json"
+export FRS_GOOGLE_CREDENTIALS="$HOME/.frs/service-account.json"
 export FRS_PROSPECTS_SHEET_ID="<your_sheet_id_here>"
 ```
 
 Reload your shell (`source ~/.zshrc` or restart your terminal).
+
+**Why `FRS_GOOGLE_CREDENTIALS` and not `GOOGLE_APPLICATION_CREDENTIALS`?**
+
+Most Google SDKs auto-read the standard `GOOGLE_APPLICATION_CREDENTIALS` variable. If you already have another agentic system that sets it, adding a second export would collide — whichever runs last wins.
+
+FRS uses a namespaced variable (`FRS_GOOGLE_CREDENTIALS`). The `.mcp.json` in this repo maps it into the MCP subprocess as `GOOGLE_APPLICATION_CREDENTIALS`, so only the FRS Google Sheets MCP sees it. Your global variable stays untouched.
+
+You can keep both side by side:
+
+```bash
+# Other system (unchanged)
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.other-system/creds.json"
+
+# FRS (scoped to this project via .mcp.json)
+export FRS_GOOGLE_CREDENTIALS="$HOME/.frs/service-account.json"
+export FRS_PROSPECTS_SHEET_ID="<your_sheet_id_here>"
+```
 
 ### Step 1d: Verify
 
@@ -68,11 +85,11 @@ Verify `.gitignore` covers these (see `/.gitignore`).
 
 | Agent | Needs | Env Var |
 |-------|-------|---------|
-| `frs-content-writer` | None | — |
-| `frs-content-planner` | Linear access | (configured in Claude Code) |
-| `frs-prospect-sourcer` | Sheets, Linear | `FRS_PROSPECTS_SHEET_ID`, `GOOGLE_APPLICATION_CREDENTIALS` |
-| `frs-prospect-researcher` | Sheets, web | `FRS_PROSPECTS_SHEET_ID`, `GOOGLE_APPLICATION_CREDENTIALS` |
-| `frs-outreach-writer` | Sheets | `FRS_PROSPECTS_SHEET_ID`, `GOOGLE_APPLICATION_CREDENTIALS` |
+| `frs-content-writer` | Sheets (dedup + engagement) | `FRS_PROSPECTS_SHEET_ID`, `FRS_GOOGLE_CREDENTIALS` |
+| `frs-content-planner` | Sheets, Linear | `FRS_PROSPECTS_SHEET_ID`, `FRS_GOOGLE_CREDENTIALS` |
+| `frs-prospect-sourcer` | Sheets, Linear | `FRS_PROSPECTS_SHEET_ID`, `FRS_GOOGLE_CREDENTIALS` |
+| `frs-prospect-researcher` | Sheets, web | `FRS_PROSPECTS_SHEET_ID`, `FRS_GOOGLE_CREDENTIALS` |
+| `frs-outreach-writer` | Sheets | `FRS_PROSPECTS_SHEET_ID`, `FRS_GOOGLE_CREDENTIALS` |
 
 ## 5. Troubleshooting
 
@@ -80,6 +97,8 @@ Verify `.gitignore` covers these (see `/.gitignore`).
 
 **"Permission denied"**: The service account needs Editor access to the Sheet. Go to Share → add the service account email.
 
-**"MCP server not connected"**: Run `claude mcp list` to see connection status. Check that `GOOGLE_APPLICATION_CREDENTIALS` points to a valid JSON file.
+**"MCP server not connected"**: Run `claude mcp list` to see connection status. Check that `FRS_GOOGLE_CREDENTIALS` points to a valid JSON file and that the path is absolute (no `~`).
+
+**"Auth error but my other Google agent still works"**: That's the point — `FRS_GOOGLE_CREDENTIALS` is isolated to this repo's `.mcp.json`. If it's unset, check `echo $FRS_GOOGLE_CREDENTIALS` in the same shell you launched Claude Code from.
 
 **Agents can't see the Sheet**: Each agent that needs Sheet access must declare `mcpServers: [google-sheets]` in its frontmatter. Check the agent definition.
