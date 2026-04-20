@@ -86,9 +86,9 @@ async function sheetsApi(token, path, init = {}) {
 
 // ----- CRM schema -----
 
-const BRAND_RGB = { r: 0.04, g: 0.09, b: 0.18 };
-const ACCENT_RGB = { r: 0.35, g: 0.42, b: 1.0 };
-const MUTED_RGB = { r: 0.94, g: 0.96, b: 1.0 };
+const BRAND_RGB = { red: 0.04, green: 0.09, blue: 0.18 };
+const ACCENT_RGB = { red: 0.35, green: 0.42, blue: 1.0 };
+const MUTED_RGB = { red: 0.94, green: 0.96, blue: 1.0 };
 
 const TABS = [
   {
@@ -240,6 +240,8 @@ function bandedRangeSpec(sheetId, numCols) {
   };
 }
 
+const WORKBOOK_TITLE = "FRS Agentic CRM";
+
 async function main() {
   const creds = loadCreds();
   console.log(`Using service account: ${creds.client_email}`);
@@ -250,6 +252,24 @@ async function main() {
   console.log(`Spreadsheet: "${meta.properties?.title ?? meta.spreadsheetId}"`);
   const existingByName = new Map();
   for (const s of meta.sheets ?? []) existingByName.set(s.properties.title, s.properties);
+
+  // Rename the workbook if it's still the default.
+  if (meta.properties?.title !== WORKBOOK_TITLE) {
+    await sheetsApi(token, ":batchUpdate", {
+      method: "POST",
+      body: JSON.stringify({
+        requests: [
+          {
+            updateSpreadsheetProperties: {
+              properties: { title: WORKBOOK_TITLE },
+              fields: "title",
+            },
+          },
+        ],
+      }),
+    });
+    console.log(`Renamed workbook to "${WORKBOOK_TITLE}".`);
+  }
 
   // 2. Add any missing tabs
   const addRequests = [];
@@ -342,7 +362,7 @@ async function main() {
     await sheetsApi(token, ":batchUpdate", { method: "POST", body: JSON.stringify({ requests: formatRequests }) });
     console.log(`Applied ${formatRequests.length} formatting request(s).`);
   } catch (e) {
-    if (String(e.message).includes("already exists") || String(e.message).includes("already in use")) {
+    if (/already (has|exists|in use|contains)/i.test(String(e.message)) || String(e.message).includes("alternating background colors")) {
       const filtered = formatRequests.filter((r) => !r.addBanding);
       await sheetsApi(token, ":batchUpdate", { method: "POST", body: JSON.stringify({ requests: filtered }) });
       console.log(`Applied ${filtered.length} formatting request(s) (skipped existing bandings).`);
@@ -410,6 +430,22 @@ async function main() {
     body: JSON.stringify({ majorDimension: "ROWS", values: weightedFormula }),
   });
   console.log("Installed Weighted Value formula in Pipeline.");
+
+  // 7. Remove the default "Sheet1" if present and empty.
+  const defaultSheet = [...existingByName.values()].find(
+    (p) => p.title === "Sheet1" && !TABS.some((t) => t.name === "Sheet1"),
+  );
+  if (defaultSheet) {
+    const check = await sheetsApi(token, `/values/${encodeURIComponent("Sheet1!A1:Z50")}`);
+    const isEmpty = !(check.values ?? []).some((r) => r.some((c) => c));
+    if (isEmpty) {
+      await sheetsApi(token, ":batchUpdate", {
+        method: "POST",
+        body: JSON.stringify({ requests: [{ deleteSheet: { sheetId: defaultSheet.sheetId } }] }),
+      });
+      console.log(`Removed default empty "Sheet1".`);
+    }
+  }
 
   console.log(`\nDone. Sheet: https://docs.google.com/spreadsheets/d/${SHEET_ID}`);
 }
