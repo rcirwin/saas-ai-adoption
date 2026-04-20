@@ -39,7 +39,15 @@ if [ -n "${FRS_GOOGLE_CREDENTIALS_B64:-}" ]; then
   echo "[frs-session-start] Materialized service account credentials to $CREDS_PATH"
 elif [ -z "${FRS_GOOGLE_CREDENTIALS:-}" ]; then
   echo "[frs-session-start] WARNING: Neither FRS_GOOGLE_CREDENTIALS_B64 nor FRS_GOOGLE_CREDENTIALS is set."
-  echo "  Google Sheets MCP will not connect. See agents/SETUP.md."
+  echo "  scripts/sheet.py will not authenticate. See agents/SETUP.md."
+fi
+
+# Install Python deps for scripts/sheet.py (Google Sheets API client).
+# Idempotent: pip is fast when packages are already installed.
+if command -v pip3 >/dev/null 2>&1 && [ -f "$REPO_ROOT/scripts/requirements.txt" ]; then
+  pip3 install --quiet --disable-pip-version-check -r "$REPO_ROOT/scripts/requirements.txt" 2>/dev/null || {
+    echo "[frs-session-start] WARNING: pip install failed. scripts/sheet.py may not work."
+  }
 fi
 
 echo "[frs-session-start] Ready."
