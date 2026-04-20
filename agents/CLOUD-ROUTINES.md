@@ -5,12 +5,8 @@
 ## Prerequisites
 
 - Complete `agents/SETUP.md` (create Sheet, bootstrap tabs, share service account, set 3 project secrets)
-- `main` branch allows direct pushes (Stop hook pushes artifacts here)
+- `main` branch allows direct pushes
 - Linear MCP connected at your Claude account level
-
-## Push-to-main timing
-
-The `Stop` hook runs automatically when each session ends. It stages `agents/drafts/`, `agents/plans/`, `agents/sourcing-runs/`, `agents/research-runs/`, `agents/outreach-runs/`, `agents/outreach-drafts/`, `.claude/agent-memory/`, auto-commits with a timestamped message, and pushes to `origin/main` with 4x exponential retry. You do not configure this per-routine.
 
 ---
 
@@ -38,6 +34,11 @@ The subagent will:
 - Link the Linear issue key back to the `post_ideas` row via `python3 scripts/sheet.py update`
 - Write the plan to agents/plans/<YYYY>-W<WW>.md
 
+CRITICAL — after the subagent finishes, commit and push all changes to main so downstream agents (Draft Post on Monday) can read the plan:
+1. Run: git add agents/plans/ .claude/agent-memory/ && git commit -m "[planner] Week plan <YYYY>-W<WW> — 3 posts scheduled"
+2. Run: git push origin main
+3. If push fails, retry up to 4 times with 2s/4s/8s/16s delays between attempts.
+
 When done, echo only the plan file path and the Linear issue keys. Do not paste the full plan body.
 ```
 
@@ -64,6 +65,11 @@ If a post is scheduled for today, invoke the frs-content-writer subagent with th
 - Write the draft to agents/drafts/<YYYY-MM-DD>-<slug>.md with frontmatter (pillar, angle, date_drafted, status: draft, length_tier)
 
 If no post is scheduled for today, write a 2-line note to agents/drafts/<YYYY-MM-DD>-no-plan.md explaining the gap and exit.
+
+CRITICAL — after drafting, commit and push all changes to main so Ryan can review and other agents have the latest state:
+1. Run: git add agents/drafts/ .claude/agent-memory/ && git commit -m "[writer] Draft post: <pillar> — <angle slug>"
+2. Run: git push origin main
+3. If push fails, retry up to 4 times with 2s/4s/8s/16s delays between attempts.
 
 When done, echo only the draft file path and the hook (first line). Do not paste the full draft.
 ```
@@ -96,6 +102,11 @@ The subagent will:
 
 Hard-fail if `sheet.py read prospects` fails — don't risk duplicate rows. Cap at 15 new prospects.
 
+CRITICAL — after sourcing, commit and push all changes to main so the Researcher (runs 2 hours later) can see the new prospects and sourcing summary:
+1. Run: git add agents/sourcing-runs/ .claude/agent-memory/ && git commit -m "[sourcer] <N> new prospects sourced from <sources>"
+2. Run: git push origin main
+3. If push fails, retry up to 4 times with 2s/4s/8s/16s delays between attempts.
+
 When done, echo only the summary file path, count added, count skipped with reasons, and Linear issue keys.
 ```
 
@@ -127,6 +138,11 @@ The subagent will:
 - Write summary to agents/research-runs/<YYYY-MM-DD>-<N>-prospects.md
 
 Target ai_posture = none / exploring / bolt-on (these need our help). Score 5 is reserved for prospects with all signals: ARR in range, clear workflow complexity, AI disruption exposure, active founder on LinkedIn, multiple personalization hooks.
+
+CRITICAL — after research, commit and push all changes to main so the Outreach Writer (runs 3 hours later) can see the newly researched prospects and their scores:
+1. Run: git add agents/research-runs/ .claude/agent-memory/ && git commit -m "[researcher] <N> prospects researched — <A> fit 3+, <B> not-a-fit"
+2. Run: git push origin main
+3. If push fails, retry up to 4 times with 2s/4s/8s/16s delays between attempts.
 
 When done, echo only the summary file path, counts (researched, not-a-fit, cache-hits, errors), and the top fit-4/5 prospect IDs.
 ```
@@ -162,6 +178,11 @@ The subagent will:
 - Write run summary to agents/outreach-runs/<YYYY-MM-DD>.md
 
 Never send messages. Never fabricate facts. Skip any prospect with no personalization hooks and flag for re-research. Reuse no hook across two prospects in the same run.
+
+CRITICAL — after drafting outreach, commit and push all changes to main so Ryan can review the drafts and future runs have the latest memory and outreach history:
+1. Run: git add agents/outreach-drafts/ agents/outreach-runs/ .claude/agent-memory/ && git commit -m "[outreach] <N> drafts — <A> connect, <B> DM, <C> email"
+2. Run: git push origin main
+3. If push fails, retry up to 4 times with 2s/4s/8s/16s delays between attempts.
 
 When done, echo only the run summary file path, count by channel, and top 3 draft paths.
 ```
@@ -199,22 +220,22 @@ Reverse when EDT resumes (second Sunday in March). Set calendar reminders for bo
 ## Troubleshooting
 
 **"Session ran but nothing happened"**
-Session log → look for `[frs-session-start] Ready.` If you see `WARNING: Neither FRS_GOOGLE_CREDENTIALS_B64 nor FRS_GOOGLE_CREDENTIALS is set`, your secrets aren't configured. Sheet-dependent agents fail fast.
+Session log → look for `[frs-session-start] Ready.` If you see the credentials warning, your secrets aren't configured.
 
 **"google-api-python-client not installed"**
-The SessionStart hook runs `pip install -r scripts/requirements.txt` on every boot. If it fails, check the session log for `WARNING: pip install failed`. The cloud sandbox should have pip3 by default.
+The SessionStart hook runs `pip install -r scripts/requirements.txt` on every boot. If it fails, check the session log for `WARNING: pip install failed`.
 
 **"Draft Post routine ran but no post was drafted"**
-Check `agents/plans/` for the current week's plan file. If missing, the Plan Week session didn't run. If present but today's row is absent, the planner didn't schedule a post for today.
+Check `agents/plans/` for the current week's plan file. If missing, the Plan Week session didn't run or its push failed. Check the Plan Week session log.
 
 **"Researcher isn't processing prospects"**
-Check the Sheet `prospects` tab — any rows with `status=identified`? If not, the sourcer didn't find qualified leads. Check `agents/sourcing-runs/` for the latest summary.
+Check the Sheet `prospects` tab — any rows with `status=identified`? If not, the sourcer didn't find qualified leads or its push failed.
 
 **"Outreach writer finds no work"**
-Check `prospects` for rows with `status=researched` and `last_outreach_date` older than `follow_up_cadence_days`. Researcher must complete before outreach runs.
+Check `prospects` for rows with `status=researched`. Researcher must complete and push before outreach runs.
 
-**"Push failed on Stop hook"**
-Stop hook retries 4x. If main has branch protection blocking direct pushes, either (a) disable the protection, (b) edit `scripts/session-stop.sh` to push to a branch + open a PR via `gh`, or (c) add a deploy key with bypass permissions. Artifacts are still committed locally inside the sandbox but are lost when the sandbox dies if push fails.
+**"Push failed"**
+Each routine retries 4x with exponential backoff. If main has branch protection, either (a) disable the protection, (b) add a deploy key with bypass, or (c) edit instructions to push to a branch + open a PR via `gh`.
 
 ## Iteration loop
 
@@ -222,4 +243,4 @@ After each week:
 1. Review summary files in `agents/plans/`, `agents/sourcing-runs/`, `agents/research-runs/`, `agents/outreach-runs/`
 2. Fill engagement data on the `posts` Sheet tab — planner uses this next Sunday
 3. Fill response data on the `outreach_log` Sheet tab — outreach writer uses this to pick winning templates
-4. In an ad-hoc local session, give agents feedback. They update `.claude/agent-memory/<agent>/MEMORY.md` and improve over time.
+4. In an ad-hoc session, give agents feedback. They update `.claude/agent-memory/<agent>/MEMORY.md` and improve over time.
