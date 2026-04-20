@@ -51,17 +51,17 @@ To change how an agent behaves: edit the agent or the context file. Don't edit s
   agents/
     frs-content-writer.md          Drafts LinkedIn posts (live)
     frs-content-planner.md         Plans weekly content + Linear (live)
-    frs-prospect-researcher.md     Phase 3
-    frs-prospect-sourcer.md        Phase 4
-    frs-outreach-writer.md         Phase 4
+    frs-prospect-sourcer.md        Sources new leads (live)
+    frs-prospect-researcher.md     Researches leads + scores fit (live)
+    frs-outreach-writer.md         Drafts personalized outreach (live)
   commands/
-    frs-draft-post.md              /frs-draft-post (thin dispatcher)
-    frs-plan-week.md               /frs-plan-week (thin dispatcher)
-    frs-research.md                Phase 3
-    frs-personalize.md             Phase 4
+    frs-draft-post.md              /frs-draft-post
+    frs-plan-week.md               /frs-plan-week
+    frs-source-leads.md            /frs-source-leads
+    frs-research.md                /frs-research
+    frs-draft-outreach.md          /frs-draft-outreach
   agent-memory/                     Per-agent persistent learning
-    frs-content-writer/MEMORY.md
-    frs-content-planner/MEMORY.md
+    frs-<agent>/MEMORY.md
 
 agents/
   README.md                        This file
@@ -71,6 +71,8 @@ agents/
   context/
     business.md                    Offer, ICP, positioning
     objections.md                  12 buyer objections → responses
+    sourcing.md                    Sources + disqualification rules
+    research-protocol.md           Research sources + fit scoring rubric
   templates/
     outreach.md                    Connection, DM, email templates
   specs/
@@ -79,16 +81,22 @@ agents/
     README.md                      How to run agent runbooks
     content-writer.md              6-case runbook
     content-planner.md             5-case runbook
+    prospect-sourcer.md            5-case runbook
+    prospect-researcher.md         5-case runbook
+    outreach-writer.md             6-case runbook
   data/
     prospects-sheet-schema.md      Google Sheet structure (6 tabs)
-  drafts/
-    <date>-<slug>.md               Drafted posts awaiting review
-  plans/
-    <YYYY>-W<WW>.md                Weekly content plans
+  drafts/                          LinkedIn post drafts
+  plans/                           Weekly content plans
+  sourcing-runs/                   Sourcer run summaries
+  research-runs/                   Researcher run summaries
+  outreach-drafts/                 Outreach message drafts
+  outreach-runs/                   Outreach writer run summaries
 
 scripts/
   session-start.sh                 SessionStart hook (pull + cred bootstrap)
   session-stop.sh                  Stop hook (auto-commit + push main)
+  sheet-bootstrap.gs               One-click Apps Script for Sheet setup
 
 .claude/settings.json              Hook configuration
 .mcp.json                          MCP server config (Google Sheets)
@@ -208,9 +216,35 @@ All agents run on **Opus 4.7**. Efficiency comes from system design:
 8. **Filtered Sheet queries** — never fetch whole tabs; always filter by column
 9. **Scheduled cloud sessions** — off-hours runs use separate token budgets, keep daytime usage light
 
+## Full Lead-Gen Pipeline
+
+```
+┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐
+│   SOURCER        │ ───→ │   RESEARCHER     │ ───→ │ OUTREACH WRITER  │
+│                  │      │                  │      │                  │
+│ Tue 7am ET       │      │ Tue-Fri 9am ET   │      │ Tue-Fri 12pm ET  │
+│                  │      │                  │      │                  │
+│ AppSumo / PH /   │      │ Website /        │      │ Templates +      │
+│ jobs / directory │      │ LinkedIn / G2 /  │      │ research hooks / │
+│                  │      │ funding news     │      │ objection map    │
+│                  │      │                  │      │                  │
+│ status:          │      │ status:          │      │ status: drafted  │
+│ identified       │      │ researched /     │      │ (human sends)    │
+│                  │      │ not-a-fit        │      │                  │
+└──────────────────┘      └──────────────────┘      └──────────────────┘
+         │                         │                         │
+         └─────────────────────────┴─────────────────────────┘
+                                   ▼
+                          Google Sheet (CRM)
+                     prospects + research_cache
+                        + outreach_log tabs
+```
+
+Status flows one direction: `identified` → `researched` → `outreach-sent` → `connected` → `call-scheduled` → `call-completed` → `proposal-sent` → `closed-won` / `closed-lost`. Only humans move status past `outreach-sent`.
+
 ## Phase Plan
 
 - **Phase 1** (live): `frs-content-writer` + `/frs-draft-post`
 - **Phase 2** (live): `frs-content-planner` + `/frs-plan-week` + Linear integration + cloud hooks
-- **Phase 3**: `frs-prospect-researcher` + `/frs-research` (Google Sheets CRM writes)
-- **Phase 4**: `frs-prospect-sourcer` + `frs-outreach-writer` + full lead-gen pipeline
+- **Phase 3** (live): `frs-prospect-sourcer` + `frs-prospect-researcher` + `/frs-source-leads` + `/frs-research`
+- **Phase 4** (live): `frs-outreach-writer` + `/frs-draft-outreach` + template performance tracking

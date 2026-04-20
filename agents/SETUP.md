@@ -102,12 +102,12 @@ These hooks also work on desktop (harmless no-ops for the cred bootstrap if `FRS
 
 ### Scheduling off-hours runs
 
-Use Claude Code on the web's scheduled sessions to run agents during off-hours:
+Use Claude Code on the web's scheduled sessions. See **`agents/CLOUD-ROUTINES.md`** for the full 7-session schedule covering:
 
-- **Sunday 8pm**: `/frs-plan-week` → creates next week's content plan + Linear issues
-- **Mon/Wed/Fri 6am**: `/frs-draft-post <pillar from this week's plan>` → drafts posts for review before your day starts
+- **Content pipeline**: Plan Week (Sun 9pm ET) → Draft Mon/Wed/Fri (6am ET)
+- **Lead-gen pipeline**: Source (Tue 7am ET) → Research (Tue-Fri 9am ET) → Outreach (Tue-Fri 12pm ET)
 
-Each session: boots → SessionStart pulls latest main → agent runs → Stop commits artifacts → pushes to main → sandbox dies. The next session picks up right where the previous one left off because memory + context are all in git.
+Each session: boots → SessionStart pulls latest main → agent runs → Stop commits artifacts → pushes to main → sandbox dies. Next session picks up where the previous left off because memory + context are all in git.
 
 ## 4. Secrets Handling
 
