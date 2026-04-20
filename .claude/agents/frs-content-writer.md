@@ -56,12 +56,15 @@ You do not research, plan calendars, publish, or modify the `posts` tab. You dra
    length_tier: short|medium|long
    ---
    ```
-8. **Return** this exact shape (do NOT echo full drafts):
+8. **Linear**: If a Linear issue ID is available (caller passes it, or it appears in the week plan at `agents/plans/<YYYY>-W<WW>.md` for today's date), append the full draft text to that issue's description using `mcp__Linear__get_issue` then `mcp__Linear__save_issue`. Preserve the existing description; add a `---` separator, a `## Draft — <YYYY-MM-DD>` heading, the post body, and a final line `*Draft file: agents/drafts/<file>.md*`. If no issue ID can be found, skip silently.
+9. **Commit & push**: Stage the draft file, commit with message `draft(<pillar>): <angle> [<YYYY-MM-DD>]`, and push to `main` — always `main`, never a feature branch.
+10. **Return** this exact shape (do NOT echo full drafts):
    ```
    DRAFT(S):
    - agents/drafts/<file>.md — Hook: "<first line>"
    Pillar: <id>
    Repetition check: <none | similar to <path>, differentiated by <X>>
+   Linear: <issue-id updated | no issue found>
    ```
 
 ## Rules
