@@ -2,21 +2,21 @@
 
 External, structural guidance for high-performing LinkedIn posts. Voice, tone, banned words, and topic selection live in `agents/voice-guide.md` — this file only covers **format, structure, and algorithm-aware tactics**. When this file conflicts with `voice-guide.md` on style, voice-guide wins.
 
-Audience for the resulting posts: B2B SaaS founders, CEOs, product leaders. Mobile-first readers (LinkedIn reports ~60% of feed views are mobile).
+Audience for the resulting posts: B2B SaaS founders, CEOs, product leaders. Mobile-first readers — ~72% of LinkedIn sessions and ~91% of browsing happens on mobile (source: van der Blom Algorithm InSights 2025).
 
 ---
 
 ## 1. The "see more" truncation cutoff
 
-LinkedIn truncates a text post in the feed at roughly **210 characters on mobile** and **~300 characters on desktop** before showing a "see more" link. Whatever sits above that line is the entire pitch for the click.
+LinkedIn truncates a text post in the feed at roughly **140 characters on mobile** and **~210 characters on desktop** before showing a "see more" link (sources: Advanced Character Counter 2026, TestFeed.ai 2025). Whatever sits above that line is the entire pitch for the click.
 
-**Engineer the first 3 lines.** A "line" on mobile is roughly 60-80 characters depending on word breaks. The visible window before the cut is 2-3 short lines.
+**Engineer the first 2-3 lines.** A "line" on mobile is roughly 50-70 characters depending on word breaks. The visible window before the cut is 2-3 short lines.
 
 **Do:**
 - Open with a hook in line 1 that creates a curiosity gap or stakes.
-- Use line 2 to widen the gap or sharpen the stake — never to soften it.
+- Use line 2 to widen the gap or sharpen the stake, never to soften it.
 - If line 3 is visible, end it on a hanging clause or a colon that forces the click.
-- Keep all content above the fold under ~210 visible characters.
+- Keep all content above the fold under ~140 visible characters on mobile.
 
 **Don't:**
 - Don't open with a greeting, throat-clear, or context. ("Recently I was thinking about..." is dead on arrival.)
@@ -180,31 +180,32 @@ The last line is the second-most-important line in the post (after the hook). It
 
 ## 7. Algorithm-aware formatting
 
-What the 2024-2025 algorithm rewards and punishes:
+What the 2025-2026 algorithm rewards and punishes (sources: van der Blom Algorithm InSights 2025, Hootsuite, AuthoredUp, autoposting.ai):
 
-**Rewards:**
-- Dwell time (people reading slowly, expanding "see more").
-- Comments with >12 words ("knowledgeable comments" weight).
-- Replies *from the author* within the first 60-90 minutes.
-- Reposts (much heavier weight than likes).
-- Saves (signal of long-term value).
+**Rewards (in order of weight):**
+- **Saves** (~5x the value of a like; signal of long-term value).
+- **Comments**, especially those over 15 words ("knowledgeable comments" carry ~2.5x more weight than short ones).
+- **Reposts with commentary** (extend reach to new audiences, outweigh likes substantially).
+- **Author replies in the first 30-90 minutes** (posts with author responses in the first 30 min get 64% more total comments and 2.3x more views; the "golden hour" determines ~70% of ultimate reach).
+- **Dwell time** (people reading slowly, expanding "see more").
 
 **Punishes:**
-- Outbound links in the post body (suppression of ~25-50% reach in most analyses).
-- Engagement-bait phrasings ("comment YES below," "tag a friend who needs this").
-- Edits within the first 10 minutes after posting (treated as suspicious).
-- Hashtag spam (>3 hashtags correlates with lower reach).
-- Posts identical or near-identical to recent ones from the same account.
+- **Outbound links in the post body** (~25-35% reach reduction per van der Blom 2025; the penalty has softened slightly from prior years and a small subset of link posts even saw +5% reach).
+- **Engagement-bait phrasings** ("comment YES below," "tag a friend who needs this").
+- **Hashtag spam**: LinkedIn flags more than 5 hashtags as spam.
+- **Posts identical or near-identical** to recent ones from the same account.
+- **Editing the post in the first hour** is widely reported (10-15% reach reduction in some analyses) but is anecdotal; treat as a soft heuristic, not data.
 
 **Do:**
-- Use 0–3 hashtags, placed at the very end on their own line. Niche tags (`#B2BSaaS`, `#ProductManagement`) outperform generic ones (`#AI`, `#Innovation`).
-- Reply to every comment in the first 90 minutes with a substantive answer (not "thanks!").
+- Use **1-5 niche hashtags** on their own line at the end. Niche tags (`#B2BSaaS`, `#ProductManagement`) outperform generic ones (`#AI`, `#Innovation`). Skip hashtags entirely if none feel natural.
+- Reply to every comment in the first 90 minutes with a substantive answer, not "thanks!"
 - If a link is essential, post it as the first comment with a short "link in comments" note in the post body.
-- Text-only posts and document carousels (PDFs uploaded as native carousels) currently get the highest reach. Single images underperform plain text.
+- **Document carousels** (PDFs uploaded as native carousels) and **native vertical video** currently lead reach in 2025-2026. Document carousels still hit ~24% engagement vs. ~6.7% for text posts; native vertical video saw a +69% performance lift in 2025.
+- Text-only posts no longer outperform images the way they did in 2023-2024 (text-only engagement dropped ~18% in 2025). Use them for sharp, voice-driven posts where image work would dilute the message.
 
 **Don't:**
-- Don't tag people who haven't agreed to be tagged. Negative-signal if they don't engage.
-- Don't post and ghost. No author replies = lower comment depth = lower reach.
+- Don't tag people who haven't agreed to be tagged. Negative signal if they don't engage.
+- Don't post and ghost. No author replies means lower comment depth, which means lower reach.
 - Don't use emoji as bullet markers (🔥 ✅ 👉). Reads as low-effort. Plain dashes win.
 
 ---
