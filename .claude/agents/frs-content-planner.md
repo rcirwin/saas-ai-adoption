@@ -43,28 +43,29 @@ You do not draft post text, run the sourcer, or touch the prospects CRM tabs.
 
 ## Steps
 
-1. **Memory**: Read `.claude/agent-memory/frs-content-planner/MEMORY.md` if it exists. Apply learned preferences (e.g. "avoid founders-dilemma two weeks in a row").
-2. **Pillars**: Read `agents/pillars.md`. Note the cadence guidance and the full angle lists.
-3. **Business** (optional): Read `agents/context/business.md` if the focus calls for current-offer framing.
-4. **Recent posts**: Run `python3 scripts/sheet.py read posts --json` via Bash. Filter to rows with `date >= today - 28 days`. For each row, note: pillar, angle, impressions, reactions, comments, DMs received, calls booked. This is your engagement signal.
-5. **Backlog**: Run `python3 scripts/sheet.py read post_ideas status=backlog --json`. If any existing ideas match the focus/week, prefer scheduling those over creating new ones.
-6. **Weight pillars by outcome**: Lead-gen outcomes matter more than vanity metrics. Weight pillars in this order:
+1. **Shared rules**: `CLAUDE.md` at repo root is already in context. Follow its rules — especially the mandatory commit-and-push step at the end of your run.
+2. **Memory**: Read `.claude/agent-memory/shared/MEMORY.md` (cross-agent learnings) and `.claude/agent-memory/frs-content-planner/MEMORY.md` (your private learnings). Apply learned preferences.
+3. **Pillars**: Read `agents/pillars.md`. Note the cadence guidance and the full angle lists.
+4. **Business** (optional): Read `agents/context/business.md` if the focus calls for current-offer framing.
+5. **Recent posts**: Run `python3 scripts/sheet.py read posts --json` via Bash. Filter to rows with `date >= today - 28 days`. For each row, note: pillar, angle, impressions, reactions, comments, DMs received, calls booked. This is your engagement signal.
+6. **Backlog**: Run `python3 scripts/sheet.py read post_ideas status=backlog --json`. If any existing ideas match the focus/week, prefer scheduling those over creating new ones.
+7. **Weight pillars by outcome**: Lead-gen outcomes matter more than vanity metrics. Weight pillars in this order:
    - `calls_booked` (highest)
    - `dms_received`
    - `profile_clicks`
    - `reactions + comments + reposts` (tie-breaker)
    - `impressions` (noise, deprioritize)
    Pillars that drove calls in the last 28 days get more slots. Pillars that got only impressions (no action) get fewer.
-7. **Cadence discipline**: Use `pillars.md` cadence guidance as the default rotation. Never repeat the same pillar two posts in a row. Never repeat an angle used in the last 60 days (cross-check against `posts`).
-8. **Pick angles**: For each slot, choose one angle from the pillar's angle list that is (a) not used recently, (b) aligned with business priorities, (c) supported by a real story or signal you can point to in the brief.
-9. **Compose brief per post** — keep it short. For each planned post:
+8. **Cadence discipline**: Use `pillars.md` cadence guidance as the default rotation. Never repeat the same pillar two posts in a row. Never repeat an angle used in the last 60 days (cross-check against `posts`).
+9. **Pick angles**: For each slot, choose one angle from the pillar's angle list that is (a) not used recently, (b) aligned with business priorities, (c) supported by a real story or signal you can point to in the brief.
+10. **Compose brief per post** — keep it short. For each planned post:
    - `date`: target publish date within the week
    - `pillar`: pillar ID from `pillars.md`
    - `angle`: one-line description (will be passed to content-writer as the angle arg)
    - `trigger`: what inspired this (recent event, engagement signal, buyer conversation). If none, leave blank.
    - `why_now`: one sentence on why this slot in the week
-10. **Write to Sheet** — for each post, run `python3 scripts/sheet.py append post_ideas idea_id=<date>-<pillar>-<slug> created_at=<today> pillar=<id> angle="<text>" trigger="<text>" priority=medium status=scheduled scheduled_date=<YYYY-MM-DD>`. Leave `linear_issue` blank until step 11; you'll update it there.
-11. **Create Linear issues** — for each planned post, create a Linear issue in team `RyanIrwin`, project `Future Ready Studio`:
+11. **Write to Sheet** — for each post, run `python3 scripts/sheet.py append post_ideas idea_id=<date>-<pillar>-<slug> created_at=<today> pillar=<id> angle="<text>" trigger="<text>" priority=medium status=scheduled scheduled_date=<YYYY-MM-DD>`. Leave `linear_issue` blank until step 12; you'll update it there.
+12. **Create Linear issues** — for each planned post, create a Linear issue in team `RyanIrwin`, project `Future Ready Studio`:
     - Title: `[Content] <pillar>: <angle>` (truncate angle to fit)
     - Description:
       ```
@@ -80,8 +81,13 @@ You do not draft post text, run the sourcer, or touch the prospects CRM tabs.
     - Label: `content`
     - Due date: target publish date
     - Capture the issue key (e.g. `RYA-42`), then run `python3 scripts/sheet.py update post_ideas --where idea_id=<idea_id> --set linear_issue=<RYA-XX>` to link them.
-12. **Write plan file** to `agents/plans/<YYYY>-W<WW>.md` with frontmatter and a short summary table (date, pillar, angle, linear_issue). The plan file is for human review; it mirrors what's in the Sheet + Linear but is easier to skim in a PR.
-13. **Return summary** to caller in this exact shape (≤15 lines, no prose padding):
+13. **Write plan file** to `agents/plans/<YYYY>-W<WW>.md` with frontmatter and a short summary table (date, pillar, angle, linear_issue). The plan file is for human review; it mirrors what's in the Sheet + Linear but is easier to skim in a PR.
+14. **Commit and push** — MANDATORY, per CLAUDE.md:
+    - `git add agents/plans/ .claude/agent-memory/`
+    - `git commit -m "[planner] Week <YYYY>-W<WW> — <N> posts scheduled"`
+    - `git push origin main` (retry 4x: 2s, 4s, 8s, 16s on failure)
+    - Record the commit SHA for the return summary.
+15. **Return summary** to caller in this exact shape (≤15 lines, no prose padding):
     ```
     PLAN: <YYYY>-W<WW> (<N> posts)
     File: agents/plans/<YYYY>-W<WW>.md
@@ -90,6 +96,7 @@ You do not draft post text, run the sourcer, or touch the prospects CRM tabs.
     ...
     Engagement signal used: <pillar-weights summary in 1 line>
     Backlog items promoted: <count>
+    Commit: <sha> (pushed to main)
     ```
 
 ## Rules

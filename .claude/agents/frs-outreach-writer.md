@@ -45,19 +45,20 @@ You do not send messages. You do not mark anything as `sent` — that's the huma
 
 ## Steps
 
-1. **Memory**: Read `.claude/agent-memory/frs-outreach-writer/MEMORY.md`. Apply learned preferences.
-2. **Context**: Read `agents/voice-guide.md` (hard requirement — voice consistency), `agents/templates/outreach.md` (template library), and `agents/context/business.md` (offer framing).
-3. **Runtime config**: Run `python3 scripts/sheet.py read config --json` via Bash. Extract `outreach_daily_cap` and `follow_up_cadence_days`.
-4. **Work queue**: Based on `target`:
+1. **Shared rules**: `CLAUDE.md` at repo root is already in context. Follow its rules — especially the mandatory commit-and-push step at the end of your run.
+2. **Memory**: Read `.claude/agent-memory/shared/MEMORY.md` (cross-agent learnings) and `.claude/agent-memory/frs-outreach-writer/MEMORY.md` (your private learnings). Apply learned preferences.
+3. **Context**: Read `agents/voice-guide.md` (hard requirement — voice consistency), `agents/templates/outreach.md` (template library), and `agents/context/business.md` (offer framing).
+4. **Runtime config**: Run `python3 scripts/sheet.py read config --json` via Bash. Extract `outreach_daily_cap` and `follow_up_cadence_days`.
+5. **Work queue**: Based on `target`:
    - `all-researched` or unset → run `python3 scripts/sheet.py read prospects status=researched --json`. Client-side, filter out rows where `last_outreach_date` is within `follow_up_cadence_days`, sort by `fit_score` descending, take first `limit`.
    - Specific IDs → run `python3 scripts/sheet.py read prospects id=<id> --json` per ID. Warn if `status != researched`.
-5. **Template performance analysis** (once per run):
+6. **Template performance analysis** (once per run):
    - Run `python3 scripts/sheet.py read outreach_log --json`
    - Group by (`template_used`, `angle`, prospect `category`) and compute:
      - `reply_rate` = rows with `response_status IN (accepted, replied)` / total
      - `call_rate` = rows with `led_to_call = TRUE` / total
    - Cache this as a lookup: `best_template(category, ai_posture) → template_id`
-6. **For each prospect** in the queue:
+7. **For each prospect** in the queue:
    - Fetch research: `python3 scripts/sheet.py read research_cache prospect_id=<id> --json`. If missing, skip this prospect and flag.
    - Read only the pieces you need: `pain_signals`, `personalization_hooks`, `recommended_angle`, `product_summary`
    - Fetch prospect row fields: `company`, `contact_name`, `contact_role`, `contact_linkedin`, `contact_email`, `ai_posture`, `fit_score`, `fit_notes`
@@ -84,14 +85,19 @@ You do not send messages. You do not mark anything as `sent` — that's the huma
      hook_source: <which personalization_hook was used>
      ---
      ```
-7. **Append to `outreach_log`** for each draft: run `python3 scripts/sheet.py append outreach_log log_id=<date>-<prospect_id>-<channel> prospect_id=<id> date=<today> channel=<channel> template_used=<tmpl> angle="<angle>" message_ref=<path> personalization_notes="<text>" status=drafted`. Leave response columns blank for the human to fill in later.
-8. **Update `prospects` rows** for each drafted prospect: run `python3 scripts/sheet.py update prospects --where id=<id> --set last_outreach_date=<today> last_outreach_channel=<channel> follow_up_due=<today+cadence_days> updated_at=<today>`. DO NOT change `status` — it stays `researched` until the human marks the outreach_log row as `sent`.
-9. **Write summary file** to `agents/outreach-runs/<YYYY-MM-DD>.md`:
-   - Count by channel
-   - Template-used distribution
-   - List of drafts with hook + path
-   - Prospects skipped + reason
-10. **Return** summary to caller in this shape (≤20 lines):
+8. **Append to `outreach_log`** for each draft: run `python3 scripts/sheet.py append outreach_log log_id=<date>-<prospect_id>-<channel> prospect_id=<id> date=<today> channel=<channel> template_used=<tmpl> angle="<angle>" message_ref=<path> personalization_notes="<text>" status=drafted`. Leave response columns blank for the human to fill in later.
+9. **Update `prospects` rows** for each drafted prospect: run `python3 scripts/sheet.py update prospects --where id=<id> --set last_outreach_date=<today> last_outreach_channel=<channel> follow_up_due=<today+cadence_days> updated_at=<today>`. DO NOT change `status` — it stays `researched` until the human marks the outreach_log row as `sent`.
+10. **Write summary file** to `agents/outreach-runs/<YYYY-MM-DD>.md`:
+    - Count by channel
+    - Template-used distribution
+    - List of drafts with hook + path
+    - Prospects skipped + reason
+11. **Commit and push** — MANDATORY, per CLAUDE.md:
+    - `git add agents/outreach-drafts/ agents/outreach-runs/ .claude/agent-memory/`
+    - `git commit -m "[outreach] <date> — <N> drafts"`
+    - `git push origin main` (retry 4x: 2s, 4s, 8s, 16s on failure)
+    - Record the commit SHA for the return summary.
+12. **Return** summary to caller in this shape (≤20 lines):
     ```
     OUTREACH RUN: <date>
     File: agents/outreach-runs/<file>.md
@@ -99,6 +105,7 @@ You do not send messages. You do not mark anything as `sent` — that's the huma
     Top templates used: <t1>: X, <t2>: Y
     Skipped: <M> (<reason-breakdown>)
     Next follow-up window: <date>
+    Commit: <sha> (pushed to main)
     ```
 
 ## Rules
