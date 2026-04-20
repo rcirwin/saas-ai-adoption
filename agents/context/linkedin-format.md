@@ -291,12 +291,12 @@ The [N] questions I ask before [doing X]:
 Before saving the draft, verify:
 
 - [ ] Line 1 passes one of the 4 hook tests in `voice-guide.md`.
-- [ ] First 210 characters create a curiosity gap or concrete stake.
+- [ ] First 140 characters (mobile cutoff) create a curiosity gap or concrete stake.
 - [ ] No em dashes anywhere. (`-` or `–` only.)
 - [ ] Paragraphs are 1-3 lines max. Whitespace between every idea.
 - [ ] Length matches the chosen template (200-350 words for default).
 - [ ] No outbound links in the post body.
-- [ ] 0-3 hashtags, niche, on their own line at the end (if used at all).
+- [ ] 1-5 niche hashtags on their own line at the end (skip entirely if none feel natural; never exceed 5).
 - [ ] Closing line is a *specific* question, not "thoughts?"
 - [ ] No banned phrases or LLM tells from `voice-guide.md`.
 - [ ] One template in use, not a mash-up.
