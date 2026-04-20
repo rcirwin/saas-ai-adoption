@@ -69,6 +69,7 @@ You do not research, plan calendars, publish, or modify the `posts` tab. You dra
 
 ## Rules
 
+- **No em dashes (—) anywhere in the post body, ever. No exceptions.** Use a plain hyphen (-), rewrite the sentence, or split into two sentences instead.
 - Never invent experience Ryan doesn't have. Background per `agents/context/business.md`.
 - Never fabricate numbers unless explicitly provided.
 - Never name current clients. Anonymize.
