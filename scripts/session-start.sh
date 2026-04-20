@@ -2,27 +2,35 @@
 set -euo pipefail
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
-
-echo "[frs-session-start] Pulling latest from main..."
 cd "$REPO_ROOT"
 
-git fetch origin main 2>/dev/null || {
-  echo "[frs-session-start] WARNING: git fetch failed (network?). Proceeding with local state."
-}
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "")
 
-if git show-ref --verify --quiet refs/remotes/origin/main; then
-  git checkout main 2>/dev/null || true
-  git merge origin/main --ff-only 2>/dev/null || {
-    echo "[frs-session-start] WARNING: fast-forward merge failed. Local main may have diverged."
+# Preserve local dev work: if interactively on a claude/* feature branch,
+# skip the checkout-main-and-pull step so the user's in-progress work isn't
+# yanked. Cloud scheduled sessions always boot on main (default branch), so
+# they proceed through this block normally.
+if [[ "$CURRENT_BRANCH" == claude/* ]]; then
+  echo "[frs-session-start] On dev branch '$CURRENT_BRANCH' — skipping main pull."
+else
+  echo "[frs-session-start] Pulling latest from main..."
+
+  git fetch origin main 2>/dev/null || {
+    echo "[frs-session-start] WARNING: git fetch failed (network?). Proceeding with local state."
   }
+
+  if git show-ref --verify --quiet refs/remotes/origin/main; then
+    git checkout main 2>/dev/null || true
+    git merge origin/main --ff-only 2>/dev/null || {
+      echo "[frs-session-start] WARNING: fast-forward merge failed. Local main may have diverged."
+    }
+  fi
 fi
 
 # Materialize service account credentials from base64 secret (cloud only).
-# In Claude Code on web, set the project secret FRS_GOOGLE_CREDENTIALS_B64
-# to the base64-encoded contents of the service account JSON file:
-#   base64 -i ~/.frs/service-account.json | pbcopy
-#
-# Locally this is a no-op — FRS_GOOGLE_CREDENTIALS already points to the file.
+# Set FRS_GOOGLE_CREDENTIALS_B64 as a Claude Code project secret:
+#   base64 -w0 /path/to/service-account.json   # Linux
+#   base64 -i /path/to/service-account.json | pbcopy   # macOS
 if [ -n "${FRS_GOOGLE_CREDENTIALS_B64:-}" ]; then
   CREDS_PATH="/tmp/frs-service-account.json"
   echo "$FRS_GOOGLE_CREDENTIALS_B64" | base64 -d > "$CREDS_PATH"

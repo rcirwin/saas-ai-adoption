@@ -162,7 +162,7 @@ All agents run on **Opus 4.7**. Efficiency comes from system design:
 
 ## Cloud Sessions (off-hours / scheduled runs)
 
-The system works on both local (desktop) and cloud (Claude Code on the web). Cloud sessions are ephemeral — sandboxes die after each run — so two hooks keep state in sync:
+The system is cloud-first — designed to run as scheduled sessions in Claude Code on the web. Cloud sessions are ephemeral (sandboxes die after each run), so two hooks keep state in sync:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -186,13 +186,17 @@ The system works on both local (desktop) and cloud (Claude Code on the web). Clo
 └─────────────────────────────────────────────────────────┘
 ```
 
-**Scheduling**: Use Claude Code on the web's scheduled sessions:
-- Sunday 8pm → `/frs-plan-week` → plan for the week + Linear issues
-- Mon/Wed/Fri 6am → `/frs-draft-post <pillar>` → drafts ready for morning review
+**Scheduling**: 5 routines (one per agent), each with its own cron. All push artifacts back to `main` automatically via the Stop hook:
+
+- Sun 9pm ET → `/frs-plan-week` → next week's plan + Linear issues
+- Mon/Wed/Fri 6am ET → `/frs-draft-post` → reads today's plan entry, drafts the post
+- Tue 7am ET → `/frs-source-leads` → 15 new qualified prospects + research issues
+- Tue-Fri 9am ET → `/frs-research` → research identified prospects, score fit
+- Tue-Fri 12pm ET → `/frs-draft-outreach` → personalized outreach for researched prospects
 
 Each session is self-contained. Memory + drafts + plans persist via git, engagement data lives in Google Sheets. No state is lost when sandboxes die.
 
-See `agents/SETUP.md` § 3 for full cloud setup.
+See `agents/SETUP.md` for secrets + hooks, and `agents/CLOUD-ROUTINES.md` for full cron definitions and troubleshooting.
 
 ## Structure
 
