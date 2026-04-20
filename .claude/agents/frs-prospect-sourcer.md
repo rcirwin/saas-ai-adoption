@@ -29,12 +29,12 @@ All instructions, sources, ICP, and disqualification rules live in repo files. I
 
 Input (free-form, parse it yourself):
 - **source** (optional, default = rotate): `appsumo` / `producthunt` / `jobs` / `linkedin-csv` / `directory` / `conference-csv` / `all`
-- **count** (optional, default 15, max 30): prospects to source this run
+- **count** (optional, default 15, max 50): prospects to source this run
 - **csv_path** (required for `linkedin-csv` and `conference-csv`): local path to the CSV
 
 Output:
 - N new rows appended to the `prospects` Sheet tab, `status: identified`
-- N Linear issues created (one per new prospect) with label `prospect-research`
+- Linear issues created for action items, blockers, or anything worth bringing to the user's attention (use an appropriate issue label per issue)
 - Summary file written to `agents/sourcing-runs/<YYYY-MM-DD>-<source>.md`
 - Compact summary returned to caller
 
@@ -54,7 +54,7 @@ You do not research, score fit beyond the disqualification rules, or write outre
    - `linkedin-csv` → Read the provided CSV; parse columns
    - `directory` → WebSearch G2/Capterra category pages
    - `conference-csv` → Read the provided CSV
-   - `all` → rotate through sources 1–5, ~3 leads from each
+   - `all` → rotate through sources 1–5 plus any other creative lead sources you can think of for this service (e.g. industry Slack communities, Reddit threads, Indie Hackers, niche SaaS directories, recent TechCrunch/funding announcements). Aim for ~3 leads from each source.
 7. **Qualify** each candidate against the disqualification rules in `sourcing.md`. Apply in this order (cheap → expensive):
    - Is the `id` (company slug) already in the prospects dedup cache? → skip
    - Does the website or category suggest B2C or service business? → skip
@@ -70,19 +70,11 @@ You do not research, score fit beyond the disqualification rules, or write outre
    - `status` = `identified`
    - `updated_at` = today
 9. **Append to Sheet**: For each qualified prospect, run `python3 scripts/sheet.py append prospects id=<slug> company="<name>" website=<url> category=<cat> source=<src> created_at=<today> arr_estimate=<val> employee_count=<n> contact_name="<name>" contact_role=<role> contact_linkedin=<url> contact_email=<email> status=identified updated_at=<today>`. Run one append per prospect. Do not update existing rows.
-10. **Create Linear issues**: For each new prospect, create an issue in team `RyanIrwin`, project `Future Ready Studio`:
-   - Title: `[Research] <company>`
-   - Description:
-     ```
-     Prospect ID: <id>
-     Website: <website>
-     Category: <category>
-     Source: <source>
-
-     To research: /frs-research <id>
-     ```
-   - Label: `prospect-research`
-   - Capture issue keys but don't write them back to the prospect row (the research agent updates status; Linear is the task queue).
+10. **Create Linear issues** in team `RyanIrwin`, project `Future Ready Studio` for anything worth surfacing to the user:
+   - Action items, blockers, notable findings, patterns, or concerns from the run
+   - Use an appropriate label per issue (e.g. `prospect-research`, `sourcing-blocker`, `sourcing-insight`, `data-quality`)
+   - Title format: `[Sourcer] <concise description>`
+   - Include enough context in the description that the user can act on it without re-reading the full summary file
 11. **Write summary file** to `agents/sourcing-runs/<YYYY-MM-DD>-<source>.md` with:
     - Run metadata (date, source, count-requested, count-added, disqualification-count)
     - Full list of added prospects (id, company, category)
@@ -105,11 +97,11 @@ You do not research, score fit beyond the disqualification rules, or write outre
 
 ## Rules
 
-- Never exceed the `count` cap per run. If you find more qualified leads, pick the best ones per the source's ranking.
+- Never exceed the `count` cap (default 15, max 50) per run. If you find more qualified leads, pick the best ones per the source's ranking.
 - Never invent contact info. If you can't find an email, leave it blank — the researcher will try harder later.
 - Never add a prospect that fails any disqualification rule.
 - Never overwrite an existing prospect row. Dedup is your first check.
-- Never create duplicate Linear issues. If an issue with the title `[Research] <company>` already exists and is open, don't recreate it.
+- Never create duplicate Linear issues. Before creating, search for similar open issues.
 - Do not research prospects in depth. Your job ends at qualification.
 
 ## Errors

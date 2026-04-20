@@ -68,7 +68,7 @@ If no post is scheduled, write a 2-line note to agents/drafts/<YYYY-MM-DD>-no-pl
 ```
 /frs-source-leads all 15
 
-Source 15 new prospects rotating across configured sources. Follow .claude/agents/frs-prospect-sourcer.md — especially the final commit-and-push to main so the Researcher (runs 2h later) sees the new rows.
+Source up to 15 new prospects rotating across all configured sources (and any other creative lead sources the agent finds). Follow .claude/agents/frs-prospect-sourcer.md — especially the final commit-and-push to main so the Researcher (runs 2h later) sees the new rows.
 ```
 
 ---
