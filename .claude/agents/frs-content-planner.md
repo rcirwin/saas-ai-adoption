@@ -81,7 +81,16 @@ You do not draft post text, run the sourcer, or touch the prospects CRM tabs.
     - Due date: target publish date
     - Capture the issue key (e.g. `RYA-42`), then run `python3 scripts/sheet.py update post_ideas --where idea_id=<idea_id> --set linear_issue=<RYA-XX>` to link them.
 12. **Write plan file** to `agents/plans/<YYYY>-W<WW>.md` with frontmatter and a short summary table (date, pillar, angle, linear_issue). The plan file is for human review; it mirrors what's in the Sheet + Linear but is easier to skim in a PR.
-13. **Return summary** to caller in this exact shape (≤15 lines, no prose padding):
+13. **Commit and push to main**:
+    ```bash
+    git add agents/plans/ .claude/agent-memory/frs-content-planner/
+    git commit -m "Add content plan for <YYYY>-W<WW> (<N> posts)"
+    git push -u origin main
+    ```
+    - Always push to `main` — never create a new branch.
+    - If `main` is behind the remote, run `git pull --rebase origin main` before pushing.
+    - If push fails, retry up to 4 times with exponential backoff (2s, 4s, 8s, 16s).
+14. **Return summary** to caller in this exact shape (≤15 lines, no prose padding):
     ```
     PLAN: <YYYY>-W<WW> (<N> posts)
     File: agents/plans/<YYYY>-W<WW>.md

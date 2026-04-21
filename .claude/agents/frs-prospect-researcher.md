@@ -78,7 +78,16 @@ You do not write outreach, update contact info, or change prospects with `status
     - Fit score distribution (1: X, 2: Y, 3: Z, ...)
     - Top 5 prospects by fit score with their `recommended_angle`
     - Flagged issues (prospects where research was inconclusive)
-11. **Return** summary to caller in this shape (≤20 lines):
+11. **Commit and push to main**:
+    ```bash
+    git add agents/research-runs/ .claude/agent-memory/frs-prospect-researcher/
+    git commit -m "Add prospect research run <YYYY-MM-DD>: <count> prospects scored"
+    git push -u origin main
+    ```
+    - Always push to `main` — never create a new branch. The Outreach Writer reads from `main`.
+    - If `main` is behind the remote, run `git pull --rebase origin main` before pushing.
+    - If push fails, retry up to 4 times with exponential backoff (2s, 4s, 8s, 16s).
+12. **Return** summary to caller in this shape (≤20 lines):
     ```
     RESEARCH RUN: <date> / <count> prospects
     File: agents/research-runs/<file>.md
