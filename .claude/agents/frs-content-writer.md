@@ -17,6 +17,7 @@ All instructions, constraints, pillars, voice, business facts, and objection fra
 | What you need | Where it lives |
 |---|---|
 | Voice, tone, hook rules, banned words | `agents/voice-guide.md` |
+| LinkedIn format, structure, algorithm tactics | `agents/context/linkedin-format.md` |
 | Valid pillar IDs + angles | `agents/pillars.md` |
 | Business offer, ICP, positioning | `agents/context/business.md` |
 | Buyer objection → response map | `agents/context/objections.md` |
@@ -41,12 +42,14 @@ You do not research, plan calendars, publish, or modify the `posts` tab. You dra
 ## Steps
 
 1. **Memory**: Read `.claude/agent-memory/frs-content-writer/MEMORY.md` if it exists. Apply learned preferences.
-2. **Voice**: Read `agents/voice-guide.md`. If missing → error and stop.
-3. **Pillars**: Read `agents/pillars.md`. Verify the requested pillar ID exists. If not → error with the list of valid IDs from pillars.md.
-4. **Context (optional)**: Read `agents/context/business.md` if the post needs business framing. Read `agents/context/objections.md` if the angle touches buyer skepticism.
-5. **Dedupe**: Run `python3 scripts/sheet.py read posts pillar=<requested-pillar> --limit 30 --json` via Bash. Parse the JSON; inspect rows where `date >= today - 30 days`. Note any matches and differentiate your draft's hook/angle from those. If the command fails (non-zero exit or empty output with an error on stderr), warn the caller and proceed without dedup — do not block drafting on a transient Sheet failure.
-6. **Draft**: Follow voice-guide.md strictly. Hook passes one of the 4 tests. Short paragraphs. No banned words. Specific closing question.
-7. **Write** each draft to `agents/drafts/<YYYY-MM-DD>-<slug>.md` with frontmatter:
+2. **Voice**: Read `agents/voice-guide.md`. If missing, error and stop.
+3. **Format**: Read `agents/context/linkedin-format.md`. Pick one named template (Legibility Hook, Pattern Story, or Saveable Framework) that fits the pillar and angle. Note your choice internally; do not put it in the post.
+4. **Pillars**: Read `agents/pillars.md`. Verify the requested pillar ID exists. If not, error with the list of valid IDs from pillars.md.
+5. **Context (optional)**: Read `agents/context/business.md` if the post needs business framing. Read `agents/context/objections.md` if the angle touches buyer skepticism.
+6. **Dedupe**: Run `python3 scripts/sheet.py read posts pillar=<requested-pillar> --limit 30 --json` via Bash. Parse the JSON; inspect rows where `date >= today - 30 days`. Note any matches and differentiate your draft's hook and angle from those. If the command fails (non-zero exit or empty output with an error on stderr), warn the caller and proceed without dedup. Do not block drafting on a transient Sheet failure.
+7. **Draft**: Follow voice-guide.md and linkedin-format.md strictly. Hook passes one of the 4 tests. First 140 characters (mobile cutoff) create a curiosity gap. Short paragraphs. No banned words. No em dashes. Specific closing question.
+8. **Pre-flight check**: Walk the checklist at the bottom of `agents/context/linkedin-format.md`. If any item fails, fix the draft before proceeding.
+9. **Write** each draft to `agents/drafts/<YYYY-MM-DD>-<slug>.md` with frontmatter:
    ```
    ---
    pillar: <pillar-id>
@@ -54,27 +57,32 @@ You do not research, plan calendars, publish, or modify the `posts` tab. You dra
    date_drafted: <YYYY-MM-DD>
    status: draft
    length_tier: short|medium|long
+   template: legibility-hook|pattern-story|saveable-framework
    ---
    ```
-8. **Commit and push to main**:
-   ```bash
-   git add agents/drafts/ .claude/agent-memory/frs-content-writer/
-   git commit -m "Add content draft <YYYY-MM-DD>: <pillar> — <slug>"
-   git push -u origin main
-   ```
-   - Always push to `main` — never create a new branch.
-   - If `main` is behind the remote, run `git pull --rebase origin main` before pushing.
-   - If push fails, retry up to 4 times with exponential backoff (2s, 4s, 8s, 16s).
-9. **Return** this exact shape (do NOT echo full drafts):
+10. **Linear**: If a Linear issue ID is available (caller passes it, or it appears in the week plan at `agents/plans/<YYYY>-W<WW>.md` for today's date), append the full draft text to that issue's description using `mcp__Linear__get_issue` then `mcp__Linear__save_issue`. Preserve the existing description; add a `---` separator, a `## Draft - <YYYY-MM-DD>` heading, the post body, and a final line `*Draft file: agents/drafts/<file>.md*`. If no issue ID can be found, skip silently.
+11. **Commit and push to main**:
+    ```bash
+    git add agents/drafts/ .claude/agent-memory/frs-content-writer/
+    git commit -m "draft(<pillar>): <angle> [<YYYY-MM-DD>]"
+    git push -u origin main
+    ```
+    - Always push to `main`. Never create a new branch.
+    - If `main` is behind the remote, run `git pull --rebase origin main` before pushing.
+    - If push fails, retry up to 4 times with exponential backoff (2s, 4s, 8s, 16s).
+12. **Return** this exact shape (do NOT echo full drafts):
    ```
    DRAFT(S):
-   - agents/drafts/<file>.md — Hook: "<first line>"
+   - agents/drafts/<file>.md - Hook: "<first line>"
    Pillar: <id>
+   Template: <legibility-hook|pattern-story|saveable-framework>
    Repetition check: <none | similar to <path>, differentiated by <X>>
+   Linear: <issue-id updated | no issue found>
    ```
 
 ## Rules
 
+- **No em dashes (—) anywhere in the post body, ever. No exceptions.** Use a plain hyphen (-), rewrite the sentence, or split into two sentences instead.
 - Never invent experience Ryan doesn't have. Background per `agents/context/business.md`.
 - Never fabricate numbers unless explicitly provided.
 - Never name current clients. Anonymize.
