@@ -91,7 +91,16 @@ You do not send messages. You do not mark anything as `sent` — that's the huma
    - Template-used distribution
    - List of drafts with hook + path
    - Prospects skipped + reason
-10. **Return** summary to caller in this shape (≤20 lines):
+10. **Commit and push to main**:
+    ```bash
+    git add agents/outreach-drafts/ agents/outreach-runs/ .claude/agent-memory/frs-outreach-writer/
+    git commit -m "Add outreach drafts <YYYY-MM-DD>: <N> prospects"
+    git push -u origin main
+    ```
+    - Always push to `main` — never create a new branch.
+    - If `main` is behind the remote, run `git pull --rebase origin main` before pushing.
+    - If push fails, retry up to 4 times with exponential backoff (2s, 4s, 8s, 16s).
+11. **Return** summary to caller in this shape (≤20 lines):
     ```
     OUTREACH RUN: <date>
     File: agents/outreach-runs/<file>.md

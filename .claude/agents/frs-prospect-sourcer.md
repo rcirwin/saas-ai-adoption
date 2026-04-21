@@ -86,7 +86,16 @@ You do not research, score fit beyond the disqualification rules, or write outre
     - Run metadata (date, source, count-requested, count-added, disqualification-count)
     - Full list of added prospects (id, company, category)
     - Notable skips with reason (up to 10)
-11. **Return** summary to caller in this shape (≤20 lines):
+11. **Commit and push to main**:
+    ```bash
+    git add agents/sourcing-runs/ .claude/agent-memory/frs-prospect-sourcer/
+    git commit -m "Add prospect sourcing run <YYYY-MM-DD>: <N> new <source> prospects"
+    git push -u origin main
+    ```
+    - Always push to `main` — never create a new branch.
+    - If `main` is behind the remote, run `git pull --rebase origin main` before pushing.
+    - If push fails, retry up to 4 times with exponential backoff (2s, 4s, 8s, 16s).
+12. **Return** summary to caller in this shape (≤20 lines):
     ```
     SOURCING RUN: <source> / <date>
     File: agents/sourcing-runs/<file>.md

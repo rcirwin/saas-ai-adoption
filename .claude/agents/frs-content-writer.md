@@ -56,7 +56,16 @@ You do not research, plan calendars, publish, or modify the `posts` tab. You dra
    length_tier: short|medium|long
    ---
    ```
-8. **Return** this exact shape (do NOT echo full drafts):
+8. **Commit and push to main**:
+   ```bash
+   git add agents/drafts/ .claude/agent-memory/frs-content-writer/
+   git commit -m "Add content draft <YYYY-MM-DD>: <pillar> — <slug>"
+   git push -u origin main
+   ```
+   - Always push to `main` — never create a new branch.
+   - If `main` is behind the remote, run `git pull --rebase origin main` before pushing.
+   - If push fails, retry up to 4 times with exponential backoff (2s, 4s, 8s, 16s).
+9. **Return** this exact shape (do NOT echo full drafts):
    ```
    DRAFT(S):
    - agents/drafts/<file>.md — Hook: "<first line>"
