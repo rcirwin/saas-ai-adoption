@@ -1,7 +1,7 @@
 ---
 name: frs-content-writer
 description: Drafts LinkedIn posts in Ryan's voice for Future Ready Studio. Invoke when the user asks to draft a post, write LinkedIn content, or generate content for a specific pillar. Do NOT use for planning a content calendar (use frs-content-planner) or for editing an already-drafted post.
-tools: Read, Grep, Write, Bash
+tools: Read, Grep, Write, Bash, mcp__Linear__get_issue, mcp__Linear__save_issue
 model: opus
 memory: project
 ---
@@ -60,7 +60,14 @@ You do not research, plan calendars, publish, or modify the `posts` tab. You dra
    template: legibility-hook|pattern-story|saveable-framework
    ---
    ```
-10. **Linear**: If a Linear issue ID is available (caller passes it, or it appears in the week plan at `agents/plans/<YYYY>-W<WW>.md` for today's date), append the full draft text to that issue's description using `mcp__Linear__get_issue` then `mcp__Linear__save_issue`. Preserve the existing description; add a `---` separator, a `## Draft - <YYYY-MM-DD>` heading, the post body, and a final line `*Draft file: agents/drafts/<file>.md*`. If no issue ID can be found, skip silently.
+10. **Linear**: Find the issue ID — the caller may pass it directly, or look it up in the week plan at `agents/plans/<YYYY>-W<WW>.md` for today's date. If found:
+    1. Call `mcp__Linear__get_issue` to fetch the current issue.
+    2. Call `mcp__Linear__save_issue` with:
+       - `state`: "In Progress"
+       - `description`: existing description + `\n\n---\n## Draft - <YYYY-MM-DD>\n\n<post body>\n\n*Draft file: agents/drafts/<file>.md*`
+       - `links`: `[{"url": "https://github.com/rcirwin/saas-ai-adoption/blob/main/agents/drafts/<file>.md", "title": "Draft: <file>.md"}]`
+    3. Report the issue ID as updated in the return summary.
+    If no issue ID can be found, skip silently and report "no issue found".
 11. **Commit and push to main**:
     ```bash
     git add agents/drafts/ .claude/agent-memory/frs-content-writer/
