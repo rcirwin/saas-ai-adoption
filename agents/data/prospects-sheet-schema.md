@@ -58,6 +58,7 @@ Every outreach attempt logged as a row. Immutable append-only log.
 | K | `response_date` | date | date of response | human |
 | L | `response_sentiment` | string | positive / neutral / negative | human |
 | M | `led_to_call` | boolean | `TRUE` if this outreach resulted in a booked call | human |
+| N | `message_text` | string | full message body (copy-paste ready) | outreach-writer |
 
 **Template performance**: outreach-writer reads this tab before drafting. It groups by `template_used` + `angle` and computes reply-rate and call-rate to pick the best-performing template for the prospect's `ai_posture`/`category`. Template IDs must be stable strings so aggregation works.
 

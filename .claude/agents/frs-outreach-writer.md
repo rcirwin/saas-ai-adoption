@@ -84,7 +84,30 @@ You do not send messages. You do not mark anything as `sent` — that's the huma
      hook_source: <which personalization_hook was used>
      ---
      ```
-7. **Append to `outreach_log`** for each draft: run `python3 scripts/sheet.py append outreach_log log_id=<date>-<prospect_id>-<channel> prospect_id=<id> date=<today> channel=<channel> template_used=<tmpl> angle="<angle>" message_ref=<path> personalization_notes="<text>" status=drafted`. Leave response columns blank for the human to fill in later.
+7. **Append to `outreach_log`** for each draft:
+   - Extract the message body from the draft file (text between the 2nd and 3rd `---` delimiters):
+     ```bash
+     MSG=$(python3 -c "
+     content = open('<draft_path>').read()
+     parts = content.split('---\n')
+     print(parts[2].strip())
+     ")
+     ```
+   - Append the row, including `message_text`:
+     ```bash
+     python3 scripts/sheet.py append outreach_log \
+       log_id=<date>-<prospect_id>-<channel> \
+       prospect_id=<id> \
+       date=<today> \
+       channel=<channel> \
+       template_used=<tmpl> \
+       angle="<angle>" \
+       message_ref=<path> \
+       message_text="$MSG" \
+       personalization_notes="<text>" \
+       status=drafted
+     ```
+   Leave response columns blank for the human to fill in later.
 8. **Update `prospects` rows** for each drafted prospect: run `python3 scripts/sheet.py update prospects --where id=<id> --set last_outreach_date=<today> last_outreach_channel=<channel> follow_up_due=<today+cadence_days> updated_at=<today>`. DO NOT change `status` — it stays `researched` until the human marks the outreach_log row as `sent`.
 9. **Write summary file** to `agents/outreach-runs/<YYYY-MM-DD>.md`:
    - Count by channel
