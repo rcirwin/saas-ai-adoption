@@ -6,7 +6,8 @@
 - **300-char limit is tight**: LinkedIn connection notes allow ~300 chars. Always verify with Python `len()` before saving — visible character count in markdown can under-count em-dashes and apostrophes. On 2026-04-21, 3 drafts needed re-tightening after first pass.
 - **"Directionally" is a signature word**: Ryan's actual vocabulary. Works well as a softening lead-in before contrasting the prospect's choice against a category trend. Used in 5 of 8 drafts on 2026-04-21.
 - **"No pitch, just curious" is the default closer**: respects cold-outreach etiquette and matches Ryan's understated voice better than a direct CTA in a connection request.
-- **Check for same-day prior run before redoing work**: before doing anything, read `agents/outreach-runs/<today>.md` if it exists. If an earlier run covered the same queue state, don't regenerate — just verify nothing changed, and avoid overwriting a prior summary with an identical one. Observed 2026-04-24: a dry-run summary already existed; re-running produced identical state (queue unchanged, same 10 in-cadence + 6 contact-blocked).
+- **Check for same-day prior run before redoing work**: before doing anything, read `agents/outreach-runs/<today>.md` if it exists. If an earlier run covered the same queue state, don't regenerate — just verify nothing changed, and avoid overwriting a prior summary with an identical one. Observed 2026-04-24: a dry-run summary already existed; re-running produced identical state (queue unchanged, same 10 in-cadence + 6 contact-blocked). Re-confirmed 2026-04-28: morning dry-run captured the disposition-data block; afternoon re-run found identical state, did not overwrite, did not regenerate.
+- **Disposition data is a hard prerequisite for second-touch**: `outreach_log` rows with `status: drafted` and blank `response_status` cannot be advanced. The agent has no way to distinguish "sent + pending" from "sent + accepted" from "never sent". On cadence-boundary day, this blocks every channel: linkedin-dm needs accept, new linkedin-connect would duplicate, email needs `contact_email`, referral needs a path. Until Ryan dispositions the log, every subsequent run on the same batch is a no-op. Surface this blocker early in the summary.
 
 ## Angle → Posture Mapping
 
@@ -37,8 +38,9 @@
 
 - On 2026-04-21, 6 of 15 researched prospects had zero contact info. Pipe back to sourcer: re-run contact discovery on `paperbell`, `guideflow`, `docupilot`, `dubsado`, `kickserv`, `jobtread`.
 - Same 6 remain contact-blocked as of 2026-04-24 — sourcer unblock still outstanding. Paperbell (Laura Roeder, ex-MeetEdgar) is the highest-value unblock given its fit_score 4 and strong founder hook.
+- Same 6 still contact-blocked as of 2026-04-28 — third consecutive run flagging this. Sourcer dependency is now the longest-running open blocker.
 - When `outreach_log` is empty, template performance analysis is null — fall back to the default template per channel. No bias.
-- When `outreach_log` has only `drafted` rows (no `response_status` yet), template performance is still effectively null — fall back to defaults. Observed 2026-04-24: 10 drafted rows, zero response data, no template bias possible.
+- When `outreach_log` has only `drafted` rows (no `response_status` yet), template performance is still effectively null — fall back to defaults. Observed 2026-04-24 (10 drafted rows) and 2026-04-28 (10 drafted rows, unchanged) — zero response data, no template bias possible.
 
 ## Voice Reminders
 
