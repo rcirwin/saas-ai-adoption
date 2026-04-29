@@ -37,3 +37,10 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 ## Open Questions / Flags
 - Many prospects (ninjapipe, heffl, flowlu, sociamonials, guideflow, plgos, charla, activepieces, thrivedesk, docupilot, dubsado, paperbell, kickserv, jobtread) came in without contact data. Sourcer must backfill contact_name / contact_linkedin before outreach writer can use the scored rows. Even fit 4–5 prospects are unreachable without those fields.
 - freshflows and stacker from 2026-04-22 run also came in without contact data. Moot since both scored fit 1, but note the pattern: G2Capterra and JobBoards sources tend to arrive without contacts.
+
+## Run Log
+
+### 2026-04-29 — DRY_RUN
+- Queue empty (0 identified prospects). 30 prospects total: 16 researched, 14 not-a-fit, 0 identified.
+- Sourcer hasn't run since the 2026-04-22 batch.
+- Env hiccup: `scripts/sheet.py` failed at import time with `ModuleNotFoundError: _cffi_backend`. Fixed by `pip install --user cffi cryptography`. If this recurs in future runs, repeat the install before retrying sheet ops.
