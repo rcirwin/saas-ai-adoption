@@ -44,3 +44,8 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - Queue empty (0 identified prospects). 30 prospects total: 16 researched, 14 not-a-fit, 0 identified.
 - Sourcer hasn't run since the 2026-04-22 batch.
 - Env hiccup: `scripts/sheet.py` failed at import time with `ModuleNotFoundError: _cffi_backend`. Fixed by `pip install --user cffi cryptography`. If this recurs in future runs, repeat the install before retrying sheet ops.
+
+### 2026-04-30 — DRY_RUN
+- Queue still empty (0 identified prospects). 30 prospects total: 16 researched, 14 not-a-fit, 0 identified. Two consecutive empty runs (04-29, 04-30) — sourcing pipeline appears stalled.
+- Env hiccup recurred (`ModuleNotFoundError: _cffi_backend`). Fixed again with `pip install --user cffi cryptography`. Treat as a standing pre-flight: run that install first if `sheet.py` errors on import.
+- No memory pattern updates this run (no new prospects to learn from).
