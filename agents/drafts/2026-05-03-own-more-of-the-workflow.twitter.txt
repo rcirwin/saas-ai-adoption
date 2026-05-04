@@ -1,0 +1,96 @@
+1/ "Software as a Service" was always a misnomer.
+
+What we shipped for 20 years was software that let a human do the service.
+
+Agents just made the literal version possible. And the market is going to want the literal version. 🧵
+
+---
+
+2/ The old SaaS playbook: build a tool, give the user the buttons, let them complete the workflow.
+
+If the workflow was 7 steps, you owned 1 or 2 well and called it best-in-class.
+
+The user still had to do the job.
+
+---
+
+3/ That worked because the technology couldn't do better.
+
+Users tolerated tools because tools were what was on offer.
+
+That constraint is gone.
+
+---
+
+4/ The winning shape now:
+
+• Own the workflow end-to-end
+• Complete it
+• Hand the user the result
+• If a step is high-risk, gate it with a review checkpoint. But the work is done.
+
+---
+
+5/ Users never wanted features. They wanted outcomes.
+
+They paid for tools because results-as-software wasn't possible. With agents, it is.
+
+The tolerance for traditional SaaS drops every quarter.
+
+---
+
+6/ Three things most SaaS teams haven't fully factored in:
+
+Pricing. Per-seat is a tool pricing model. You charge for buttons.
+
+Per-outcome is a service pricing model. You charge for delivered work.
+
+Companies that reprice around outcomes will be impossible to catch.
+
+---
+
+7/ Competition.
+
+You're not competing with other SaaS in your category.
+
+You're competing with the agency, the contractor, the in-house hire your buyer would have used instead.
+
+Benchmark against them. Their output, turnaround, price.
+
+---
+
+8/ Vocabulary.
+
+"Tool" will quietly become a buyer's red flag.
+
+Old question: "can this help my team do X?"
+New question: "does this just do X?"
+
+If your demo answers the first, you're already losing the room.
+
+---
+
+9/ If your product owns 1 step out of 7, the agent completes the other 6 around you.
+
+Best case: you become a callable function it pings like an API.
+Worst case: it builds its own version of your slice and routes around you.
+
+---
+
+10/ Either way, your offering gets commoditized over time, proportional to how easy you are to replace in the workflow.
+
+Whether that's survivable depends on what you do and how hard your slice is to rebuild.
+
+---
+
+11/ If your product owns 7 out of 7 and delivers the result, you're the service the buyer was actually trying to buy all along.
+
+---
+
+12/ Workflow first. AI second.
+
+𝗕𝘂𝘁 𝘁𝗵𝗲 𝗿𝗲𝗮𝗹 𝘀𝗵𝗶𝗳𝘁: 𝘀𝘁𝗼𝗽 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝘁𝗵𝗲 𝘁𝗼𝗼𝗹, 𝘀𝘁𝗮𝗿𝘁 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗶𝗻𝗴 𝘁𝗵𝗲 𝗷𝗼𝗯.
+
+---
+
+13/ What's the smallest version of your product's full workflow you could complete end-to-end and just hand the user the result?
