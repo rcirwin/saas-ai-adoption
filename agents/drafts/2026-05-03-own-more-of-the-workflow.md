@@ -1,34 +1,43 @@
 ---
 pillar: ai-agent-thesis
-angle: In the agent era, owning a thin slice of the workflow turns you into a commodity. Defensible SaaS owns more of the job-to-be-done end-to-end.
+angle: SaaS as a tool is dying. The winners in the agent era will own and complete the workflow, not assist with it. Software as a Service, finally taken literally.
 date_drafted: 2026-05-03
 status: draft
-length_tier: medium
+length_tier: long
 template: legibility-hook
 ---
 
-"Own one slice. Integrate the rest." was the SaaS playbook for 15 years.
+"Software as a Service" was always a misnomer.
 
-Agents just broke it.
+What we shipped for 20 years was software that let a human do the service.
 
-The whole reason that playbook worked is that stitching tools together was a human job. Painful, manual, expensive. So owning one good slice was enough. The user did the integration in their head, in a spreadsheet, in a Slack message to a coworker.
+Agents just made the literal version possible. And the market is going to want the literal version.
 
-Agents do that stitching now. Cheaply. Instantly. Without loyalty.
+The old SaaS playbook was: build a tool, give the user the buttons, let them complete the workflow. If the workflow was 10 steps, you owned 1 or 2 of them well and called it best-in-class. The user still had to do the job.
 
-Which means if your product owns 10% of a workflow, an agent will route around you. It will pull your data, drop it into the next tool, and never surface your brand to the user again. You become a callable function. Margins follow.
+That deal worked because the technology couldn't do better. Users tolerated tools because tools were what was on offer.
 
-I've been pulling apart B2B SaaS products from this angle, and the pattern is consistent:
+That constraint is gone.
 
-- The thin-slice products are getting commoditized fastest.
-- The products surviving are the ones that own the messy middle of a job, not just one clean step.
-- "Best in class at one thing" is no longer a moat. It's a rate card.
+The winning shape now is different:
 
-The structural fix isn't more features. It's a different question on the roadmap:
+- Own the workflow end-to-end.
+- Complete the workflow.
+- Hand the user the result.
+- If a step is high-risk, gate it with a permission or review checkpoint. But the work is done and ready.
 
-What's the full job our user is trying to get done, and how much of it do we actually own end-to-end today?
+Users never wanted features. They wanted outcomes. They paid for tools because results-as-software wasn't possible. With agents, it is. So the tolerance for "we'll help your team do it" drops every quarter.
 
-If the honest answer is "one step out of seven," that's the gap. Either you expand the surface area you own, or an agent collapses the other six steps around you and you become the cheap one.
+A few things follow from this that I think most SaaS teams haven't fully priced in:
 
-Workflow first. AI second. But also: own more of the workflow.
+**Pricing.** Per-seat is a tool pricing model. You charge for access to the buttons. Per-outcome is a service pricing model. You charge for the work delivered. The companies that reprice around outcomes will look obvious in two years and impossible to catch.
 
-What's one step adjacent to your product that an agent could absorb before you do?
+**Competition.** You are no longer competing with the other SaaS in your category. You are competing with the agency, the contractor, the in-house hire your buyer would have used instead. Benchmark against them. Their output, their turnaround, their price.
+
+**Vocabulary.** "Tool" is quietly becoming a buyer's red flag. The question used to be "can this help my team do X?" The question is becoming "does this just do X?" If your demo answers the first one, you're already losing the room.
+
+If your product owns 1 step out of 7, an agent will collapse the other 6 around you and you become a callable function with a rate card. If your product owns 7 out of 7 and delivers the result, you're the service the buyer was actually trying to buy all along.
+
+Workflow first. AI second. But the real shift: stop building the tool, start completing the job.
+
+What's the smallest version of your product's full workflow you could complete end-to-end and just hand the user the result?
