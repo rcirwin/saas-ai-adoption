@@ -26,15 +26,15 @@ The winning shape now is different:
 - Hand the user the result.
 - If a step is high-risk, gate it with a permission or review checkpoint. But the work is done and ready.
 
-Users never wanted features. They wanted outcomes. They paid for tools because results-as-software wasn't possible. With agents, it is. So the tolerance for "we'll help your team do it" drops every quarter.
+Users never wanted features. They wanted outcomes. They paid for tools because results-as-software wasn't possible. With agents, it is. So the tolerance for traditional SaaS tools drops every quarter.
 
-A few things follow from this that I think most SaaS teams haven't fully priced in:
+A few things follow from this that I think most SaaS teams haven't fully factored in:
 
-**Pricing.** Per-seat is a tool pricing model. You charge for access to the buttons. Per-outcome is a service pricing model. You charge for the work delivered. The companies that reprice around outcomes will look obvious in two years and impossible to catch.
+Pricing. Per-seat is a tool pricing model. You charge for access to the buttons. Per-outcome is a service pricing model. You charge for the work delivered. The companies that reprice around outcomes will look obvious in two years and impossible to catch.
 
-**Competition.** You are no longer competing with the other SaaS in your category. You are competing with the agency, the contractor, the in-house hire your buyer would have used instead. Benchmark against them. Their output, their turnaround, their price.
+Competition. You are no longer competing with the other SaaS in your category. You are competing with the agency, the contractor, the in-house hire your buyer would have used instead. Benchmark against them. Their output, their turnaround, their price.
 
-**Vocabulary.** "Tool" is quietly becoming a buyer's red flag. The question used to be "can this help my team do X?" The question is becoming "does this just do X?" If your demo answers the first one, you're already losing the room.
+Vocabulary. "Tool" will quietly become a buyer's red flag. The question used to be "can this help my team do X?" The question is becoming "does this just do X?" If your demo answers the first one, you're already losing the room.
 
 If your product owns 1 step out of 7, the agent completes the other 6 around you. If you're lucky, you become a callable function it pings like an API. If you're not, it builds its own version of your slice and routes around you entirely. Either way, your offering gets commoditized over time, proportional to how easy you are to replace in the workflow. Whether that's a survivable place to sit depends on what you actually do and how hard your slice is to rebuild.
 
