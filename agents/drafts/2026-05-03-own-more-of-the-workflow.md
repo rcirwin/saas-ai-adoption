@@ -1,6 +1,6 @@
 ---
 pillar: ai-agent-thesis
-angle: SaaS as a tool is dying. The winners in the agent era will own and complete the workflow, because thin slices get rebuilt around. Software as a Service, finally taken literally.
+angle: SaaS as a tool is dying. The winners in the agent era will own and complete the workflow. Software as a Service, finally taken literally.
 date_drafted: 2026-05-03
 status: draft
 length_tier: long
@@ -28,23 +28,18 @@ The winning shape now is different:
 
 Users never wanted features. They wanted outcomes. They paid for tools because results-as-software wasn't possible. With agents, it is. So the tolerance for "we'll help your team do it" drops every quarter.
 
-Here's the part most SaaS teams haven't priced in.
-
-The risk isn't that agents will call your product as an API. Lots of agents calling you is great, that's distribution. The risk is that the agent (or the platform orchestrating it) eventually rebuilds your slice itself, or routes around it.
-
-The logic is uncomfortable but simple:
-
-- Thin slice → easy to rebuild → commoditized → margin compression.
-- Thick workflow → expensive to replace → durable.
-
-The smaller and simpler the piece you own, the cheaper it is to swap you out. A 1-step product is trivially replaceable. A product that owns 6 messy, integrated steps of a 7-step job is not. The defense isn't "be a great API." The defense is owning enough of the workflow that rebuilding around you costs more than paying you.
-
-Two things follow:
+A few things follow from this that I think most SaaS teams haven't fully priced in:
 
 **Pricing.** Per-seat is a tool pricing model. You charge for access to the buttons. Per-outcome is a service pricing model. You charge for the work delivered. The companies that reprice around outcomes will look obvious in two years and impossible to catch.
 
+**Competition.** You are no longer competing with the other SaaS in your category. You are competing with the agency, the contractor, the in-house hire your buyer would have used instead. Benchmark against them. Their output, their turnaround, their price.
+
 **Vocabulary.** "Tool" is quietly becoming a buyer's red flag. The question used to be "can this help my team do X?" The question is becoming "does this just do X?" If your demo answers the first one, you're already losing the room.
 
-Workflow first. AI second. But the real shift: stop building the tool, start completing the job. The thicker the slice you own, the harder you are to replace.
+If your product owns 1 step out of 7, the agent completes the other 6 around you. If you're lucky, you become a callable function it pings like an API. If you're not, it builds its own version of your slice and routes around you entirely. Either way, your offering gets commoditized over time, proportional to how easy you are to replace in the workflow. Whether that's a survivable place to sit depends on what you actually do and how hard your slice is to rebuild.
+
+If your product owns 7 out of 7 and delivers the result, you're the service the buyer was actually trying to buy all along.
+
+Workflow first. AI second. But the real shift: stop building the tool, start completing the job.
 
 What's the smallest version of your product's full workflow you could complete end-to-end and just hand the user the result?
