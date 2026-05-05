@@ -67,9 +67,11 @@ Skip companies that match any of these:
 - Companies already AI-native from day one (e.g. Jasper, Copy.ai, Runway) — they're ahead of us on this
 - Companies where Ryan has a prior relationship that should be warm-introed not cold (check notes in `prospects` tab)
 - Already in the `prospects` tab (dedup by `id` which is the company slug)
-- **Acquired and merged into a parent** (e.g. Demio/Banzai, SquadCast/Descript) — parent company is the decision-maker now
+- **Acquired and merged into a parent** (e.g. Demio/Banzai, SquadCast/Descript, Splitbee/Vercel, Reform.app/FunnelEnvy) — parent company is the decision-maker now
 - **AppSumo Originals** (e.g. TidyCal, BreezeDoc) — built by AppSumo itself, not independent companies
-- **Multi-product SaaS parents** where the parent org exceeds ICP even if one product is small (e.g. SaaS Labs which owns Helpwise + others)
+- **Multi-product SaaS parents** where the parent org exceeds ICP even if one product is small (e.g. SaaS Labs which owns Helpwise + others, WPManageNinja with 120+ employees)
+- **Recently took Series A that pushes them past ICP** (e.g. GrowthBook $22.6M June 2025, Anchor $20M Jan 2025) — even if previously bootstrapped, post-Series-A they scale fast
+- **Self-hosted vs SaaS** — FluentCRM-style WordPress plugins are self-hosted, not SaaS
 
 ## Quality Over Volume
 
@@ -89,6 +91,7 @@ Detailed per-run notes live in `agents/sourcing-runs/<YYYY-MM-DD>-<source>.md`. 
 |------|--------|-------|---------|
 | 2026-04-20 | all | 15 | 11 |
 | 2026-04-21 | all | 15 | 10 |
+| 2026-05-05 | all | 12 | 18 |
 
 ## Categories Already Well-Sampled (reduce weight in future runs)
 
@@ -101,5 +104,12 @@ Tracking so we don't keep returning to the same category repeatedly:
 - Customer support / helpdesk (Charla, ThriveDesk) — 2 added
 - No-code tools (Tally, Noloco, Stacker) — 3 added
 - Document automation (Docupilot, Papermark) — 2 added
+- Devtools / async productivity / WordPress / feature flags (Geekbot, Reflag, WP Umbrella) — 3 added (2026-05-05)
+- Customer feedback / surveys (Savio, Refiner, Survicate) — 3 added (1 prior + 2 new)
+- Sales enablement / proposals / testimonials (Notch, Senja, Better Proposals) — 3 added
+- Vertical SaaS — finance/accounting (Liscio, Financial Cents) — 2 added (2026-05-05)
+- Vertical SaaS — telecom (Splynx) — 1 added (2026-05-05)
+- Webinar / lifecycle (eWebinar) — 1 added (2026-05-05)
+- Data sync / no-code pipelines (Whalesync) — 1 added (2026-05-05)
 
-**Under-sampled** (prioritize next run): devtools, observability, data pipelines/ETL, vertical SaaS for legal/healthcare/finance, B2B marketplaces, e-commerce ops tools.
+**Under-sampled** (prioritize next run): vertical SaaS for legal, vertical SaaS for healthcare practice management, B2B marketplaces, e-commerce ops tools (Shopify-specific), observability / error tracking (Sentry alternatives), API-as-a-service / DevX tools.
