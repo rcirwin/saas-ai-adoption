@@ -49,3 +49,19 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - Queue still empty (0 identified prospects). 30 prospects total: 16 researched, 14 not-a-fit, 0 identified. Two consecutive empty runs (04-29, 04-30) — sourcing pipeline appears stalled.
 - Env hiccup recurred (`ModuleNotFoundError: _cffi_backend`). Fixed again with `pip install --user cffi cryptography`. Treat as a standing pre-flight: run that install first if `sheet.py` errors on import.
 - No memory pattern updates this run (no new prospects to learn from).
+
+### 2026-05-05 — additions from 12-prospect run
+- **Explicit anti-AI founder stance in AI-saturated category = high fit signal.** Better Proposals (Adam Hempenstall publicly bans AI for customer comms in a category where PandaDoc/Proposify push AI hard) is a textbook FRS conversation: not "add AI" but "where would AI add real workflow value vs gimmicks." Conviction stance produces engagement, not avoidance. Score 4 even if ARR is uncertain.
+- **Vertical SaaS serving fragmented ops customers + AI-empty peer set + bootstrapped public founder = consistent 4-5.** Pattern across telecom ISP (Splynx), WP agency (WP Umbrella), accounting practice mgmt (Financial Cents). When none of the peers have moved on AI and the founder publicly tells the bootstrapped journey, hooks and engagement both score high.
+- **MCP server shipped is a fast disqualifier.** Geekbot just shipped Geekbot MCP for AI-powered rollups — that's the agent-readiness leg of the FRS thesis already executed. Pair it with the existing AI-language analysis and there's no gap. Add MCP-shipped to the agent-ready disqualifier list alongside ".ai rebrand" and "prompt-to-app UX."
+- **Vendor-rebranded devtools at seed stage are 2s, not 4s.** Reflag rebranded from Bucket with $5.7M seed; founder is highly visible but the company is in product-positioning mode, not ICP-fit for a $30K assessment. Pattern: if a YC-grad / VC-funded devtool relaunched in the past 12 months, default fit 2 regardless of founder reachability.
+- **AI-bolt-on category laggard underneath an AI-native well-funded competitor = textbook fit 4.** Refiner (auto-tag AI) underneath Sprig (AI-native, well-funded) is the same pattern as Userlist under Customer.io. The "what AI to build that isn't just feature-list-matching" conversation is the most natural FRS opener.
+- **getlatka public revenue numbers are a research shortcut.** Survicate ($4.4M Dec 2025), Refiner ($1.2M 2024), Whalesync ($405K June 2024), Geekbot ($1M+), eWebinar ($5M now per founder), WP Umbrella ($1.3M public yearly review), Financial Cents (~$3.9M growjo), Senja ($800K) all surfaced cleanly via getlatka or founder yearly-review blog posts. Always check Latka first when ARR is the deciding factor.
+
+## Run Log
+
+### 2026-05-05 — 12 prospects
+- 7 researched (fit 3+), 5 not-a-fit. Avg fit 3.08.
+- Top: financial-cents (5), splynx/betterproposals/wp-umbrella/refiner (4), ewebinar/survicate (3).
+- All 12 prospects had contact_name + contact_linkedin populated by sourcer (only Refiner, Financial Cents, and Whalesync missing email; LinkedIn present for Refiner and Financial Cents was missing — note: financial-cents and refiner both have empty contact_linkedin, sourcer should backfill before outreach).
+- No environment hiccups this run; the cffi pre-flight install from prior runs was apparently already in effect.
