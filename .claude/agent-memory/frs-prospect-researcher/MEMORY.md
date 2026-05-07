@@ -71,3 +71,9 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - Third empty run after the 05-05 batch of 12. Sourcing has not produced new identified rows in the past day. Outreach Writer (3h downstream) will see no new scored prospects from this run.
 - Env hiccup recurred for the third time: `ModuleNotFoundError: _cffi_backend` on `sheet.py` import; fixed again with `pip install --user cffi cryptography`. The fix doesn't persist across runs in this environment — keep treating it as a pre-flight.
 - No new patterns to record (no prospects researched).
+
+### 2026-05-07 — DRY_RUN
+- Queue still empty (0 identified prospects). 42 prospects total: 23 researched, 19 not-a-fit, 0 identified — unchanged since 05-06.
+- Two consecutive DRY_RUNs (05-06, 05-07) following the productive 05-05 run. Sourcer has not produced new `identified` rows in the 48h since the 12-prospect batch was cleared.
+- Pre-flight env install (`pip install --user cffi cryptography`) ran clean — already satisfied. No `_cffi_backend` error this cycle. Note: prior runs treated this as a per-run hiccup; this run shows it can be a no-op when packages are still cached. Keep running it pre-flight, but don't assume the error will always recur.
+- No memory pattern updates (no new scored prospects). If 05-08 is also DRY, raise with caller — outreach pipeline will starve.
