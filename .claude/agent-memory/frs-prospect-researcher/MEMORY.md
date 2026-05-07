@@ -49,3 +49,10 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - Queue still empty (0 identified prospects). 30 prospects total: 16 researched, 14 not-a-fit, 0 identified. Two consecutive empty runs (04-29, 04-30) — sourcing pipeline appears stalled.
 - Env hiccup recurred (`ModuleNotFoundError: _cffi_backend`). Fixed again with `pip install --user cffi cryptography`. Treat as a standing pre-flight: run that install first if `sheet.py` errors on import.
 - No memory pattern updates this run (no new prospects to learn from).
+
+### 2026-05-07 — DRY_RUN
+- Queue empty (0 identified prospects). 42 prospects total: 23 researched, 19 not-a-fit, 0 identified.
+- Sourcer has added 12 new prospects since 2026-04-30 (30 → 42), but every one of them was already moved past `identified` by the time this run executed — so nothing new for the researcher to act on. Either (a) sourcer is also doing initial triage before saving, or (b) a prior researcher run already cleared the batch.
+- Three consecutive DRY_RUN cycles (04-29, 04-30, 05-07). Sourcing → researcher handoff timing remains a question; consider raising with caller.
+- Env hiccup recurred again (`ModuleNotFoundError: _cffi_backend`). Standing pre-flight fix (`pip install --user cffi cryptography`) worked as before. This is now reliable — treat as expected.
+- No memory pattern updates (no new scored prospects).
