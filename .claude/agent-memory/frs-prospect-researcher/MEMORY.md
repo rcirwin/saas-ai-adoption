@@ -77,3 +77,10 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - Two consecutive DRY_RUNs (05-06, 05-07) following the productive 05-05 run. Sourcer has not produced new `identified` rows in the 48h since the 12-prospect batch was cleared.
 - Pre-flight env install (`pip install --user cffi cryptography`) ran clean — already satisfied. No `_cffi_backend` error this cycle. Note: prior runs treated this as a per-run hiccup; this run shows it can be a no-op when packages are still cached. Keep running it pre-flight, but don't assume the error will always recur.
 - No memory pattern updates (no new scored prospects). If 05-08 is also DRY, raise with caller — outreach pipeline will starve.
+
+### 2026-05-08 — DRY_RUN (escalation threshold)
+- Queue still empty (0 identified prospects). 42 prospects total: 23 researched, 19 not-a-fit, 0 identified — unchanged since 05-06.
+- **Third consecutive DRY_RUN (05-06, 05-07, 05-08).** This is the threshold flagged in the 05-07 note. Sourcer has not produced new `identified` rows in 72h since the 05-05 batch of 12. Outreach Writer (3h downstream) has nothing new to draft against — pipeline is officially starving.
+- Pre-flight `pip install --user cffi cryptography` installed fresh (cffi-2.0.0, pycparser-3.0) — looks like a fresh container this run. Worked cleanly. Keep pre-flight in place.
+- **Pattern: when DRY runs cluster (3+ in a row), the bottleneck is upstream sourcing, not researcher.** Stop treating DRY_RUNs as routine after day 2; surface them as pipeline alerts in the returned summary.
+- No scoring patterns updated (no new prospects).
