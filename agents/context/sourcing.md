@@ -50,10 +50,10 @@ ICP config lives in the `config` Sheet tab (`icp_arr_min`, `icp_arr_max`). Read 
 ### 7. Bootstrapped-founder roundups (supplementary; high signal)
 Added 2026-04-21. Useful when AppSumo / ProductHunt are blocked.
 - IndieHackers interviews (https://www.indiehackers.com/)
-- GetLatka company profiles (revenue/employee proxies)
+- GetLatka company profiles (revenue/employee proxies) — high signal, surfaces in WebSearch snippets directly
 - Starter Story interviews
 - Bootstrappers.com, SaaSMag, SaasClub podcast episode archives
-- Market Clarity "Top 30 Indie SaaS" and "Top 33 B2B SaaS" lists
+- Market Clarity "Top 30 Indie SaaS" and "Top 33 B2B SaaS" lists (mktclarity.com returns 403 to WebFetch as of 2026-05-12; use WebSearch with site filter)
 - TheRecursive regional bootstrapper features
 These confirm revenue and employee counts that WebFetch on the company site cannot.
 
@@ -67,9 +67,11 @@ Skip companies that match any of these:
 - Companies already AI-native from day one (e.g. Jasper, Copy.ai, Runway) — they're ahead of us on this
 - Companies where Ryan has a prior relationship that should be warm-introed not cold (check notes in `prospects` tab)
 - Already in the `prospects` tab (dedup by `id` which is the company slug)
-- **Acquired and merged into a parent** (e.g. Demio/Banzai, SquadCast/Descript) — parent company is the decision-maker now
+- **Acquired and merged into a parent** (e.g. Demio/Banzai, SquadCast/Descript, Baremetrics/Xenon, FareHarbor/Booking, SparkLoop/ConvertKit, CastorDoc/Coalesce) — parent company is the decision-maker now
 - **AppSumo Originals** (e.g. TidyCal, BreezeDoc) — built by AppSumo itself, not independent companies
 - **Multi-product SaaS parents** where the parent org exceeds ICP even if one product is small (e.g. SaaS Labs which owns Helpwise + others)
+- **Strict $5M ceiling**: $5.1M-$10M companies are NOT borderline — they are out of ICP. Apply rigorously.
+- **Below $500K floor**: pre-revenue or hobby-scale companies (ConfigCat $317K, ServGrow $316K) are out — researcher cost > expected value.
 
 ## Quality Over Volume
 
@@ -89,6 +91,7 @@ Detailed per-run notes live in `agents/sourcing-runs/<YYYY-MM-DD>-<source>.md`. 
 |------|--------|-------|---------|
 | 2026-04-20 | all | 15 | 11 |
 | 2026-04-21 | all | 15 | 10 |
+| 2026-05-12 | all | 14 | 20 |
 
 ## Categories Already Well-Sampled (reduce weight in future runs)
 
@@ -98,8 +101,17 @@ Tracking so we don't keep returning to the same category repeatedly:
 - CRM / project management (Flowlu, Heffl, NinjaPipe, Dubsado) — 4 added
 - Field service / property mgmt (Kickserv, JobTread, TenantCloud) — 3 added
 - Scheduling / calendar (SavvyCal, Paperbell) — 2 added
-- Customer support / helpdesk (Charla, ThriveDesk) — 2 added
+- Customer support / helpdesk (Charla, ThriveDesk, Crisp, Customerly) — 4 added
 - No-code tools (Tally, Noloco, Stacker) — 3 added
 - Document automation (Docupilot, Papermark) — 2 added
+- Email marketing / messaging (MailerSend, Loops, EmailOctopus, Customerly) — 4 added (2026-05-12)
+- Product feedback / voice-of-customer (Savio, Canny) — 2 added
+- Devtools (Bannerbear, Honeybadger, MailerSend, Loops) — 4 added (2026-05-12)
+- Vertical SaaS healthcare (Carepatron) — 1 added (2026-05-12)
+- Vertical SaaS legal (MerusCase) — 1 added (2026-05-12)
+- Vertical SaaS cleaning/maid (ZenMaid) — 1 added (2026-05-12)
+- Knowledge base (Tettra) — 1 added (2026-05-12)
+- Podcast/creator (Castos) — 1 added (2026-05-12)
+- Referral/e-commerce (ReferralCandy) — 1 added (2026-05-12)
 
-**Under-sampled** (prioritize next run): devtools, observability, data pipelines/ETL, vertical SaaS for legal/healthcare/finance, B2B marketplaces, e-commerce ops tools.
+**Under-sampled** (prioritize next run): observability proper (Datadog-alts at sub-ICP), data pipelines/ETL bootstrapped (most are VC-funded), vertical SaaS for finance/accounting (TaxDome too big; Karbon VC-funded — need to find sub-$5M), B2B marketplaces, vertical SaaS for construction/real-estate/manufacturing, HR-tech for SMB.
