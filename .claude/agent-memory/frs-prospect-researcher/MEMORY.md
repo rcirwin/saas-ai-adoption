@@ -93,3 +93,10 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - Caller asked for push to branch `claude/charming-lovelace-sAFwM` (not `main`). Outreach Writer per its spec reads from `main`. Flagging in returned summary so caller can merge or re-run from main.
 - Pre-flight `pip install --user cffi cryptography` ran cleanly. Standard fresh-container behavior continues; keep pre-flight.
 - No new scoring patterns this run (no prospects researched).
+
+### 2026-05-13 — DRY_RUN (second invocation, same day)
+- Queue still empty (0 identified prospects). Sheet state unchanged from earlier 05-13 run: 56 total, 29 researched, 27 not-a-fit.
+- Caller re-invoked researcher within the same day with the same branch instruction (`claude/charming-lovelace-sAFwM`). No new prospects appeared in the ~hours between the two invocations, so this is a true no-op.
+- **Pattern: same-day re-invocation is fine — cache hit logic and empty-queue handling both behave correctly.** No risk of double-scoring as long as queue filter is `status=identified`. Confirmed cost-cheap (one read against `prospects` + one against `research_cache` returns immediately).
+- Pre-flight `pip install --user cffi cryptography` was already satisfied this invocation (no fresh install needed). Distinct from the typical fresh-container pattern — same container persisted across both 05-13 invocations.
+- Branch convention still `claude/charming-lovelace-sAFwM`. Two consecutive same-day instructions to push there suggests intentional staging branch usage. Outreach Writer reading from `main` continues to be a downstream concern that's not in this agent's scope to resolve.
