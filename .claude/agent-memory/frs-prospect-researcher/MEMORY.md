@@ -84,3 +84,12 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - Pre-flight `pip install --user cffi cryptography` installed fresh (cffi-2.0.0, pycparser-3.0) — looks like a fresh container this run. Worked cleanly. Keep pre-flight in place.
 - **Pattern: when DRY runs cluster (3+ in a row), the bottleneck is upstream sourcing, not researcher.** Stop treating DRY_RUNs as routine after day 2; surface them as pipeline alerts in the returned summary.
 - No scoring patterns updated (no new prospects).
+
+### 2026-05-13 — DRY_RUN (post-batch cooldown, not starvation)
+- Queue empty (0 identified prospects). 56 prospects total: 29 researched, 27 not-a-fit, 0 identified.
+- **The 05-12 batch (14 prospects: zenmaid, emailoctopus, castos, referralcandy, carepatron, tettra, meruscase, mailersend, bannerbear, canny, crisp, customerly, loops, honeybadger) was sourced AND researched the same day, but no artifact file or git commit was produced by that run.** Sheet rows show updated_at=2026-05-12 with fit scores populated. Headless / direct-to-Sheet researcher runs are now a thing. Today is empty because that batch cleared yesterday.
+- **Pattern: empty queue after a same-day sourced + scored batch is NORMAL cooldown, not a sourcing stall.** Distinguish this from the 05-06 / 05-07 / 05-08 cluster (which had no recent batch). When evaluating "is the pipeline starving?", check if the most recent batch was processed within the staleness window — if yes, empty queue today is fine.
+- **05-12 batch top hits to remember**: zenmaid (5) and emailoctopus (5) are the new fit-5 entries. Both are bootstrapped public-founder SaaS in workflow-heavy categories (maid service ops; email marketing) — fits the established fit-5 pattern (vertical SaaS + AI-empty peer set + bootstrapped reachable founder).
+- Caller asked for push to branch `claude/charming-lovelace-sAFwM` (not `main`). Outreach Writer per its spec reads from `main`. Flagging in returned summary so caller can merge or re-run from main.
+- Pre-flight `pip install --user cffi cryptography` ran cleanly. Standard fresh-container behavior continues; keep pre-flight.
+- No new scoring patterns this run (no prospects researched).
