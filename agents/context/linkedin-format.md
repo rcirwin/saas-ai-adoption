@@ -68,17 +68,47 @@ Current LinkedIn algorithm (2024-2025) favors **dwell time** over reach-per-impr
 
 LinkedIn renders single line breaks as visible breaks. Top performers use this aggressively for mobile rhythm.
 
+**Match line-break density to the post's *shape*. There are two valid styles. Pick one per post.**
+
+- **Punchy / narrative posts** (story, observation, lesson, single-stake hook): single-sentence "paragraphs" with a blank line between every line. Maximum scannability. Default for templates B and D.
+- **Analytical / argumentative posts** (thesis posts with bolded section labels, multi-block reasoning, framework breakdowns): keep multi-sentence paragraphs separated by blank lines. Atomizing every sentence fragments the argument and breaks the dwell-time pattern long-form thesis posts depend on. Default for templates A and C when running long.
+- **Mirrored sentence pairs** (e.g., `If X, then A.` / `If Y, then B.`) stay on consecutive lines with NO blank between them. They are one beat.
+
 **Do:**
-- Single-sentence "paragraphs". A paragraph of 3 sentences feels like a wall on mobile.
-- Drop a blank line between every idea unit.
-- Use leading dashes for lists: `– point` (en dash works; the writer agent is banned from em dashes — use `-` or `–`).
-- Use arrows `→` sparingly to show cause/effect on a single line.
+- Drop a blank line between every distinct idea unit.
+- Use leading dashes for lists: `- point` or `– point`. En dashes are allowed; em dashes are banned everywhere (use `-`, `–`, a comma, or split sentences).
+- Use arrows `→` sparingly to show cause/effect on a single line. Drop them in the Twitter version (see `twitter-format.md`).
 - Leave a blank line before the closing question.
 
 **Don't:**
-- Don't write blocks of 4+ lines without a break.
-- Don't bold every other sentence — bolding loses meaning when overused (and LinkedIn requires Unicode-bold characters, which screen readers butcher).
+- Don't write blocks of 4+ lines without a break (analytical-style 2-3 sentence paragraphs are fine; 4+ is a wall).
+- Don't bold every other sentence. Bolding loses meaning when overused. See section 4a for placement rules.
 - Don't center-align with leading spaces. It looks broken on desktop.
+
+---
+
+## 4a. Unicode bold for emphasis (LinkedIn feed posts have no native rich text)
+
+LinkedIn feed posts have NO native bold/italic toolbar. Articles and Newsletters do; feed posts do not. The standard workaround is Unicode mathematical sans-serif bold characters (U+1D5D4 through U+1D607). They look bold and render reliably across web and mobile clients.
+
+**The markdown draft (`agents/drafts/<file>.md`) uses standard markdown bold (`**...**`).** Convert to Unicode bold *only* in the LinkedIn-ready sibling file (`<file>.linkedin.txt`), never in the markdown source.
+
+**When to use Unicode bold (≤4 spans per post):**
+- The single takeaway sentence — the line a scroll-skimmer should catch even if they read nothing else. Almost always the final thesis-compression line.
+- Section labels in analytical three-block posts (`𝗣𝗿𝗶𝗰𝗶𝗻𝗴.`, `𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝗼𝗻.`, `𝗩𝗼𝗰𝗮𝗯𝘂𝗹𝗮𝗿𝘆.`). They function as in-line headers; bolding helps scanners catch the structure.
+
+**When NOT to use:**
+- Any keyword you want surfaced in LinkedIn search or hashtag matching. Unicode-bold text is invisible to search.
+- The hook (first ~140 chars). Bold elsewhere competes with the hook's own pull.
+- More than ~4 spans per post. Bold loses signal when overused.
+
+**How to apply (in `.linkedin.txt` only):**
+- Use a Unicode bold converter (boldify.app, yaytext.com) or pre-compute mathematical sans-serif bold characters.
+- Mappings: A-Z = U+1D5D4 to U+1D5ED. a-z = U+1D5EE to U+1D607. Numbers, punctuation, and spaces stay as regular characters; the visual contrast still reads as bold.
+
+**Tradeoffs to flag if the user asks:**
+- Screen readers verbalize each bold character as its math-symbol Unicode name ("mathematical sans-serif bold capital P…"). Accessibility hit.
+- LinkedIn search ignores Unicode-bold text entirely.
 
 ---
 
@@ -292,8 +322,10 @@ Before saving the draft, verify:
 
 - [ ] Line 1 passes one of the 4 hook tests in `voice-guide.md`.
 - [ ] First 140 characters (mobile cutoff) create a curiosity gap or concrete stake.
-- [ ] No em dashes anywhere. (`-` or `–` only.)
-- [ ] Paragraphs are 1-3 lines max. Whitespace between every idea.
+- [ ] No em dashes anywhere. (`-`, `–`, comma, or split sentence only.)
+- [ ] Line-break style chosen consciously: punchy/narrative → one-line-per-sentence; analytical/argumentative → multi-sentence paragraphs separated by blank lines (see section 4).
+- [ ] Mirrored sentence pairs (`If X / If Y`) stay on consecutive lines with no blank between them.
+- [ ] If using Unicode bold: ≤4 bolded spans, none in the hook, none on a search-relevant keyword (see section 4a). Markdown draft uses `**...**`; Unicode bold appears only in the `.linkedin.txt` sibling.
 - [ ] Length matches the chosen template (200-350 words for default).
 - [ ] No outbound links in the post body.
 - [ ] 1-5 niche hashtags on their own line at the end (skip entirely if none feel natural; never exceed 5).
