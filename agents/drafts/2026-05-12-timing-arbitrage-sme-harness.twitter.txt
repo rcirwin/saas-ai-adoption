@@ -30,21 +30,15 @@ Anyone who has asked an AI to do a domain-specific analysis with no scaffolding 
 
 ---
 
-6/ The flip side is where the opportunity sits.
+6/ The flip side: give an AI the right harness and it matches a human in almost any domain.
 
-Give an AI the right harness (strategic context, decision rules, KPIs, a clean data path) and it matches a human in almost any domain.
+So the medium-term value of SMEs isn't doing the work themselves. It's encoding their judgment into the harness the AI runs inside.
 
----
-
-7/ So the medium-term value of subject matter experts isn't doing the work themselves.
-
-It's encoding their judgment into the harness the AI runs inside.
-
-That reframe reveals where the next two arbitrages live.
+That reveals where the next two arbitrages live.
 
 ---
 
-8/ Arbitrage 1, the one that became clear first.
+7/ Arbitrage 1, the one that became clear first.
 
 Rely on the LLM's own decision-making to drive value. Point the model at a task, trust the raw capability, charge for access.
 
@@ -52,7 +46,7 @@ The window is closing fast because the models are commoditizing.
 
 ---
 
-9/ Arbitrage 2, just opening.
+8/ Arbitrage 2, just opening.
 
 Design AI harnesses that pair raw model capability with deep domain expertise.
 
@@ -60,11 +54,19 @@ SOPs that operate entire businesses. Tool routing. Rules for when to act vs. esc
 
 ---
 
-10/ The first one is a race to the bottom on price.
+9/ The first is a race to the bottom on price. The second is a moat that compounds.
 
-The second one is a moat, because the harness is only as good as the judgment encoded in it.
+The harness is only as good as the judgment encoded in it. When the underlying model improves, the whole system improves with it.
 
-And that judgment doesn't exist in the training data.
+---
+
+10/ The pattern is already playing out.
+
+Cursor: code, with file context and IDE-native scaffolding.
+Harvey: legal work.
+Sierra: customer support.
+
+Same models everyone else can call. The model is the engine. The harness is the product.
 
 ---
 

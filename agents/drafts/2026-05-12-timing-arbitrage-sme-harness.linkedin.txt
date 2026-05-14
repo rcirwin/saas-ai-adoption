@@ -16,7 +16,9 @@ That reveals where the next two arbitrages live.
 
 𝗔𝗿𝗯𝗶𝘁𝗿𝗮𝗴𝗲 𝟮, 𝗷𝘂𝘀𝘁 𝗼𝗽𝗲𝗻𝗶𝗻𝗴. Design the AI harnesses that pair raw model capability with deep domain expertise. SOPs that operate entire businesses. Tool routing. Rules for when to act vs. when to escalate. KPIs the AI optimizes against. Feedback loops so the system learns from its own consequences.
 
-The first one is a race to the bottom on price. The second one is a moat, because the harness is only as good as the judgment encoded in it, and that judgment doesn't exist in the training data.
+The first one is a race to the bottom on price. The second one is a moat that compounds. The harness is only as good as the judgment encoded in it, and that judgment doesn't exist in the training data. When the underlying model improves, the whole system improves with it.
+
+The pattern is already playing out. Cursor wraps frontier models with code-specific scaffolding: file context, IDE-native interaction, project-aware tool use. Same models any developer can call directly. Harvey did this for legal work. Sierra did it for customer support. The model is the engine. The harness is the product.
 
 𝗧𝗵𝗲 𝗽𝗼𝗶𝗻𝘁 𝗶𝘀 𝗺𝗼𝗿𝗲 𝗹𝗶𝗸𝗲 𝘁𝗵𝗶𝘀: 𝗶𝗳 𝘆𝗼𝘂'𝗿𝗲 𝗮𝗻 𝗦𝗠𝗘, 𝘆𝗼𝘂 𝗰𝗮𝗻 𝗰𝗮𝗽𝘁𝘂𝗿𝗲 𝘃𝗮𝗹𝘂𝗲 𝗶𝗻 𝘁𝗵𝗶𝘀 𝗮𝗿𝗯𝗶𝘁𝗿𝗮𝗴𝗲 𝘄𝗶𝗻𝗱𝗼𝘄 𝗯𝘆 𝘂𝘀𝗶𝗻𝗴 𝘆𝗼𝘂𝗿 𝗸𝗻𝗼𝘄𝗹𝗲𝗱𝗴𝗲 𝘁𝗼 𝗮𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁 𝗮 𝘀𝘆𝘀𝘁𝗲𝗺 𝘁𝗵𝗮𝘁 𝘀𝗰𝗮𝗹𝗲𝘀 𝘆𝗼𝘂𝗿 𝗷𝘂𝗱𝗴𝗺𝗲𝗻𝘁.
 
