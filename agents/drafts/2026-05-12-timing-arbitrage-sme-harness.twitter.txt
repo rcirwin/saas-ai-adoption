@@ -4,25 +4,23 @@ The signal sits buried under doomer takes, hype, and a productivity ceiling that
 
 ---
 
-2/ People try to predict the shape of the future.
+2/ People try to predict the shape of the future and overlook predicting the timing of each milestone.
 
-The bet that actually pays is predicting the timing of each milestone.
-
-The arbitrage is providing value before the market catches up to the next one.
+There's a ton of arbitrage in providing value before the market catches up to the next one.
 
 ---
 
-3/ One milestone was up for debate last quarter:
+3/ One thing was up for debate recently, and is still being debated:
 
-How long does deep human expertise hold value before AI surpasses humans across all intellectual domains?
+How long does deep human expertise hold value before AI surpasses humans?
 
-The last few months clarified the medium-term answer.
+As we get deeper into this revolution, some clarity has been revealed.
 
 ---
 
 4/ In domains with abundant training data, AI now matches or beats most humans.
 
-In complex, niche domains where the data is fragmented, scarce, or locked in someone's head from 15 years of trial and error, AI hits a hard bottleneck.
+In niche domains where the data is fragmented, scarce, or locked in someone's head from 15 years of trial and error, AI hits a hard bottleneck.
 
 ---
 
@@ -46,11 +44,11 @@ That reframe reveals where the next two arbitrages live.
 
 ---
 
-8/ Arbitrage 1, already in motion.
+8/ Arbitrage 1, the one that became clear first.
 
-Automate the mundane, repetitive, easy-to-replicate operational work.
+Rely on the LLM's own decision-making to drive value. Point the model at a task, trust the raw capability, charge for access.
 
-This is what most "AI for business" tools do today. The window is closing fast because the tooling has commoditized.
+The window is closing fast because the models are commoditizing.
 
 ---
 
@@ -58,7 +56,7 @@ This is what most "AI for business" tools do today. The window is closing fast b
 
 Design AI harnesses that pair raw model capability with deep domain expertise.
 
-SOPs that operate entire businesses. Tool routing. Rules for when to act vs. escalate. KPIs the AI optimizes against. Feedback loops.
+SOPs that operate entire businesses. Tool routing. Rules for when to act vs. escalate. KPIs. Feedback loops.
 
 ---
 
@@ -70,10 +68,14 @@ And that judgment doesn't exist in the training data.
 
 ---
 
-11/ 𝗧𝗵𝗲 𝗼𝗽𝗲𝗿𝗮𝘁𝗼𝗿𝘀 𝘄𝗵𝗼 𝗰𝗮𝗽𝘁𝘂𝗿𝗲 𝘁𝗵𝗲 𝗻𝗲𝘅𝘁 𝘄𝗮𝘃𝗲 𝗮𝗿𝗲𝗻'𝘁 𝗿𝗲𝗽𝗹𝗮𝗰𝗶𝗻𝗴 𝘁𝗵𝗲𝗶𝗿 𝗦𝗠𝗘𝘀.
-
-𝗧𝗵𝗲𝘆'𝗿𝗲 𝘁𝘂𝗿𝗻𝗶𝗻𝗴 𝘁𝗵𝗲𝗺 𝗶𝗻𝘁𝗼 𝗮𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘀 𝗼𝗳 𝘁𝗵𝗲 𝘀𝘆𝘀𝘁𝗲𝗺𝘀 𝘁𝗵𝗮𝘁 𝘀𝗰𝗮𝗹𝗲 𝘁𝗵𝗲𝗶𝗿 𝗷𝘂𝗱𝗴𝗺𝗲𝗻𝘁.
+11/ 𝗜𝗳 𝘆𝗼𝘂'𝗿𝗲 𝗮𝗻 𝗦𝗠𝗘, 𝘆𝗼𝘂 𝗰𝗮𝗻 𝗰𝗮𝗽𝘁𝘂𝗿𝗲 𝘃𝗮𝗹𝘂𝗲 𝗶𝗻 𝘁𝗵𝗶𝘀 𝗮𝗿𝗯𝗶𝘁𝗿𝗮𝗴𝗲 𝘄𝗶𝗻𝗱𝗼𝘄 𝗯𝘆 𝘂𝘀𝗶𝗻𝗴 𝘆𝗼𝘂𝗿 𝗸𝗻𝗼𝘄𝗹𝗲𝗱𝗴𝗲 𝘁𝗼 𝗮𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁 𝗮 𝘀𝘆𝘀𝘁𝗲𝗺 𝘁𝗵𝗮𝘁 𝘀𝗰𝗮𝗹𝗲𝘀 𝘆𝗼𝘂𝗿 𝗷𝘂𝗱𝗴𝗺𝗲𝗻𝘁.
 
 ---
 
-12/ Which one of your experts' judgment would be worth the most if it ran 24/7 without them in the room?
+12/ If you run a business with deep expertise, or you're an expert in any domain yourself, that knowledge is leverage.
+
+Whether it sits in your head or a handful of heads, the winners of this next phase will be doing something like this.
+
+---
+
+13/ Which slice of expertise in your business would be worth the most if it ran 24/7 without anyone in the room?
