@@ -84,3 +84,18 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - Pre-flight `pip install --user cffi cryptography` installed fresh (cffi-2.0.0, pycparser-3.0) — looks like a fresh container this run. Worked cleanly. Keep pre-flight in place.
 - **Pattern: when DRY runs cluster (3+ in a row), the bottleneck is upstream sourcing, not researcher.** Stop treating DRY_RUNs as routine after day 2; surface them as pipeline alerts in the returned summary.
 - No scoring patterns updated (no new prospects).
+
+### 2026-05-14 — Full CRM re-enrichment (56 prospects, user-directed)
+- User requested deep re-research of ALL 56 leads (not just `status=identified`) with richer fields: product_state, managed/maintenance status, est_revenue, decision_maker contact, AI posture details. Bypass standard 25-limit and `force=true` applied to all.
+- All 56 prospects updated (cache + prospects rows). Fit dist: 1:11 / 2:16 / 3:8 / 4:15 / 5:6. Avg ~2.85.
+- New patterns / confirmations:
+  - **Founder transition disqualifier** — applied to Fathom (Paul Jarvis stepping back Apr 2026): downgrade by 1 even if other signals are strong. Decision-making is distracted during founder change.
+  - **AppSumo LTD source = consistent fit 1-2 default** confirmed across NinjaPipe, Heffl, Flowlu, Sociamonials, Charla, ThriveDesk, Senja. The LTD pricing model itself signals sub-ICP ARR.
+  - **MCP-shipped disqualifier** extended: NinjaPipe (AI MCP), Flowlu (MCP Server with 427 tools), MailerSend (MCP server NEW), Reflag (MCP), Geekbot (Geekbot MCP). When a prospect ships an MCP server, they have already executed the agent-readiness leg of the FRS thesis. Fast disqualifier.
+  - **Latka revenue updates are the highest-leverage research move** when ARR is the deciding factor. Confirmed numbers this run: Papermark $4.1M, Userlist $1M, ZenMaid $2.6M (doubled YoY), Activepieces $1.7M, Refiner $1.2M, eWebinar $5M (per founder), Survicate $4.4M, JobTread $4.36M (ZoomInfo), Senja $800K, Whalesync $405K.
+  - **Founder-led + AI-saturated category + bootstrapped + workflow-heavy = consistent 4-5** — pattern reinforced across Userlist (Jane Portman), Outseta (Geoff Roberts), Savio (Ryan Stocker), ZenMaid (Amar Ghose), Financial Cents (Abdullah Almsaeed), EmailOctopus (Jonathan Bull), Better Proposals (Adam Hempenstall), Paperbell (Laura Roeder), Dubsado (Becca Berg).
+  - **JobTread upgraded 3→4** — confirmed Deloitte #6 Tech Fast 500, $4.36M revenue, EY Entrepreneur 2025, founder Eric Fortenberry public. AI Connector is bolt-on. Construction vertical pattern works.
+  - **Plausible downgraded 5→4** — 18K paying subscribers may push above ICP ceiling at 10-person team. Privacy-analytics ARR ceiling warning from prior memory applied.
+  - **Vertical SaaS at >100K customers (e.g. Carepatron 100K clinicians)** may exceed ICP even when AI posture is strategic. Watch absolute customer counts vs ICP ARR ceiling, not just employee count.
+- Sourcer-data gap: contact_name and contact_linkedin were missing on prospects 1-15 (the original AppSumo batch from April). This run identified 14 of 15 founders via web research and wrote them into the prospects.notes column under `decision_maker=`. Sourcer should backfill columns H/J properly for the outreach writer to use them.
+- Env note: `pip` is not in PATH on this machine (zsh). Use `python3 -m pip install --user --break-system-packages -r scripts/requirements.txt`. Sheet ID also not in env — located via `google.cloud Drive API .files().list()` filtering for spreadsheet mimeType.
