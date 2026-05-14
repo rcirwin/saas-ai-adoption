@@ -2,71 +2,69 @@
 
 The signal sits buried under doomer takes, hype, and a productivity ceiling that keeps moving every six months.
 
----
-
-2/ People try to predict the shape of the future and overlook predicting the timing of each milestone.
-
-There's a ton of arbitrage in providing value before the market catches up to the next one.
+🧵
 
 ---
 
-3/ One thing was up for debate recently, and is still being debated:
+2/ People try to predict the shape of the future and overlook the timing of each milestone.
 
-How long does deep human expertise hold value before AI surpasses humans?
-
-As we get deeper into this revolution, some clarity has been revealed.
+There's a ton of arbitrage in providing value before the market catches up.
 
 ---
 
-4/ In domains with abundant training data, AI now matches or beats most humans.
+3/ One thing was up for debate recently (and is still):
 
-In niche domains where the data is fragmented, scarce, or locked in someone's head from 15 years of trial and error, AI hits a hard bottleneck.
+How long does deep subject matter expertise hold value before AI surpasses humans?
+
+As we get deeper into this revolution, some clarity has emerged.
 
 ---
 
-5/ The model can't pattern-match to a strategy it has never seen the outputs of.
+4/ In domains with abundant training data, AI matches or beats most humans.
+
+In niche domains where the data is fragmented or locked in someone's head from 15 years of trial and error, AI hits a hard bottleneck.
+
+---
+
+5/ It can't pattern-match to a strategy it has never seen the outputs of.
 
 Anyone who has asked an AI to do a domain-specific analysis with no scaffolding has felt this directly.
 
 ---
 
-6/ The flip side: give an AI the right harness and it matches a human in almost any domain.
+6/ The flip side: with the right harness (strategic context, decision rules, KPIs, a clean data path), AI matches a human in almost any domain.
 
-So the medium-term value of SMEs isn't doing the work themselves. It's encoding their judgment into the harness the AI runs inside.
-
-That reveals where the next two arbitrages live.
+So the value of SMEs isn't doing the work. It's encoding their judgment into the harness the AI runs inside.
 
 ---
 
 7/ Arbitrage 1, the one that became clear first.
 
-Rely on the LLM's own decision-making to drive value. Point the model at a task, trust the raw capability, charge for access.
+Rely on the LLM's own decision making to drive value. Point it at a task, trust the raw capability, stitch together complex automations.
 
-The window is closing fast because the models are commoditizing.
+Still lots of value, but the market's appetite will outgrow the raw LLM in the interim.
 
 ---
 
-8/ Arbitrage 2, just opening.
+8/ Arbitrage 2, now becoming clear.
 
 Design AI harnesses that pair raw model capability with deep domain expertise.
 
-SOPs that operate entire businesses. Tool routing. Rules for when to act vs. escalate. KPIs. Feedback loops.
+Business SOPs. Tool routing. Rules for when to act vs. escalate. KPIs and feedback loops so the system learns from its decisions.
 
 ---
 
-9/ The first is a race to the bottom on price. The second is a moat that compounds.
+9/ The first relies on the LLM's training. The second provides the training.
 
-The harness is only as good as the judgment encoded in it. When the underlying model improves, the whole system improves with it.
+The harness is only as good as the judgment encoded in it. And that judgment doesn't exist in the training data.
 
 ---
 
-10/ The pattern is already playing out.
+10/ The pattern is playing out.
 
-Cursor: code, with file context and IDE-native scaffolding.
-Harvey: legal work.
-Sierra: customer support.
+Cursor wraps frontier models with code-specific scaffolding: file context, IDE-native interaction, project-aware tools. Same models everyone else can call.
 
-Same models everyone else can call. The model is the engine. The harness is the product.
+Harvey did this for legal. Sierra for customer support.
 
 ---
 
@@ -74,10 +72,10 @@ Same models everyone else can call. The model is the engine. The harness is the 
 
 ---
 
-12/ If you run a business with deep expertise, or you're an expert in any domain yourself, that knowledge is leverage.
+12/ If you run a business with deep expertise, or you're an expert in any domain, that knowledge is leverage.
 
-Whether it sits in your head or a handful of heads, the winners of this next phase will be doing something like this.
+The winners of the next phase will be doing this.
 
 ---
 
-13/ Which slice of expertise in your business would be worth the most if it ran 24/7 without anyone in the room?
+13/ Which one of your expert judgments would be worth the most if it ran 24/7 without you in the room?
