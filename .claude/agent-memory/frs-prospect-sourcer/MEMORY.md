@@ -38,4 +38,42 @@ Cross-run learnings. Append only.
 ## Run cadence
 
 - 2026-04-20: 15 added (all sources rotation) - first run
-- 2026-04-21: 15 added (all sources rotation) - this run
+- 2026-04-21: 15 added (all sources rotation)
+- 2026-05-14: 15 staged but NOT appended (SHEET_APPEND_SKIPPED — `FRS_PROSPECTS_SHEET_ID` env var unavailable; local-session run from desktop Claude Code, not cloud routine where secrets are injected)
+
+## Environment quirks (added 2026-05-14)
+
+- The Google service account JSON exists locally at `/Users/ryanirwin/.config/frs/frs-agentic-system-ba5fe26b3a07.json` and authenticates successfully. The blocker is the Sheet ID env var.
+- When running outside the cloud session (e.g. desktop Claude Code), `FRS_PROSPECTS_SHEET_ID` is never set and there's no `.env` file fallback. Future runs from desktop should either be skipped or stage candidates to a sourcing-run file for later append.
+- Hard-stop on Sheet dedup is correctly enforced — we cannot risk duplicates without the live Sheet read since prior run files only capture ~30 of the ~56 known prospects.
+- Apify CLI / Playwright are NOT installed on this machine (only `npx` available); Chrome MCP permissions in `.claude/settings.local.json` are narrow (only `select_browser` and `tabs_context_mcp`). For web research, WebSearch + WebFetch remain the workhorses.
+
+## Sources mined 2026-05-14 (worth revisiting)
+
+- **Practical Founders podcast guest list** — high-signal, bootstrapped-only filter, $1-10M ARR range. Greg Head's interview archive is curated to ICP. Use practicalfounders.com/podcast and saasclub.io/podcast as recurring sources alongside Indie Hackers and AppSumo.
+- **GetLatka company profiles** — surprisingly current ARR/employee data, even for bootstrapped firms not in Crunchbase. Search pattern: `getlatka "bootstrapped" "$1M ARR" OR "$2M ARR" 2024 "10 employees" OR "20 employees"` works well.
+- **lifetimedeals.bloggingjoy.com** — readable AppSumo current-deals roundup that doesn't 403 like AppSumo direct.
+
+## Disqualification additions
+
+6. **Big seed/Series A with sub-$2M ARR**: Salesbricks ($18.3M raised, $1M ARR), Better Stack ($28.6M raised, $3.4M ARR), Garage Technologies ($18M raised). If a company has raised >$10M while ARR is below $5M, the strategic gap with our $30K assessment is too wide — they have implementation capacity. Skip.
+7. **"AI" in name or tagline as primary positioning**: Krisspy, Tabby, Uniti AI, Zernio (despite being a generic API, markets to AI agent builders). Marketing positioning is a faster signal than digging into product specifics.
+
+## Categories sourced 2026-05-14 (update sampling list)
+
+- Referral marketing (Referral Rock) — newly sampled
+- Vertical SaaS (BoomCloud-dental, Alosant-proptech) — newly sampled
+- Customer success (Custify) — newly sampled
+- Proposal software (Better Proposals) — newly sampled
+- Embedded BI (Holistics) — newly sampled
+- DevTools observability (OpenStatus) — newly sampled
+- Time-series databases (QuestDB) — newly sampled
+- Version control / dev (Diversion) — newly sampled
+- Social media for agencies (Rella) — newly sampled
+- E-commerce inventory (Sumtracker) — newly sampled
+- RPA (Robomotion) — newly sampled
+- Team/client portals (FuseBase) — newly sampled
+- iPaaS (Albato) — newly sampled
+- No-code forms (Formaloo) — newly sampled
+
+**Still under-sampled** (next run): B2B marketplaces (every candidate exceeded ICP this run), legal tech, fintech-for-SMB ops, supply chain SaaS, biotech research ops.
