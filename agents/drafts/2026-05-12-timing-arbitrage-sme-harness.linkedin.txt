@@ -1,26 +1,24 @@
 After a tech revolution, the winning bets look obvious. During one, they don't.
 
-The signal sits buried under doomer takes, hype, and a productivity ceiling that keeps moving every six months. People predict the shape of the future and overlook the timing of each milestone. There's a ton of arbitrage in providing value before the market catches up.
+The signal sits buried under doomer takes, hype, and a productivity ceiling that keeps moving every six months. People try to predict the shape of the future and overlook the timing of each milestone. There's a ton of arbitrage in providing value before the market catches up.
 
-One thing was up for debate recently, and is still being debated: how long does deep subject matter expertise hold value before AI surpasses humans? As we get deeper into this revolution, some clarity has emerged.
+One thing was up for debate recently (and is still): how long does deep subject matter expertise hold value before AI surpasses humans? As we get deeper into this revolution, some clarity has emerged.
 
-In domains with abundant training data, AI matches or beats most humans. In niche domains where the data is fragmented or locked in someone's head from 15 years of trial and error, AI hits a hard bottleneck. It can't pattern-match to a strategy it has never seen the outputs of.
+In domains with abundant training data, AI matches or beats most humans. In niche domains where the data is fragmented or locked in someone's head from 15 years of trial and error, AI hits a hard bottleneck. It can't pattern-match to a strategy it has never seen the outputs of. Anyone who has asked an AI to do a domain-specific analysis with no scaffolding has felt this directly.
 
-The flip side: give an AI the right harness with strategic context, decision rules, KPIs, and a clean data path, and it matches a human in almost any domain.
+The flip side is where the opportunity sits. Give an AI the right harness, strategic context, decision rules, KPIs, a clean data path, it can match a human in almost any domain.
 
 So the medium-term value of subject matter experts isn't doing the work themselves. It's encoding their judgment into the harness the AI runs inside.
 
-That reveals where the next two arbitrages live.
+𝗔𝗿𝗯𝗶𝘁𝗿𝗮𝗴𝗲 𝟭, 𝘁𝗵𝗲 𝗼𝗻𝗲 𝘁𝗵𝗮𝘁 𝗯𝗲𝗰𝗮𝗺𝗲 𝗰𝗹𝗲𝗮𝗿 𝗳𝗶𝗿𝘀𝘁. Rely on the LLM's own decision making to drive value. Point it at a task, trust the raw capability. Stitch together complex automations. This is what most "AI for business" tools do today. Still lots of value to unlock, but the market's appetite will outgrow the raw LLM in the interim.
 
-𝗔𝗿𝗯𝗶𝘁𝗿𝗮𝗴𝗲 𝟭, 𝘁𝗵𝗲 𝗼𝗻𝗲 𝘁𝗵𝗮𝘁 𝗯𝗲𝗰𝗮𝗺𝗲 𝗰𝗹𝗲𝗮𝗿 𝗳𝗶𝗿𝘀𝘁. Rely on the LLM itself to drive value. Point it at a task, trust the raw capability, charge for access. This is what most "AI for business" tools do today. The window is closing fast as the models commoditize.
+𝗔𝗿𝗯𝗶𝘁𝗿𝗮𝗴𝗲 𝟮, 𝗻𝗼𝘄 𝗯𝗲𝗰𝗼𝗺𝗶𝗻𝗴 𝗰𝗹𝗲𝗮𝗿. Design AI harnesses that pair raw model capability with deep domain expertise. Business SOPs. Tool routing. Rules for when to act vs. escalate. KPIs and feedback loops so the system learns from its decisions.
 
-𝗔𝗿𝗯𝗶𝘁𝗿𝗮𝗴𝗲 𝟮, 𝗷𝘂𝘀𝘁 𝗼𝗽𝗲𝗻𝗶𝗻𝗴. Design AI harnesses that pair raw model capability with deep domain expertise. SOPs that run entire businesses. Tool routing. Rules for when to act vs. escalate. KPIs and feedback loops so the system learns from its decisions.
+The first relies on the LLM's training. The second provides the training. The harness is only as good as the judgment encoded in it, and that judgment doesn't exist in the training data. When the model improves, the whole system improves with it.
 
-The first one is a race to the bottom on price. The second one is a moat that compounds. The harness is only as good as the judgment encoded in it, and that judgment doesn't exist in the training data. When the underlying model improves, the whole system improves with it.
+The pattern is playing out. Cursor wraps frontier models with code-specific scaffolding: file context, IDE-native interaction, project-aware tools. Same models everyone else can call. Harvey did this for legal. Sierra for customer support. The model is the engine. The harness is the product.
 
-The pattern is playing out already. Cursor wraps frontier models with code-specific scaffolding: file context, IDE-native interaction, project-aware tools. Same models everyone else can call. Harvey did this for legal. Sierra for customer support. The model is the engine. The harness is the product.
-
-𝗧𝗵𝗲 𝗽𝗼𝗶𝗻𝘁 𝗶𝘀 𝗺𝗼𝗿𝗲 𝗹𝗶𝗸𝗲 𝘁𝗵𝗶𝘀: 𝗶𝗳 𝘆𝗼𝘂'𝗿𝗲 𝗮𝗻 𝗦𝗠𝗘, 𝘆𝗼𝘂 𝗰𝗮𝗻 𝗰𝗮𝗽𝘁𝘂𝗿𝗲 𝘃𝗮𝗹𝘂𝗲 𝗶𝗻 𝘁𝗵𝗶𝘀 𝗮𝗿𝗯𝗶𝘁𝗿𝗮𝗴𝗲 𝘄𝗶𝗻𝗱𝗼𝘄 𝗯𝘆 𝘂𝘀𝗶𝗻𝗴 𝘆𝗼𝘂𝗿 𝗸𝗻𝗼𝘄𝗹𝗲𝗱𝗴𝗲 𝘁𝗼 𝗮𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁 𝗮 𝘀𝘆𝘀𝘁𝗲𝗺 𝘁𝗵𝗮𝘁 𝘀𝗰𝗮𝗹𝗲𝘀 𝘆𝗼𝘂𝗿 𝗷𝘂𝗱𝗴𝗺𝗲𝗻𝘁.
+𝗜𝗳 𝘆𝗼𝘂'𝗿𝗲 𝗮𝗻 𝗦𝗠𝗘, 𝘆𝗼𝘂 𝗰𝗮𝗻 𝗰𝗮𝗽𝘁𝘂𝗿𝗲 𝘃𝗮𝗹𝘂𝗲 𝗶𝗻 𝘁𝗵𝗶𝘀 𝗮𝗿𝗯𝗶𝘁𝗿𝗮𝗴𝗲 𝘄𝗶𝗻𝗱𝗼𝘄 𝗯𝘆 𝘂𝘀𝗶𝗻𝗴 𝘆𝗼𝘂𝗿 𝗸𝗻𝗼𝘄𝗹𝗲𝗱𝗴𝗲 𝘁𝗼 𝗮𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁 𝗮 𝘀𝘆𝘀𝘁𝗲𝗺 𝘁𝗵𝗮𝘁 𝘀𝗰𝗮𝗹𝗲𝘀 𝘆𝗼𝘂𝗿 𝗷𝘂𝗱𝗴𝗺𝗲𝗻𝘁.
 
 If you run a business with deep expertise, or you're an expert in any domain, that knowledge is leverage. The winners of the next phase will be doing this.
 
