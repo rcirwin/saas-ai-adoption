@@ -21,7 +21,7 @@ Josh,
 
 Caught the Practical Founders episode on plateaus and pivots. The line that stuck was framing AI as "level up, not replacement" when you were talking about the team side. That's the right construction, and I think it applies cleanly to the plateau question itself.
 
-Most founders looking at a plateau either expand scope or commit to a pivot. Both are expensive. AI is the third option that nobody talks about cleanly because the discourse keeps collapsing into "ship AI features." For a referral platform with 500 customers and steady growth, the leverage is almost never new product surface area. It's the operational layers underneath that compound.
+Most founders looking at a plateau either expand scope or commit to a pivot. Both are expensive. AI is the third option that nobody talks about cleanly because the discourse keeps collapsing into "ship AI features." For a referral platform with 500 customers and steady growth, the winning move is almost never new product surface area. It's the operational layers underneath that compound.
 
 I run a fixed-scope assessment for B2B SaaS at $500K to $5M ARR. The deliverable is a workflow map of where AI moves the needle for the team and the customer, and where it doesn't. No "rebuild Referral Rock as AI-native." Plenty of "here's where the next 30 hours a week comes from."
 

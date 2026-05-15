@@ -23,7 +23,7 @@ Your piece on how AI-native SaaS companies should do email marketing flipped a s
 
 The 2025 redesign was a substantive call. Most teams shipping a major UI overhaul in 2025 used the moment to bolt in AI. You didn't. The llm-info-page-style discipline at Userlist is the kind of restraint that ages well.
 
-I run a fixed-scope assessment for B2B SaaS at $500K to $5M ARR. The work is mapping workflow friction first (yours, your customers'), then deciding which AI bets compound for a small bootstrapped team. For Userlist the more interesting question is probably internal-ops leverage rather than product AI. Customer.io can throw 30 engineers at a feature. You can't, and probably shouldn't.
+I run a fixed-scope assessment for B2B SaaS at $500K to $5M ARR. The work is mapping workflow friction first (yours, your customers'), then deciding which AI bets compound for a small bootstrapped team. For Userlist the more interesting question is probably internal-ops compounding rather than product AI. Customer.io can throw 30 engineers at a feature. You can't, and probably shouldn't.
 
 Long-time UI Breakfast listener, so this is a fan note too. Worth 20 minutes to compare notes?
 
