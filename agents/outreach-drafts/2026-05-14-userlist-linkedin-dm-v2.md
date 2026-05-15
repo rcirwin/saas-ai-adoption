@@ -13,4 +13,4 @@ hook_distinct_from_v1: yes — v1 leaned on the $1M / 5-person arc + the Custome
 hold_back_if_connect_not_accepted: yes — v1 was already a DM-assumes-connected; v2 same assumption
 ---
 
-Thanks for connecting, Jane. Read the "How AI SaaS Companies Do Email Marketing" piece a while back — directionally one of the few takes that didn't just paste ChatGPT use-cases. The inverse question is the one I keep getting from bootstrapped founders: how is your own small team actually using AI internally, separate from the Userlist product roadmap? That gap between "AI for our customers" and "AI for us" is where most teams haven't done the work. Happy to share what I'm seeing — no pitch.
+Thanks for connecting, Jane. Read the "How AI SaaS Companies Do Email Marketing" piece a while back. Directionally one of the few takes that didn't just paste ChatGPT use-cases. The inverse question is the one I keep getting from bootstrapped founders: how is your own small team actually using AI internally, separate from the Userlist product roadmap? That gap between "AI for our customers" and "AI for us" is where most teams haven't done the work. Happy to share what I'm seeing. No pitch.

@@ -9,7 +9,7 @@ contact: Derrick Reimer (Founder / CEO) — https://linkedin.com/in/derrick-reim
 hook_source: Motion and Reclaim reshaping scheduling category as AI-native + Derrick's indie/TinySeed track record
 ---
 
-Hey Derrick — long-time fan of the Drip-to-SavvyCal arc. Interesting moment for scheduling — Motion and Reclaim are redefining the category as AI-native while SavvyCal's held a different line. Directionally that's a real choice. I help SaaS founders think through agent-era product bets. No pitch.
+Hey Derrick. Long-time fan of the Drip-to-SavvyCal arc. Interesting moment for scheduling. Motion and Reclaim are redefining the category as AI-native while SavvyCal's held a different line. Directionally that's a real choice. I help SaaS founders think through agent-era product bets. No pitch.
 
 ---
 

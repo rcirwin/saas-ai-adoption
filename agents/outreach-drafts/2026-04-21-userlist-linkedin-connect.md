@@ -9,7 +9,7 @@ contact: Jane Portman (Co-Founder / CEO) — https://linkedin.com/in/janeportman
 hook_source: UI Breakfast podcast thought leadership + Userlist staying AI-light while category peers add AI
 ---
 
-Hey Jane — long-time UI Breakfast listener. Interesting watching Userlist stay AI-light while Customer.io and peers bolt things on. Directionally feels deliberate. I help bootstrapped SaaS founders pick which AI bets matter and which to skip. No pitch — curious how you're thinking about it.
+Hey Jane. Long-time UI Breakfast listener. Interesting watching Userlist stay AI-light while Customer.io and peers bolt things on. Directionally feels deliberate. I help bootstrapped SaaS founders pick which AI bets matter and which to skip. No pitch. Curious how you're thinking about it.
 
 ---
 

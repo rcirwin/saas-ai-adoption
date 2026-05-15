@@ -11,4 +11,4 @@ prior_touch: none
 framing: broad-peer (not services pitch)
 ---
 
-Hey Marie — Tally hitting 500K teams with Notion, Make and Rakuten in the mix is wild for a no-code form tool. Curious how the AI / MCP surface is being shaped by what those bigger customers ask for vs the long tail. No pitch, comparing notes with bootstrapped founders.
+Hey Marie. Tally hitting 500K teams with Notion, Make and Rakuten in the mix is wild for a no-code form tool. Curious how the AI / MCP surface is being shaped by what those bigger customers ask for vs the long tail. No pitch, comparing notes with bootstrapped founders.

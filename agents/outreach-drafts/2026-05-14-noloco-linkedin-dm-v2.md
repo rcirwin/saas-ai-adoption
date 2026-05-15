@@ -16,4 +16,4 @@ recommended_pivot: |
 re_score_recommendation: down — fit-3
 ---
 
-(no services draft — outside FRS sweet spot. Morning v1 DM should be reviewed and likely not sent.)
+(no services draft. Outside FRS sweet spot. Morning v1 DM should be reviewed and likely not sent.)

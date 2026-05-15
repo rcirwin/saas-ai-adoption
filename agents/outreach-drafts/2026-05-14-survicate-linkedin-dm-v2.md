@@ -13,7 +13,7 @@ hook_distinct_from_v1: yes
 hold_back_if_connect_not_accepted: yes
 ---
 
-Thanks for connecting, Kamil. Following up — with customers like Vercel and Amplitude on the books, you've got a power-user segment that's already pulling Survicate data into AI workflows downstream. Curious whether the AI Research Assistant gets pulled into those external loops or stays inside the Survicate surface. Most tools at $4M+ hit that question and have to decide between feature-build and programmatic-surface. No pitch, happy to compare notes.
+Thanks for connecting, Kamil. Following up. With customers like Vercel and Amplitude on the books, you've got a power-user segment that's already pulling Survicate data into AI workflows downstream. Curious whether the AI Research Assistant gets pulled into those external loops or stays inside the Survicate surface. Most tools at $4M+ hit that question and have to decide between feature-build and programmatic-surface. No pitch, happy to compare notes.
 
 ---
 

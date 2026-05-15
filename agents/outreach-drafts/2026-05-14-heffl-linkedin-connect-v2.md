@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Hadi Azeez (https://www.linkedin.com/in/hadi-azeez-321322197/ per notes)
 ---
 
-Hey Hadi — voice → task + auto-activity-logging in an all-in-one CRM is closer to "agent that runs the workflow" than the usual AI-summary bolt-on. Curious what the LTD audience does with that vs what you expected. No pitch, comparing notes with founder-led teams shipping workflow-native AI.
+Hey Hadi. Voice → task + auto-activity-logging in an all-in-one CRM is closer to "agent that runs the workflow" than the usual AI-summary bolt-on. Curious what the LTD audience does with that vs what you expected. No pitch, comparing notes with founder-led teams shipping workflow-native AI.

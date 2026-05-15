@@ -9,7 +9,7 @@ contact: Adriaan van Rossum (Founder / CEO) — https://linkedin.com/in/adriaanv
 hook_source: Simple Analytics' AI chat feature layered onto a privacy-analytics product + 500K revenue milestone
 ---
 
-Hey Adriaan — respect the 500K solo-bootstrap run. Interesting watching privacy analytics add AI chat while the real AI-era shift is what agents do with the data. I help SaaS founders figure out which AI bets actually matter. No pitch, just curious how you're thinking about it.
+Hey Adriaan. Respect the 500K solo-bootstrap run. Interesting watching privacy analytics add AI chat while the real AI-era shift is what agents do with the data. I help SaaS founders figure out which AI bets actually matter. No pitch, just curious how you're thinking about it.
 
 ---
 

@@ -13,4 +13,4 @@ hook_distinct_from_v1: yes — v1 framed against Asana embed position + Timely "
 hold_back_if_connect_not_accepted: yes
 ---
 
-Thanks for connecting, Mike. $5.3M with 15 people plus the mobile + Apple Watch ship is a lean ops story — and the dossier on time-tracking founders I've been talking to has a recurring blind spot: most have shipped one AI feature (auto-logging, like Everhour AI) but haven't audited where AI actually compounds inside the team — billing exceptions, support triage, customer success. Different audit than product roadmap. Happy to share what I'm seeing — no pitch.
+Thanks for connecting, Mike. $5.3M with 15 people plus the mobile + Apple Watch ship is a lean ops story. And the dossier on time-tracking founders I've been talking to has a recurring blind spot: most have shipped one AI feature (auto-logging, like Everhour AI) but haven't audited where AI actually compounds inside the team. Billing exceptions, support triage, customer success. Different audit than product roadmap. Happy to share what I'm seeing. No pitch.

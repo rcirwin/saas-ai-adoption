@@ -11,4 +11,4 @@ prior_touch: none — first touch
 CONTACT_BLOCKER: LinkedIn URL not in prospects.contact_linkedin; check sourcer or LI search before sending
 ---
 
-Hey Laura — followed the MeetEdgar arc. The "no bots, no AI" stance at Paperbell with 14K coaches is one of the more interesting positioning bets in the category — directionally sharper than the bolt-on default. No pitch, just curious how you're thinking about it.
+Hey Laura. Followed the MeetEdgar arc. The "no bots, no AI" stance at Paperbell with 14K coaches is one of the more interesting positioning bets in the category. Directionally sharper than the bolt-on default. No pitch, just curious how you're thinking about it.

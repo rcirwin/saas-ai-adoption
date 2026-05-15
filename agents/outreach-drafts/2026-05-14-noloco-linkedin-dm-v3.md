@@ -14,7 +14,7 @@ hold_back_if_connect_not_accepted: yes
 dossier_decision: REFRAME — Darragh leads the no-code AI conversation. Lead with peer Q on the Vibe Building → enterprise sales motion.
 ---
 
-Thanks for connecting, Darragh. Watched the Feb interview on Vibe Building — directionally the most honest framing I've seen on where AI no-code actually lands for SMB ops. I work mostly with workflow-heavy SaaS founders on the agent-readiness question, and I'm seeing a similar gap on their side. Curious how the Vibe Building demo-to-production gap is shaping who Noloco sells to next. Comparing notes, no pitch.
+Thanks for connecting, Darragh. Watched the Feb interview on Vibe Building. Directionally the most honest framing I've seen on where AI no-code actually lands for SMB ops. I work mostly with workflow-heavy SaaS founders on the agent-readiness question, and I'm seeing a similar gap on their side. Curious how the Vibe Building demo-to-production gap is shaping who Noloco sells to next. Comparing notes, no pitch.
 
 ---
 

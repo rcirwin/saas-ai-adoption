@@ -9,7 +9,7 @@ contact: Darragh Mc Kay (Co-Founder / CEO) — https://linkedin.com/in/darraghmc
 hook_source: Noloco's Nola AI assistant layered onto agency-OS niche + recent free plan launch
 ---
 
-Hey Darragh — nice move on the recent free plan. Interesting watching no-code go agent-native (Retool, Softr) while Nola sits as an assistant. Directionally different bets. I work with YC + bootstrapped founders on which AI bets matter. No pitch, just curious how you're framing it.
+Hey Darragh. Nice move on the recent free plan. Interesting watching no-code go agent-native (Retool, Softr) while Nola sits as an assistant. Directionally different bets. I work with YC + bootstrapped founders on which AI bets matter. No pitch, just curious how you're framing it.
 
 ---
 

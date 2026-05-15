@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing AND contact_name_missing — sourcer dependency
 ---
 
-Hey — I work with B2B SaaS founders on AI deployment strategy and Charla's choice to ship AI agents into the LTD/SMB tier is one of the more interesting bets in the support-AI space (vs enterprise-only positioning). Would love to connect. No pitch, just enjoy the category move.
+Hey. I work with B2B SaaS founders on AI deployment strategy and Charla's choice to ship AI agents into the LTD/SMB tier is one of the more interesting bets in the support-AI space (vs enterprise-only positioning). Would love to connect. No pitch, just enjoy the category move.

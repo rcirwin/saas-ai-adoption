@@ -15,4 +15,4 @@ recommended_pivot: |
 re_score_recommendation: down — fit-3
 ---
 
-(no services draft — outside FRS sweet spot)
+(no services draft. Outside FRS sweet spot)

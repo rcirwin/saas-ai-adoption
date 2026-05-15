@@ -11,4 +11,4 @@ prior_touch: none
 framing: broad-peer (not services pitch)
 ---
 
-Hey Olly — sentiment + auto-transcription is a solid baseline. The interesting question is whether testimonials themselves change once AI agents start summarizing review corpora before humans read them. Curious how you're thinking about it. No pitch, comparing notes.
+Hey Olly. Sentiment + auto-transcription is a solid baseline. The interesting question is whether testimonials themselves change once AI agents start summarizing review corpora before humans read them. Curious how you're thinking about it. No pitch, comparing notes.

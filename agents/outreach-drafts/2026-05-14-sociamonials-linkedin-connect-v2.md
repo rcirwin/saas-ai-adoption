@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Craig Sherman (Elk Grove CA)
 ---
 
-Hey Craig — 13 years running Sociamonials through every shift in the social-mgmt category is a long arc. Curious how the recent AI content surface has landed with the agency side specifically vs in-house SMBs. No pitch, comparing notes with long-arc bootstrapped founders.
+Hey Craig. 13 years running Sociamonials through every shift in the social-mgmt category is a long arc. Curious how the recent AI content surface has landed with the agency side specifically vs in-house SMBs. No pitch, comparing notes with long-arc bootstrapped founders.

@@ -13,4 +13,4 @@ hook_distinct_from_v1: n/a — first touch
 CONTACT_BLOCKER: LinkedIn URL now in dossier (https://in.linkedin.com/in/rohitreddyabbadi) — backfill to prospects.contact_linkedin
 ---
 
-Hey Rohit — the eSignature unification + the /ai-info page combo is unusually deliberate work for a 6-person team. Curious how AI ends up showing up on the team side, not just in the product. Different audit than the customer-facing AI roadmap. No pitch.
+Hey Rohit. The eSignature unification + the /ai-info page combo is unusually deliberate work for a 6-person team. Curious how AI ends up showing up on the team side, not just in the product. Different audit than the customer-facing AI roadmap. No pitch.

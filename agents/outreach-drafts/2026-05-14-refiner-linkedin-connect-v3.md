@@ -11,8 +11,8 @@ cohort: A1-reframe
 dossier_decision: REFRAME — Refiner shipped MCP before most of FRS's prospects. Peer angle on what happened post-MCP, not services pitch.
 ---
 
-Hey Moritz — saw Refiner shipped an MCP server, which is honestly further than most B2B SaaS I look at. Curious what power-user behavior actually shifted post-MCP vs what you expected. I work with bootstrapped SaaS founders on agent-readiness — comparing notes, no pitch.
+Hey Moritz. Saw Refiner shipped an MCP server, which is honestly further than most B2B SaaS I look at. Curious what power-user behavior actually shifted post-MCP vs what you expected. I work with bootstrapped SaaS founders on agent-readiness. Comparing notes, no pitch.
 
 ---
 
-**Char count**: ~298 (under 300 limit — verify below)
+**Char count**: ~298 (under 300 limit. Verify below)

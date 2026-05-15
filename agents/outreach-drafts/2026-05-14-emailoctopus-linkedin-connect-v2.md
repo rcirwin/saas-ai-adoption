@@ -12,4 +12,4 @@ dossier_decision: SERVICES — strong sweet spot. They've hired internally for A
 hook_distinct_from_v1: n/a — no prior draft file located
 ---
 
-Hey Jonathan — saw the "AI as companion, maintain your voice" framing in the Feb piece, plus Jake on board as Head of AI. The "we hired for it before shipping it" approach is more deliberate than most. Curious how the assessment's been going. No pitch.
+Hey Jonathan. Saw the "AI as companion, maintain your voice" framing in the Feb piece, plus Jake on board as Head of AI. The "we hired for it before shipping it" approach is more deliberate than most. Curious how the assessment's been going. No pitch.

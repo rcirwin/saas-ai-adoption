@@ -9,7 +9,7 @@ contact: Waqar Azeem (Co-Founder / CEO) — https://linkedin.com/in/waqar-azeem-
 hook_source: Usermaven 2.0 launch + Maven AI assistant positioning as AI-first analytics
 ---
 
-Hey Waqar — saw the Usermaven 2.0 launch. Interesting watching AI-first analytics position against Posthog and Amplitude. The next gap most AI-first tools hit is agent-readiness — how external agents actually use the data. Happy to compare notes on what's working. No pitch.
+Hey Waqar. Saw the Usermaven 2.0 launch. Interesting watching AI-first analytics position against Posthog and Amplitude. The next gap most AI-first tools hit is agent-readiness. How external agents actually use the data. Happy to compare notes on what's working. No pitch.
 
 ---
 

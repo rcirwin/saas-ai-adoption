@@ -9,7 +9,7 @@ contact: Marko Saric (Co-Founder) — https://linkedin.com/in/markosaric
 hook_source: recent AI-tools traffic tracking feature (ChatGPT/Perplexity/Claude referrer attribution) + exploring posture
 ---
 
-Hey Marko — saw Plausible ship AI-tools traffic attribution. Directionally the right move: privacy analytics needs to surface what the AI-era actually changes. I help bootstrapped SaaS founders pick which AI bets matter and which to skip. No pitch, just curious how you're thinking about it.
+Hey Marko. Saw Plausible ship AI-tools traffic attribution. Directionally the right move: privacy analytics needs to surface what the AI-era actually changes. I help bootstrapped SaaS founders pick which AI bets matter and which to skip. No pitch, just curious how you're thinking about it.
 
 ---
 

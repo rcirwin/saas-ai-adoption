@@ -13,7 +13,7 @@ hook_distinct_from_v1: yes
 hold_back_if_connect_not_accepted: yes
 ---
 
-Thanks for connecting, Melissa. Following up on the Chatbase-over-native bet — directionally a smart call given the team size, but it raises an interesting question on whether webinar content itself becomes discoverable to agents (as training data, as live source) vs staying inside the eWebinar surface. Curious where that sits in your roadmap thinking. No pitch, happy to share what I'm seeing in lifecycle tools.
+Thanks for connecting, Melissa. Following up on the Chatbase-over-native bet. Directionally a smart call given the team size, but it raises an interesting question on whether webinar content itself becomes discoverable to agents (as training data, as live source) vs staying inside the eWebinar surface. Curious where that sits in your roadmap thinking. No pitch, happy to share what I'm seeing in lifecycle tools.
 
 ---
 

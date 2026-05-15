@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Bhanu Prakash Valluri
 ---
 
-Hey Bhanu — building a PM tool right now, with AI-native roadmap copilots flooding the category, is a real positioning challenge. Curious how you're thinking about where to plant the flag. No pitch, comparing notes with early-stage founders navigating that.
+Hey Bhanu. Building a PM tool right now, with AI-native roadmap copilots flooding the category, is a real positioning challenge. Curious how you're thinking about where to plant the flag. No pitch, comparing notes with early-stage founders navigating that.

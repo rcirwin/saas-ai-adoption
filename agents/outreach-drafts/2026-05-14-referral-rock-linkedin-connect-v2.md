@@ -12,4 +12,4 @@ dossier_decision: SERVICES — Excellent sweet spot. He's named the plateau, fra
 hook_distinct_from_v1: n/a — first touch
 ---
 
-Hey Josh — heard the "Plateaus, Pivots and Staying Profitable" episode. Your "AI as level-up, not replacement" framing for teams is pretty close to how I've been talking about it with bootstrapped founders — lever, not pivot. No pitch, just curious how it's playing out.
+Hey Josh. Heard the "Plateaus, Pivots and Staying Profitable" episode. Your "AI as level-up, not replacement" framing for teams is pretty close to how I've been talking about it with bootstrapped founders. Lever, not pivot. No pitch, just curious how it's playing out.

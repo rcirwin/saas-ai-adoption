@@ -12,8 +12,8 @@ prior_touch: 2026-05-14 linkedin-connect v1/v2 (drafted, not yet sent — v3 rep
 dossier_decision: REFRAME — AI Connector is essentially FRS's deliverable shipped as product. Peer angle on what's actually working vs demo'd.
 ---
 
-Hey Eric — saw the AI Connector launch. Curious which contractor workflows Claude actually owns 12 months in vs which ones the team quietly walks back. Most construction-SaaS I look at hasn't shipped this far. Comparing notes, no pitch.
+Hey Eric. Saw the AI Connector launch. Curious which contractor workflows Claude actually owns 12 months in vs which ones the team quietly walks back. Most construction-SaaS I look at hasn't shipped this far. Comparing notes, no pitch.
 
 ---
 
-**Char count**: ~262 (under 300 limit — verify below)
+**Char count**: ~262 (under 300 limit. Verify below)

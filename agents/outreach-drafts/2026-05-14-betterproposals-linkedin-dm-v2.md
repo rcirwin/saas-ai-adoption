@@ -13,4 +13,4 @@ hook_distinct_from_v1: yes — v1 framed against PandaDoc Atlas + 10K-brand oper
 hold_back_if_connect_not_accepted: yes
 ---
 
-Thanks for connecting, Adam. Re-read "AI With Common Sense" — the "12,000 companies screwing up deals" line is close to my view too. Most AI-in-SaaS work I see is the same shape: bolted-on writing assistants where the real payoff is somewhere else. The interesting question for a 9-person bootstrap isn't whether to ship more AI in the product — it's whether the internal team ops (sales, CS, content) have an audit you'd trust. Happy to share what I'm seeing with founders who share that posture — no pitch.
+Thanks for connecting, Adam. Re-read "AI With Common Sense". The "12,000 companies screwing up deals" line is close to my view too. Most AI-in-SaaS work I see is the same shape: bolted-on writing assistants where the real payoff is somewhere else. The interesting question for a 9-person bootstrap isn't whether to ship more AI in the product. It's whether the internal team ops (sales, CS, content) have an audit you'd trust. Happy to share what I'm seeing with founders who share that posture. No pitch.

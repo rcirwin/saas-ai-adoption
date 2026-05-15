@@ -11,7 +11,7 @@ cohort: A2-broad
 CONTACT_BLOCKER: linkedin_url_missing
 ---
 
-Hey Dinesh — 30K+ brands and a 4.9 on Shopify is a quietly dominant run. Referral is one of the few ecom categories that hasn't gotten the AI bolt-on treatment — directionally I'd argue that's the right call. The workflow question sits elsewhere. Curious how you're thinking about it. No pitch.
+Hey Dinesh. 30K+ brands and a 4.9 on Shopify is a quietly dominant run. Referral is one of the few ecom categories that hasn't gotten the AI bolt-on treatment. Directionally I'd argue that's the right call. The workflow question sits elsewhere. Curious how you're thinking about it. No pitch.
 
 ---
 

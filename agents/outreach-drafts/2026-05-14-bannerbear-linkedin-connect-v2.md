@@ -11,4 +11,4 @@ prior_touch: none
 framing: broad-peer (not services pitch)
 ---
 
-Hey Jon — followed the bootstrapped arc for a while. Curious how you're thinking about Bannerbear's position now that AI-native image APIs (Replicate / Fal) are coming at the category from the other direction. No pitch, just enjoy how publicly you've worked through tradeoffs.
+Hey Jon. Followed the bootstrapped arc for a while. Curious how you're thinking about Bannerbear's position now that AI-native image APIs (Replicate / Fal) are coming at the category from the other direction. No pitch, just enjoy how publicly you've worked through tradeoffs.

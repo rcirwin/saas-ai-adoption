@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Viktor Kessler (Hamburg, Germany)
 ---
 
-Hey Viktor — buyer-seller workspaces are one of the few segments where I think AI agents on both sides could end up dramatically reshaping what "the deal room" even looks like. Curious how Notch is framing that next layer. No pitch, comparing notes with seed-stage founders in B2B workflow.
+Hey Viktor. Buyer-seller workspaces are one of the few segments where I think AI agents on both sides could end up dramatically reshaping what "the deal room" even looks like. Curious how Notch is framing that next layer. No pitch, comparing notes with seed-stage founders in B2B workflow.

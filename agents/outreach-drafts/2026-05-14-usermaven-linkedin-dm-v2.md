@@ -13,7 +13,7 @@ hook_distinct_from_v1: yes
 hold_back_if_connect_not_accepted: yes
 ---
 
-Thanks for connecting, Waqar. Quick follow-up on the AI-first analytics positioning — the next gap I see in tools at your stage isn't more AI features, it's how external agents query the data programmatically. Watching how Amplitude and PostHog are stepping into that question, and curious how Usermaven is thinking about it. No pitch, happy to share patterns I'm seeing if useful.
+Thanks for connecting, Waqar. Quick follow-up on the AI-first analytics positioning. The next gap I see in tools at your stage isn't more AI features, it's how external agents query the data programmatically. Watching how Amplitude and PostHog are stepping into that question, and curious how Usermaven is thinking about it. No pitch, happy to share patterns I'm seeing if useful.
 
 ---
 

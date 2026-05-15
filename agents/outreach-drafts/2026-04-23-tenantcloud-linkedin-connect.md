@@ -9,7 +9,7 @@ contact: Mark DeHaan (CEO / CRO) — https://linkedin.com/in/mark-dehaan-1b9b591
 hook_source: Cloudia ChatGPT listing-gen launch (Aug 2025) + documented workflow friction in accounting/maintenance/payments
 ---
 
-Hey Mark — saw Cloudia ship in August. Interesting move: listing gen as the bolt-on AI while the real workflow pain in property mgmt sits in accounting, maintenance, payments. Directionally a gap worth looking at. I help bootstrapped SaaS founders pick which AI bets matter. No pitch, just curious.
+Hey Mark. Saw Cloudia ship in August. Interesting move: listing gen as the bolt-on AI while the real workflow pain in property mgmt sits in accounting, maintenance, payments. Directionally a gap worth looking at. I help bootstrapped SaaS founders pick which AI bets matter. No pitch, just curious.
 
 ---
 

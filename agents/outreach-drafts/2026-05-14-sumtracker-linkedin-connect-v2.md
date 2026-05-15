@@ -10,7 +10,7 @@ hook_source: $990K ARR bootstrapped Delhi + AI-Powered Inventory Planning (seaso
 cohort: A2-broad
 ---
 
-Hey Kush — saw the $990K bootstrapped arc and AI Inventory Planning. Forecasting is the natural first AI bet, but Shopify-native AI will eat that surface fast. The harder question — what inventory calls still need human judgment — is where the moat sits. Curious how you're thinking. No pitch.
+Hey Kush. Saw the $990K bootstrapped arc and AI Inventory Planning. Forecasting is the natural first AI bet, but Shopify-native AI will eat that surface fast. The harder question. What inventory calls still need human judgment. Is where the moat sits. Curious how you're thinking. No pitch.
 
 ---
 

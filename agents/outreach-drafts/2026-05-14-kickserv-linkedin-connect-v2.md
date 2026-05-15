@@ -12,7 +12,7 @@ CONTACT_BLOCKER: linkedin_url_missing
 caveat: EverCommerce portfolio = decision-making likely runs through EverPro leadership, not solely Todd. Connection still useful as founder peer.
 ---
 
-Hey Todd — re-buying Kickserv from your 2014 sale is one of the more interesting founder stories in FSM. Curious how EverCommerce shapes the AI question for Kickserv — most FSM competitors are bolting AI onto scheduling, but the workflow gap sits elsewhere. No pitch, just comparing notes.
+Hey Todd. Re-buying Kickserv from your 2014 sale is one of the more interesting founder stories in FSM. Curious how EverCommerce shapes the AI question for Kickserv. Most FSM competitors are bolting AI onto scheduling, but the workflow gap sits elsewhere. No pitch, just comparing notes.
 
 ---
 

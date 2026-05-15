@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Osman Mollahamut (tr.linkedin.com/in/osman-mollahamut-673b7a144 per notes)
 ---
 
-Hey Osman — the full pivot from RPA to "Agentic Automation Platform" with an Agent Hub marketplace is one of the boldest category moves I've watched in automation. Curious how the existing RPA customer base has handled the shift. No pitch, comparing notes on category pivots.
+Hey Osman. The full pivot from RPA to "Agentic Automation Platform" with an Agent Hub marketplace is one of the boldest category moves I've watched in automation. Curious how the existing RPA customer base has handled the shift. No pitch, comparing notes on category pivots.

@@ -11,7 +11,7 @@ cohort: A1-reframe
 dossier_decision: REFRAME — Natalie sets AI narratives in the creator economy; she's not a buyer. Lead with podcast/peer angle.
 ---
 
-Hey Natalie — heard the Practical Founders pivot episode. Watching ELLA land for agency teams vs creators got me thinking about how the AI-tools conversation splits between operators and creators. I work with bootstrapped SaaS founders on AI strategy — guest swap on Just Grow With It maybe?
+Hey Natalie. Heard the Practical Founders pivot episode. Watching ELLA land for agency teams vs creators got me thinking about how the AI-tools conversation splits between operators and creators. I work with bootstrapped SaaS founders on AI strategy. Guest swap on Just Grow With It maybe?
 
 ---
 

@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Parvez Akther (Bangladesh)
 ---
 
-Hey Parvez — bootstrapping a support SaaS while Intercom Fin and Decagon eat the category is a hard road. NEO AI Agent feels like the right counter-move. Curious how SMB customers frame the build-vs-buy question vs the enterprise narrative. No pitch.
+Hey Parvez. Bootstrapping a support SaaS while Intercom Fin and Decagon eat the category is a hard road. NEO AI Agent feels like the right counter-move. Curious how SMB customers frame the build-vs-buy question vs the enterprise narrative. No pitch.

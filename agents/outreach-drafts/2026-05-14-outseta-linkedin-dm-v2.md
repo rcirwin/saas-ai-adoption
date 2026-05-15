@@ -16,8 +16,8 @@ recommended_pivot: |
 re_score_recommendation: down — fit-3 or fit-2
 ---
 
-(no services draft — see frontmatter)
+(no services draft. See frontmatter)
 
 If a peer/connection message is desired, suggested non-services draft:
 
-Thanks for connecting, Geoff. The "AI is a tool, not a strategy" piece in March echoed how I've been framing this with bootstrapped founders — most "AI workflow audits" are reverse-engineering hype, not solving the workflow. Curious how the MCP rollout has shifted what your customers actually ask for vs what you expected.
+Thanks for connecting, Geoff. The "AI is a tool, not a strategy" piece in March echoed how I've been framing this with bootstrapped founders. Most "AI workflow audits" are reverse-engineering hype, not solving the workflow. Curious how the MCP rollout has shifted what your customers actually ask for vs what you expected.

@@ -11,4 +11,4 @@ prior_touch: none
 framing: broad-learning (asymmetric — I want to learn from them, not pitch)
 ---
 
-Hey Baptiste — I work with bootstrapped B2B SaaS founders in the $1-5M ARR range on AI strategy. Crisp at 10K companies with custom AI agent builders is well past where most of them are. Would love to learn how Hugo's deployment shaped what customers actually ask for now. No pitch.
+Hey Baptiste. I work with bootstrapped B2B SaaS founders in the $1-5M ARR range on AI strategy. Crisp at 10K companies with custom AI agent builders is well past where most of them are. Would love to learn how Hugo's deployment shaped what customers actually ask for now. No pitch.

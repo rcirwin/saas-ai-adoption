@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Dinuka Jay (Australia)
 ---
 
-Hey Dinuka — shipping AI MCP into an SMB CRM with daily release cadence is the kind of velocity most enterprise vendors can't match. Curious how the LTD-buyer profile is responding to the agent-callable surface specifically. No pitch, comparing notes with founders shipping daily.
+Hey Dinuka. Shipping AI MCP into an SMB CRM with daily release cadence is the kind of velocity most enterprise vendors can't match. Curious how the LTD-buyer profile is responding to the agent-callable surface specifically. No pitch, comparing notes with founders shipping daily.

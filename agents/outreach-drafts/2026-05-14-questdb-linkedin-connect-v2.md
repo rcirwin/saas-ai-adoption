@@ -11,4 +11,4 @@ prior_touch: none
 framing: broad-learning (asymmetric — QuestDB is past ICP, want to learn from positioning)
 ---
 
-Hey Nicolas — making "QuestDB for AI Agents" the top homepage product line, not a feature footnote, is one of the cleaner database-repositioning moves I've seen. Curious how that's landed with the capital-markets customer base. No pitch, learning from someone running this at scale.
+Hey Nicolas. Making "QuestDB for AI Agents" the top homepage product line, not a feature footnote, is one of the cleaner database-repositioning moves I've seen. Curious how that's landed with the capital-markets customer base. No pitch, learning from someone running this at scale.

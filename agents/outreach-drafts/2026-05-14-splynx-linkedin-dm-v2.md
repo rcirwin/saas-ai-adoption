@@ -13,4 +13,4 @@ hook_distinct_from_v1: yes — v1 named the customer base + workflows ISPs hate.
 hold_back_if_connect_not_accepted: yes
 ---
 
-Thanks for connecting, Alex. Saw the WhatsApp AI chatbot mentioned for the v6.0 window — that's a fine narrow bet, but it's also the giveaway that the rest of the AI map hasn't been drawn yet. The eSIM expansion is the more interesting one to me: new product, no legacy workflow, AI question is open from day one rather than retrofit. Most ISPs only get one shot to design that. I've been mapping where AI actually pays back vs distracts with vertical-SaaS founders. Happy to share what I'm seeing — no pitch.
+Thanks for connecting, Alex. Saw the WhatsApp AI chatbot mentioned for the v6.0 window. That's a fine narrow bet, but it's also the giveaway that the rest of the AI map hasn't been drawn yet. The eSIM expansion is the more interesting one to me: new product, no legacy workflow, AI question is open from day one rather than retrofit. Most ISPs only get one shot to design that. I've been mapping where AI actually pays back vs distracts with vertical-SaaS founders. Happy to share what I'm seeing. No pitch.

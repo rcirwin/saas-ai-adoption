@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Paul/Pavel Sher (linkedin.com/in/paul--sher/ per notes)
 ---
 
-Hey Paul — caught the "agents as teammates, not tools" framing on DesignRush. Cleanest articulation I've heard of where this is going. Curious how screen-aware agents have played vs the agent-marketplace approach. No pitch, comparing notes.
+Hey Paul. Caught the "agents as teammates, not tools" framing on DesignRush. Cleanest articulation I've heard of where this is going. Curious how screen-aware agents have played vs the agent-marketplace approach. No pitch, comparing notes.

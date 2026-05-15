@@ -11,4 +11,4 @@ prior_touch: none
 framing: broad-peer (not services pitch)
 ---
 
-Hey Sarah — Autopilot auto-capture is one of the more sensible product-AI patterns I've seen in feedback. Most of the category went the "summary widget" route. Curious how customer behavior shifted once auto-capture replaced manual logging. No pitch, comparing notes.
+Hey Sarah. Autopilot auto-capture is one of the more sensible product-AI patterns I've seen in feedback. Most of the category went the "summary widget" route. Curious how customer behavior shifted once auto-capture replaced manual logging. No pitch, comparing notes.

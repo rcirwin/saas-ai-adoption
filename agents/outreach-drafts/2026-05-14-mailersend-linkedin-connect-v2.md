@@ -12,4 +12,4 @@ framing: broad-learning (asymmetric — MailerSend is above ICP, want to learn f
 CONTACT_BLOCKER: linkedin_url_missing AND contact_role_on_mailersend_specifically_unknown — sourcer dependency (Ignas is parent, MailerSend-specific GM may be different)
 ---
 
-Hey Ignas — MailerSend shipping an MCP server is one of the cleaner moves I've seen on the transactional-email side. Curious whether the MCP rollout has shifted what enterprise customers actually request vs the SaaS long tail. No pitch, learning from someone running this at scale.
+Hey Ignas. MailerSend shipping an MCP server is one of the cleaner moves I've seen on the transactional-email side. Curious whether the MCP rollout has shifted what enterprise customers actually request vs the SaaS long tail. No pitch, learning from someone running this at scale.

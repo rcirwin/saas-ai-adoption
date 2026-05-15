@@ -11,4 +11,4 @@ prior_touch: none
 framing: broad-peer (not services pitch)
 ---
 
-Hey Marc — open-source + AI Agents for Data Rooms is a combo most of the doc-sharing category isn't even pretending to do yet. Curious how the OSS side has shaped what features the agent surface ended up needing. No pitch, comparing notes with founders running OSS-plus-agent strategies.
+Hey Marc. Open-source + AI Agents for Data Rooms is a combo most of the doc-sharing category isn't even pretending to do yet. Curious how the OSS side has shaped what features the agent surface ended up needing. No pitch, comparing notes with founders running OSS-plus-agent strategies.

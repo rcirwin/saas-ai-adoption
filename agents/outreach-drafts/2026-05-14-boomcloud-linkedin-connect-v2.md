@@ -10,7 +10,7 @@ hook_source: BoomCloud Outreach feature ("coming soon" for prospect targeting) +
 cohort: A2-broad
 ---
 
-Hey Jordon — heard you on Tooth & Coin. 12 years bootstrapped in dental membership SaaS is a quietly impressive run. Saw Outreach is in the pipeline — directionally the right place for AI in your category vs the membership-plan flow itself. Curious how you're thinking about it. No pitch.
+Hey Jordon. Heard you on Tooth & Coin. 12 years bootstrapped in dental membership SaaS is a quietly impressive run. Saw Outreach is in the pipeline. Directionally the right place for AI in your category vs the membership-plan flow itself. Curious how you're thinking about it. No pitch.
 
 ---
 

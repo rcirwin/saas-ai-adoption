@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Ben Curtis (Co-Founder/CEO)
 ---
 
-Hey Ben — 13 years bootstrapped in error monitoring while Sentry and Datadog go all-in on AI is a stance, not an accident. Curious how you're thinking about that calculation now vs five years ago. No pitch, comparing notes with founders running long-arc bootstrapped shops.
+Hey Ben. 13 years bootstrapped in error monitoring while Sentry and Datadog go all-in on AI is a stance, not an accident. Curious how you're thinking about that calculation now vs five years ago. No pitch, comparing notes with founders running long-arc bootstrapped shops.

@@ -14,4 +14,4 @@ CONTACT_BLOCKER: LinkedIn URL now in dossier (https://www.linkedin.com/in/abdull
 note_on_contact: Dossier flags Abdullah (CTO) as better technical buyer than Shahram (CEO) for AI-adoption pitch. Confirm before sending if CEO-track is preferred.
 ---
 
-Hey Abdullah — saw Financial Cents AI is shipped and the team's growing. The CTO-leads-product-and-engineering setup is rarer than it sounds — usually the AI conversation is forked between "AI features for customers" and "AI for our engineers." Curious how you're thinking about both. No pitch.
+Hey Abdullah. Saw Financial Cents AI is shipped and the team's growing. The CTO-leads-product-and-engineering setup is rarer than it sounds. Usually the AI conversation is forked between "AI features for customers" and "AI for our engineers." Curious how you're thinking about both. No pitch.

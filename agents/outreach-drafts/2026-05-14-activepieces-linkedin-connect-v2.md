@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Ashraf Samhouri per prospects.notes
 ---
 
-Hey Ashraf — I work with B2B SaaS founders on AI deployment strategy, and Activepieces is one of the more interesting reads in the open-source agent-tooling space. Would love to compare notes sometime on what you're seeing from the automation side. No pitch.
+Hey Ashraf. I work with B2B SaaS founders on AI deployment strategy, and Activepieces is one of the more interesting reads in the open-source agent-tooling space. Would love to compare notes sometime on what you're seeing from the automation side. No pitch.

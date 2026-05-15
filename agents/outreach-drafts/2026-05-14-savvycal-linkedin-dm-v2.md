@@ -13,4 +13,4 @@ hook_distinct_from_v1: yes — v1 framed against Motion/Reclaim AI-scheduling + 
 hold_back_if_connect_not_accepted: yes
 ---
 
-Thanks for connecting, Derrick. The Shipper experiment (Opus 4.6 → App Store) was a fun read — but the more interesting signal is that you're deep in Claude Code AND chose not to ship AI in SavvyCal. That's a more deliberate read of the category than most. The question I've been having with founders in that position: what does AI do for the team operating the company, separate from the product? It's a different audit. Happy to share what I'm seeing — no pitch.
+Thanks for connecting, Derrick. The Shipper experiment (Opus 4.6 → App Store) was a fun read. But the more interesting signal is that you're deep in Claude Code AND chose not to ship AI in SavvyCal. That's a more deliberate read of the category than most. The question I've been having with founders in that position: what does AI do for the team operating the company, separate from the product? It's a different audit. Happy to share what I'm seeing. No pitch.

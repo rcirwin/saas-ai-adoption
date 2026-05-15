@@ -11,7 +11,7 @@ cohort: A2-broad
 CONTACT_BLOCKER: linkedin_url_missing
 ---
 
-Hey Andy — saw Kai shipped on Tettra. Knowledge base is the category where agent-readiness arguably matters more than any AI feature — whether external agents query the knowledge directly or get filtered through Kai. Curious how you're thinking about that vs Notion AI and Glean. No pitch.
+Hey Andy. Saw Kai shipped on Tettra. Knowledge base is the category where agent-readiness arguably matters more than any AI feature. Whether external agents query the knowledge directly or get filtered through Kai. Curious how you're thinking about that vs Notion AI and Glean. No pitch.
 
 ---
 

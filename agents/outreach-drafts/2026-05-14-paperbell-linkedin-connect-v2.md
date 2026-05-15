@@ -13,4 +13,4 @@ hook_distinct_from_v1: yes — v1 leaned on MeetEdgar arc + the 14K coaches / "n
 CONTACT_BLOCKER: LinkedIn URL now in dossier (https://www.linkedin.com/in/lauraroeder/) — backfill to prospects.contact_linkedin
 ---
 
-Hey Laura — heard the "beating a venture-backed competitor" episode. The bootstrap-ops discipline carries over from MeetEdgar in a way most founders don't replicate. Curious how the "overhaul day" practice has evolved. No pitch, just enjoy how you've framed this.
+Hey Laura. Heard the "beating a venture-backed competitor" episode. The bootstrap-ops discipline carries over from MeetEdgar in a way most founders don't replicate. Curious how the "overhaul day" practice has evolved. No pitch, just enjoy how you've framed this.

@@ -11,7 +11,7 @@ cohort: A2-broad
 CONTACT_BLOCKER: linkedin_url_missing
 ---
 
-Hey Mike — saw the Embedded launch and the State of Integrations report. iPaaS sits in a strange spot right now — every workflow tool is bolting on AI calls, but the integration layer decides whether agents can orchestrate across SaaS. Curious how that's shaping Albato's bets. No pitch.
+Hey Mike. Saw the Embedded launch and the State of Integrations report. iPaaS sits in a strange spot right now. Every workflow tool is bolting on AI calls, but the integration layer decides whether agents can orchestrate across SaaS. Curious how that's shaping Albato's bets. No pitch.
 
 ---
 

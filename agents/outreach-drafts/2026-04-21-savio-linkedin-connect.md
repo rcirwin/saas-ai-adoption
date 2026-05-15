@@ -9,7 +9,7 @@ contact: Ryan Stocker (Co-Founder / CEO) — https://linkedin.com/in/ryanstocker
 hook_source: Savio's evidence-based roadmap positioning + Productboard/Canny adding AI summarization in the same category
 ---
 
-Hey Ryan — like the evidence-based roadmap angle Savio's built around. Interesting spot — Productboard and Canny leaning hard into AI summarization while Savio's stayed focused. I help bootstrapped SaaS founders on which AI bets matter. No pitch, just curious how you're thinking about it.
+Hey Ryan. Like the evidence-based roadmap angle Savio's built around. Interesting spot. Productboard and Canny leaning hard into AI summarization while Savio's stayed focused. I help bootstrapped SaaS founders on which AI bets matter. No pitch, just curious how you're thinking about it.
 
 ---
 

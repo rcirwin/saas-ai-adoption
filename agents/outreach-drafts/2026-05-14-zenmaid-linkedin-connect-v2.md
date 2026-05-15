@@ -12,4 +12,4 @@ dossier_decision: SERVICES — Amar is personally AI-curious (uses it, talks abo
 hook_distinct_from_v1: n/a — no prior draft file located; this is the canonical hook
 ---
 
-Hey Amar — followed the "Max" experiment and the "non-technical is a limiting belief in 2026" post. Curious how that thesis plays out at the team level for a 30-person SaaS, not just solo. Different question than the product-AI conversation. No pitch, just curious.
+Hey Amar. Followed the "Max" experiment and the "non-technical is a limiting belief in 2026" post. Curious how that thesis plays out at the team level for a 30-person SaaS, not just solo. Different question than the product-AI conversation. No pitch, just curious.

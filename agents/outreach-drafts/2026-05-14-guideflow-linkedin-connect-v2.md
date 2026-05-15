@@ -11,7 +11,7 @@ cohort: A2-broad
 CONTACT_BLOCKER: linkedin_url_missing
 ---
 
-Hey Geoffroy — 500K guides with HubSpot and DocuSign is real distribution. Interactive-demo is sitting on a question most haven't answered — whether demos become discoverable content for buyer-side AI agents, or stay inside vendor flows. Curious how that's framing the roadmap. No pitch.
+Hey Geoffroy. 500K guides with HubSpot and DocuSign is real distribution. Interactive-demo is sitting on a question most haven't answered. Whether demos become discoverable content for buyer-side AI agents, or stay inside vendor flows. Curious how that's framing the roadmap. No pitch.
 
 ---
 

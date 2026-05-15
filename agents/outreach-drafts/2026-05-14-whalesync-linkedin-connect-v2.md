@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Matthew Busel (Founder/CEO)
 ---
 
-Hey Matthew — bidirectional sync becomes a different product once the consuming side is an agent rather than a dashboard. Curious whether the AI-tools directory was a marketing experiment or a roadmap signal. No pitch, comparing notes with bootstrapped data-sync founders.
+Hey Matthew. Bidirectional sync becomes a different product once the consuming side is an agent rather than a dashboard. Curious whether the AI-tools directory was a marketing experiment or a roadmap signal. No pitch, comparing notes with bootstrapped data-sync founders.

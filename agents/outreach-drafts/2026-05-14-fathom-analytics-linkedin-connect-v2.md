@@ -11,4 +11,4 @@ prior_touch: none
 framing: broad-peer (not services pitch)
 ---
 
-Hey Jack — Fathom's privacy stance gets more interesting, not less, as AI-agent traffic starts to muddy the analytics signal everyone else relies on. Curious how you're thinking about that next layer post-Gauges. No pitch, just comparing notes with founders running principled analytics shops.
+Hey Jack. Fathom's privacy stance gets more interesting, not less, as AI-agent traffic starts to muddy the analytics signal everyone else relies on. Curious how you're thinking about that next layer post-Gauges. No pitch, just comparing notes with founders running principled analytics shops.

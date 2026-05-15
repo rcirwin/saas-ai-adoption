@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Luca Micheli (Dublin)
 ---
 
-Hey Luca — 71% autonomous resolution is a number very few support-AI shops will quote publicly. Most are still hedging at 30. Curious what shifted in your roadmap once Aura actually started clearing that bar. No pitch, comparing notes with founders shipping strategic AI.
+Hey Luca. 71% autonomous resolution is a number very few support-AI shops will quote publicly. Most are still hedging at 30. Curious what shifted in your roadmap once Aura actually started clearing that bar. No pitch, comparing notes with founders shipping strategic AI.

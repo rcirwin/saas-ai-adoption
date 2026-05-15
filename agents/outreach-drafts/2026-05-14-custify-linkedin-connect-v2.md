@@ -10,7 +10,7 @@ hook_source: CustifyAI launch Nov 2025 (playbooks, account summaries, churn risk
 cohort: A2-broad
 ---
 
-Hey Philipp — saw the CustifyAI launch and the 2x revenue arc. You're past the "add AI" question most CS tools sit on. The next gap I see in tools at $2-3M is agent-readiness — whether CS workflows are programmatic surfaces for external agents. Curious how you're thinking about it. No pitch.
+Hey Philipp. Saw the CustifyAI launch and the 2x revenue arc. You're past the "add AI" question most CS tools sit on. The next gap I see in tools at $2-3M is agent-readiness. Whether CS workflows are programmatic surfaces for external agents. Curious how you're thinking about it. No pitch.
 
 ---
 

@@ -12,4 +12,4 @@ dossier_decision: SERVICES — strong fit. Bootstrapped, profitable, AI-aware (l
 hook_distinct_from_v1: n/a — first touch
 ---
 
-Hey Becca — noticed the /llm-info page. Most SaaS founders haven't thought about LLMs as a channel yet, never mind shipped a primary-source reference page. Plus the node-based Flow builder is a clean substrate for the next-layer AI question. Curious how you're thinking about that. No pitch.
+Hey Becca. Noticed the /llm-info page. Most SaaS founders haven't thought about LLMs as a channel yet, never mind shipped a primary-source reference page. Plus the node-based Flow builder is a clean substrate for the next-layer AI question. Curious how you're thinking about that. No pitch.

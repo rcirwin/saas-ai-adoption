@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Thibault Le Ouay Ducasse (linkedin.com/in/thibault-le-ouay-ducasse/ per notes)
 ---
 
-Hey Thibault — the audit-logging on the MCP server (actor_type=mcp) is one of the more thoughtful agent-deployment details I've seen anywhere. Most ship the surface and figure out trust later. Curious how that's playing in practice. No pitch, comparing notes with bootstrapped devtools founders.
+Hey Thibault. The audit-logging on the MCP server (actor_type=mcp) is one of the more thoughtful agent-deployment details I've seen anywhere. Most ship the surface and figure out trust later. Curious how that's playing in practice. No pitch, comparing notes with bootstrapped devtools founders.

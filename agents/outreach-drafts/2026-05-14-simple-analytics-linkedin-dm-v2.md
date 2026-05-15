@@ -13,4 +13,4 @@ hook_distinct_from_v1: yes — v1 framed against agent-era discovery + competiti
 hold_back_if_connect_not_accepted: yes
 ---
 
-Thanks for connecting, Adriaan. Old X post of yours stuck with me — using an LLM to score HN/Google Alerts articles 0-100 with reasoning. That's a sharper internal-ops use than what most teams ship as "AI features." The interesting thread for Simple Analytics is the rest of the internal map: support triage, customer-success signal, billing exception review — none of which conflict with the privacy brand. Happy to share what I'm seeing with bootstrapped founders on that internal-vs-product split — no pitch.
+Thanks for connecting, Adriaan. Old X post of yours stuck with me. Using an LLM to score HN/Google Alerts articles 0-100 with reasoning. That's a sharper internal-ops use than what most teams ship as "AI features." The interesting thread for Simple Analytics is the rest of the internal map: support triage, customer-success signal, billing exception review. None of which conflict with the privacy brand. Happy to share what I'm seeing with bootstrapped founders on that internal-vs-product split. No pitch.

@@ -12,4 +12,4 @@ framing: broad-learning (asymmetric — Holistics is past ICP, want to learn)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Huy Nguyen (linkedin.com/in/nvquanghuy/ per notes)
 ---
 
-Hey Huy — Holistics 4.0 with MCP server, agentic AI, embedded AI assistant — and bootstrapped to $5M — is exactly the playbook I'd recommend most BI founders run. Curious which of those bets actually paid back fastest. No pitch, learning from someone who scaled past where my typical clients sit.
+Hey Huy. Holistics 4.0 with MCP server, agentic AI, embedded AI assistant. And bootstrapped to $5M. Is exactly the playbook I'd recommend most BI founders run. Curious which of those bets actually paid back fastest. No pitch, learning from someone who scaled past where my typical clients sit.

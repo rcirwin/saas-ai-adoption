@@ -11,8 +11,8 @@ cohort: A1-reframe
 dossier_decision: REFRAME — Formaloo did a full AI-era rebrand. Peer angle on what the rebuild actually moved on retention.
 ---
 
-Hey Farokh — saw Formaloo 4.0 framed as the AI-era rebuild. Curious what the rebrand actually moved on retention vs new-account acquisition. Most "AI-era" relaunches I look at don't get separated cleanly. Comparing notes, no pitch.
+Hey Farokh. Saw Formaloo 4.0 framed as the AI-era rebuild. Curious what the rebrand actually moved on retention vs new-account acquisition. Most "AI-era" relaunches I look at don't get separated cleanly. Comparing notes, no pitch.
 
 ---
 
-**Char count**: ~263 (under 300 limit — verify below)
+**Char count**: ~263 (under 300 limit. Verify below)

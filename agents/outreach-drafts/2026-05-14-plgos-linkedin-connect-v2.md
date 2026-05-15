@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Shubham Nigam (Founder, San Francisco)
 ---
 
-Hey Shubham — "24/7 agentic growth team" is a sharp positioning move in a category where everyone else is still selling dashboards. Curious how the PLG OS layer on top has shaped what early customers actually use day-to-day. No pitch, comparing notes with agent-native founders.
+Hey Shubham. "24/7 agentic growth team" is a sharp positioning move in a category where everyone else is still selling dashboards. Curious how the PLG OS layer on top has shaped what early customers actually use day-to-day. No pitch, comparing notes with agent-native founders.

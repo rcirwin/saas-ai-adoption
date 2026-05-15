@@ -14,7 +14,7 @@ hold_back_if_connect_not_accepted: yes
 dossier_decision: REFRAME — Geoff is an AI strategy peer, not a buyer. Lead with shared anti-hype thesis.
 ---
 
-Thanks for connecting, Geoff. Your "AI is a tool, not a strategy" piece in March is closer to how I actually talk to bootstrapped SaaS founders than most things I read — most AI workflow audits are reverse-engineering hype, not naming the workflow. Curious what the Agent Toolkit rollout has surfaced that you didn't expect — what are customers doing with it that you didn't design for? Comparing notes, no pitch.
+Thanks for connecting, Geoff. Your "AI is a tool, not a strategy" piece in March is closer to how I actually talk to bootstrapped SaaS founders than most things I read. Most AI workflow audits are reverse-engineering hype, not naming the workflow. Curious what the Agent Toolkit rollout has surfaced that you didn't expect. What are customers doing with it that you didn't design for? Comparing notes, no pitch.
 
 ---
 

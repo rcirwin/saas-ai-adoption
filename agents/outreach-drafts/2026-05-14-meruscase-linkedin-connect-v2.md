@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Johnny Fuery (CEO/Founder)
 ---
 
-Hey Johnny — legal practice management is one of the categories where AI rollout is shaped more by what the bar will tolerate than by what's technically possible. Curious how you're thinking about that line on MerusCase. No pitch, comparing notes with founders in conservative vertical SaaS.
+Hey Johnny. Legal practice management is one of the categories where AI rollout is shaped more by what the bar will tolerate than by what's technically possible. Curious how you're thinking about that line on MerusCase. No pitch, comparing notes with founders in conservative vertical SaaS.

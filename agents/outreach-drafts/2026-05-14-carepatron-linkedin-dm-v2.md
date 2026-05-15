@@ -13,7 +13,7 @@ hook_distinct_from_v1: yes
 hold_back_if_connect_not_accepted: yes
 ---
 
-Thanks for connecting, Jamie. Following up on the Authority Magazine framing — most healthcare SaaS that shipped scribes is now hitting the second question: do external agents (charting copilots, billing automations, patient-facing apps) get to query Carepatron data programmatically, or do they have to scrape it. Curious whether that's already in the roadmap conversation. No pitch, happy to share what I'm seeing in vertical SaaS.
+Thanks for connecting, Jamie. Following up on the Authority Magazine framing. Most healthcare SaaS that shipped scribes is now hitting the second question: do external agents (charting copilots, billing automations, patient-facing apps) get to query Carepatron data programmatically, or do they have to scrape it. Curious whether that's already in the roadmap conversation. No pitch, happy to share what I'm seeing in vertical SaaS.
 
 ---
 

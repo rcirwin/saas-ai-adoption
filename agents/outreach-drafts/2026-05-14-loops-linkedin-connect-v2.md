@@ -12,4 +12,4 @@ framing: broad-peer (not services pitch)
 CONTACT_BLOCKER: linkedin_url_missing — decision_maker=Chris Frantz (Astrodon Inc)
 ---
 
-Hey Chris — when your customer list reads Linear / Perplexity / Granola / Clerk, the AI question coming back at you is different from the one most email SaaS founders are getting. Curious how that's shaping the roadmap post-CLI. No pitch, comparing notes with founders selling into AI-native buyers.
+Hey Chris. When your customer list reads Linear / Perplexity / Granola / Clerk, the AI question coming back at you is different from the one most email SaaS founders are getting. Curious how that's shaping the roadmap post-CLI. No pitch, comparing notes with founders selling into AI-native buyers.

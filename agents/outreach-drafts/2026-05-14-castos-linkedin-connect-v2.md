@@ -13,4 +13,4 @@ hook_distinct_from_v1: n/a — first touch
 CONTACT_BLOCKER: LinkedIn URL now in dossier (https://www.linkedin.com/in/craig-hewitt-78386a66) — backfill to prospects.contact_linkedin
 ---
 
-Hey Craig — caught the Rogue Startups solo arc and the YouTube republishing bet. Curious what audio-to-auto-video adoption is actually doing vs the demo — that's the AI feature with the trickiest pickup curve in creator tools right now. No pitch.
+Hey Craig. Caught the Rogue Startups solo arc and the YouTube republishing bet. Curious what audio-to-auto-video adoption is actually doing vs the demo. That's the AI feature with the trickiest pickup curve in creator tools right now. No pitch.

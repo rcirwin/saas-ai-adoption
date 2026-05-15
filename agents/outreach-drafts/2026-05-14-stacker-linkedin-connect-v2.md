@@ -11,4 +11,4 @@ prior_touch: none
 framing: broad-peer (not services pitch)
 ---
 
-Hey Michael — the stacker.ai rebrand to a prompt-to-app product is one of the more decisive pivots I've seen in no-code internal tools. Most of the category is still doing AI bolt-ons on the old UX. Curious how existing customers handled the shift. No pitch.
+Hey Michael. The stacker.ai rebrand to a prompt-to-app product is one of the more decisive pivots I've seen in no-code internal tools. Most of the category is still doing AI bolt-ons on the old UX. Curious how existing customers handled the shift. No pitch.
