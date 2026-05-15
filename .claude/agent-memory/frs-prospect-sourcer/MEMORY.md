@@ -279,3 +279,24 @@ Pattern: `"<company name>" employees revenue ARR 2024 funding` → GetLatka and 
 8. **Solo founders / 1-person teams** like Tarsnap, Polypane, Pirsch (when sub-$500K) — they're below ICP floor *and* lack the team-mediated workflow complexity that makes the FRS assessment valuable. Skip even if otherwise on-thesis. Annotate as `not-a-fit` not just `identified`.
 9. **CalmCo / saas.group / Banzai / similar "acquihire roll-up" parents** — when a small tool is owned by a private-equity-style operator (Rewardful → saas.group, DeployBot/DeployHQ → saas.group, Encharge → exited), treat it like a multi-product parent failure even if the brand operates independently. The decision-maker is no longer the founder.
 10. **Founders who recently stepped away / co-founder transitions in last 12 months** — Hookdeck (Eric Tran stepped away 2024 for caregiving), ScraperAPI (Daniel Ni exited), Postmark/Wildbit (founders took a break). Borderline — include if other signals are strong but flag for researcher to verify company is still in growth mode.
+
+## G2-mature-incumbent angle observations (2026-05-14 late-evening, fifth parallel sourcer)
+
+Caller asked for 30 prospects with the angle: "incumbents in mature G2 categories that have AI-native challengers but haven't responded." Source tagged `g2-mature-incumbent`. 30 appended. See `agents/sourcing-runs/2026-05-14-g2-mature-incumbent.md`.
+
+### Why the angle works for ICP
+
+- The thesis ("mature category + no AI strategy") naturally filters TO our ICP. ~60% of initial candidates fit ICP without needing employee/ARR cap filtering — incumbents have self-selected to be founder-led, decade-old, pre-LLM-architected.
+- Best categories surfacing fits this angle: mid-tier CRM (OnePageCRM, Salesmate, Capsule, Pipeline CRM, NetHunt), session recording/heatmap (Lucky Orange, Crazy Egg, Plerdy), podcast hosting (Buzzsprout, Transistor.fm), form builders (Paperform), dev docs (GitBook), testimonial collection (Endorsal, Trustmary), feedback/bug tracking (BugHerd, Userback).
+- Worst categories (over-consolidated, almost nothing fits): subscription billing, marketing automation, sales engagement, helpdesk top-tier.
+
+### Borderline ARR cap tension
+
+12 of 30 picks are at the edges ($5-7M ARR or $500-700K floor). They were included because the angle itself selects for "established G2 incumbents" which by definition tend to be slightly over $5M ARR. Researcher can downgrade these in fit score; sourcing's job is surfacing not gatekeeping.
+
+Borderline-over: Capsule ($6.9M), Resource Guru ($6.1M), Pipeline CRM ($6M), NetHunt ($6M), Crazy Egg ($6.3M), Buzzsprout ($5.6M), Missive ($6.1M)
+Borderline-under: Endorsal ($567K), Trustmary ($620K), iorad (~$750K)
+
+## Disqualification observation (added 2026-05-14e)
+
+12. **"Shipped real AI feature in past 12 months"**: Helpjuice released "Swifty Chatbot" + "Wizardshot" + Helpjuice 5.0 (Feb 2025) — substantive AI investment. Even though they fit ICP otherwise ($6M ARR, 30 emp, bootstrapped since 2011), they've already moved on the AI thesis. Skip for "G2 mature incumbent who HASN'T responded" angle. Future runs of this angle: check candidate's changelog/blog for past 12 months. If "AI" appears as more than chatbot integration sticker, skip — the angle requires they're STILL in pre-thinking mode.
