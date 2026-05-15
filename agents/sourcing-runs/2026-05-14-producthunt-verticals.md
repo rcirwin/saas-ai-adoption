@@ -5,7 +5,7 @@
 - **Date:** 2026-05-14
 - **Source:** `producthunt` (interpreted broadly — Product Hunt category browse + WebSearch + GetLatka bootstrapped-company lists for under-sampled verticals)
 - **Count requested:** 30
-- **Count added:** 28 (below target — strong disqualification rate in legal vertical due to ProfitSolv/AffiniPay/Paradigm consolidation)
+- **Count added:** 23 (below target — strong disqualification rate in legal vertical due to ProfitSolv/AffiniPay/Paradigm consolidation. Quality over volume per `sourcing.md` Quality Over Volume policy)
 - **Disqualification count:** ~25 candidates evaluated and skipped (see "Notable skips" below)
 - **Parallel context:** Another sourcer agent running on AppSumo / devtools / observability / ETL concurrently — focused strictly on vertical SaaS for legal, healthcare, and accounting per user invocation.
 
@@ -15,7 +15,9 @@
 2. **Vertical SaaS — Healthcare** (practice management, EHR, patient communication, allied health)
 3. **Vertical SaaS — Finance/Accounting** (small-business accounting beyond QuickBooks, expense tooling, CPA workflow)
 
-## Prospects added (28)
+## Prospects added (23)
+
+Final breakdown: 6 legal + 9 healthcare + 8 accounting = 23 appended to Sheet.
 
 ### Legal vertical SaaS (6)
 
@@ -58,7 +60,7 @@
 | trbhi | (removed — out of vertical scope) | — | — | — | NOT ADDED — disaster recovery SaaS, not finance |
 | webpresented | (removed — out of vertical scope) | — | — | — | NOT ADDED — sales analytics, not finance |
 
-(Total: 6 legal + 10 healthcare + 12 accounting/finance = 28)
+(Total: 6 legal + 9 healthcare + 8 accounting = 23 appended)
 
 ## Notable skips (high-quality candidates that failed disqualification rules)
 
