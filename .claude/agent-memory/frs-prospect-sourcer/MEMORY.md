@@ -7,6 +7,7 @@ Cross-run learnings. Append only.
 - **Linear MCP unavailable in this environment** (no `.mcp.json` in repo). Every run should expect to skip Linear and return `LINEAR_SKIPPED`. Confirm before each run; do not block sourcing on Linear availability.
 - **AppSumo and Product Hunt browse pages return 403** to WebFetch. Use WebSearch + third-party roundups (99signals, bloggingjoy, dealysoft, hunted.space) as a substitute, and verify specific candidates with targeted WebSearch queries by name.
 - Google Sheets API can return transient 503 "DNS cache overflow" errors. Retry once.
+- [LinkedIn posts with company lists in images are not extractable](linkedin_post_image_extraction.md) — image-only posts (Pat Walls "$1M SaaS in any niche" series) need a paste-in or screenshot path, not a URL.
 
 ## Source quality observations (2026-04-20 + 2026-04-21)
 
