@@ -40,6 +40,21 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-05-15 — Batch H-L (23 prospects, helpjuice→locate2u)
+- Researched 23, fit 3+: 8, not-a-fit: 15, cache hits: 0. Avg fit 2.17. Distribution 1:9 / 2:6 / 3:3 / 4:5 / 5:0.
+- Top fit-4 (no 5s this batch): less-annoying-crm, iconosquare, iorad, implementhit, jetpack-workflow, lagrowthmachine + helpjuice excluded (fit 1, above ICP).
+- All 46 sheet writes succeeded (23 cache + 23 prospects updates). Hit Google API write quota at write 17/46 — fixed with 90s pause + batch sizes of 5 between sleeps.
+- New patterns / confirmations:
+  - **MCP-shipped disqualifier extended** to: hookdeck (Agent Skills + MCP), ilert (AI SRE on MCP + reasoning models), landingi (Orbit MCP server in development), latenode (MCP Cursor integration), hunter/hunter-io (MCP server late 2025), hoppscotch (MCP client roadmap Mar 2026). The marketing-page MCP signal is the most reliable agent-ready disqualifier — even "MCP coming soon / on roadmap" is sufficient.
+  - **CPA workflow + AI-empty + AI-native peer (Karbon AI Coworker) = consistent fit 4** — Jetpack Workflow ($818K ARR) matches the Userlist/Outseta pattern in accounting vertical. Karbon and Financial Cents have shipped AI; Jetpack hasn't. Strong FRS conversation.
+  - **Founder-podcast-host pattern reconfirmed**: David Cristello (Growing Your Firm Podcast for CPAs) and Tyler King (Startup to Last) both scored fit 4. Memory's pattern continues to predict well.
+  - **Family-owned legacy SaaS in AI-booming category** (juralaw under Law Bulletin Media, 5 generations since 1854) — high category-level FRS potential, but family-owned + no public CEO/founder = severe contact gap that downgrades fit by 1. Add this as a contact-availability heuristic.
+  - **Duplicate prospect rows**: hunter and hunter-io are both Hunter.io (domain hunter.io). Sourcer should de-dupe. The behavior in scoring: write both as not-a-fit but flag in the run summary. Sheet-cleanup work for the sourcer.
+  - **Stale sheet ARR estimates matter**: iconosquare's sheet ARR was $7.8M (above ICP → fit 2); Latka Aug 2025 shows $3.8M (in ICP → fit 4). The 2x difference flipped the score 2 points. When sheet ARR contradicts product/team size signals, always re-verify with Latka first.
+  - **Hireflix-style "deliberately simple" positioning** in AI-saturated category = mid-fit (3 not 4) — founder may resist the deeper AI conversation because the brand is "we focus on one thing." Different from "AI-empty" where founder is open to AI but hasn't built it; "deliberately-simple" founders may have ideologically rejected AI complexity. Future: don't score 4 unless the founder has signaled openness.
+- Env note: Both `FRS_GOOGLE_CREDENTIALS` and `FRS_PROSPECTS_SHEET_ID` must be exported in the bash session before any sheet.py call — they don't inherit reliably. Path: `/Users/ryanirwin/.config/frs/frs-agentic-system-ba5fe26b3a07.json`. Sheet ID: `1zgHoABX-oQ9pTHONFnnGBYGvuwMEGZ3S-JDIZY4y3go`.
+- Rate-limit note: With 4 researchers running in parallel, the Sheets API per-user write quota (60/min) is the bottleneck. Pace writes at ~1 every 3s with 35s pauses every 5 writes. Reads are also limited to 60/min — bulk-reading the whole prospects/research_cache sheets and filtering in Python is much more efficient than per-ID reads.
+
 ### 2026-04-29 — DRY_RUN
 - Queue empty (0 identified prospects). 30 prospects total: 16 researched, 14 not-a-fit, 0 identified.
 - Sourcer hasn't run since the 2026-04-22 batch.
