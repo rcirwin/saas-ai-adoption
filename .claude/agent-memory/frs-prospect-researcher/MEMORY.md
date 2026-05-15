@@ -96,6 +96,18 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - **Bootstrapped + public-podcasting founder pattern confirmed twice this run** — Josh Ho (Referral Rock, SaaS Club + Indie Bites + Practical Founders, plus explicit "AI is internal not core product" stance) and Natalie Barbu (Rella, Practical Founders + QuickBooks I Run This + 380K social audience). Both scored top of their fit tier. This is the highest-fit pattern in the memory — when you find it, score aggressively.
 - Environment note: `FRS_GOOGLE_CREDENTIALS` and `FRS_PROSPECTS_SHEET_ID` are persisted in `~/.zshrc` per user but did NOT inherit into the first `sheet.py` call this session. Set explicitly with `export` in every Bash call. Persistence in .zshrc only helps interactive shells.
 
+### 2026-05-15 — 23 prospects (batch D–H of 9-batch loop)
+- 7 researched (fit 3+), 16 not-a-fit. Avg fit 2.09. Distribution 1:6 / 2:11 / 3:4 / 4:2 / 5:0.
+- Top: folderly (4), geckoboard (4). Then eventcube/eventee/fullsession/gaggleamp (3).
+- **Disqualifier confirmations**: MCP-shipped on flagsmith + gitbook (both fit 1); founder-transition on encharge (sold 2024), getstencil (Namecheap acquisition), hatchways (founder pivoted to Bento, product dormant); VC-funded-growth-mode on dripos ($11M Series A 2024).
+- **Comprehensive-AI-suite-in-last-6-months downgrade applied** to fullsession (Lift AI March 2026), halaxy (700 clinical tools 2025), gmelius (Meli + Automation Agents), helpcrunch (AI chatbot + Editor + KB). All scored 2-3 instead of 4.
+- **Above-ICP-cap cluster**: dsmn8 ($6.6M), engagebay ($6M), gmass ($8.6M), gosquared ($8M) all scored 2. Pattern: bootstrapped tools that scale past $5M ceiling lose FRS engagement window because the buyer has already chosen their AI direction.
+- **New pattern: employee-advocacy category** — DSMN8 and GaggleAMP are mirror-image $5-6M bootstrapped tools with bolt-on AI Copy Variations / Content Assistant. Neither addresses low-participation workflow underneath. Would be 4s if ARR were lower; both got 2-3.
+- **Sourcer-data integrity issues** in this batch: 5 of 23 had wrong/missing founder data. easil (Lisa Smith → actual Annette McDonald), eventcube (Bilal Tahir → actual Wil Troup + Kieran Alington), frill (Khosro Ezaz Nikpay → actual Mike Hill), endorsal (blank → Dean Walton), geckoboard (blank → Paul Joyce). Outreach writer should backfill before drafting.
+- **getlatka revenue lookups** confirmed reliable again — surfaced clean ARR for dsmn8, engagebay, frill, folderly, geckoboard, gitbook, gmass, gmelius, gosquared, endorsal, eventcube-absent, gaggleamp, flagsmith. Always Latka first.
+- **GitBook agent-ready confirmation**: shipped GitBook Agent + MCP server + AI Assistant + AI Linting and positions docs as "the knowledge layer for AI." Textbook agent-ready fit 1, alongside Flagsmith with its own MCP server.
+- Environment: one transient 429 rate-limit hit on formspree prospect-row update during the batch (3 parallel researcher agents sharing 60 req/min quota). 30-second backoff + retry succeeded. Throttling at 1.2s between operations kept the rest of the batch clean.
+
 ### 2026-05-14 — Full CRM re-enrichment (56 prospects, user-directed)
 - User requested deep re-research of ALL 56 leads (not just `status=identified`) with richer fields: product_state, managed/maintenance status, est_revenue, decision_maker contact, AI posture details. Bypass standard 25-limit and `force=true` applied to all.
 - All 56 prospects updated (cache + prospects rows). Fit dist: 1:11 / 2:16 / 3:8 / 4:15 / 5:6. Avg ~2.85.
