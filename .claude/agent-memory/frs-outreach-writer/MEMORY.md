@@ -2,6 +2,16 @@
 
 ## Heuristics Confirmed
 
+- **Parallel-agent Sheets quota strategy (2026-05-15)**: when 4-5 outreach agents write the Sheet concurrently, Google Sheets API per-second quota hits 429 fast (saw 17 failed writes in a 23-prospect batch). Solution: catch 429 in stderr, retry with exponential backoff (3s, 6s, 12s, 24s, 48s) + 1s pacing between successful requests. First retry attempt typically resolves it. Don't abort the batch — the writes are the side effect, drafts on disk are the primary artifact.
+
+- **Email subject lines mirror prospect framing, not generic FRS pitch (2026-05-15)**: subject lines that work cite the prospect's own language (Adriaan's "privacy-first", Mikhail's "Did Albato disappear", Justin's "Is podcasting cooked"), name their shipped product (Cloudia, CoHost AI, CP Assist, AI Scribe, umbrella-skill), or pose the question they're already sitting with ("After contract review, the second AI feature"). Subject lines that don't work: "Future Ready Studio + <Company>" or "AI strategy for <Category>". The mirror is the open-rate signal.
+
+- **founder_perspective synthesis is the new mandatory frontmatter field for fit≥4 (2026-05-15)**: it forces the agent to write 2-4 sentences describing what the founder is actually sitting with — their public thesis, what they resent, what they'll respond to vs reject. This becomes the inference engine for which angle to take. Synthesized from Sheet fit_notes + research_cache + dossier (when present) + public signals (LinkedIn posts, podcast appearances, marketing language). Worth keeping even for fit=3 prospects because it disciplines the email body.
+
+- **Email channel pairs cleanly with same-day LinkedIn drafts when hook is distinct (2026-05-15)**: 4 prospects on the 23-prospect email batch (simple-analytics, splynx, tenantcloud, wp-umbrella) already had same-day linkedin-dm-v2 drafts from the morning re-draft. Email hooks were cross-checked against DM-v2 hooks and confirmed distinct. The pattern is: DM hooks lean on micro-specifics (a specific blog post, a specific quote, a specific feature ship), email hooks lean on macro framing (positioning beat, category reshape, roadmap question). Use `hook_distinct_from_v1: yes` flag to make the cross-check audit-able.
+
+## Heuristics Confirmed (older)
+
 - **Don't DM before connecting**: for LinkedIn cold outreach, always open with `linkedin-connect` template even when `fit_score >= 4`. The DM template activates only after connection is accepted. Applied on 2026-04-21 run — 7 high-fit prospects downgraded from linkedin-dm to linkedin-connect.
 - **300-char limit is tight**: LinkedIn connection notes allow ~300 chars. Always verify with Python `len()` before saving — visible character count in markdown can under-count em-dashes and apostrophes. On 2026-04-21, 3 drafts needed re-tightening after first pass.
 - **"Directionally" is a signature word**: Ryan's actual vocabulary. Works well as a softening lead-in before contrasting the prospect's choice against a category trend. Used in 5 of 8 drafts on 2026-04-21.
