@@ -40,6 +40,7 @@ Cross-run learnings. Append only.
 - 2026-04-20: 15 added (all sources rotation) - first run
 - 2026-04-21: 15 added (all sources rotation)
 - 2026-05-14: 15 staged but NOT appended (SHEET_APPEND_SKIPPED — `FRS_PROSPECTS_SHEET_ID` env var unavailable; local-session run from desktop Claude Code, not cloud routine where secrets are injected)
+- 2026-05-14 (afternoon, directory): 23 added (requested 30, but consolidated categories — sales engagement, billing, marketing automation, customer feedback — yielded too many disqualifications). Run also coincided with three parallel sourcer agents working different sources, so coordination not a problem.
 
 ## Environment quirks (added 2026-05-14)
 
@@ -77,3 +78,22 @@ Cross-run learnings. Append only.
 - No-code forms (Formaloo) — newly sampled
 
 **Still under-sampled** (next run): B2B marketplaces (every candidate exceeded ICP this run), legal tech, fintech-for-SMB ops, supply chain SaaS, biotech research ops.
+
+## Directory category observations (2026-05-14 afternoon run)
+
+- **Sales engagement / outbound** is HEAVILY consolidated. Of 25+ candidates, only 7 fit ICP. Most have either grown past $5M ARR (Snov.io $22.7M, Lemlist $40M, Smartlead $14M, Hunter $8M, GMass $8.6M, Mailshake $10M, Woodpecker $5-12M), been acquired (Outplay→JungleWorks, PersistIQ→Wishpond, Autoklose→VanillaSoft, Postmark/Wildbit→ActiveCampaign), or are now AI-native positioned (SalesBlink "BlinkGPT", Solvimon, etc.). The remaining $1-5M ARR set tends to be non-US (FR, IN, RS, UK, BG, UA).
+- **Subscription billing** is even more consolidated. Recurly ($60M), FastSpring ($28M, owned by PE), Maxio (merger), Paddle ($90M+VC), Zuora (public), Chargebee (mega), ProfitWell→Paddle, Lemon Squeezy→Stripe, Servicebot→Stripe. Only ~4-5 fit: Billsby, Pabbly, Churnkey, Churn Buster, possibly Saaslogic. Wingback is below floor with too much YC funding.
+- **Marketing automation for SMBs**: ALL the well-known names exceed ICP — Brevo (unicorn), MailerLite ($18M), AWeber ($53M), Omnisend ($55M), ActiveCampaign (huge), Kit/ConvertKit ($44M), Drip ($15M owned by Leadpages). Smaller bootstrapped: VBOUT ($3M), Encharge ($550K), Mailtrap ($1.7M for transactional). Also: Mautic owned by Acquia, Moosend by Sitecore, Postmark by ActiveCampaign, SendGrid by Twilio, Mailgun by Pathwire, SharpSpring by Constant Contact. Almost everything else is too large or acquired.
+- **Customer feedback / NPS / survey** is the healthiest under-sampled category. Many bootstrapped sub-$5M players still independent: Zonka, SatisMeter, Retently, Trustmary, Simplesat, Frill, Userback, Reform, Sleekplan. Userback is borderline (had Blackbird seed). AskNicely, SurveySparrow, GetFeedback all skipped (too large or acquired).
+
+## Slug conventions adopted in this run
+
+- `lagrowthmachine` (no hyphens, no .com — original branding)
+- `churn-buster` (kebab because of two-word name, matches `referral-rock` pattern)
+- `smartreach` (preferred over `smartreach-io` per memory rule)
+- `reform` (preferred over `reform-app`)
+- `zonka-feedback`, `churn-buster` use hyphens because multi-word company names need them for readability
+
+## New disqualification observation
+
+8. **"Acquired by a SaaS holding/PE company"**: Postmark/Wildbit (ActiveCampaign), FastSpring (Accel-KKR), Baremetrics (Xenon Partners), Outplay (JungleWorks), Autoklose (VanillaSoft), PersistIQ (Wishpond), Featurebase (owner: separate from product, check). Even when the brand still ships, decision-making and budget sit with the parent. Apply the multi-product parent rule generously — if the holding company itself runs 3+ SaaS products, treat the prospect as parent-led.
