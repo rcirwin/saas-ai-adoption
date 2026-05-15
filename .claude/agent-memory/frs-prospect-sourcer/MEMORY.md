@@ -8,6 +8,7 @@ Cross-run learnings. Append only.
 - **AppSumo and Product Hunt browse pages return 403** to WebFetch. Use WebSearch + third-party roundups (99signals, bloggingjoy, dealysoft, hunted.space) as a substitute, and verify specific candidates with targeted WebSearch queries by name.
 - Google Sheets API can return transient 503 "DNS cache overflow" errors. Retry once.
 - [LinkedIn posts with company lists in images are not extractable](linkedin_post_image_extraction.md) — image-only posts (Pat Walls "$1M SaaS in any niche" series) need a paste-in or screenshot path, not a URL.
+- [Pat Walls $1M SaaS carousel — successful manual-OCR workflow](patwalls_1m_saas_extraction_workflow.md) — user has demonstrated Claude-in-Chrome can OCR carousel tiles into a structured handoff file; documents the format + headline-to-company map confirmed 2026-05-15
 
 ## Source quality observations (2026-04-20 + 2026-04-21)
 
@@ -38,6 +39,7 @@ Cross-run learnings. Append only.
 
 ## Run cadence
 
+- 2026-05-15 (linkedin-patwalls-1m-saas): 8 added of 25 in-band tiles (10 out-of-band skipped pre-research; 3 duplicates; 4 unidentified after one-search rule; 10 disqualified for ICP/acquired/AI-native). One-off ingestion of Pat Walls carousel manually OCR'd by user via Claude-in-Chrome. See `agents/sourcing-runs/2026-05-15-linkedin-patwalls-1m-saas.md` and `patwalls_1m_saas_extraction_workflow.md`.
 - 2026-04-20: 15 added (all sources rotation) - first run
 - 2026-04-21: 15 added (all sources rotation)
 - 2026-05-14: 15 staged but NOT appended (SHEET_APPEND_SKIPPED — `FRS_PROSPECTS_SHEET_ID` env var unavailable; local-session run from desktop Claude Code, not cloud routine where secrets are injected)
