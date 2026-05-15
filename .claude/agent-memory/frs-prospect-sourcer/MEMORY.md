@@ -41,6 +41,7 @@ Cross-run learnings. Append only.
 - 2026-04-21: 15 added (all sources rotation)
 - 2026-05-14: 15 staged but NOT appended (SHEET_APPEND_SKIPPED — `FRS_PROSPECTS_SHEET_ID` env var unavailable; local-session run from desktop Claude Code, not cloud routine where secrets are injected)
 - 2026-05-14 (afternoon, directory): 23 added (requested 30, but consolidated categories — sales engagement, billing, marketing automation, customer feedback — yielded too many disqualifications). Run also coincided with three parallel sourcer agents working different sources, so coordination not a problem.
+- 2026-05-14 (jobs run, parallel with appsumo/devtools + producthunt/vertical-SaaS sourcers): 20 added of 30 requested. Under-sampled focus categories: B2B marketplaces, e-commerce ops, HR tech SMB. Hard quality-bar — refused to pad list with weaker fits. Sheet writes successful (FRS_PROSPECTS_SHEET_ID exported from memory pointer).
 
 ## Environment quirks (added 2026-05-14)
 
@@ -92,6 +93,20 @@ Cross-run learnings. Append only.
 - `churn-buster` (kebab because of two-word name, matches `referral-rock` pattern)
 - `smartreach` (preferred over `smartreach-io` per memory rule)
 - `reform` (preferred over `reform-app`)
+
+## Jobs-run category observations (2026-05-14)
+
+- **B2B marketplaces are dominated by Series B+ / unicorn funding**. Choco ($310M, unicorn), Faire ($12.5B), Ankorstore ($283M Series C), JOOR ($110M, 250 emp), NuOrder (acquired Lightspeed), Tradeshift (large), Pepperi (acquired Advantive). Only small-team independent fits found: B2B Wave (3 emp Greece), OrderEase (32 emp Canada), Orderlion (30 emp Vienna), Procuros (8 emp Hamburg integration layer), Vendoo (YC W22 multichannel reseller). **The category is so consolidated that pure-play B2B marketplaces fitting ICP are nearly always EU/Asia or vertical-niche, never North American horizontal.**
+- **HR tech for SMBs has many fits but they cluster around specific niches**: hourly workforce (StaffAny, TipHaus, Workstream is too big), recruiting ATS (Recruiterflow, Hireflix, Truffle), and SMB HRIS (CharlieHR). All the big names (Personio, BambooHR, HiBob, Workable, Sense, Manatal) are way past ICP. **Bootstrapped India-based ATS players like Recruiterflow are an under-tapped vein** — multi-million ARR + AI-curious + lean teams.
+- **E-commerce ops** has more diversity at ICP than expected: returns mgmt has small independents (ReturnLogic 21 emp + $2.8M ARR, Outvio 8 emp), DTC inventory has Cogsy (18 emp) and Trunk Inventory (~5 emp), multichannel has Vendoo. **Most of the well-known players (Loop $340M val, Returnly→Affirm, AfterShip $85M rev, Veeqo→Amazon, Skubana→Extensiv, Linnworks→Marlin Equity, Cin7 huge) are out.**
+- **Founder-led companies with public AI feature launches in 2024-25 are the highest-intent candidates** — Springbot's April 2025 relaunch under new CEO Marc Pickren explicitly positioning as AI-native is the textbook example. Even if the company technically exceeds ICP size, the founder taking majority control + AI repositioning is a clearer buy signal than ARR.
+- **Delivery/route optimization is a cluster of true bootstrappers** — Routific ($280K total raised, $5.4M ARR), Locate2u (ASX:Z2U subsidiary, 51 emp), Detrack (16 emp, $0 raised). All Tier-1 ICP fits. Add this category to the regular sampling list.
+
+## Disqualification observations 2026-05-14 jobs run
+
+- **Acquired-but-still-branded** is the #1 skip reason in mature B2B SaaS spaces. Run a "[name] acquired" search BEFORE doing any deeper ARR/employee verification. Saves significant time.
+- **DQ rule #6 (raise >$10M with ARR <$5M)** triggered on: Convictional ($49M/$2.9M), Pietra ($36M/unknown), Pepperi (acquired), Bonusly ($32M/$87 emp), Wholesail ($25M/45 emp), Sourceful ($32M/115 emp). This rule is doing real work — keep it prominent.
+- **Recent acquisitions in last 12 months** to remember as auto-skip: Veeqo (Amazon 2021/22), Onport (May 2025, sunset Oct 2025), Sastrify (Deel 2024 confirmed), Glofox (ABC Fitness 2022), Pepperi (Advantive 2024), Encharge (exited per prior memory), PartnerHero (Crescendo Oct 2024), Sense Talent Labs (Avataar large stake), HourWork (Sprockets/Humanly chain), Sumtracker (still independent but in dedup).
 - `zonka-feedback`, `churn-buster` use hyphens because multi-word company names need them for readability
 
 ## New disqualification observation
