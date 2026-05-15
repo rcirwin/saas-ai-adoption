@@ -125,3 +125,85 @@ Caller asked for 30 prospects with the angle: "companies whose last priced fundi
 - **Customer.io disqualified for being past ICP**: $70M revenue 2024, 352 employees. Pattern fooled the heuristic: raised tiny rounds 2014-2018, took $30M Series A in 2022. The "no priced round 2014-2021" gap looked plateau-like but they were quietly compounding.
 - **High-quality fits surfaced via this angle**: Vero (Sydney AU customer engagement, $1.8M ARR, 13 emp), Helpjuice (Austin TX knowledge base, bootstrapped since 2014 with $20K seed only), Olark (live chat, YC-seed-only-then-bootstrapped, $7.2M rev 2024), Setmore (bootstrapped scheduling, $3.2M rev 2024, 27 emp), GoSquared (UK analytics+chat+CRM, $1.23M total raised, $8M rev), Tapfiliate (German affiliate, bootstrapped, founded 2014), Paperform (Australian forms, bootstrapped), DSMN8 (UK employee advocacy, bootstrapped, $6.6M rev).
 - **Verticals worth deep-mining in future plateau-angle runs**: website change monitoring (Visualping, ChangeTower, Distill.io, Sken.io), membership management (MemberSpace, Memberstack, MemberPress), knowledge base (Helpjuice, Document360, Bloomfire), affiliate marketing (Refersion, Tapfiliate, Trackdesk, Rewardful), employee advocacy (GaggleAMP, DSMN8, EveryoneSocial), Hotjar/FullStory alternatives (Mouseflow, Lucky Orange), forms (Paperform, JotForm, Wufoo).
+
+## Producthunt-verticals run (2026-05-14 evening) — vertical SaaS for legal/healthcare/accounting
+
+23 prospects added in three under-sampled verticals after user explicitly requested focus on legal/healthcare/finance.
+
+### Major learning: Legal vertical is heavily consolidated in 2024-2026
+
+**Before adding any legal candidate, cross-check ownership at `lawnext.com` "Shrinking Ownership of Law Practice Management Technology" series (Sep 2024).** Key rollups to filter out:
+
+- **ProfitSolv (Lightyear Capital PE rollup)**: TimeSolv, Tabs3, CosmoLex, Bill4Time, Rocket Matter, Law Ruler, LexCharge — ALL same parent
+- **8am / AffiniPay group**: MyCase, CASEpeer, LawPay — common parent
+- **Paradigm portfolio**: LollyLaw, others
+- **Mitratech**: Acquired AdvoLogix (now Mitratech CaseCloud) and others
+- **Stretto**: BestCase + bankruptcy portfolio
+- **Australian Technology Innovators**: Smokeball + portfolio (owned by Christian Beck)
+- **AbacusNext / CARET rebrand**: Zola Suite, HotDocs, AbacusLaw, Amicus Attorney, APX
+- **ASG (Alpine Software Group)**: PracticePanther
+- **Clio**: Lawyaw (now Clio Draft)
+
+This is why this run only added 6 legal candidates — almost every initially promising name failed parent-disqualification. Legal vertical can really only contribute 5-10 per sourcing run going forward unless a brand-new independent emerges.
+
+### Survivors of legal-vertical filter (still independent in 2026)
+
+- **CasePacer** ($652K ARR, 10 emp, Indianapolis) — bootstrapped, Tony Petrucciani CEO
+- **PacerPro** ($3.2M ARR, 19 emp, SF) — $5.97M raised but operating independently, Gavin McGrane founder
+- **Xakia Technologies** ($3.2M ARR, 33 emp, Melbourne/Kansas City/London) — female-led (Jodie Baker), bootstrapped, in-house legal teams
+- **RunSensible** (Markham ON Canada) — Kaven Hendiz, independent
+- **JuraLaw** ($5M ARR, Chicago) — division of Law Bulletin Media (5th-gen family media co, not SaaS rollup)
+- **PracticeLeague** (Pune India) — bootstrapped, Parimal Chanchani, corporate legal ops
+
+### Healthcare vertical (9 added)
+
+Healthcare bootstrapped is concentrated in two clusters:
+
+1. **Australian allied-health practice mgmt** is the richest founder-led, bootstrapped sub-niche — Cliniko, Halaxy, CorePlus, Nookal. None PE-rolled-up. Highest concentration of ICP fits per category. Probably another 3-5 still to find on a future Australian deep-dive.
+2. **US small-clinic / specialty EHR** — CharmHealth (integrative med, 22 emp), ImplementHIT (EHR training, 13 emp), Patagonia Health (public/behavioral), DocVilla (DPC). All independent.
+
+### Healthcare names skipped (recent acquisitions 2024-2026)
+
+- **OptiMantra** — merged with Cerbo Dec 2025 under new CEO Jeff Hindman
+- **Rimidi** — acquired by Health Recovery Solutions Mar 2026 for RPM consolidation
+- **TheraNest** — acquired 2021 by Therapy Brands (rebranded Ensora Health 2025)
+- **MyClientsPlus** — rolled into Ensora Health
+- **PatientPop** — acquired by Tebra/Kareo
+- **Practice Fusion** — acquired by Allscripts (older)
+- **Splose** (Australian allied health) — raised $46M Series A from Spectrum Equity 2024, out of ICP
+
+### Accounting vertical (8 added)
+
+Strongest cluster I've found this year. Three sub-segments:
+
+1. **CPA practice management** — Uku (Estonia), Jetpack Workflow (Pittsburgh), Aero Workflow (US) — all bootstrapped, all under 50 emp, all founder-led
+2. **Open-source SMB accounting** — Bigcapital (Ahmed Bouhuolia), Akaunting (Cihan Erkan UK) — founder-developer types, ARR opaque but high engagement
+3. **Specialty tax/finance** — TaxRobot (R&D credits), Sperse (CRM+cash flow), Certifi (benefits billing)
+
+### Cliniko exception — included despite $8M ARR (above $5M ICP max)
+
+Cliniko ($8M ARR, 57 emp, Melbourne) is ~$3M over our ICP max. INCLUDED anyway because:
+- Founder Joel Friedlaender explicitly rejects investment ("Investment? No thanks" blog post)
+- Unfunded by choice for 14+ years
+- 30,000+ practitioners global
+- Remote-first, no managers, no meetings culture
+
+**Heuristic for future runs**: when a candidate just barely exceeds ICP ARR ceiling but has very strong "intentionally bootstrapped" signals (public anti-VC stance, decade+ operating history, no funding rounds at all), include with a note. The researcher can decide.
+
+### Sources that worked this run
+
+- **getlatka.com/companies/industries/i-legal-software** etc. — by-industry indexes are the fastest path to ICP-fit bootstrapped companies. Way better than Capterra/G2 "alternatives" pages.
+- **LawSites (lawnext.com) ownership series** — essential for legal vertical filtering
+- **Capterra "[X] alternative" + WebSearch verification** — for healthcare/accounting where consolidation is less aggressive
+
+### New disqualification observation
+
+9. **Mainsail Partners portfolio companies are out**: Mainsail "invests exclusively in fast-growing, bootstrapped software companies" — they buy growth equity stakes (often $5-30M). Once Mainsail invests, the company is no longer truly bootstrapped + the parent expects rapid growth incompatible with our $30K strategic-advisory price point. Centerbase is the canonical example this run.
+
+### Categories now sampled (update sourcing.md going forward)
+
+- Legal practice mgmt — 6 added this run (previously 1: meruscase)
+- Healthcare practice mgmt — 9 added (previously 1: carepatron)
+- Accounting/finance practice + open-source — 8 added (previously 2: liscio + financial-cents)
+
+**Next verticals to mine** (still under-sampled): K-12 / higher-ed EdTech (school admin SaaS), municipal/govtech (small city/county SaaS), nonprofit ops (besides Bonterra-scale incumbents), construction tech for small GCs, manufacturing ERP for SMBs, hospitality/restaurant ops for independents.
