@@ -40,6 +40,7 @@ Cross-run learnings. Append only.
 - 2026-04-20: 15 added (all sources rotation) - first run
 - 2026-04-21: 15 added (all sources rotation)
 - 2026-05-14: 15 staged but NOT appended (SHEET_APPEND_SKIPPED — `FRS_PROSPECTS_SHEET_ID` env var unavailable; local-session run from desktop Claude Code, not cloud routine where secrets are injected)
+- 2026-05-14: 30 added (g2-mature-incumbent angle) — Sheet writes successful after exporting env vars manually. Linear MCP unavailable (no .mcp.json). See `agents/sourcing-runs/2026-05-14-g2-mature-incumbent.md`.
 - 2026-05-14 (afternoon, directory): 23 added (requested 30, but consolidated categories — sales engagement, billing, marketing automation, customer feedback — yielded too many disqualifications). Run also coincided with three parallel sourcer agents working different sources, so coordination not a problem.
 - 2026-05-14 (jobs run, parallel with appsumo/devtools + producthunt/vertical-SaaS sourcers): 20 added of 30 requested. Under-sampled focus categories: B2B marketplaces, e-commerce ops, HR tech SMB. Hard quality-bar — refused to pad list with weaker fits. Sheet writes successful (FRS_PROSPECTS_SHEET_ID exported from memory pointer).
 
