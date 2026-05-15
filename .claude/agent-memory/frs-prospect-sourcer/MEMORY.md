@@ -207,3 +207,58 @@ Cliniko ($8M ARR, 57 emp, Melbourne) is ~$3M over our ICP max. INCLUDED anyway b
 - Accounting/finance practice + open-source — 8 added (previously 2: liscio + financial-cents)
 
 **Next verticals to mine** (still under-sampled): K-12 / higher-ed EdTech (school admin SaaS), municipal/govtech (small city/county SaaS), nonprofit ops (besides Bonterra-scale incumbents), construction tech for small GCs, manufacturing ERP for SMBs, hospitality/restaurant ops for independents.
+
+## YC W15-S20 directory angle observations (2026-05-14 late-evening run)
+
+Caller asked for 30 prospects from YC batches W15-S20 — the "scale-but-didn't-break-out, no AI pivot" survivors. 30 appended with `source=yc-directory`. Sheet was at 174 when I started, ended at 204 (4 parallel sourcer agents running concurrently).
+
+- **YCDB.co batch pages are the gold standard** for filterable YC company lists. WebFetch works perfectly on `ycdb.co/batch/<w15|s15|w16|...>`. Returns ~30-60 companies per batch with descriptions and "Live/Exited/Closed" status. Use this FIRST before falling back to TechCrunch demo day articles.
+- **Y Combinator's own directory page returns just a title to WebFetch** — JS-rendered. Don't waste cycles on it. Use ycdb.co instead.
+- **The acquisition rate in W15-S18 B2B SaaS is ~40%**. Plan on disqualifying 40-50% of candidates per batch through acquisitions alone. Verified-acquired list from this run (add to standing skip list): PopSQL→Timescale (Apr 2024), Memfault→Nordic Semi (Jun 2025), Humi→Employment Hero (Jan 2025), SafeBase→Drata (Feb 2025), Polymail (May 2025), Lawyaw→Clio, Gather→ChartHop, Together Software→Absorb (Dec 2024), AXDRAFT→Onit (2020), Slapdash→ClickUp (2022), Berbix→Socure (2023), Smarking→Parkhub (2022), Cuboh→ChowNow (Mar 2024), Convox→Curious (Apr 2024), Optic→Atlassian (Apr 2024), PullRequest→HackerOne (2022), Sourceress→Gem (May 2024), Wingman→Clari (2022), OneGraph→Netlify (2021), Saleswhale→6Sense (2021), Flowdash→Notion (2022), Explo→Omni (Oct 2025), Hubble→NetSPI (Jun 2024), Plato→Coda, Localyze→Boundless (Oct 2025), PartnerStack→AppDirect (Apr 2026).
+- **The richest YC batch for our ICP is S20** — 10/30 of my final picks are from S20. They're 5 years post-batch, often hit $1-3M ARR, still independent, founder still CEO. The bigger S20 names (PostHog, Supabase, Modern Treasury) already broke out, leaving a clear plateau cohort.
+- **"AI-powered" rebranding is the dominant signal pattern** in this cohort. Sunsama, Slite, Taskade, Cosmic JS, Gmelius all added AI features in 2023-2024 but their core workflows are pre-LLM. This is exactly our wedge: they bolted on AI without restructuring the product. Lead outreach with "you've added AI; now structure for agent-orchestration."
+- **Bootstrapped + YC seed = highest conviction**. NetBeez, Apozy, Worklytics, OpenWrench, Names & Faces, Thematic, BaseDash, OpenUnit, ToDesktop all took only YC seed ($120K-$500K), never raised again. Founder owns >80%, decides budget alone, $30K assessment is a clear go/no-go. Highest-leverage outreach targets in the entire prospect pool.
+- **The "small team, big revenue" pattern is overrepresented in this cohort vs general sourcing**: ToDesktop (2 emp, $5M rev), Names & Faces (9 emp, $1.2M), Sunsama (9 emp, $1.5M), OpenUnit (4 emp). These are extreme leverage businesses — exactly the kind of founder who'll appreciate a structural blueprint over consulting hours.
+
+### Slug conventions adopted in yc-directory run
+
+- `cosmic` (not `cosmic-js` — they rebranded)
+- `mozart-data` (kebab because two-word)
+- `names-and-faces` (kebab for multi-word, follows established pattern)
+- `heron-data` (kebab)
+- `tydo` (current brand, not historical `polyops`)
+- `basedash` (single word per current branding, not `base-dash`)
+- `netbeez` (single word per company branding)
+- `openwrench` (single word)
+
+### New disqualification observations
+
+10. **YC seed-only, raised $10M+ later, AI-positioned**: Tara AI ($13M raised, "AI-first"), Glide ($23M+, "AI-Powered Apps"), Veryfi ($18M, "AI document capture"), Demodesk (pivoted "AI Sales Agents"), Klarity ($90M, "AI automation platform"). The YC seed brand makes them look small but the post-YC funding + AI-native marketing signals they're already executing the strategy we'd sell. Skip.
+11. **Late-stage YC pre-AI-pivot acquired in 2024-2025 wave**: Many YC W15-S18 alums acquired specifically for their data + workflow assets in the AI consolidation wave — SafeBase, Memfault, Optic, Hubble, Together, Explo. If a YC company hasn't raised since 2022 and is mid-cap, check acquisition status first — they're prime targets for AI rollups.
+
+### Categories sourced via yc-directory (update sampling list)
+
+- DevTools / API testing (Speedscale) — newly sampled
+- DevTools / desktop app builders (ToDesktop) — newly sampled
+- DevTools / database admin UI (Basedash) — newly sampled
+- DevTools / API simulation (Speedscale) — newly sampled
+- IoT / Smart device APIs (Seam) — newly sampled
+- Data reliability / data engineering (Datafold) — newly sampled
+- Bank transaction analytics (Heron Data) — newly sampled
+- Network performance monitoring (NetBeez) — newly sampled
+- Browser security (Apozy) — newly sampled
+- Vertical SaaS / self-storage (OpenUnit) — newly sampled
+- Vertical SaaS / cannabis ERP (Canix) — newly sampled
+- Vertical SaaS / coffee shop POS (Dripos) — newly sampled
+- Vertical SaaS / freelance ERP (Bonsai) — newly sampled
+- E-commerce ops analytics (Tydo/PolyOps) — newly sampled
+- Workforce productivity analytics (Worklytics) — newly sampled
+- HR / engineering interviews (Hatchways) — newly sampled
+- Calendar / productivity (Sunsama, Vimcal) — newly sampled
+- Design system platforms (zeroheight) — newly sampled
+- Headless CMS (Cosmic) — newly sampled
+- Embedded integrations (Paragon) — newly sampled
+
+### Search heuristic that worked best
+
+Pattern: `"<company name>" employees revenue ARR 2024 funding` → GetLatka and PitchBook return 2024 snapshots reliably. Faster than trying to navigate company About pages. ALWAYS verify acquisition status with a follow-up `"<company>" acquired status` search before adding — this caught Memfault, SafeBase, Localyze, PartnerStack as acquired-but-still-visible-on-the-web.
