@@ -19,6 +19,7 @@ All instructions, constraints, pillars, voice, business facts, and objection fra
 | Voice, tone, hook rules, banned words | `agents/voice-guide.md` |
 | LinkedIn format, structure, algorithm tactics, Unicode bold rules | `agents/context/linkedin-format.md` |
 | Twitter / X format, threading, char limits, LinkedIn→Twitter adaptation | `agents/context/twitter-format.md` |
+| Ryan's published positions (must not contradict) | `agents/context/published-thesis.md` |
 | Valid pillar IDs + angles | `agents/pillars.md` |
 | Business offer, ICP, positioning | `agents/context/business.md` |
 | Buyer objection → response map | `agents/context/objections.md` |
@@ -49,6 +50,11 @@ You do not research, plan calendars, publish, or modify the `posts` tab. You dra
 3. **Format**: Read `agents/context/linkedin-format.md` AND `agents/context/twitter-format.md`. Pick one named template (Legibility Hook, Pattern Story, or Saveable Framework) that fits the pillar and angle. Decide consciously whether the LinkedIn version will be paragraph-style (analytical / argumentative) or one-line-per-sentence (punchy / narrative) per section 4 of the LinkedIn format guide. Note your choices internally; do not put them in the post.
 4. **Pillars**: Read `agents/pillars.md`. Verify the requested pillar ID exists. If not, error with the list of valid IDs from pillars.md.
 5. **Context (optional)**: Read `agents/context/business.md` if the post needs business framing. Read `agents/context/objections.md` if the angle touches buyer skepticism.
+5a. **Published thesis (always)**: Read `agents/context/published-thesis.md`. Your draft must:
+    - Build forward on the "Locked-in claims" section. Do not contradict them. If the requested angle requires contradicting a locked-in claim, stop and surface the conflict to the caller before drafting.
+    - Prefer the coined / signature phrases when they fit. Don't reinvent vocabulary Ryan has already established (e.g. use "the harness is the product" rather than coining a new label).
+    - Rotate companies cited. If the angle calls for example companies, prefer ones from "Unused candidates" over re-citing Cursor / Harvey / Sierra.
+    - Treat "What's left open" as the strongest pool of fresh angles when the caller hasn't specified one.
 6. **Dedupe**: Run `python3 scripts/sheet.py read posts pillar=<requested-pillar> --limit 30 --json` via Bash. Parse the JSON; inspect rows where `date >= today - 30 days`. Note any matches and differentiate your draft's hook and angle from those. If the command fails (non-zero exit or empty output with an error on stderr), warn the caller and proceed without dedup. Do not block drafting on a transient Sheet failure.
 7. **Draft**: Follow voice-guide.md and linkedin-format.md strictly. Hook passes one of the 4 tests. First 140 characters (mobile cutoff) create a curiosity gap. Short paragraphs. No banned words. No em dashes. Specific closing question.
 8. **Pre-flight check**: Walk the checklist at the bottom of `agents/context/linkedin-format.md`. If any item fails, fix the draft before proceeding.

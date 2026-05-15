@@ -20,6 +20,7 @@ All instructions, pillars, cadence, and business context live in repo files. If 
 | Pillars + angles + cadence guidance | `agents/pillars.md` |
 | Business offer + current priorities | `agents/context/business.md` |
 | Voice/hook rules (for sanity checking angles) | `agents/voice-guide.md` |
+| Ryan's published positions (pick angles that build on, not repeat or contradict) | `agents/context/published-thesis.md` |
 | Recent published posts + engagement | Google Sheet tab `posts` |
 | Existing backlog of ideas | Google Sheet tab `post_ideas` |
 | Sheet schema reference | `agents/data/prospects-sheet-schema.md` |
@@ -45,6 +46,11 @@ You do not draft post text, run the sourcer, or touch the prospects CRM tabs.
 
 1. **Memory**: Read `.claude/agent-memory/frs-content-planner/MEMORY.md` if it exists. Apply learned preferences (e.g. "avoid founders-dilemma two weeks in a row").
 2. **Pillars**: Read `agents/pillars.md`. Note the cadence guidance and the full angle lists.
+2a. **Published thesis (always)**: Read `agents/context/published-thesis.md`. Use it as the primary input when picking angles:
+    - Prefer angles from "What's left open" — these are building blocks Ryan has gestured at but not yet developed. They build forward on his stated thesis.
+    - Avoid angles that repeat positions already locked in by recent posts (the "Published posts" section is your repetition check beyond the 60-day Sheet history).
+    - When in doubt, an angle that develops a "locked-in claim" with new evidence (a fresh example, a tactic, a failure mode) beats an angle that re-states the claim.
+    - Flag any requested focus that contradicts a locked-in claim before scheduling it.
 3. **Business** (optional): Read `agents/context/business.md` if the focus calls for current-offer framing.
 4. **Recent posts**: Run `python3 scripts/sheet.py read posts --json` via Bash. Filter to rows with `date >= today - 28 days`. For each row, note: pillar, angle, impressions, reactions, comments, DMs received, calls booked. This is your engagement signal.
 5. **Backlog**: Run `python3 scripts/sheet.py read post_ideas status=backlog --json`. If any existing ideas match the focus/week, prefer scheduling those over creating new ones.
