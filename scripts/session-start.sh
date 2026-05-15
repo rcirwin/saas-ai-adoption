@@ -27,6 +27,17 @@ else
   fi
 fi
 
+# Load local desktop env file if present (FRS_GOOGLE_CREDENTIALS path +
+# FRS_PROSPECTS_SHEET_ID). Cloud sessions skip this and use the B64 secret
+# block below. Hook spawn doesn't inherit interactive-shell env, so .zshrc
+# exports alone won't reach scripts/sheet.py — this file is the bridge.
+if [ -f "$HOME/.config/frs/env" ]; then
+  set -a
+  # shellcheck disable=SC1091
+  source "$HOME/.config/frs/env"
+  set +a
+fi
+
 # Materialize service account credentials from base64 secret (cloud only).
 # Set FRS_GOOGLE_CREDENTIALS_B64 as a Claude Code project secret:
 #   base64 -w0 /path/to/service-account.json   # Linux

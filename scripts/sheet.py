@@ -25,6 +25,7 @@ Examples:
 import json
 import os
 import sys
+from pathlib import Path
 from typing import Dict, List, Optional
 
 try:
@@ -39,6 +40,32 @@ except ImportError:
         "Run: pip install -r scripts/requirements.txt\n"
     )
     sys.exit(2)
+
+
+def _load_local_env_file():
+    # Fallback for local desktop: load ~/.config/frs/env if FRS_* not already set.
+    # Cloud sessions inject vars from project secrets and skip this. The Bash
+    # tool spawns fresh subshells that don't inherit the session-start hook's
+    # env, so loading here is the only place that catches every caller.
+    env_path = Path.home() / ".config" / "frs" / "env"
+    if not env_path.is_file():
+        return
+    for raw in env_path.read_text().splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("export "):
+            line = line[len("export "):]
+        if "=" not in line:
+            continue
+        key, val = line.split("=", 1)
+        key = key.strip()
+        val = val.strip().strip('"').strip("'")
+        val = os.path.expandvars(os.path.expanduser(val))
+        os.environ.setdefault(key, val)
+
+
+_load_local_env_file()
 
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
