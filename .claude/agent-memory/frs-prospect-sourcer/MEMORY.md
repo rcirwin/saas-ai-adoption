@@ -40,6 +40,7 @@ Cross-run learnings. Append only.
 - 2026-04-20: 15 added (all sources rotation) - first run
 - 2026-04-21: 15 added (all sources rotation)
 - 2026-05-14: 15 staged but NOT appended (SHEET_APPEND_SKIPPED — `FRS_PROSPECTS_SHEET_ID` env var unavailable; local-session run from desktop Claude Code, not cloud routine where secrets are injected)
+- 2026-05-14 (later, same day): 30 added focused on under-sampled devtools/observability/data pipelines (source=appsumo, but most candidates surfaced via GetLatka + Indie Hackers + Practical Founders rather than AppSumo direct). 1 immediately downgraded to not-a-fit (polypane, solo founder). Net 30 identified.
 - 2026-05-14: 30 added (g2-mature-incumbent angle) — Sheet writes successful after exporting env vars manually. Linear MCP unavailable (no .mcp.json). See `agents/sourcing-runs/2026-05-14-g2-mature-incumbent.md`.
 - 2026-05-14 (afternoon, directory): 23 added (requested 30, but consolidated categories — sales engagement, billing, marketing automation, customer feedback — yielded too many disqualifications). Run also coincided with three parallel sourcer agents working different sources, so coordination not a problem.
 - 2026-05-14 (jobs run, parallel with appsumo/devtools + producthunt/vertical-SaaS sourcers): 20 added of 30 requested. Under-sampled focus categories: B2B marketplaces, e-commerce ops, HR tech SMB. Hard quality-bar — refused to pad list with weaker fits. Sheet writes successful (FRS_PROSPECTS_SHEET_ID exported from memory pointer).
@@ -263,3 +264,18 @@ Caller asked for 30 prospects from YC batches W15-S20 — the "scale-but-didn't-
 ### Search heuristic that worked best
 
 Pattern: `"<company name>" employees revenue ARR 2024 funding` → GetLatka and PitchBook return 2024 snapshots reliably. Faster than trying to navigate company About pages. ALWAYS verify acquisition status with a follow-up `"<company>" acquired status` search before adding — this caught Memfault, SafeBase, Localyze, PartnerStack as acquired-but-still-visible-on-the-web.
+
+## Devtools/observability/data-pipeline-specific learnings (added 2026-05-14b)
+
+- **AppSumo as a source for devtools is weak.** AppSumo deal flow skews to marketing, productivity, AI-content tools. For devtools/observability/ETL, GetLatka + Indie Hackers + Practical Founders + Failory yield far more on-ICP candidates per hour of search than browsing AppSumo roundups.
+- **Independent bootstrapped data-pipeline / ETL SaaS at $500K-$5M ARR is genuinely scarce.** The category has consolidated: Fivetran/Airbyte/Estuary/Hevo are all heavily VC-backed; Stitch/Pipedream/Meltano/Postmark are acquired; Coupler.io / Mailtrap are multi-product Railsware parent; Skyvia is Devart parent. For under-sampled "data pipelines" hits, broaden to workflow automation (Latenode) and treat reverse-ETL as a distinct bucket.
+- **Webhook/webhook-gateway/API-mocking subcategory is rich** with bootstrapped or seed-funded indies (Hookdeck, Beeceptor, Treblle, Hoppscotch, Apidog). Most are <30 employees and within ICP.
+- **Visual bug reporting / feedback / on-call** subcategories are surprisingly indie-rich (Marker.io, Userback, BugHerd, ilert, Bugfender). All bootstrapped or near-bootstrapped, all in 5-20 employee range.
+- **Image/media CDN APIs** is a strong bootstrapped niche (ImageKit, Uploadcare both $3-5M ARR, ~30 emp). Cloudinary has the giant share but the indies are clear ICP fits.
+- **Founder LinkedIn coverage is very high** for European/Indian/Australian devtools founders. Less so for US-based ones — they're more often on Twitter/X than LinkedIn.
+
+## Disqualification additions (2026-05-14b)
+
+8. **Solo founders / 1-person teams** like Tarsnap, Polypane, Pirsch (when sub-$500K) — they're below ICP floor *and* lack the team-mediated workflow complexity that makes the FRS assessment valuable. Skip even if otherwise on-thesis. Annotate as `not-a-fit` not just `identified`.
+9. **CalmCo / saas.group / Banzai / similar "acquihire roll-up" parents** — when a small tool is owned by a private-equity-style operator (Rewardful → saas.group, DeployBot/DeployHQ → saas.group, Encharge → exited), treat it like a multi-product parent failure even if the brand operates independently. The decision-maker is no longer the founder.
+10. **Founders who recently stepped away / co-founder transitions in last 12 months** — Hookdeck (Eric Tran stepped away 2024 for caregiving), ScraperAPI (Daniel Ni exited), Postmark/Wildbit (founders took a break). Borderline — include if other signals are strong but flag for researcher to verify company is still in growth mode.
