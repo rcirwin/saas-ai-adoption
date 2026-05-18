@@ -89,6 +89,7 @@ Detailed per-run notes live in `agents/sourcing-runs/<YYYY-MM-DD>-<source>.md`. 
 |------|--------|-------|---------|
 | 2026-04-20 | all | 15 | 11 |
 | 2026-04-21 | all | 15 | 10 |
+| 2026-05-18 | directory | 12 | 13 |
 
 ## Categories Already Well-Sampled (reduce weight in future runs)
 
