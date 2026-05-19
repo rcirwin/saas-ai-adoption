@@ -40,6 +40,18 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-05-19 — batch 7 (15 prospects, hospice-tools→starchapter)
+- See agents/research-runs/2026-05-19-batch7-15-prospects.md — 9 researched / 6 not-a-fit / 0 cache hits / avg 2.93 / dist 1:0 2:6 3:4 4:5 5:0. 7 identified remain.
+- Top fit-4: osiris-software, gradelink, hoa-start, swept, hospice-tools. No 5s — strongest candidates (osiris, gradelink, hoa-start) all lack a named/reachable founder, which caps at 4.
+- **Niche-vertical-EMR/EHR is a strong category** — hospice (Hospice Tools), funeral home (Osiris), chiropractic (ECLIPSE), optometry (Eye Cloud Pro) are all workflow-heavy regulated verticals where AI adoption is early. none/bolt-on posture + in-band ARR + domain-expert founders = fit 4. Caveat: when the EHR already ships multiple AI features (HENO: AI Scribe + goal-gen + EOB scanning), cap at 3 — the what-AI-to-build conversation is partly closed (same rule as oryx-dental/synder).
+- **Pricing-x-customer-count is a reliable sub-ICP filter when ARR is unknown** — BrewPlanner ($49-125/mo x ~500 customers ≈ $300-700K) and BarnManager ($400-700/yr) both scored 2 by multiplying public pricing tiers by stated customer counts. Faster than a Latka lookup when the company is too small for Latka coverage.
+- **Sub-ICP small-operator cluster reconfirmed and extended** — campium (camp mgmt), punchpass (fitness studio), myschoolworx (private-school SIS) all fit 2. Pattern: vertical admin SaaS for tiny operators (camps/studios/small private schools) with "affordable / grants / discounts" positioning + <10-person team = sub-ICP. Note the contrast: gradelink (also K-12 SIS) scored 4 because 27 staff + 2,000 schools + 1M-5M sheet ARR — same category, opposite side of the ICP line. SIS category is bimodal; always check team size + customer count.
+- **Above-ICP-ceiling rule applied** — novi-ams has a textbook profile (workflow-heavy, none posture, named domain-expert founder Pete Zimek) but ~$8.1M ARR (2026) is above the $5M ceiling → fit 2. Strong profile, wrong size band.
+- **Founder-retirement transition gap** — eye-cloud-pro's founder Ivan Samuels retired ~Jan 2021; company run by unnamed management team → downgrade reachability, capped at 3 (same as the Paul Jarvis/Fathom pattern).
+- **HOA / association software is a viable workflow-heavy category** — hoa-start (exploring posture: blogging about HOA AI chatbots, nothing shipped) scored 4; starchapter (none posture, ARR unconfirmed) scored 3. Property/association management matches the construction/FSM long-sales-cycle pattern. "Blogging about AI but nothing shipped" is the cleanest `exploring` signal and the ideal what-to-build moment.
+- **Contact data: directory-sourced "source: all" rows arrive AND stay without contacts.** All 15 came in with contact_linkedin=unknown and contact_email blank; only 4 had a contact_name. ZERO LinkedIn URLs were discoverable during research for any of the 15. Sourcer must backfill before outreach — even fit-4 osiris/gradelink/hoa-start/hospice-tools are unreachable.
+- All 30 sheet writes succeeded with 3s pacing between cache-upsert and prospect-update. No rate-limit errors (single researcher).
+
 ### 2026-05-19 — batch 6 (15 prospects, govpilot→breww)
 - See agents/research-runs/2026-05-19-batch6-15-prospects.md — 6 researched / 9 not-a-fit / 0 cache hits / avg 2.53 / dist 1:1 2:7 3:4 4:3 5:0. 22 identified remain.
 - Top fit-4: govpilot, power-my-analytics, croptracker. No 5s — none had a confirmed-in-band ARR + strong founder origin story together.
