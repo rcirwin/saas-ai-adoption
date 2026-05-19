@@ -1,5 +1,9 @@
 # frs-outreach-writer — Persistent Memory
 
+## Run Notes Index
+
+- [2026-05-19 batch-1 run](run_2026-05-19.md) — prior draft files exist but Sheet columns empty; all 2026-05-15 connect drafts had em dashes; `update` needs `--where`/`--set`.
+
 ## Heuristics Confirmed
 
 - **"leverage" as noun is also banned by the agent's self-check (2026-05-15 batch C)**: voice-guide.md says "leverage (as verb)" is banned, but the step 6e self-check uses `word.lower() not in body.lower()` which catches noun usage too. Five drafts in the 23-prospect email batch C (`referral-rock`, `userlist`, `zenmaid`, `coreplus`, `everhour`) needed a second pass to swap noun "leverage" for `winning move`, `internal-ops compounding`, `compounding question`, `highest-impact one`, `operator-side layer`. **Why**: agent definition's hard rules (step 6e) override voice-guide nuance. Self-check is intentionally strict. **How to apply**: don't use "leverage" in any form. Always reach for `compounding`, `the bet that compounds`, `where it earns its place`, `the right two bets`. Also avoid "unlock", "unlocking" — flagged separately as banned.
