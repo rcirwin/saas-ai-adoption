@@ -3,6 +3,7 @@
 ## Run Notes Index
 
 - [2026-05-19 batch-1 run](run_2026-05-19.md) — prior draft files exist but Sheet columns empty; all 2026-05-15 connect drafts had em dashes; `update` needs `--where`/`--set`.
+- 2026-05-19 batch-2 (this file inline): 20 prospects, both channels (40 drafts). `sheet.py update` syntax confirmed: `update prospects --where id=<id> --set col=val ...` (NOT `update prospects id=<id> col=val`). `append` uses bare `col=val` args, `update` needs `--where`/`--set`. First-pass connect drafts ran 330-393 chars; needed two tightening passes to clear 300. 19/20 prospects had no contact_email so email bodies were staged into outreach_email_draft for later sourcing.
 
 ## Heuristics Confirmed
 
