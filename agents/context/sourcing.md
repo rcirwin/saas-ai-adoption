@@ -56,6 +56,7 @@ Added 2026-04-21. Useful when AppSumo / ProductHunt are blocked.
 - Market Clarity "Top 30 Indie SaaS" and "Top 33 B2B SaaS" lists
 - TheRecursive regional bootstrapper features
 These confirm revenue and employee counts that WebFetch on the company site cannot.
+- **Note (2026-05-19):** GetLatka *industry-index* pages (`getlatka.com/companies/industries/i-<category>`) are the single fastest path to ICP-fit bootstrapped verticals. A WebSearch of `getlatka <category> bootstrapped $XM ARR` reliably surfaces per-company GetLatka profiles with verified ARR + employee + funding in one hit.
 
 ## Disqualification Rules
 
@@ -70,6 +71,7 @@ Skip companies that match any of these:
 - **Acquired and merged into a parent** (e.g. Demio/Banzai, SquadCast/Descript) — parent company is the decision-maker now
 - **AppSumo Originals** (e.g. TidyCal, BreezeDoc) — built by AppSumo itself, not independent companies
 - **Multi-product SaaS parents** where the parent org exceeds ICP even if one product is small (e.g. SaaS Labs which owns Helpwise + others)
+- **"AI" as primary marketing positioning** (in product name or main tagline) — fast, reliable proxy for AI-native thesis. Skip even when ARR/team metrics fit (e.g. Etaprise "AI-Powered Field Service", Chatterworks "AI data layer for recruiters").
 
 ## Quality Over Volume
 
@@ -90,6 +92,7 @@ Detailed per-run notes live in `agents/sourcing-runs/<YYYY-MM-DD>-<source>.md`. 
 | 2026-04-20 | all | 15 | 11 |
 | 2026-04-21 | all | 15 | 10 |
 | 2026-05-18 | directory | 12 | 13 |
+| 2026-05-19 | all | 8 | 16 |
 
 ## Categories Already Well-Sampled (reduce weight in future runs)
 
@@ -102,5 +105,8 @@ Tracking so we don't keep returning to the same category repeatedly:
 - Customer support / helpdesk (Charla, ThriveDesk) — 2 added
 - No-code tools (Tally, Noloco, Stacker) — 3 added
 - Document automation (Docupilot, Papermark) — 2 added
+- Heatmap / behavior analytics (Lucky Orange, Crazy Egg, Plerdy, Mouseflow, FullSession) — well-sampled
 
-**Under-sampled** (prioritize next run): devtools, observability, data pipelines/ETL, vertical SaaS for legal/healthcare/finance, B2B marketplaces, e-commerce ops tools.
+**Under-sampled** (prioritize next run): devtools, observability, data pipelines/ETL, B2B marketplaces, e-commerce ops tools. Manufacturing MRP / job-shop / production-scheduling is a clean bootstrapped vein (2026-05-19) — worth a dedicated run. Microsoft 365 / SaaS-management admin tooling is a GAT Labs adjacency worth mining.
+
+**Consolidation graveyards** (low yield, lower the weight): govtech municipal, nonprofit donor management, hospitality PMS, veterinary practice management — almost every candidate is acquired, PE-rolled-up, or VC-mega-funded.

@@ -374,3 +374,29 @@ These founder-led, solo/near-solo bootstrappers are the best fit for a $30K asse
 - Appointment scheduling — additional sampling (Setmore, SimplyBook.me)
 
 **Next angle worth trying:** "Founder threads on Reddit (r/SaaS, r/EntrepreneurRideAlong) where they ask 'how do I add AI to my product without becoming AI-native'" — that's the explicit cognitive state we want to find. Could be a tighter signal than mining alternative-to threads.
+
+## Run 2026-05-19 (all rotation) observations
+
+- 8 added of 15 requested. ~24 candidates evaluated, 14 disqualified, 2 deduped. Prospects tab 321 -> 329. LINEAR_SKIPPED (still no `.mcp.json`). Pushed to branch `claude/gifted-fermat-q2je2` per caller override (not `main`). See `agents/sourcing-runs/2026-05-19-all.md`.
+- **Deliberately finalized at 8.** The under-sampled verticals from prior memory (construction, manufacturing ERP, govtech, hospitality, nonprofit ops) are consolidation graveyards. govtech especially: iWorQ ($9M/166 emp), Hotelogix (Series B), every donor-mgmt name acquired (Keela->Aplos). Hospitality PMS is VC-mega-funded or dead (DirectWithHotels deadpooled).
+- **Acquisition-check rule keeps earning its keep.** This run alone: Keela->Aplos (Jun 2024), SellerActive->Cart.com (Jan 2022), YardView->Vector (Jan 2026), Fieldster->Teamfront (Jan 2023), Spectora acquired ($90M val, founders out). ALWAYS run "[name] acquired" before adding any vertical-SaaS or logistics/inspection candidate.
+- **Manufacturing MRP/inventory for SMBs is a genuinely clean under-sampled vein** — Brahmin Solutions (9 emp, $1-2.4M, customer-funded) and Aquilon Software (7 emp, ~$500-880K, $0 raised since 2006) are both textbook ICP. Both founder-led, both spreadsheet-replacement plays. Worth a dedicated future run on getlatka.com/companies/industries for MRP / job-shop / production-scheduling.
+- **GAT Labs pattern**: Google Workspace admin/audit tooling ($2.7M, 17 emp, $0 raised since 2009) — IT-admin tooling adjacent to devtools is under-sampled and bootstrapped-rich. Adjacent niches to mine: Microsoft 365 admin tools, SaaS-management/SaaS-spend, Chrome/browser fleet management.
+- **Etaprise skipped on DQ #7** even though metrics fit ($660K, 6 emp, bootstrapped) — "AI-Powered Field Service Management" is the literal primary tagline. Confirms DQ #7 (AI-first marketing positioning) is a fast, reliable filter. Same logic skipped Chatterworks (founder's stated mission = "AI data layer for recruiters").
+- **GetLatka industry-index pages remain the single fastest path** to ICP-fit bootstrapped verticals (getlatka.com/companies/industries/i-<category>). WebSearch with `getlatka <category> bootstrapped $XM ARR` reliably surfaces the per-company GetLatka profile with verified ARR + employee + funding in one hit.
+
+## Run cadence (continued)
+
+- 2026-05-19 (all): 8 added of 15. 14 DQ / 2 dedup. 321 -> 329. Verticals: construction PM, manufacturing MRP, SMB ERP, salon/spa, call tracking, HR onboarding, HOA mgmt, Workspace IT-admin. LINEAR_SKIPPED. Branch `claude/gifted-fermat-q2je2`.
+
+## Categories sampled 2026-05-19 (update sampling list)
+
+- Construction project management — newly sampled (Buildern)
+- Manufacturing MRP / inventory — newly sampled (Brahmin Solutions)
+- SMB ERP (manufacturing/distribution) — newly sampled (Aquilon Software)
+- Salon/spa management — newly sampled (Rosy Salon Software)
+- Call tracking / marketing analytics — newly sampled (WildJar)
+- HOA / association management — newly sampled (Assembly HOA)
+- Google Workspace IT-admin / audit tooling — newly sampled (GAT Labs)
+
+**Still under-sampled / consolidation-heavy (lower the weight, they rarely yield):** govtech municipal, nonprofit donor management, hospitality PMS, veterinary PM (per 2026-05-18 memory note vet PM is fully consolidated). **Worth a dedicated future run:** manufacturing MRP / job-shop / production-scheduling (clean vein this run); Microsoft 365 / SaaS-management admin tooling (GAT Labs adjacency).
