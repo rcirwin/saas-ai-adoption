@@ -40,6 +40,7 @@ Cross-run learnings. Append only.
 
 ## Run cadence
 
+- 2026-05-18 (all): 14 added of 15 requested. ~40 evaluated, 26 skipped. Prospects tab 307 -> 321. Prioritized under-sampled verticals (9 of 14 adds were vertical SaaS: veterinary, dental, logistics, education, nonprofit, manufacturing/ERP). LINEAR_SKIPPED (no .mcp.json). Finalized at 14 rather than padding with a weaker fit. See `agents/sourcing-runs/2026-05-18-all.md`. Stale-snapshot trap hit again (Barti — GetLatka said $3.7M bootstrapped but it raised $12M Series A Aug 2025). Probely was clean ICP fit but acquired by Snyk — always run "[name] acquired" on devtools/security candidates.
 - 2026-05-15 (linkedin-patwalls-1m-saas): 8 added of 25 in-band tiles (10 out-of-band skipped pre-research; 3 duplicates; 4 unidentified after one-search rule; 10 disqualified for ICP/acquired/AI-native). One-off ingestion of Pat Walls carousel manually OCR'd by user via Claude-in-Chrome. See `agents/sourcing-runs/2026-05-15-linkedin-patwalls-1m-saas.md` and `patwalls_1m_saas_extraction_workflow.md`.
 - 2026-04-20: 15 added (all sources rotation) - first run
 - 2026-04-21: 15 added (all sources rotation)
