@@ -40,6 +40,16 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-05-19 — batch 8 (7 prospects, FINAL batch, stable-secretary→clinicnote)
+- See agents/research-runs/2026-05-19-batch8-7-prospects.md — 5 researched / 2 not-a-fit / 0 cache hits / avg 3.29 / dist 1:0 2:1 3:3 4:3 5:0. Queue now fully cleared (0 identified).
+- Top fit-4: vinesos, towbook, clinicnote. towbook is the strongest — only confirmed-in-band ARR of the batch ($2.9M 2024, doubled from $1.4M 2023, bootstrapped, 37 staff, founder Dan Smith on LinkedIn).
+- **Niche workflow-heavy vertical SaaS with none posture keeps scoring 3-4** — winery DTC (VinesOS), towing dispatch (Towbook), allied-health EMR (ClinicNote) all 3-4. Confirmed-in-band ARR is the single lever that moves these from 3 to 4 (towbook) vs ARR-unconfirmed downgrade (stable-secretary, clinicnote, vinesos held at 4 on strong founder, stable-secretary dropped to 3 on small-operation signals).
+- **EHR/practice-mgmt AI-already-shipped cap reconfirmed (HENO/oryx-dental rule)** — aestheticspro (AI receptionist + AI in-app support + predictive scheduling) and identalsoft (AI-Assist Diagnosis) both capped at 3 despite otherwise solid vertical-SaaS profiles. The medspa/dental categories are now actively bolting on AI; expect bolt-on posture and a 3-cap on most practice-management EHRs going forward.
+- **Sub-ICP small-operator cluster extended** — bookamat (yoga/Pilates studio mgmt, first 10 clients free, adaptive ZAR pricing, 3,100 tiny studios) = fit 2, same as punchpass/campium. Free-tier-heavy adaptive-pricing fitness-studio SaaS defaults to fit 2.
+- **Founder-as-vertical-practitioner is a strong reachability hook** — Jules Robbins (VinesOS) also owns Bailarin Cellars winery; Kate Rice (Stable Secretary) is a 30yr horse-industry professional; ClinicNote founded directly from an SLP friend's pain. Domain-practitioner founders give clean, credible outreach angles.
+- All 14 sheet writes succeeded with 3s pacing. towbook.com returned HTTP 403 — triangulated cleanly via getlatka/Crunchbase/Crain's (website-block fallback works as always).
+- Contact data: directory "source: all" rows again arrived contact-thin (4/7 had names, 0 had LinkedIn/email). Backfilled 2 names + 2 LinkedIn URLs (vinesos, towbook). Sourcer must backfill emails for the 5 fit-3+ rows before outreach.
+
 ### 2026-05-19 — batch 7 (15 prospects, hospice-tools→starchapter)
 - See agents/research-runs/2026-05-19-batch7-15-prospects.md — 9 researched / 6 not-a-fit / 0 cache hits / avg 2.93 / dist 1:0 2:6 3:4 4:5 5:0. 7 identified remain.
 - Top fit-4: osiris-software, gradelink, hoa-start, swept, hospice-tools. No 5s — strongest candidates (osiris, gradelink, hoa-start) all lack a named/reachable founder, which caps at 4.
