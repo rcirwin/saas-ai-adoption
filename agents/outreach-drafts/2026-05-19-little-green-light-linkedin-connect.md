@@ -1,8 +1,8 @@
 ---
 prospect_id: little-green-light
 channel: linkedin-connect
-template_used: ai-posture-bolt-on-gap
-angle: Name the AI email assistant as the one AI feature; pivot to donor moves-management as the deeper AI opportunity
+template_used: linkedin-connect-default
+angle: ai-posture-bolt-on-gap
 date_drafted: 2026-05-19
 status: drafted
 contact: Nick Bicknell (CEO & Co-Founder) — https://www.linkedin.com/in/nick-bicknell-95a4222/

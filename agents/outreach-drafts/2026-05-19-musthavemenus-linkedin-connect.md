@@ -1,8 +1,8 @@
 ---
 prospect_id: musthavemenus
 channel: linkedin-connect
-template_used: ai-posture-bolt-on-gap
-angle: Serial-founder credibility; category being reshaped by AI-native menu makers; workflow-first vs feature bolt-on
+template_used: linkedin-connect-default
+angle: ai-posture-bolt-on-gap
 date_drafted: 2026-05-19
 status: drafted
 contact: Jim Williams (Founder & CEO) — https://www.linkedin.com/in/jimwilliams123/

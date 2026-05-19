@@ -1,8 +1,8 @@
 ---
 prospect_id: sweft
 channel: linkedin-connect
-template_used: ai-posture-none-gap
-angle: Name the In-Stock-Not-Online problem and the manual spreadsheet handoffs; AI to predict launch bottlenecks
+template_used: linkedin-connect-default
+angle: ai-posture-none-gap
 date_drafted: 2026-05-19
 status: drafted
 contact: Michael Robinson (Co-Founder & CPO) — https://www.linkedin.com/in/mkrobinson212/

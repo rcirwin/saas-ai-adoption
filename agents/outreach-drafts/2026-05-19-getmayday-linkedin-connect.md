@@ -1,8 +1,8 @@
 ---
 prospect_id: getmayday
 channel: linkedin-connect
-template_used: ai-posture-bolt-on-gap
-angle: AIR engine is recent and narrow; extending AI across the month-end close workflow
+template_used: linkedin-connect-default
+angle: ai-posture-bolt-on-gap
 date_drafted: 2026-05-19
 status: drafted
 contact: David Tuck (CEO) — https://uk.linkedin.com/company/get-mayday

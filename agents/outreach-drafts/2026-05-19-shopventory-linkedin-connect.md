@@ -1,8 +1,8 @@
 ---
 prospect_id: shopventory
 channel: linkedin-connect
-template_used: ai-posture-bolt-on-gap
-angle: AI Assist limited to one import flow per reviews; from bolt-on import helper to AI across inventory ops
+template_used: linkedin-connect-default
+angle: ai-posture-bolt-on-gap
 date_drafted: 2026-05-19
 status: drafted
 contact: Bach Le (CEO & Co-Founder) — https://www.linkedin.com/in/bachmle/

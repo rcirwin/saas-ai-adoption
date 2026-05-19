@@ -1,8 +1,8 @@
 ---
 prospect_id: skusuite
 channel: linkedin-connect
-template_used: ai-posture-none-gap
-angle: Predictive purchasing is rule-based, not AI; agentic commerce ops emerging; real forecasting vs rules
+template_used: linkedin-connect-default
+angle: ai-posture-none-gap
 date_drafted: 2026-05-19
 status: drafted
 contact: Aron Aharonoff (Founder & CEO) — https://www.linkedin.com/in/aronaharonoff

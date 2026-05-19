@@ -1,8 +1,8 @@
 ---
 prospect_id: powercode-isp
 channel: linkedin-connect
-template_used: ai-posture-none-gap
-angle: AI-empty ISP ops vertical; the "Something new arrives May 18" teaser as the roadmap entry point
+template_used: linkedin-connect-default
+angle: ai-posture-none-gap
 date_drafted: 2026-05-19
 status: drafted
 contact: James Bertram (CEO, per Glassdoor) — https://www.linkedin.com/company/powercode

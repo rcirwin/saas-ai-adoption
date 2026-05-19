@@ -1,8 +1,8 @@
 ---
 prospect_id: mrpeasy
 channel: linkedin-connect
-template_used: ai-posture-bolt-on-gap
-angle: Name the Mr. Peasy support chatbot; pivot to AI embedded in production scheduling, not support
+template_used: linkedin-connect-default
+angle: ai-posture-bolt-on-gap
 date_drafted: 2026-05-19
 status: drafted
 contact: Konstantin Klugman (CEO & Co-Founder) — https://www.linkedin.com/in/klugman/

@@ -1,8 +1,8 @@
 ---
 prospect_id: studio-ninja
 channel: linkedin-connect
-template_used: ai-posture-bolt-on-gap
-angle: Reference founder's "AI and the future of photography" post; HoneyBook pushing AI; which features in lead-to-booking
+template_used: linkedin-connect-default
+angle: ai-posture-bolt-on-gap
 date_drafted: 2026-05-19
 status: drafted
 contact: Chris Garbacz (Co-Founder & CEO) — https://au.linkedin.com/company/studio-ninja

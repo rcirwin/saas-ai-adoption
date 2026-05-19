@@ -1,8 +1,8 @@
 ---
 prospect_id: qbench
 channel: linkedin-connect
-template_used: ai-posture-none-gap
-angle: #1-rated LIMS while competitors start AI positioning; what-AI-to-build assessment, not feature-chasing
+template_used: linkedin-connect-default
+angle: ai-posture-none-gap
 date_drafted: 2026-05-19
 status: drafted
 contact: Nicholas Evans (CEO) — LinkedIn URL needed
