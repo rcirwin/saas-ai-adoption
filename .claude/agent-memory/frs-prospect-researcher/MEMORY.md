@@ -40,6 +40,10 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-05-19 — batch 4 (15 prospects, serac-technologies→samito)
+- See [run_2026-05-19_batch4.md](run_2026-05-19_batch4.md) — 6 researched / 9 not-a-fit / avg 2.67 / dist 1:6 2:2 3:3 4:4 5:0. Top fit-4: serac-technologies, mirku, sycamore-education, contactpigeon.
+- Key new pattern: domain 301-redirect to a *different operating company* = acquired/absorbed disqualifier (the-bot-platform→getflip.com, pc-payroll→excelforce.com). 4 of 15 this batch were acquired — directory-sourced vertical SaaS has high acquisition rate.
+
 ### 2026-05-19 — batch 3 (15 prospects, revealbot→aptly)
 - 9 researched (fit 3+), 6 not-a-fit, 0 cache hits. Avg fit 2.93. Distribution 1:3 / 2:2 / 3:4 / 4:6 / 5:0. 67 identified remain.
 - Top: 6 prospects tied at fit 4 (craver, tarifica, taleez, syncspider, pulpo-wms, inflow-inventory). No 5s — none had a strong public founder origin story this batch.
