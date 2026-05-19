@@ -40,6 +40,19 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-05-19 — batch 3 (15 prospects, revealbot→aptly)
+- 9 researched (fit 3+), 6 not-a-fit, 0 cache hits. Avg fit 2.93. Distribution 1:3 / 2:2 / 3:4 / 4:6 / 5:0. 67 identified remain.
+- Top: 6 prospects tied at fit 4 (craver, tarifica, taleez, syncspider, pulpo-wms, inflow-inventory). No 5s — none had a strong public founder origin story this batch.
+- **Bootstrapped no-VC inventory/WMS/iPaaS vertical SaaS with zero AI = consistent fit 4** — craver (QSR ordering), pulpo-wms (WMS), inflow-inventory (inventory), syncspider (iPaaS) all matched. Workflow-heavy operational SaaS where peers are starting to add forecasting/AI builders but the prospect has none.
+- **Acquirer-not-acquired confusion is a recurring sourcing trap** — orbitmi was flagged as possibly acquired; it is the *acquirer* (bought AuQub agentic-AI + Gale Force in 2025, AuQub co-founder now CPO). Acquirer on an AI-acquisition trail = agent-ready = fit 1. Always check direction of the acquisition, not just the keyword.
+- **Domain-redirects-to-sale-page = defunct disqualifier** — pulsecommerce.com 301s to a brandsly.com domain-sale listing. Treat any prospect whose domain redirects to a domain-brokerage page as defunct, fit 1. (Distinct from a normal rebrand redirect like revealbot.com→bir.ch.)
+- **Rebrand-redirect is NOT a death signal** — revealbot.com→bir.ch and craverapp.com→getcraver.com are healthy rebrands; eyvo.com→e-procurement.com is a domain-strategy move. Only redirects to a *for-sale listing* signal a dead company.
+- **AI-native ops-layer disqualifier** — aptly leads its entire homepage with "AI Agents" and brands as "the AI-powered operations layer" for property management. When the product IS the agentic experience FRS would design, it's fit 1 even with in-band ARR. Same as the Stacker/agent-ready pattern.
+- **getlatka delivered clean ARR again** — tarifica $3.3M (2024, no VC), kontentino $2.2M 2024 but ~$8M 2025, qualee $3M, taleez $3.1M, craver $2M, aptly $3.1M, syncspider $2M, pulpo-wms $1.2M. Note kontentino's 2024→2025 jump ($2.2M→$8M) is suspiciously large; the $8M figure pushed it above ICP — flagged but the founder-departure disqualifier made it moot.
+- **Founder-departure disqualifier** — kontentino's Bohumil Pokstefl is now ex-CEO (founded Newsletter Pilot). Founder transition + above-ICP revenue = fit 2.
+- All 30 sheet writes (15 cache + 15 prospects) succeeded with 3s pacing between cache-upsert and prospect-update. No rate-limit errors this run (single researcher, not parallel).
+- Sourcer contact-data quality: 13 of 15 rows arrived with blank contact_name (only eyvo + orbitmi + nektria had names). Backfilled 12 founder names during research; only 2 LinkedIn URLs discoverable (syncspider, aptly). directory/jobs/appsumo/producthunt sources consistently arrive without contact data.
+
 ### 2026-05-19 — batch 2 (15 prospects, clerky→shipsaving)
 - 8 researched (fit 3+), 7 not-a-fit, 0 cache hits. Avg fit 2.73. Distribution 1:4 / 2:3 / 3:5 / 4:2 / 5:1. 82 identified remain.
 - Top: sweft (5), clerky + k16-solutions (4).
