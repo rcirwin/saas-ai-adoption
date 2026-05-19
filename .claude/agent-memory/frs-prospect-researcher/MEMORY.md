@@ -40,6 +40,17 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-05-19 — batch 6 (15 prospects, govpilot→breww)
+- See agents/research-runs/2026-05-19-batch6-15-prospects.md — 6 researched / 9 not-a-fit / 0 cache hits / avg 2.53 / dist 1:1 2:7 3:4 4:3 5:0. 22 identified remain.
+- Top fit-4: govpilot, power-my-analytics, croptracker. No 5s — none had a confirmed-in-band ARR + strong founder origin story together.
+- **Sub-ICP small-vertical-SaaS cluster confirmed**: teachworks, mymusicstaff, studiogrowth, myrec all fit 2. Large user counts (70K tutors, 500 studios) mask low-tier/free revenue bases; sub-10-person teams + teacher/studio-owner price points = below the 500K ICP floor. Default this cluster (tutoring/music/fitness/parks admin SaaS for tiny operators) to fit 2 unless ARR is verified in-band.
+- **Agent-ready disqualifier hit again**: windsor-ai ships a production Windsor MCP server with native Claude + ChatGPT connectors. Automatic fit 1.
+- **Strategic-AI-already-core caps the score**: oryx-dental ships AI imaging + auto-notes + AI risk assessments → fit 2; synder markets itself as AI-powered accounting automation → fit 3. When the product page already lists multiple shipped AI features, the what-AI-to-build conversation is closed — cap at 3, drop to 2 if ARR also uncertain.
+- **GovTech is a viable category**: govpilot (municipal OS, ~3.5M ARR, 125+ modules, Vertex-AI analytics = exploring posture) scored 4. Workflow-heavy public-sector SaaS with exploratory AI is a strong target; expect long sales cycles like construction/FSM.
+- **No-founder / holding-co contact gap = fit-2 contributor**: schedulefly (Fly Holdings LLC, no named founder) and myrec (independently-owned, no public CEO) both downgraded partly on contact unreachability.
+- All 30 sheet writes succeeded with 3s pacing between cache-upsert and prospect-update. No rate-limit errors (single researcher).
+- File-naming note: a 2026-05-19-15-prospects.md collision is possible — use a -batchN- suffix for same-day runs (other batches used 2026-05-19-batch2..5).
+
 ### 2026-05-19 — batch 4 (15 prospects, serac-technologies→samito)
 - See [run_2026-05-19_batch4.md](run_2026-05-19_batch4.md) — 6 researched / 9 not-a-fit / avg 2.67 / dist 1:6 2:2 3:3 4:4 5:0. Top fit-4: serac-technologies, mirku, sycamore-education, contactpigeon.
 - Key new pattern: domain 301-redirect to a *different operating company* = acquired/absorbed disqualifier (the-bot-platform→getflip.com, pc-payroll→excelforce.com). 4 of 15 this batch were acquired — directory-sourced vertical SaaS has high acquisition rate.
