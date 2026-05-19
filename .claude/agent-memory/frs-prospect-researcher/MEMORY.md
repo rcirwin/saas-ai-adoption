@@ -40,6 +40,21 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-05-19 — batch 2 (15 prospects, clerky→shipsaving)
+- 8 researched (fit 3+), 7 not-a-fit, 0 cache hits. Avg fit 2.73. Distribution 1:4 / 2:3 / 3:5 / 4:2 / 5:1. 82 identified remain.
+- Top: sweft (5), clerky + k16-solutions (4).
+- **Sweft = highest-fit pattern reconfirmed**: bootstrapped vertical workflow SaaS (~$1.2M ARR) + zero AI + workflow-heavy (cross-departmental launch orchestration) + domain-expert founder with strong public origin story (Michael Robinson ex-Anthropologie). Same Aero Workflow / Financial Cents pattern — when all these hit, score 5.
+- **Holding-co disqualifier hit again**: webpresented acquired by Cordance (Aug 2023, their 12th portfolio co) → fit 1. Cordance joins the SureSwift/Constellation/Tiny/Awesome Motive/Saas.group/Pantastic list. Runbook: check Crunchbase/press for acquisition on any vertical SaaS >5yrs old.
+- **Open-source freemium disqualifier reconfirmed**: docuseal (16K GitHub stars, 168K users, 2-person team, free self-host) → fit 1. Big user counts mislead; the free-self-host + thin-paid-cloud model means sub-ICP revenue. Same as Akaunting/Bigcapital.
+- **`.ai` domain is NOT an agent-ready signal by itself** — certes.ai is a post-quantum encryption company; the .ai is pure branding. Always confirm AI posture from the product, not the TLD. (Contrast with the genuine .ai-rebrand disqualifier which requires prompt-to-app UX / AI-native positioning.)
+- **Stagnating-legacy-company profile = fit 1** (rackwise): revenue LOWER than a decade ago ($1.4M 2024 vs $1.96M 2013), ~13-person team, OTC penny-stock listing, no public founder/CEO. Technically in ICP band but zero appetite/wrong timing for a $30K assessment. New pattern: flat-or-declining decade-long revenue + OTC listing + no visible founder = wind-down trajectory, fit 1.
+- **Marketplace (two-sided/B2C-facing) = weaker FRS fit than pure workflow SaaS** — openbay scored 2 despite ~$3.8M revenue in-band. Consumer-facing marketplaces have thinner internal user-workflow surface, which is what the assessment is built around. Pattern: default marketplace-category prospects to fit 2 unless there's a strong B2B SaaS-side workflow product (Openbay+ wasn't enough).
+- **Comprehensive-AI-suite caveat applied**: e-cargoware shipped FR8CoPilot + FR8Automate docAI + FR8DocAI → capped at fit 3 not 4 despite being a textbook workflow-heavy reachable-founder vertical SaaS. uptain's core product IS the AI (cart-abandonment engine) → fit 2, strategic posture, gap already closed.
+- **getlatka revenue lookups remain the highest-leverage shortcut** — confirmed clean ARR this run for openbay ($3.8M), rackwise ($1.4M), uptain ($1.5M), wordlift ($3.2M), k16-solutions ($3.3M), ruler-analytics ($3M), sweft ($1.2M). Always Latka first when ARR is the deciding factor or the website is blocked.
+- **Website-block fallback worked again**: openbay.com + uptain.de returned 403, rackwise.com timed out — getlatka/Crunchbase/Tracxn triangulated all three with confident scores. WebFetch 403/timeout is not a blocker.
+- Sourcer contact-data quality this batch: 7 of 15 rows had blank or partial contact data; backfilled 7 founders during research (see run summary). k16-solutions and several others still missing LinkedIn/email — sourcer must backfill before outreach.
+- Schema confirmation: `research_cache` tab has only 12 columns (no `ai_posture`, no `fit_score`) — upsert silently drops unknown keys, no error. `ai_posture`/`fit_score` live on `prospects` tab only.
+
 ### 2026-05-15 — Batch H-L (23 prospects, helpjuice→locate2u)
 - Researched 23, fit 3+: 8, not-a-fit: 15, cache hits: 0. Avg fit 2.17. Distribution 1:9 / 2:6 / 3:3 / 4:5 / 5:0.
 - Top fit-4 (no 5s this batch): less-annoying-crm, iconosquare, iorad, implementhit, jetpack-workflow, lagrowthmachine + helpjuice excluded (fit 1, above ICP).
