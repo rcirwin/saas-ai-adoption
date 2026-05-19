@@ -8,4 +8,4 @@ status: drafted
 contact: Konstantin Klugman (CEO & Co-Founder) — https://www.linkedin.com/in/klugman/
 hook_source: Mr. Peasy chatbot launch; unmanned operations scheduling 2025-26 direction
 ---
-Hey Konstantin — the Mr. Peasy chatbot was a smart first AI step. The bigger opening, directionally, is AI inside production scheduling itself, not just support. Your unmanned-operations direction points right at it. I help founders pick which workflows to embed AI in. No pitch, just curious.
+Hey Konstantin, the Mr. Peasy chatbot was a smart first AI step. The bigger opening, directionally, is AI inside production scheduling itself, not just support. Your unmanned-operations direction points right at it. I help founders pick which workflows to embed AI in. No pitch, just curious.
