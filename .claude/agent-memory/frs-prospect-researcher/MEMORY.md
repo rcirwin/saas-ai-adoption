@@ -365,3 +365,11 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - **PE-platform + installed non-founder CEO = fit 1** — agencybloc (Resurgens platform, Mike Lamb ex-Clearwave installed as CEO). No founder buyer; decisions run through the PE thesis. Joins the holding-co disqualifier family.
 - **ARR-unknown workflow-heavy verticals default to fit 3, not 4** — boosterhub, citizenserve, contractor-foreman all genuine FRS gaps but no public revenue figure. Capped at 3 pending ARR verification rather than scored up on workflow signal alone.
 - Env clean: auto-loaded via ~/.config/frs/env, no cffi error, no 429s. 30 writes at 3s pacing, 0 errors. bookafy.com returned HTTP 403 — triangulated via getlatka/Crunchbase/websearch, no blocker.
+
+### 2026-05-20 — DRY_RUN (post-clearing day 1)
+- Queue empty (0 identified). 432 prospects total: 200 researched, 225 not-a-fit, 7 needs-re-research. Expected — the 2026-05-19 multi-batch loop (batches 1–8) drained the entire 112-prospect backlog.
+- 7 `needs-re-research` rows (bugherd x2 [sourcer dupe], bugfender, titlecapture, fitdegree, skusuite, govpilot) were left untouched per the "never research status != identified" rule. Flagged in the run summary for caller decision (force-rerun vs status flip).
+- Cffi pre-flight recurred (`ModuleNotFoundError: _cffi_backend`). One-line fix again (`pip install --user --break-system-packages cffi cryptography`). Keep treating it as a per-run hiccup in this container — confirmed across 4+ prior runs.
+- Pattern reminder: one DRY immediately after a queue-clearing batch is routine; escalate only if 05-21 and 05-22 are also DRY (3-in-a-row threshold from the 05-08 escalation rule).
+- No new scoring patterns this run (nothing researched).
+- Summary files: agents/context/research-run-summary-2026-05-20.md (caller-requested location) + agents/research-runs/2026-05-20-dry-run.md (standard location).
