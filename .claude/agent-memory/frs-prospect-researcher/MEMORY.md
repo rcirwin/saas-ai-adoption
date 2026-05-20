@@ -373,3 +373,10 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - Pattern reminder: one DRY immediately after a queue-clearing batch is routine; escalate only if 05-21 and 05-22 are also DRY (3-in-a-row threshold from the 05-08 escalation rule).
 - No new scoring patterns this run (nothing researched).
 - Summary files: agents/context/research-run-summary-2026-05-20.md (caller-requested location) + agents/research-runs/2026-05-20-dry-run.md (standard location).
+
+### 2026-05-20 — DRY_RUN #2 (same-day repeat, post-clearing)
+- Second invocation on 2026-05-20. Queue still empty (0 identified). 432 prospects total: 200 researched, 225 not-a-fit, 7 needs-re-research. Same state as the morning run.
+- No `_cffi_backend` error this invocation — the prior install (`pip install --user --break-system-packages cffi cryptography` from earlier today) persisted in the container. Treat the cffi hiccup as a *session-start* issue, not a per-run one.
+- No new scoring patterns (nothing researched). Same 7 `needs-re-research` rows flagged for caller decision.
+- Same-day repeat note: when two DRY_RUNs land on the same calendar date, overwrite the `agents/context/research-run-summary-<date>.md` to reflect the latest state but file a sibling `agents/research-runs/<date>-dry-run-2.md` so the per-day audit trail in `research-runs/` doesn't lose the second invocation. The caller-requested context file is the single source for "today's state"; the research-runs directory is append-only history.
+- Escalation threshold unchanged: only escalate to caller if 05-21 AND 05-22 are also DRY (3-distinct-calendar-day rule from the 05-08 entry — multiple DRYs on the same day count as one day).
