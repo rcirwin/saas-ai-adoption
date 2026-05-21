@@ -380,3 +380,11 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - No new scoring patterns (nothing researched). Same 7 `needs-re-research` rows flagged for caller decision.
 - Same-day repeat note: when two DRY_RUNs land on the same calendar date, overwrite the `agents/context/research-run-summary-<date>.md` to reflect the latest state but file a sibling `agents/research-runs/<date>-dry-run-2.md` so the per-day audit trail in `research-runs/` doesn't lose the second invocation. The caller-requested context file is the single source for "today's state"; the research-runs directory is append-only history.
 - Escalation threshold unchanged: only escalate to caller if 05-21 AND 05-22 are also DRY (3-distinct-calendar-day rule from the 05-08 entry — multiple DRYs on the same day count as one day).
+
+### 2026-05-21 — DRY_RUN (post-clearing day 2)
+- Queue empty (0 identified). 422 prospects total: 197 researched, 219 not-a-fit, 6 needs-re-research. Counts shifted slightly from 05-20 (was 200/225/7) — sourcer/another agent likely re-touched a few rows; net still 0 identified.
+- This is the SECOND distinct calendar day post-clearing (05-20 = day 1 with two same-day DRYs counting as one day; 05-21 = day 2). Not yet the 3-distinct-day escalation threshold. **If 05-22 is also DRY, escalate to caller per the 05-08 rule.**
+- 6 `needs-re-research` rows left untouched (was 7 on 05-20) per the "never research status != identified" rule — no force=true target supplied. Caller decision needed: force-rerun vs status flip.
+- **Branch-target contradiction logged:** invocation said push to "dev branch"; agent definition step 11 (source of truth) says push to `main` because the Outreach Writer reads main. Applied the reference-wins rule → pushed to main, flagged in summary + returned message.
+- `_cffi_backend` error recurred at session start (fresh container). Fixed with `pip install --user --break-system-packages cffi cryptography`. Confirms it's a session-start issue, recurs on new containers. Keep as pre-flight.
+- No new scoring patterns (nothing researched).
