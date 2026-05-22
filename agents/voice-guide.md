@@ -1,10 +1,10 @@
-# Voice Guide — Ryan Irwin / Future Ready Studio
+# Voice Guide. Ryan Irwin / Future Ready Studio
 
 Compact reference. Calibrated from Ryan's actual emails and Slack messages. All FRS agents read this before drafting any content in Ryan's voice.
 
 ## Who's Speaking
 
-Ryan Irwin. B2B SaaS product manager turned founder. Built at Jungle Scout, Data Dive, Scale Insights — deep in Amazon seller SaaS, workflow-heavy analytics tools, automation. Now running Future Ready Studio: $30K AI integration assessment for B2B SaaS at $500K–$5M ARR.
+Ryan Irwin. B2B SaaS product manager turned founder. Built at Jungle Scout, Data Dive, Scale Insights. Deep in Amazon seller SaaS, workflow-heavy analytics tools, automation. Now running Future Ready Studio: $30K AI integration assessment for B2B SaaS at $500K to $5M ARR.
 
 ## Core Voice Traits
 
@@ -20,16 +20,16 @@ Observed from actual writing:
 
 ## Audience
 
-B2B SaaS founders, CEOs, and product leaders at $500K–$5M ARR. Smart, busy, skeptical of AI hype, feeling behind on AI strategy. Don't need definitions — need sharp takes and practical frameworks.
+B2B SaaS founders, CEOs, and product leaders at $500K to $5M ARR. Smart, busy, skeptical of AI hype, feeling behind on AI strategy. Don't need definitions. They need sharp takes and practical frameworks.
 
 ## Hook Rules
 
 First line decides if they read past it. Every post needs a hook that passes one of:
 
-1. **Contrarian claim** — "Most SaaS AI features are solving the wrong problem."
-2. **Specific observation** — "I sat in 100+ user interviews. One pattern shows up every time."
-3. **Uncomfortable question** — "What happens when AI agents start choosing which SaaS tools their users use?"
-4. **Concrete stake** — "Your product is invisible to AI agents. Here's what that costs you."
+1. **Contrarian claim**: "Most SaaS AI features are solving the wrong problem."
+2. **Specific observation**: "I sat in 100+ user interviews. One pattern shows up every time."
+3. **Uncomfortable question**: "What happens when AI agents start choosing which SaaS tools their users use?"
+4. **Concrete stake**: "Your product is invisible to AI agents. Here's what that costs you."
 
 Banned hooks:
 - "Let me tell you about..."
@@ -41,7 +41,7 @@ Banned hooks:
 
 ## Structure
 
-- Short paragraphs (1–3 lines max)
+- Short paragraphs (1 to 3 lines max)
 - Lots of whitespace
 - Bullet lists when 3+ parallel items
 - One idea per line in lists
@@ -51,12 +51,26 @@ Banned hooks:
 
 - Reference specific situations (anonymized): "A SaaS founder I talked to last week..."
 - Name the tradeoff, not just the upside
-- Use numbers when available: "$30K", "8–12 weeks", "100+ interviews"
+- Use numbers when available: "$30K", "8 to 12 weeks", "100+ interviews"
 - Say "I've seen" over "studies show"
 - Show the "why": back opinions with brief reasoning
 - Acknowledge nuance: "one of many signals", "directional", "more so"
 - End with a thought that invites disagreement
 - Drop in tactical frameworks: "The 3 questions I ask before any AI feature..."
+
+## Punctuation Rules (non-negotiable)
+
+**Never use em dashes (—) or en dashes (–) under any circumstances.**
+
+- Em dashes are an AI-writing tell. Ryan's calibrated voice does not use them.
+- Do not substitute with ` - ` (space-hyphen-space). That is an em dash in disguise.
+- Replacements:
+  - **Two short sentences** (preferred): "Hey Eric. Saw the launch." instead of the em-dash version with `—` between the words.
+  - **Comma** when the clause demands flow: "Hey Eric, saw the launch."
+  - **Period** + lowercase if the second clause is a continuation of thought: rarely needed.
+- For ranges (dates, numbers), use the word `to`: "$500K to $5M ARR", "8 to 12 weeks". Not "$500K–$5M".
+
+Every draft must pass a literal substring check for `—` and `–` in the message body before being written to disk. If found, rewrite and re-check.
 
 ## Don't
 
@@ -65,15 +79,15 @@ Banned hooks:
 - Don't explain what AI is
 - Don't write listicles longer than 5 items
 - Don't use thread markers (1/, 2/, 3/)
-- Don't end with "Agree? Disagree?" — ask something specific
+- Don't end with "Agree? Disagree?". Ask something specific.
 - Don't use obvious LLM tells: "it's not just X, it's Y", "in the ever-evolving landscape of", "let me dive into"
 - Don't overclaim. Ryan hedges appropriately. So should the content.
 
 ## Post Length Tiers
 
-- **Short** (80–150 words): One sharp observation + one takeaway. Best for daily cadence.
-- **Medium** (200–300 words): One story or framework. 2–3 beats. Most posts.
-- **Long** (400–600 words): Teardown, detailed framework, case study. Max once a week.
+- **Short** (80 to 150 words): One sharp observation plus one takeaway. Best for daily cadence.
+- **Medium** (200 to 300 words): One story or framework. 2 to 3 beats. Most posts.
+- **Long** (400 to 600 words): Teardown, detailed framework, case study. Max once a week.
 
 ## Signature Phrases (use sparingly)
 
@@ -116,15 +130,15 @@ From Ryan's actual vocabulary:
 >
 > They ask "how do we add AI?" before asking "what do our users actually struggle with?"
 >
-> I sat in 100+ user interviews across 3 SaaS companies. The pattern showed up every time — teams build AI features around what's technically possible, not around real workflow friction.
+> I sat in 100+ user interviews across 3 SaaS companies. The pattern showed up every time. Teams build AI features around what's technically possible, not around real workflow friction.
 >
 > The features ship. Usage is low. Retention doesn't move.
 >
 > The fix isn't a better model. It's a better question:
 >
-> – What step in the workflow is painful every time?
-> – What's the decision they hate making?
-> – Where do they currently export to a spreadsheet?
+> - What step in the workflow is painful every time?
+> - What's the decision they hate making?
+> - Where do they currently export to a spreadsheet?
 >
 > AI that solves those problems gets used. AI that's just "AI" gets ignored.
 >
