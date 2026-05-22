@@ -20,7 +20,7 @@ Variant bodies live in `agents/templates/outreach.md`.
 
 ## Ranking (scored sends only)
 
-A "scored send" = an actually-sent email (`status = sent`) with a non-blank `response_status`. Drafts, skips, bounces, and unsent rows never count.
+A "scored send" = an actually-sent email (`status = sent`) with a non-blank `response_status`. Drafts, skips, bounces, and unsent rows never count. As of this run: 0 of 741 log rows have a non-blank `response_status`, and `led_to_call = TRUE` count is 0.
 
 | Variant | Scored sends | Reply rate | Call rate |
 |---|---|---|---|
@@ -28,10 +28,14 @@ A "scored send" = an actually-sent email (`status = sent`) with a non-blank `res
 | email-short-question | 0 | n/a | n/a |
 | email-proof-led | 0 | n/a | n/a |
 
+## LinkedIn channel selection (this run)
+
+This run drafted `linkedin-dm` second-touch follow-ups only (no email). Because there are zero scored sends, the LinkedIn DM template falls back to the default DM body in `outreach.md`. Logged `template_used = linkedin-dm-broad` (second-touch, research_cache-personalized, follow-up to a sent `linkedin-connect`), consistent with the 2026-05-14 channel-tag convention so reply/call outcomes stay attributable per cohort. LinkedIn channels never enter the email A/B even-split; that split applies to the email channel only.
+
 ## Dependency: where outcome data comes from
 
-Rankings stay empty until `response_status` / `led_to_call` get populated for sent emails. The campaign sends via **Outlook** (`ryan@futurereadystudio.com`); replies land there, **not** in the connected Gmail (`rcirwin11@gmail.com`, which is personal mail). Until an Outlook reply source is wired up, or outcomes are entered manually, the writer stays in EXPLORATION mode and splits evenly.
+Rankings stay empty until `response_status` / `led_to_call` get populated. The campaign sends email via **Outlook** (`ryan@futurereadystudio.com`); replies land there, **not** in the connected Gmail (`rcirwin11@gmail.com`, which is personal mail). LinkedIn connect/DM dispositions also need manual entry. Until an outcome source is wired up or outcomes are entered manually, the writer stays in EXPLORATION mode for email and falls back to defaults for LinkedIn.
 
-That is the correct behavior for now: the even split spreads sends across all three variants so that the moment outcome data exists, the ranking becomes computable. Before this change, every email used a single template, so no comparison was ever possible.
+That is the correct behavior for now: the even split spreads sends across all three email variants so the moment outcome data exists, the ranking becomes computable.
 
-_Last updated: seeded 2026-05-22 (manual). The writer overwrites this on its next run._
+_Last updated: regenerated 2026-05-22 by outreach run (linkedin-dm second-touch batch). The writer overwrites this on its next run._
