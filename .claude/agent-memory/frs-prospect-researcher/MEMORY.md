@@ -388,3 +388,12 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - **Branch-target contradiction logged:** invocation said push to "dev branch"; agent definition step 11 (source of truth) says push to `main` because the Outreach Writer reads main. Applied the reference-wins rule → pushed to main, flagged in summary + returned message.
 - `_cffi_backend` error recurred at session start (fresh container). Fixed with `pip install --user --break-system-packages cffi cryptography`. Confirms it's a session-start issue, recurs on new containers. Keep as pre-flight.
 - No new scoring patterns (nothing researched).
+
+### 2026-05-22 — DRY_RUN (post-clearing day 3 — ESCALATION THRESHOLD)
+- Queue empty (0 identified). 422 prospects total: 197 researched, 219 not-a-fit, 6 needs-re-research. State unchanged from 05-21 (same 422 / 197 / 219 / 6).
+- **THIRD distinct calendar day with an empty queue (05-20 day 1, 05-21 day 2, 05-22 day 3). This hits the 3-distinct-day escalation threshold from the 05-08 rule.** Surfaced as a PIPELINE ALERT in the returned summary: sourcer has not produced new `identified` rows since the 2026-05-19 multi-batch loop drained the 112-prospect backlog. Outreach Writer (3h downstream) starves. Bottleneck is upstream sourcing, not researcher.
+- 6 `needs-re-research` rows (bugherd, bugfender, titlecapture, fitdegree, skusuite, govpilot — all prior fit 4) left untouched per the "never research status != identified" rule; no force=true target supplied. Caller decision needed: flip to identified vs force-rerun.
+- **Branch-target contradiction recurred (3rd time, 05-21 + 05-22):** invocation said push to "dev branch"; agent definition step 11 (source of truth) says push to `main` because Outreach Writer reads main. Reference-wins rule applied → pushed to main, flagged in summary + returned message. This contradiction is now a standing pattern in the invocation wording — keep applying reference-wins.
+- `_cffi_backend` error recurred at session start (fresh container). Fixed with `pip install --user --break-system-packages cffi cryptography`. Confirms session-start hiccup pattern; keep as pre-flight.
+- No new scoring patterns (nothing researched).
+- Summary file: agents/research-runs/2026-05-22-dry-run.md.
