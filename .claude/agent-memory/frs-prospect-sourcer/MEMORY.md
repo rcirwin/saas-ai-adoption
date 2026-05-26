@@ -378,3 +378,70 @@ These founder-led, solo/near-solo bootstrappers are the best fit for a $30K asse
 - Appointment scheduling — additional sampling (Setmore, SimplyBook.me)
 
 **Next angle worth trying:** "Founder threads on Reddit (r/SaaS, r/EntrepreneurRideAlong) where they ask 'how do I add AI to my product without becoming AI-native'" — that's the explicit cognitive state we want to find. Could be a tighter signal than mining alternative-to threads.
+
+## Run cadence (continued)
+
+- 2026-05-26 (all, rotation): 15 added of up to 30. ~35 evaluated, 8 dupes-detected-pre-add (hostme, aero-workflow, insuredmine, little-green-light, boosterhub, synder, tally, vimcal), ~12 DQ during search. Prospects tab 422 -> 437. LINEAR_SKIPPED. See `agents/sourcing-runs/2026-05-26-all.md`. Sources: practical-founders podcast (3), directory walks via GetLatka + G2 (12). Held at 15 vs padding to 30 since later candidates were uniformly over ICP. Categories newly sampled: subscription ecommerce (Cratejoy, Subbly), web data / data marketplace (Datarade, Coresignal), restaurant reservation (Resmio), nonprofit donor CRM (DonorDock), church management (ChMeetings), email productivity (Mailbutler), ecommerce iPaaS (APIWORX), no-code database (Stackby), construction PM (Linarc, Knowify), membership/association EU (VeryConnect).
+
+## Disqualification additions (2026-05-26)
+
+17. **"Bootstrapped to $10M+ but past 50 emp"**: Even with a strong narrative (TalkingParents, Boomerang/Baydin, Donorbox), if BOTH ARR and emp signals exceed ICP, skip. The Cliniko heuristic exception requires under-50-emp with strong "no investment by choice" signal. TalkingParents at $10M/65 emp fails this.
+
+18. **WordPress plugin multi-product parents**: BuddyBoss → Awesome Motive Jul 2024. Awesome Motive runs WPBeginner + OptinMonster + WPForms + MonsterInsights + many more — treat as DQ #8 parent. Same pattern: saas.group, Banzai. Run "[name] acquired by" search for any WordPress plugin company > 5 years old.
+
+19. **Service businesses framed as SaaS**: Founders Workshop (Vincent Serpico) is a software-dev AGENCY despite being Practical Founders podcast adjacent. Fraction (Praveen Ghanta) is a fractional ENGINEERING MARKETPLACE — high ARR ($10M) but not a SaaS product. Skip both per existing rule (dev agencies/consultancies and marketplaces aren't SaaS).
+
+20. **GetLatka founder-mismatch trap**: 2026-05-26 run had multiple GetLatka entries with incorrect founder attribution (e.g., "Tyler Wright" attributed to ResNexus; actual founder is James Mayfield. "Lukas Sruoga" attributed to Coresignal; actual is unclear, possibly Andrius Žiūznys or different name). ALWAYS cross-reference founder identity via:
+    (a) Company About page
+    (b) LinkedIn search "Founder + [company name]"
+    (c) Practical Founders podcast page if applicable
+    Before recording contact_name in sheet.
+
+## Source quality observations (2026-05-26)
+
+- **Subscription ecommerce platform** category — under-sampled. Cratejoy ($4.1M / 15 emp / Amir Elaguizy / Y Combinator S13 originally) and Subbly ($1.4M / 17 emp / Stefan Pretty Scotland) both clean fits. Recharge is over ICP. Look at Bold Subscriptions, Submetrics, ReCharge alternatives in future runs.
+
+- **Web data / data API** category — Datarade ($2.1M / 27 emp / Berlin / $1.23M raised) and Coresignal ($5.7M / 32 emp / Lithuania / $0 raised) are both fits. Apify is now $25M ARR / 160 emp — past ICP. The category has compressed in 2024-2025 with most providers either growing past $10M or getting acquired.
+
+- **Restaurant reservation** beyond consolidated giants — Resmio (Berlin, $1.3M / 38 emp / $1M raised) is the rare independent. Most others are acquired (Tock→Amex, Resy→Amex, SevenRooms→DoorDash $1.2B). Hostme was already in our prospects list.
+
+- **Membership/association software** — VeryConnect (Glasgow, $3.8M ARR / 33 emp / Kyle White / $0 raised) is a clean fit beyond what we already have (Novi AMS, StarChapter). Springly/AssoConnect raised $7.7M Series A — borderline. MemberClicks is part of Momentive Software — DQ.
+
+- **Construction PM** — Linarc (San Jose, $8M / 25 emp / Shanthi Rajan / $0 raised) is a fresh independent. Tradify was acquired by The Access Group Oct 2024 (confirmed acquisition status that previous memory entries hadn't captured yet). Knowify is borderline ($6M / 19 emp / $8.45M raised — fails DQ #6 narrowly with ARR $6M vs threshold check).
+
+- **Church management software** — ChMeetings (Jios Apps Inc, USA-based but team has international religious-ministry roots) is the under-sampled clean fit. Tithe.ly acquired Breeze ChMS Mar 2021 and is now $16M ARR (over ICP). Servant Keeper acquired by Faithlife (parent). ChurchTrac already in dedup. ChMeetings has 7K+ churches and seems genuinely independent — worth researcher's deeper dig to confirm.
+
+## Slug conventions adopted in this run
+
+- `apiworx` (no hyphens, all-caps branding maintained as company name but slug is lowercase)
+- `donordock` (single word per branding)
+- `linarc` (single word)
+- `veryconnect` (single word per branding)
+- `datarade` (single word, kept .ai out of slug per memory rule)
+- `craftybase` (single word per branding)
+- `chmeetings` (single word per branding)
+- `coresignal` (single word per branding)
+- `hostfully` (single word per branding)
+- `cratejoy` (single word per branding)
+- `subbly` (single word per branding, .co stripped)
+- `resmio` (single word per branding)
+- `knowify` (single word per branding)
+- `stackby` (single word per branding)
+- `mailbutler` (single word per branding, .io stripped)
+
+## Categories now sampled — update sourcing.md going forward
+
+- Subscription ecommerce platform — 2 added this run (Cratejoy, Subbly; previously only had Sumtracker for adjacent SMB ecommerce inventory)
+- Membership / association SaaS EU — 1 added (VeryConnect; previously Novi AMS, StarChapter were US-only)
+- Web data / data API marketplace — 2 added (Datarade, Coresignal)
+- Restaurant reservation — 1 added (Resmio; previously only hostme in dedup)
+- Nonprofit donor CRM — 1 added (DonorDock; previously flocknote, giveffect were religious/community-adjacent)
+- Church management — 1 added (ChMeetings; previously flocknote was the main one)
+- Manufacturing for DTC makers — 1 added (Craftybase; previously Sumtracker for SMB ecommerce inventory but this is craft-specific)
+- Vacation rental / STR PMS — 1 added (Hostfully; previously hostme was the closest)
+- Construction PM with workflow heavy — 2 added (Linarc, Knowify; previously contractor-foreman, sitemax, jobtread; this fills a gap)
+- Email productivity extension — 1 added (Mailbutler; previously mailmeteor, mailersend for sending, but no inbox-augmentation)
+- Ecommerce integration / iPaaS — 1 added (APIWORX; previously albato, syncspider, latenode covered iPaaS but not ecommerce-specific)
+- No-code database / Airtable alt — 1 added (Stackby; previously noloco, stacker, fusebase for no-code but not pure-database)
+
+**Next under-sampled to mine**: K-12/private school SIS beyond what's in dedup (Sycamore-class incumbents are PE; founder-led indies exist), salon/spa booking (Mindbody alternatives), childcare SaaS (independents beyond Brightwheel), salon/spa booking, agtech beyond Cropin-scale incumbents, dental practice management beyond Oryx/iDentalSoft (already in dedup), veterinary practice management beyond shepherd-vet (already in dedup), HR tech for SMB beyond charliehr (already in dedup), B2B marketplaces (still consolidated heavily).
