@@ -32,6 +32,14 @@ A "scored send" = an actually-sent email (`status = sent`) with a non-blank `res
 
 Rankings stay empty until `response_status` / `led_to_call` get populated for sent emails. The campaign sends via **Outlook** (`ryan@futurereadystudio.com`); replies land there, **not** in the connected Gmail (`rcirwin11@gmail.com`, which is personal mail). Until an Outlook reply source is wired up, or outcomes are entered manually, the writer stays in EXPLORATION mode and splits evenly.
 
-That is the correct behavior for now: the even split spreads sends across all three variants so that the moment outcome data exists, the ranking becomes computable. Before this change, every email used a single template, so no comparison was ever possible.
+That is the correct behavior for now: the even split spreads sends across all three variants so that the moment outcome data exists, the ranking becomes computable.
 
-_Last updated: seeded 2026-05-22 (manual). The writer overwrites this on its next run._
+## Run-level state, 2026-05-26
+
+- `outreach_log` rows total: 800 (795 before this run + 5 appended)
+- Rows with non-blank `response_status`: 0
+- 136 `sent`, 555 `drafted`, remainder skipped or bounced
+- All three email variants remain at 0 scored sends. EXPLORATION mode persists.
+- This run added 5 `linkedin-connect` drafts only (5 never-touched prospects); no email drafts because none of the 5 had a `contact_email`.
+
+_Last updated by writer: 2026-05-26._
