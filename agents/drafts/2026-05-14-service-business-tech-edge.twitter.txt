@@ -1,14 +1,14 @@
-1/ Service businesses are about to look more like tech companies than tech companies do.
+1/ Service based businesses are going to start looking more like tech companies than tech companies do.
 
-For 20 years, the playbook said: stop being a service business, become a software business.
-
-Agents just flipped which one has the harder problem.
+For 20 years, software was on a pedestal. Huge margins. Huge multiples. Massive ability to scale.
 
 🧵
 
 ---
 
-2/ Tech companies built the tools. Software margins, software multiples, software exits.
+2/ Agents may have just inverted who has the harder problem.
+
+Tech companies built the tools. Software margins, software multiples, software exits.
 
 But the tool was always a means. The customer was buying the outcome.
 
@@ -16,9 +16,9 @@ But the tool was always a means. The customer was buying the outcome.
 
 3/ Service businesses owned the outcome from day one.
 
-Trial-and-error reps. Judgment across hundreds of cases. The workflow. The customer relationship.
+Trial-and-error reps. Judgment from hundreds of cases. The workflow. The customer relationship.
 
-What they didn't have was the leverage.
+What they didn't have was the leverage. Margins capped by hours in the day.
 
 ---
 
@@ -30,17 +30,17 @@ Software-like leverage. Services-like depth.
 
 ---
 
-5/ A founder friend just scrapped his AI SaaS to become a service business that runs the workflow his customers were trying to do inside it.
+5/ I've seen founders scrap their AI SaaS and pivot to running the workflow as a service.
 
-Owns all the inputs and outputs. Margins climbing. Deals closing faster.
+They own all the inputs and outputs. Unlocks larger budgets. Deals close faster.
 
 The agent is the leverage. The service is the product.
 
 ---
 
-6/ Three things most operators are missing.
+6/ Three things follow that most operators are missing.
 
-The edge. The judgment agentic harnesses need lives in the heads of operators who have run the workflow thousands of times. Not in the SaaS founder shipping the first version of it.
+The edge. The judgment agentic harnesses need lives in the heads of operators who have run the workflow thousands of times. Not in the SaaS founders just building the tools they use.
 
 ---
 
@@ -52,24 +52,22 @@ Domain context doesn't exist in training data. It exists in the operator who alr
 
 8/ The scramble. Software companies built for tool delivery now have to figure out how to deliver outcomes.
 
-Going from outcomes to leverage is a far shorter trip than going from leverage to outcomes.
+Going from outcomes to leverage is a far shorter trip than going the other way.
+
+Services don't realize the goldmine they're sitting on.
 
 ---
 
-9/ The model is the engine. The harness is the product.
-
-The people best positioned to build the right harness are the ones who already know what right looks like.
+9/ 𝗜𝗳 𝘆𝗼𝘂 𝗿𝘂𝗻 𝗮 𝘀𝗲𝗿𝘃𝗶𝗰𝗲 𝗯𝘂𝘀𝗶𝗻𝗲𝘀𝘀, 𝘁𝗵𝗶𝘀 𝗶𝘀 𝘆𝗼𝘂𝗿 𝘄𝗶𝗻𝗱𝗼𝘄 𝘁𝗼 𝗯𝗲𝗰𝗼𝗺𝗲 𝗮 𝘁𝗲𝗰𝗵 𝗰𝗼𝗺𝗽𝗮𝗻𝘆. 𝗗𝗼𝗻'𝘁 𝗯𝘂𝗶𝗹𝗱 𝘁𝗵𝗲 𝘁𝗼𝗼𝗹. 𝗘𝗻𝗰𝗼𝗱𝗲 𝘄𝗵𝗮𝘁 𝘆𝗼𝘂 𝗸𝗻𝗼𝘄 𝗶𝗻𝘁𝗼 𝗮 𝘀𝘆𝘀𝘁𝗲𝗺 𝘁𝗵𝗮𝘁 𝗿𝘂𝗻𝘀 𝗶𝘁.
 
 ---
 
-10/ 𝗜𝗳 𝘆𝗼𝘂 𝗿𝘂𝗻 𝗮 𝘀𝗲𝗿𝘃𝗶𝗰𝗲 𝗯𝘂𝘀𝗶𝗻𝗲𝘀𝘀, 𝘁𝗵𝗶𝘀 𝗶𝘀 𝘆𝗼𝘂𝗿 𝘄𝗶𝗻𝗱𝗼𝘄 𝘁𝗼 𝗯𝗲𝗰𝗼𝗺𝗲 𝘁𝗲𝗰𝗵. 𝗗𝗼𝗻'𝘁 𝗯𝘂𝗶𝗹𝗱 𝘁𝗵𝗲 𝘁𝗼𝗼𝗹. 𝗘𝗻𝗰𝗼𝗱𝗲 𝘄𝗵𝗮𝘁 𝘆𝗼𝘂 𝗸𝗻𝗼𝘄 𝗶𝗻𝘁𝗼 𝗮 𝘀𝘆𝘀𝘁𝗲𝗺 𝘁𝗵𝗮𝘁 𝗿𝘂𝗻𝘀 𝗶𝘁.
-
----
-
-11/ For two decades, scale meant becoming a software business.
+10/ For two decades, scale meant becoming a software business.
 
 That path is closing. The new path is to stay a service business and let the agent provide the leverage.
 
 ---
 
-12/ What part of your workflow do you know cold that an agent in your harness could be running for the next client tomorrow?
+11/ The question isn't whether your service-based business can become a tech company.
+
+It's how long until that becomes the norm in your industry.
