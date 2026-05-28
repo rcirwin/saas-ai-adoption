@@ -40,6 +40,20 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-05-28 — explicit-slice batch 49 slice C (49 prospects, propet-software→clarityflow)
+- See [run_2026-05-28_slice_c.md](run_2026-05-28_slice_c.md) and `agents/research-runs/2026-05-28-batch-49-prospects-slice-c.md` — 49 researched / 21 fit3+ / 28 not-a-fit / 0 cache hits / avg 2.65 / dist 1:6 2:19 3:10 4:14 5:0.
+- Top fit-4: statusbrew ($3.6M, AI-empty vs Sprout/Hootsuite/Buffer), qebot ($2.9M, Matthew White LinkedIn tagline "Nerding out over AI"), desktime ($2M, Artis Rozentals published 2026 AI usage study from own 50K-user data while product has zero AI), plainly (TinySeed AE-template API vs Sora/Runway gen-video threat), eagle-club-systems (PGA-pro founder Tyler Arnold, no AI vs CourseRev AI-native entrant).
+- **New pattern: founder LinkedIn tagline as AI-posture signal** — Matthew White (Qebot) tagline "Nerding out over AI" + zero shipped AI = textbook exploring posture + clean hook. Scan taglines on borderline scores.
+- **New pattern: founder publishes AI study from own data but ships no AI = strongest exploring signal** (Artis/DeskTime). Default to fit 4.
+- **New disqualifier: "Wanna buy it?" on founder's projects page** — Brian Casel/Clarityflow product explicitly listed for sale. Cleaner than Paul Jarvis/Fathom pattern. Automatic fit 1.
+- **New pattern: marketing-page "AI-native" rebrand within last 6 months caps at fit 2** — maidcentral Sept 2025 + redpoint-hq AI tools 2025 launch. The assessment conversation is closed when their own marketing page already declares it.
+- **TinySeed sub-$1M ARR + gen-AI-disrupted category can override ARR floor** — plainly fit 4 because AE-template video automation faces existential Sora/Runway threat. Apply when category faces gen-model existential threat.
+- **Sheet contact errors caught**: codefortynine had wrong founder "Andreas Spall" (correct: Ben Romberg CEO, Andreas Schröder is COO); stiltsoft had wrong CEO "Maxim Bolshakov" (correct: Maxim Kuzmich). Always verify founder name via Crunchbase/LinkedIn before treating sheet as ground truth.
+- **Sheet ARR vs Tracxn ARR mismatch caught**: webkul sheet "3-5M" vs Tracxn 2025 "$158M" (439 emp). When team size is inconsistent with ARR, Tracxn first.
+- **Career-place has duplicate prospects-tab rows** (`update --where id=career-place` returned 2 rows touched). Flag sourcer for de-dupe.
+- Three directory rows arrived with no founder name (ownerrez, actonic, gymmaster); all backfilled during research. Pattern continues: directory-vertical-saas + atlassian-marketplace sources arrive contact-thin.
+- All sheet writes succeeded with 4-5s pacing between calls; one transient 429 mid-run (statusbrew cache write) cleanly recovered via until-loop retry. Rate-limit window proved to be ~60 read+write/min/user; budget single-researcher slice at ~5s per write.
+
 ### 2026-05-28 — explicit-slice batch 49 (49 prospects, offeringtree→gosimpletax, parallel slice C)
 - See `agents/research-runs/2026-05-28-batch49-prospects.md` — 49 researched / 0 cache hits / avg 2.59 / dist 1:9 2:7 3:21 4:12 5:0. No fit-5.
 - Top fit-4 patterns: practitioner-founder anchors (Pool Brain/Maidily/Customer Factor — founder still operates the original service business they wrote the SaaS for); Indie-Hackers-darling solo-to-small bootstrappers (Damon Chen Testimonial.to/PDF.ai, Stu Chaney Rivo $4M, Hani Mourra Repurpose.io $5M); AI-empty-in-AI-saturated-category (Adversus vs Bland/Air voice agents, Keeping vs Hiver/Front AI triage, ReviewPush vs Birdeye/Podium).
