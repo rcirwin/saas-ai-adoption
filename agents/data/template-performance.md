@@ -14,7 +14,7 @@ Variant bodies live in `agents/templates/outreach.md`.
 
 ## Current policy
 
-- **Mode: EXPLORATION (even split).** Reason: zero scored sends (every `response_status` in `outreach_log` is still blank across 819 log rows).
+- **Mode: EXPLORATION (even split).** Reason: zero scored sends (every `response_status` in `outreach_log` is still blank across 819 log rows pre-run).
 - Split rule: `idx = (sum of ord(c) for c in prospect_id) % 3`, deterministic and even.
 - Switches to **EXPLOITATION** (rank-and-pick by call rate, then reply rate) once every variant has at least 20 scored sends.
 
@@ -28,14 +28,19 @@ A "scored send" = an actually-sent email (`status = sent`) with a non-blank `res
 | email-short-question | 0 | n/a | n/a |
 | email-proof-led | 0 | n/a | n/a |
 
-## Variant assignment this run (2026-05-27)
+## Variant assignment this run (2026-05-28)
 
 | Prospect | Variant |
 |---|---|
-| usermaven | email-short-question |
-| ewebinar | email-proof-led |
-| survicate | email-short-question |
-| tettra | hyper-personalized-email |
+| referralcandy | email-short-question |
+| sumtracker | hyper-personalized-email |
+| pallyy | email-short-question |
+| simplybook-me | email-proof-led |
+| pixpa | hyper-personalized-email |
+| smartsupp | email-proof-led |
+| e-cargoware | hyper-personalized-email |
+
+Distribution: 3 hyper-personalized, 2 email-short-question, 2 email-proof-led.
 
 ## Dependency: where outcome data comes from
 
@@ -43,12 +48,12 @@ Rankings stay empty until `response_status` / `led_to_call` get populated for se
 
 That is the correct behavior for now: the even split spreads sends across all three variants so that the moment outcome data exists, the ranking becomes computable.
 
-## Run-level state, 2026-05-27
+## Run-level state, 2026-05-28
 
-- `outreach_log` rows total: 819 (804 before this run + 15 appended)
-- Rows with non-blank `response_status`: 0
-- 140 `sent`, 575 `drafted`, remainder skipped or bounced
+- `outreach_log` rows total pre-run: 819
+- Rows with non-blank `response_status` pre-run: 0
+- Sent rows pre-run: 140 (67 `hyper-personalized-email`, 0 `email-short-question`, 0 `email-proof-led`, plus older / pre-variant rows tagged with other template IDs)
 - All three email variants remain at 0 scored sends. EXPLORATION mode persists.
-- This run added 11 `linkedin-connect` drafts (parallel-channel touch on past-cadence prospects whose prior `sent` channel was email) + 4 `email` drafts (parallel-channel touch on past-cadence prospects whose prior `sent` channel was LinkedIn). No prospect had both channels untouched.
+- This run added 7 `email` drafts (parallel-channel touch on past-cadence prospects whose prior `sent` channel was `linkedin-connect`). No `linkedin-*` drafts this run.
 
-_Last updated by writer: 2026-05-27._
+_Last updated by writer: 2026-05-28._
