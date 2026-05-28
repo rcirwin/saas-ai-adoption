@@ -40,6 +40,20 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-05-28 — explicit-slice batch 49 (49 prospects, offeringtree→gosimpletax, parallel slice C)
+- See `agents/research-runs/2026-05-28-batch49-prospects.md` — 49 researched / 0 cache hits / avg 2.59 / dist 1:9 2:7 3:21 4:12 5:0. No fit-5.
+- Top fit-4 patterns: practitioner-founder anchors (Pool Brain/Maidily/Customer Factor — founder still operates the original service business they wrote the SaaS for); Indie-Hackers-darling solo-to-small bootstrappers (Damon Chen Testimonial.to/PDF.ai, Stu Chaney Rivo $4M, Hani Mourra Repurpose.io $5M); AI-empty-in-AI-saturated-category (Adversus vs Bland/Air voice agents, Keeping vs Hiver/Front AI triage, ReviewPush vs Birdeye/Podium).
+- **New disqualifier pattern: holding-co rebuild rebrand** — Apoorva 'technology investment firm' announced partnership-then-3.0-ground-up-rebuild + new CEO (Michelle Otto) for 6Storage Oct 2024. Treat 'tech investment firm rebuilds SaaS + new CEO + new version number' as equivalent to acquisition disqualifier even when described as partnership. Add Apoorva to the SureSwift/Constellation/Cordance/Pender list.
+- **CRM-inside-Outlook = existentially threatened by Microsoft Copilot for Sales** — Avidian/Avid CRM in ICP at $3M but the existential threat isn't 'no AI' it's that Microsoft Copilot absorbs the Outlook surface. Score 3 with angle that's "how to coexist as agent surface" not "what AI to build."
+- **Founder also runs an AI-native sibling product = fit-4 booster** — Damon Chen (Testimonial.to / PDF.ai). Understands AI strategy, hasn't shipped in the main product. Action-bias high.
+- **'AI Powered' directory badge ≠ shipped AI** — The Customer Factor's Cuspera 'AI Powered' support badge doesn't appear in product. Always verify against product/changelog, not third-party directory tags.
+- **Reconfirmed: M&A offer raised but not closed = yellow flag (fit 3 with caveat)** — forms.app raised M&A offer April 2025 per Latka; same as ConvertCalculator pattern.
+- **Pender Software Holdings is a holding-co class disqualifier** — POWR.io is owned by Pender + new CEO Sept 2025 (founder Josh May transitioned). Add Pender to acquirer list. POWR also above-ICP ($10.6M ARR) — multiple disqualifiers stack.
+- **Quire MCP first-party server confirmed via Quire blog** — reconfirms agent-ready fit-1 pattern. Quire's product structure (nested tasks) maps to MCP tools/resources, which is a textbook agent-ready disqualifier.
+- All 98 sheet writes (49 cache + 49 prospects) succeeded with 2s pacing. No rate-limit errors. Single researcher slice C, parallel to two other slices.
+- Contact data: 38/49 arrived with `contact_name`. Backfilled 1 (maidily Mony Gueorguiev). LinkedIn URLs present for ~22; emails left blank for sourcer/Hunter lookup.
+- Inconclusive: anchorpoint (ARR unknown, TinySeed 2022 EMEA), caelor (Atlassian Gold 10-emp Croatia, ARR claim 500K-1M plausible but unconfirmed), shoppad (no public founder), landlord-studio (Charles Chan + Logan Ransley both still listed).
+
 ### 2026-05-28 — explicit-slice batch 1 (30 prospects, tito-tickets→govpilot, parallel to sprout-studio slice)
 - See agents/research-runs/2026-05-28-batch1-30-prospects.md — 21 researched / 9 not-a-fit / 2 cache-hits applied / 6 re-researched / avg 3.07 / dist 1:2 2:7 3:8 4:13 5:0. No fit-5 (no perfect ARR-in-band + workflow-heavy + AI-disrupted + reachable founder + multiple hooks combo).
 - Top fit-4: sortly ($3.1M Latka 2024, Dhanush Balachandran), getporter ($2.7M Latka 2024, Zack Neff+Mathew Lefkofsky, tattoo vertical), userguiding ($3.3M Latka 2024, Osman Koc), govpilot (~$3.5M sheet, Michael Bonner, 125-module municipal OS), tito-tickets (~$3M sheet, Paul Campbell IndieRails/Code-with-Jason guest).
