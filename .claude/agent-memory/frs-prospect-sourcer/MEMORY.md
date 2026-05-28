@@ -15,6 +15,7 @@ Cross-run learnings. Append only.
 - [Email infrastructure run 2026-05-28 — 50 prospects in deliverability/verification/parsing/auth/warmup](email_infrastructure_run_2026-05-28.md) — DMARC + email verification highest fit rates; France/Ukraine/India bootstrapped clusters; AI-readiness pitch lands existentially in this space; many acquired/PE-rolled-up to DQ first; Sheets rate-limit at 60 reads/min
 - [GetLatka country pages workhorse](getlatka_country_pages_workhorse.md) — `?cap=small` / `?cap=mid` on GetLatka country pages is the highest-yield source for LATAM/MENA/SA bootstrapped sourcing; top 10 per tier visible without paywall
 - [AI-native rebrand wave MENA 2025](ai_native_rebrand_wave_mena_2025.md) — 60% of "promising" MENA/Saudi candidates have rebranded as AI-powered/AI-driven (Sadq, Penny, Alaan, Treble, Colocio); filter pre-2023 founding + under $5M ARR + non-AI tagline
+- [Indie Chrome extension run 2026-05-28 — 50 prospects across 11 sub-categories](indie_chrome_extension_run_2026-05-28.md) — email/Gmail extensions + web scrapers + notes/clipper + tab managers richest; YC+$10M+ chrome wave (Axiom, Bardeen, Tactiq, PixieBrix, Requestly) all DQ rule #6; ~25% candidates DQ for "AI-native" rebrand; `update --where id=X` renames ALL matching rows if duplicates exist (gotcha)
 
 ## Source quality observations (2026-04-20 + 2026-04-21)
 
