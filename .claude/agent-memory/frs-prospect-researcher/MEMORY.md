@@ -40,6 +40,19 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-05-28 — explicit-slice batch 1 (30 prospects, tito-tickets→govpilot, parallel to sprout-studio slice)
+- See agents/research-runs/2026-05-28-batch1-30-prospects.md — 21 researched / 9 not-a-fit / 2 cache-hits applied / 6 re-researched / avg 3.07 / dist 1:2 2:7 3:8 4:13 5:0. No fit-5 (no perfect ARR-in-band + workflow-heavy + AI-disrupted + reachable founder + multiple hooks combo).
+- Top fit-4: sortly ($3.1M Latka 2024, Dhanush Balachandran), getporter ($2.7M Latka 2024, Zack Neff+Mathew Lefkofsky, tattoo vertical), userguiding ($3.3M Latka 2024, Osman Koc), govpilot (~$3.5M sheet, Michael Bonner, 125-module municipal OS), tito-tickets (~$3M sheet, Paul Campbell IndieRails/Code-with-Jason guest).
+- **PE-acquirer disqualifier list extended: Inverness Graham** — Cognito Forms acquired May 12, 2025. Add to the SureSwift/Constellation/Cordance/Tiny/Awesome Motive/Saas.group/Pantastic list.
+- **`research_cache` schema strictness** — cache has 12 columns; `fit_score` is NOT one. On UPSERT into NEW row, `fit_score=N` raises `ValueError: 'fit_score' is not in list` (hard error). On UPDATE of existing row it's silently dropped. New best practice: never pass `fit_score` to cache upserts. The `fit_score` lives on prospects tab only.
+- **"M&A offer raised" on Latka = yellow flag, not red** — ConvertCalculator raised an offer April 2025 (not closed). Score 3 with caveat. Distinguishes from confirmed acquisitions (Cognito Forms = 1, ConvertCalculator = 3).
+- **Knowledge-base wiki category = near-automatic fit 2** — Slab textbook: VC-funded, big logos (Asana/Ashby/Fivetran), AI-empty in a category where Notion AI defines the experience. Default knowledge-base wikis (product IS a wiki/KB) to fit 2.
+- **LTD-marketplace operators are wrong-ICP regardless of own ARR** — SaaS Mantra $2.8M ARR (in band) but marketplace business model has low workflow complexity. Extend memory pattern: even if the LTD-marketplace operator is $2-3M ARR themselves, the workflow surface is wrong for FRS.
+- **No-founder-identifiable = severe scoring penalty** — VetBlue: 17-year history, no founder name across Crunchbase/LinkedIn/website/Latka. Pattern: downgrade by at least 1 regardless of other signals. Pair with above-ICP = automatic fit 2.
+- **"AI-empty in fully AI-saturated category" is the consistent fit-4 trigger** — Lucky Orange vs Hotjar/Clarity AI; MailBluster vs Mailchimp/Klaviyo AI; Book Like A Boss vs Calendly Copilot; Sortly vs Linnworks AI; Tito vs Luma. When prospect is in ICP + zero AI + AI-native peer = fit 3-4. Public founder pushes 3→4.
+- **`needs-re-research` status flag reliably triggers re-research even with fresh cache** — All 6 (bugherd/bugfender/titlecapture/fitdegree/skusuite/govpilot) had cache 9-13 days old but were re-researched. No significant scoring changes; all held at fit 4. Pattern: trust the flag.
+- **Parallel-sourcer duplicates** — salesflare and skylead both had 2 rows in the prospects tab (one researched 2026-05-22, one identified 2026-05-28). `update` touched both correctly. Flagged for sourcer de-dupe.
+
 ### 2026-05-28 — explicit-slice batch (30 prospects, sprout-studio→booqable)
 - See [run_2026-05-28_batch30.md](run_2026-05-28_batch30.md) — 17 researched / 13 not-a-fit / 2 cache hits / avg 2.97 / dist 5:3 4:9 3:5 2:7 1:6. Top fit-5: lifterlms, paykickstart, userlist (cache hit). New patterns: re-acquisition narrative=fit-5 (paykickstart), founder-hosts-AI-podcast-no-product-AI=fit-5 (lifterlms), MCP-shipped disqualifier extended (signwell), AI-native vertical SaaS wins industry AI award (optisigns OptiDev), "world's first work AI" autonomous-HQ experiment (plutio), AI-focused holding-co acquirer (alitu→Rocketable). 28 of 30 contact-rich (good sourcer batch); bookwhen/akada/bntouch have contact gaps that downgraded fit.
 
