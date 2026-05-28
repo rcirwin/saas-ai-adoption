@@ -10,6 +10,7 @@ Cross-run learnings. Append only.
 - [LinkedIn posts with company lists in images are not extractable](linkedin_post_image_extraction.md) — image-only posts (Pat Walls "$1M SaaS in any niche" series) need a paste-in or screenshot path, not a URL.
 - [Pat Walls $1M SaaS carousel — successful manual-OCR workflow](patwalls_1m_saas_extraction_workflow.md) — user has demonstrated Claude-in-Chrome can OCR carousel tiles into a structured handoff file; documents the format + headline-to-company map confirmed 2026-05-15
 - [Directory run 2026-05-18 — vertical practice-management SaaS](directory_vertical_pm_run_2026-05-18.md) — vertical PM SaaS is richest vein; vet PM fully consolidated; stale-snapshot trap (Cetec); 12 added
+- [Marketplace residents run 2026-05-28 — 50 prospects across 12 marketplaces](marketplace_residents_run_2026-05-28.md) — Atlassian heavily Appfire-rolled-up; WP ecosystem owned by Awesome Motive/StellarWP/WPMU; Vietnamese Shopify + Bangladesh WP rich indie veins; female-founded Atlassian rare; Pipedrive under-explored
 
 ## Source quality observations (2026-04-20 + 2026-04-21)
 
