@@ -40,6 +40,9 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-05-28 — explicit-slice batch (30 prospects, sprout-studio→booqable)
+- See [run_2026-05-28_batch30.md](run_2026-05-28_batch30.md) — 17 researched / 13 not-a-fit / 2 cache hits / avg 2.97 / dist 5:3 4:9 3:5 2:7 1:6. Top fit-5: lifterlms, paykickstart, userlist (cache hit). New patterns: re-acquisition narrative=fit-5 (paykickstart), founder-hosts-AI-podcast-no-product-AI=fit-5 (lifterlms), MCP-shipped disqualifier extended (signwell), AI-native vertical SaaS wins industry AI award (optisigns OptiDev), "world's first work AI" autonomous-HQ experiment (plutio), AI-focused holding-co acquirer (alitu→Rocketable). 28 of 30 contact-rich (good sourcer batch); bookwhen/akada/bntouch have contact gaps that downgraded fit.
+
 ### 2026-05-19 — batch 8 (7 prospects, FINAL batch, stable-secretary→clinicnote)
 - See agents/research-runs/2026-05-19-batch8-7-prospects.md — 5 researched / 2 not-a-fit / 0 cache hits / avg 3.29 / dist 1:0 2:1 3:3 4:3 5:0. Queue now fully cleared (0 identified).
 - Top fit-4: vinesos, towbook, clinicnote. towbook is the strongest — only confirmed-in-band ARR of the batch ($2.9M 2024, doubled from $1.4M 2023, bootstrapped, 37 staff, founder Dan Smith on LinkedIn).
