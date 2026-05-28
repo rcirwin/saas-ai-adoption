@@ -429,3 +429,18 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - **Bootstrapped + Practical Founders podcast guest is NOT a fit-lift if MCP shipped.** Rachit Khator (Stackby) was Practical Founders ep 131; would normally be a fit-4 signal stack per Josh Ho / Justin Jackson / Marko Saric pattern. But Stackby MCP shipped overrides the reachability signal entirely. Memory pattern: the agent-ready disqualifier dominates the reachability-signal lift in all cases observed.
 - Env clean: no cffi error this session. All 10 writes (5 cache upserts + 5 prospects updates) at 3s pacing, 0 errors, 0 429s, no tracebacks. Dropped `fit_score` from cache upserts per known schema bug.
 - WebFetch 403'd on all 4 prospect company sites (subbly.co, resmio.com, mailbutler.io, stackby.com) — continuing the May 15+ pattern. WebSearch + getlatka + Crunchbase + Tracxn + Practical Founders podcast + product changelog blogs triangulated cleanly. No fetch-dependent blocker.
+
+### 2026-05-28 — DRY_RUN (queue drained after 05-26/05-27 mini-wave)
+- Queue empty (0 identified). 437 prospects total: 202 researched, 229 not-a-fit, 6 needs-re-research, 0 identified. Summary file: agents/research-runs/2026-05-28-dry-run.md.
+- **First DRY since the 2026-05-22 escalation prompted the sourcer restart.** Two productive days (05-26 = 10, 05-27 = 5) then 0. The sourcer drip is decaying (10 → 5 → 0). If 05-29 is also DRY, treat as escalation cycle day 1; if 05-30 is also DRY, raise the same pipeline alert as the 05-22 post-clearing escalation.
+- **`needs-re-research` rows (6, all 2026-05-19): bugherd, bugfender, titlecapture, fitdegree, skusuite, govpilot.** These have sat in `needs-re-research` for 9 days. Per agent definition, researcher does not touch `status != identified` unless caller explicitly targets them. Worth surfacing to caller — these are decision-ready candidates if re-research is warranted. Memory pattern: if `needs-re-research` rows persist >7 days, surface as a flag in the DRY_RUN summary; caller may want to either explicitly target them or downgrade them to `not-a-fit`.
+- Env: `_cffi_backend` ModuleNotFoundError recurred on first `sheet.py` call. Fixed with `pip install --user cffi cryptography` (cffi-2.0.0 + pycparser-3.0). Same recurring pattern as 05-06/05-07/05-08. Standing pre-flight confirmed; do this first when `sheet.py` errors on import.
+- No new scoring patterns (no prospects researched).
+
+### 2026-05-28 — DRY_RUN #2 (same-day repeat)
+- Second invocation on 2026-05-28. Queue still empty (0 identified). 437 total / 202 researched / 229 not-a-fit / 6 needs-re-research. Same state as the earlier invocation today.
+- Per the same-day-repeat pattern (recorded 2026-05-20): caller-facing summary file `agents/research-runs/2026-05-28-dry-run.md` left in place; sibling audit file `agents/research-runs/2026-05-28-dry-run-2.md` written so the per-day history isn't lost.
+- Two same-day DRY_RUNs count as one calendar day toward the 3-distinct-day escalation threshold. Today = cycle day 1. If 05-29 AND 05-30 are also DRY, escalate.
+- **Env clean this invocation** — no `_cffi_backend` error (earlier invocation today already installed cffi 2.0.0; persisted within container). Confirms the cffi hiccup is session-start, not per-run, when the container is reused. Matches the 05-20 same-day observation pattern.
+- 6 `needs-re-research` rows untouched (10 days now, was 9 yesterday). Still flagged for caller decision per the >7-day persistence rule.
+- No new scoring patterns (nothing researched).
