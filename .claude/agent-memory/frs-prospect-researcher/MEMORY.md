@@ -2,6 +2,9 @@
 
 Append-only observations. Caller or outreach writer can flag mis-scoring; reflect those here.
 
+- [CEO transition forces re-research](feedback_ceo_transition_restages.md) — when notes flag founder departure since last research, force re-research, update contact, regenerate outreach drafts
+- [Run 2026-05-29 explicit-slice 24](run_2026-05-29_explicit_slice_24.md) — clockwork-recruiting fit 5 from explicit "partner-not-build" AI stance; B2C personal finance + multi-product founder + acquired-2024 disqualifiers reconfirmed
+
 ## Patterns Learned
 
 ### Source-based heuristics
