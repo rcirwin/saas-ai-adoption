@@ -8,6 +8,7 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - [Run 2026-05-29 explicit-slice 24](run_2026-05-29_explicit_slice_24.md) — clockwork-recruiting fit 5 from explicit "partner-not-build" AI stance; B2C personal finance + multi-product founder + acquired-2024 disqualifiers reconfirmed
 - [Run 2026-05-29 slice 24 (dmarc-advisor→authgear)](run_2026-05-29_slice_24.md) — fit-4 cluster (dmarc-advisor, actionhrm, groupapp, spendwise, stora); CEO-Pulse-AI-content disqualifier (webhr Anna Naveed); OSS-auth = agent-ready inherent (authgear); Societ founder-replaced disqualifier; AI-Mentor-chatbot = exploring not strategic
 - [Run 2026-05-29 batch 24 (payhero-slidebean)](../../../agents/research-runs/2026-05-29-batch-24-prospects-payhero-slidebean.md) — Access Group disqualifier (lightyear); 8 fit-4 cluster (payhero/junip/salonist/uxtweak/chargeover/kuula/datamolino/easy-subscriptions); named-AI-feature ("AI Sales Copilot" etc) caps at 3
+- [Contact backfill corrections 2026-05-29](feedback_contact_backfill_corrections.md) — 4 sheet contact_name corrections caught (krock-io/coupontools/nektria/herocoders); verify sourcer's contact_name as hypothesis, not truth
 
 ## Patterns Learned
 
