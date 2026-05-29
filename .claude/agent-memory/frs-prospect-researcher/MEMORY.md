@@ -4,6 +4,7 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 - [CEO transition forces re-research](feedback_ceo_transition_restages.md) — when notes flag founder departure since last research, force re-research, update contact, regenerate outreach drafts
 - [Run 2026-05-29 explicit-slice 24](run_2026-05-29_explicit_slice_24.md) — clockwork-recruiting fit 5 from explicit "partner-not-build" AI stance; B2C personal finance + multi-product founder + acquired-2024 disqualifiers reconfirmed
+- [Run 2026-05-29 slice 24 (dmarc-advisor→authgear)](run_2026-05-29_slice_24.md) — fit-4 cluster (dmarc-advisor, actionhrm, groupapp, spendwise, stora); CEO-Pulse-AI-content disqualifier (webhr Anna Naveed); OSS-auth = agent-ready inherent (authgear); Societ founder-replaced disqualifier; AI-Mentor-chatbot = exploring not strategic
 
 ## Patterns Learned
 
