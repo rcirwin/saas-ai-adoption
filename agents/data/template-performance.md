@@ -14,7 +14,7 @@ Variant bodies live in `agents/templates/outreach.md`.
 
 ## Current policy
 
-- **Mode: EXPLORATION (even split).** Reason: zero scored sends (every `response_status` in `outreach_log` is still blank across 819 log rows pre-run).
+- **Mode: EXPLORATION (even split).** Reason: zero scored sends (every `response_status` in `outreach_log` is still blank across 863 log rows).
 - Split rule: `idx = (sum of ord(c) for c in prospect_id) % 3`, deterministic and even.
 - Switches to **EXPLOITATION** (rank-and-pick by call rate, then reply rate) once every variant has at least 20 scored sends.
 
@@ -28,19 +28,13 @@ A "scored send" = an actually-sent email (`status = sent`) with a non-blank `res
 | email-short-question | 0 | n/a | n/a |
 | email-proof-led | 0 | n/a | n/a |
 
-## Variant assignment this run (2026-05-28)
+## Variant assignment this run (2026-05-29)
 
-| Prospect | Variant |
-|---|---|
-| referralcandy | email-short-question |
-| sumtracker | hyper-personalized-email |
-| pallyy | email-short-question |
-| simplybook-me | email-proof-led |
-| pixpa | hyper-personalized-email |
-| smartsupp | email-proof-led |
-| e-cargoware | hyper-personalized-email |
+No email drafts this run. All 15 drafts were `linkedin-connect` (none of the 15 top-fit never-touched prospects had a `contact_email`), so the email A/B set was not exercised. The even-split assignment function is unchanged and remains ready for the next email-bearing run.
 
-Distribution: 3 hyper-personalized, 2 email-short-question, 2 email-proof-led.
+## LinkedIn template ranking
+
+No scored sends, so ranking is null. LinkedIn channels use `linkedin-connect-default` from `outreach.md` for all (category, ai_posture) cells. All 15 drafts this run used `linkedin-connect-default`.
 
 ## Dependency: where outcome data comes from
 
@@ -48,12 +42,12 @@ Rankings stay empty until `response_status` / `led_to_call` get populated for se
 
 That is the correct behavior for now: the even split spreads sends across all three variants so that the moment outcome data exists, the ranking becomes computable.
 
-## Run-level state, 2026-05-28
+## Run-level state, 2026-05-29
 
-- `outreach_log` rows total pre-run: 819
+- `outreach_log` rows total pre-run: 863
 - Rows with non-blank `response_status` pre-run: 0
-- Sent rows pre-run: 140 (67 `hyper-personalized-email`, 0 `email-short-question`, 0 `email-proof-led`, plus older / pre-variant rows tagged with other template IDs)
+- Sent rows pre-run: 176 (none dispositioned with a `response_status`)
 - All three email variants remain at 0 scored sends. EXPLORATION mode persists.
-- This run added 7 `email` drafts (parallel-channel touch on past-cadence prospects whose prior `sent` channel was `linkedin-connect`). No `linkedin-*` drafts this run.
+- This run added 15 `linkedin-connect` drafts (first-touch on top-15-by-fit never-touched prospects). No `email` drafts this run.
 
-_Last updated by writer: 2026-05-28._
+_Last updated by writer: 2026-05-29._
