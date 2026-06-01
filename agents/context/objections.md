@@ -39,3 +39,11 @@ A hire solves implementation. This solves what to implement. 3–6 months to rec
 
 ### Board pressure: "Investors want AI features, not assessments"
 Boards want AI progress. Shipping wrong features is worse than shipping nothing. Assessment gives board-ready strategic narrative: opportunity, plan, priority order, rationale.
+
+### Identity / team development: "We're shaping our team into AI conductors — outsourcing this contradicts that"
+Real objection from a fit-5 prospect (Uku / Rain Allikvee, 2026-05-29). Distinct from "we know our users." The objection is leadership-development: doing the workflow research IS the way they're growing the team into AI-native operators, so outsourcing the discovery work feels like outsourcing the muscle they want to build.
+
+Response (when surfaced in conversation, not as a counter-pitch):
+"Then we're aligned on the goal, not the path. The reason teams pick this engagement is the opposite of skipping the discovery — it's the moment the in-house team gets calibrated against an outside read of the same workflow, so the AI conductors you're shaping are arguing against real outside diagnosis, not against their own assumptions. Most lead PMs who do this become measurably sharper because they had to defend their priorities to someone who saw a hundred other AI roadmaps. If you'd rather the team build that muscle alone, the right re-engage point is 6–12 months in, when they've made their picks and want an outside read on what they missed."
+
+Do NOT push past first decline on this one. Identity objections close the door harder when fought. Mark for 12-month re-engage with a "you've done the discovery — here's where outside eyes spot what gets missed" angle.
