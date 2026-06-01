@@ -7,15 +7,24 @@ All FRS outreach agents reference these templates when personalizing messages.
 ## LinkedIn Connection Request (< 300 chars)
 
 ```
-Hey {{name}}. I help B2B SaaS founders figure out which AI features actually matter (and which to skip). Saw {{company}} and thought there might be an interesting conversation here. No pitch, just curious about your AI thinking.
+Hey {{name}}. I'm Ryan, founder of Future Ready Studio. We run AI-readiness assessments for bootstrapped SaaS at your stage. {{mirror_observation}}. Would value comparing notes.
 ```
+
+**Hard rules for this template:**
+
+1. **Always name Future Ready Studio explicitly.** Vague "I help founders…" phrasings read like every other LinkedIn DM. Named entity is more credible than role.
+2. **Always include the "AI-readiness assessments for bootstrapped SaaS at your stage" clause.** It's the credential. The prospect needs to know in one phrase whether this is relevant.
+3. **`{{mirror_observation}}` must be one sentence that proves research AND mirrors the founder's own framing.** Reference something concrete (their podcast, their public post, their roadmap, a specific market dynamic that hits their segment). 150 char budget for this clause.
+4. **Always close with "Would value comparing notes."** Do not deflect with "no pitch," "not pitching," or "no agenda." State the positive ask instead of disclaiming what we're not doing.
+5. **No em dashes (—), no en dashes (–), no space-hyphen-space ( - ).** Use periods, commas, or "and" instead. Verify before queuing.
+6. **300 char cap (LinkedIn limit).** If over, compress `{{mirror_observation}}`, not the positioning clause. The positioning is the upgrade from the old template; never sacrifice it.
 
 ---
 
 ## LinkedIn Follow-up DM (after connection accepted)
 
 ```
-Thanks for connecting, {{name}}. Quick question. As AI agents start reshaping how users interact with SaaS tools, have you thought about how {{company}} fits into that picture? I've been working with SaaS founders in the {{space}} space on exactly this. Happy to share some patterns I'm seeing if useful.
+Thanks for connecting, {{name}}. Quick question. As AI agents start reshaping how users interact with SaaS tools, have you thought about how {{company}} fits into that picture? I run AI-readiness assessments for bootstrapped SaaS founders in the {{space}} space, so this is the question I spend most of my week on. Happy to share patterns if useful.
 ```
 
 ---
@@ -50,7 +59,7 @@ cal.com/futurereadystudio/discovery-call
 
 ### Variant B: `email-short-question` (brevity + curiosity)
 
-Ultra short, under 90 words. Mirror observation plus ONE genuine question. No offer, no call ask, no signature block beyond the first name. Mirrors the "no pitch, just curious" register that earns LinkedIn replies. Tests whether brevity beats the full pitch.
+Ultra short, under 90 words. Mirror observation plus ONE genuine question. No offer, no call ask, no signature block beyond the first name. Tests whether brevity beats the full pitch. Closing line names what the conversation is for instead of disclaiming what we're not doing.
 
 ```
 Subject: quick one on {{company}} + agents
@@ -61,7 +70,7 @@ Subject: quick one on {{company}} + agents
 
 {{one_question}}
 
-No pitch, genuinely curious how you're thinking about it.
+Would value comparing notes on how you're framing it.
 
 Ryan
 ```
@@ -113,3 +122,4 @@ Hey {{referrer}}. Quick ask. I'm looking to connect with SaaS founders who are t
 | `{{proof_or_insight}}` | a real approved outcome or genuine category insight, never invented (Variant C) |
 | `{{mirror_bridge}}` | ties the proof/insight to this founder's situation, mirroring their framing |
 | `{{peer_or_category}}` | an anonymized peer or the prospect's category (Variant C subject) |
+| `{{mirror_observation}}` | one sentence proving research AND mirroring the founder's own framing (LinkedIn connect template). 150 char budget. |
