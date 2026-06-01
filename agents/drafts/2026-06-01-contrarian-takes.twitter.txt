@@ -1,0 +1,59 @@
+1/ You don't need an AI hire yet.
+
+You need a plan.
+
+---
+
+2/ I keep watching SaaS teams post the same job: "Senior AI Engineer."
+
+Six figures. Three months to fill. A month to onboard.
+
+Then they hand that person a blank page and a board that wants AI by Q3.
+
+---
+
+3/ A hire solves how to build.
+
+It does nothing for what to build.
+
+And the expensive mistakes almost always live in the what.
+
+---
+
+4/ The pattern I keep seeing:
+
+The roadmap is a wishlist of features that demo well, not workflows that hurt.
+
+---
+
+5/ The data the model needs is fragmented across three systems nobody mapped.
+
+---
+
+6/ The judgment that would make the AI useful is locked in two people's heads, undocumented.
+
+---
+
+7/ None of that gets fixed by a stronger engineer.
+
+The bottleneck isn't model intelligence or talent.
+
+---
+
+8/ It's the absence of a plan: which workflow to own, what context the model needs, where the human judgment lives.
+
+---
+
+9/ Hire first, and you pay someone six figures to discover all of this on the job.
+
+𝗣𝗹𝗮𝗻 𝗳𝗶𝗿𝘀𝘁, 𝗮𝗻𝗱 𝘁𝗵𝗲 𝗵𝗶𝗿𝗲 𝘄𝗮𝗹𝗸𝘀 𝗶𝗻 𝘄𝗶𝘁𝗵 𝗮 𝗯𝗹𝘂𝗲𝗽𝗿𝗶𝗻𝘁.
+
+---
+
+10/ I'm not saying never hire. I'm saying sequence it.
+
+The best AI hires I've seen executed a strategy that already existed. They didn't invent one under board pressure.
+
+---
+
+11/ If your AI roadmap is still a list of features instead of a plan for owning a workflow, what would your new hire actually build in week one?
