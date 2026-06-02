@@ -14,7 +14,7 @@ Last updated: 2026-06-02 (frs-outreach-writer run).
 
 A scored send = an `outreach_log` row where `status = sent` AND `response_status` is non-blank.
 
-- Total `outreach_log` rows: 1307
+- Total `outreach_log` rows: 1320
 - `sent` rows: 301
 - **Scored sends: 0** (no `response_status` dispositioned yet)
 
@@ -25,13 +25,17 @@ deterministically and evenly via `idx = (sum of ord(c) for c in prospect_id) % 3
 LinkedIn channels fall back to the default template per `outreach.md` (no
 performance signal exists to rank against).
 
-## Active Email Variants. Scored Send Counts
+## Active Email Variants. Sent + Scored Send Counts
 
-| Variant | Scored sends | Status |
-|---|---|---|
-| `hyper-personalized-email` (control) | 0 | below MIN_SCORED (20) |
-| `email-short-question` | 0 | below MIN_SCORED (20) |
-| `email-proof-led` | 0 | below MIN_SCORED (20) |
+| Variant | Sent | Scored sends | Status |
+|---|---|---|---|
+| `hyper-personalized-email` (control) | 187 | 0 | below MIN_SCORED (20) |
+| `email-short-question` | 0 | 0 | below MIN_SCORED (20) |
+| `email-proof-led` | 0 | 0 | below MIN_SCORED (20) |
+
+Note: all 187 historical email sends used the control variant (sent before the
+even-split A/B policy took hold). The two challenger variants have not been sent
+yet, so accumulating scored sends on them is the priority during exploration.
 
 ## Ranking Table
 
