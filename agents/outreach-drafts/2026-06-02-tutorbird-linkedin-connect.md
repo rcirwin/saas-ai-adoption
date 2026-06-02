@@ -2,17 +2,17 @@
 prospect_id: tutorbird
 channel: linkedin-connect
 template_used: linkedin-connect-default
-angle: ai-posture-none-gap
+angle: Khan/Schoology AI eating the surface above tutor-admin
 date_drafted: 2026-06-02
 status: drafted
 contact: Dan Santoni (President), https://ca.linkedin.com/in/dan-santoni-7b0b188
-hook_source: per-tutor pricing model and strong music-school fit
+hook_source: bootstrapped Canadian tutor/music school admin software; no AI shipped; Khan/Schoology AI above category
 founder_perspective:
-  product_strategy: "Tutor/music-school management; per-tutor pricing; scheduling, billing, gradebook; strong music-school fit."
-  ai_posture: "No AI shipped; manual multi-tutor scheduling and comms."
-  concerns: "Multi-tutor scheduling, payroll, bulk comms are the repeated grind."
-  industry_ai_view: "<inferred> AI value sits in admin automation (notes, attendance, parent updates)."
-mirror_choice: product_strategy. Mirror the studio-specific design; ask where AI fits the admin grind versus where it adds noise.
-DATA_QUALITY_FLAG: contact_email on file is dan@port443.io (cross-company domain). Verify before send.
+  product_strategy: Per-tutor priced tutor and music school admin: scheduling, attendance, billing, gradebook. Strong with music schools.
+  ai_posture: None shipped. Automation but no AI features on product pages.
+  concerns: <unknown, surfaced no signal>
+  industry_ai_view: Khan and Schoology are absorbing learning AI above the category; some peers add AI tutor matching.
+mirror_choice: industry_ai_view. The AI pressure sits above the admin layer (Khan/Schoology), so I mirror the question of where that leaves the tutor-admin tools underneath.
 ---
-Hey Dan. The per-tutor pricing and music-school depth tell me TutorBird is built for how those studios actually run. Curious where you think AI fits the admin side, lesson notes, attendance patterns, parent updates, versus where it just adds noise. No pitch.
+
+Hey Dan. I'm Ryan, founder of Future Ready Studio. We run AI-readiness assessments for bootstrapped SaaS at your stage. Per-tutor pricing and music-school depth show TutorBird fits how studios run, so the question is where AI helps admin versus where it adds noise. Would value comparing notes.

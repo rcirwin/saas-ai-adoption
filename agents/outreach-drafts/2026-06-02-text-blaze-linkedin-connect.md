@@ -6,12 +6,13 @@ angle: agent-ready-roadmap
 date_drafted: 2026-06-02
 status: drafted
 contact: Dan Barak (CEO), https://www.linkedin.com/in/danbarak/
-hook_source: 700K users; AI Blaze launched as a separate adjacent product; ex-Google ML PM
+hook_source: AI-Blaze-separate-product-to-snippets-as-tools
 founder_perspective:
-  product_strategy: "Text-expansion tool across Gmail/Docs/LinkedIn/Salesforce; 700K+ users incl Google, Airbnb, Uber; YC alum."
-  ai_posture: "Strategic; shipped AI Blaze as a separate adjacent product rather than folding it in."
-  concerns: "Competing with cheaper AI-native alternatives; AI shipped as adjacent product, not integrated."
-  industry_ai_view: "<inferred> Defensible move is snippets becoming callable tools for external agents."
-mirror_choice: ai_posture. Strategic: skip 'add AI', ask whether snippets become tools agents call (preempts 'we already have AI Blaze').
+  product_strategy: Text-expansion productivity tool, 700K+ users incl Google/Airbnb/Uber; YC, founder ex-Google ML PM.
+  ai_posture: Strategic: shipped AI Blaze as a separate co-pilot product, programmable snippet logic.
+  concerns: Chose to add AI Blaze as separate product not integrate; competing with cheaper AI-native rivals.
+  industry_ai_view: Snippets becoming callable tools for Claude/ChatGPT is the agent-era reframe.
+mirror_choice: concerns - mirrors text-blaze's concerns back; chosen because it is the sharpest founder-specific signal in research_cache.
 ---
-Hey Dan. Text Blaze at 700K users with AI Blaze shipped as its own product is a deliberate split. The question I'd sit with is whether snippets become tools external agents call, not just human shortcuts. Curious how you frame that. No pitch, just curious.
+
+Hey Dan. I'm Ryan, founder of Future Ready Studio. We run AI-readiness assessments for bootstrapped SaaS at your stage. AI Blaze shipped as its own product is a deliberate split, so the question is whether snippets become tools agents call, not just human shortcuts. Would value comparing notes.

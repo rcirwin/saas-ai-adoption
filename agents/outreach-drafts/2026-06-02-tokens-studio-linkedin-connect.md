@@ -6,13 +6,13 @@ angle: ai-posture-none-gap
 date_drafted: 2026-06-02
 status: drafted
 contact: Mike Kamminga (CEO & Co-founder), https://www.linkedin.com/in/mikekamminga/
-hook_source: 264K Figma users; platform-dependency exposure as Figma absorbs Variables
+hook_source: Figma-absorbing-Variables-platform-risk
 founder_perspective:
-  product_strategy: "Figma plugin for managing design tokens, synced to git; 264K Figma users; design-systems focus."
-  ai_posture: "No AI shipped in product."
-  concerns: "Figma absorbing core features (Variables); plugin subject to platform decisions."
-  industry_ai_view: "<inferred> AI edge must be where the platform can't easily swallow it (migration, semantic naming)."
-mirror_choice: concerns. Mirror the platform-dependency tension; ask where the AI edge lives that Figma won't absorb.
-DATA_QUALITY_FLAG: research_cache names founder Jan Six; sheet contact is Mike Kamminga (CEO). Used sheet contact; hooks kept founder-agnostic.
+  product_strategy: Figma plugin managing design tokens synced to git, 264K Figma users; created by Jan Six, run by Mike Kamminga.
+  ai_posture: No AI observed; tokens are programmatic, not AI.
+  concerns: Figma absorbing Variables natively; plugin subject to platform decisions.
+  industry_ai_view: AI token migration + semantic naming is where a tokens layer defends against platform absorption.
+mirror_choice: concerns - mirrors tokens-studio's concerns back; chosen because it is the sharpest founder-specific signal in research_cache.
 ---
-Hey Mike. Tokens Studio sitting on 264K Figma users is real reach, and also exposure as Figma absorbs Variables. Curious where you think the AI design-systems edge lives, token migration, semantic naming, that the platform won't just swallow. No pitch, just comparing notes.
+
+Hey Mike. I'm Ryan, founder of Future Ready Studio. We run AI-readiness assessments for bootstrapped SaaS at your stage. With Figma absorbing Variables, your design-tokens layer sits on the platform line. Is AI token migration and naming where you defend that edge. Would value comparing notes.

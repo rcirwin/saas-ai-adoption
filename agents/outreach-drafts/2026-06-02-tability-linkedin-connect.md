@@ -6,12 +6,13 @@ angle: agent-ready-roadmap
 date_drafted: 2026-06-02
 status: drafted
 contact: Sten Pittet (Co-Founder & CEO), https://www.linkedin.com/in/stenpittet/
-hook_source: ex-Atlassian; shipped Tability AI Mode (OKR generation, risk detection)
+hook_source: AI-Mode-vs-AI-as-text-gen-risk
 founder_perspective:
-  product_strategy: "OKR tracking platform; ~1.2M ARR; 9 emp; ex-Atlassian founder; Tability AI Mode shipped 2024-2025."
-  ai_posture: "Strategic; AI Mode for OKR generation, risk detection, report generation."
-  concerns: "AI-as-text-gen commoditizes; OKR+AI category crowded."
-  industry_ai_view: "<inferred> Durable move is OKRs as state agents act on, not text they produce."
-mirror_choice: ai_posture. Strategic: acknowledge AI Mode shipped, pivot to OKRs as agent-actionable state (preempts 'we already have AI').
+  product_strategy: OKR tracking platform, $1.2M ARR, 9 emp; co-founder ex-Atlassian Sten Pittet.
+  ai_posture: Strategic: shipped Tability AI Mode (OKR analysis, risk detection, report gen).
+  concerns: He flagged AI-as-feature-not-workflow-redesign risk himself; commoditized OKR+AI category.
+  industry_ai_view: OKR-state agents that act on data beat AI that just generates text about it.
+mirror_choice: concerns - mirrors tability's concerns back; chosen because it is the sharpest founder-specific signal in research_cache.
 ---
-Hey Sten. Shipping Tability AI Mode for OKR generation and risk detection is a clear step past text-gen. The harder question I'd watch is whether OKRs become state that agents act on, not just track. Curious how you see that. No pitch, just comparing notes.
+
+Hey Sten. I'm Ryan, founder of Future Ready Studio. We run AI-readiness assessments for bootstrapped SaaS at your stage. Tability AI Mode for OKR generation is a step past text-gen, so the harder question is whether OKRs become state agents act on, not just track. Would value comparing notes.

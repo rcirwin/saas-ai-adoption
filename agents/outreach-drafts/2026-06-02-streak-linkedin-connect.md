@@ -6,12 +6,13 @@ angle: agent-ready-roadmap
 date_drafted: 2026-06-02
 status: drafted
 contact: Aleem Mawani (Co-Founder & CEO), https://www.linkedin.com/in/aleemmawani/
-hook_source: Gmail-native CRM, 750K customers, YC company run bootstrapped-style (his own framing)
+hook_source: Attio-and-Workspace-squeeze-on-Gmail-CRM
 founder_perspective:
-  product_strategy: "CRM built inside Gmail; 750K+ customers; YC-funded but operated bootstrapped-style per Aleem's framing."
-  ai_posture: "Strategic; aware AI-native (Attio) and AI-aggressive (HubSpot) reshape CRM."
-  concerns: "Gmail-native niche may be squeezed as Google Workspace ships built-in AI."
-  industry_ai_view: "<inferred> The defensible question is agent orchestration of the inbox, not more AI features."
-mirror_choice: ai_posture. Strategic posture: skip 'add AI', go to whether agents orchestrate Streak from inside the inbox (preempts 'we already have AI').
+  product_strategy: Gmail-native CRM, 750K customers, YC-funded but run bootstrapped-style; founder ex-Google Stanford ME.
+  ai_posture: Strategic: shipped AI auto data-entry, NL deal Q&A, magic columns.
+  concerns: Attio AI-native + HubSpot AI-aggressive; Workspace AI may squeeze the Gmail-native niche.
+  industry_ai_view: CRM category being dominated by AI-native players; Gmail-native edge could get routed around.
+mirror_choice: industry_ai_view - mirrors streak's industry_ai_view back; chosen because it is the sharpest founder-specific signal in research_cache.
 ---
-Hey Aleem. A Gmail-native CRM is interesting precisely as Workspace adds its own AI. The question I'd sit with isn't more AI features, it's whether agents end up orchestrating Streak's pipelines or routing around the inbox. Curious how you see it. No pitch.
+
+Hey Aleem. I'm Ryan, founder of Future Ready Studio. We run AI-readiness assessments for bootstrapped SaaS at your stage. Gmail-native gets sharper as Workspace ships AI, so the question is whether agents orchestrate Streak's pipelines or route around the inbox. Would value comparing notes.
