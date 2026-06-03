@@ -1,0 +1,59 @@
+1/ A bad first AI move doesn't cost you the build.
+
+It costs you three things you'll never see on the invoice.
+
+---
+
+2/ Most founders price the risk as "we waste a sprint."
+
+That's the cheap part.
+
+The real bill comes due where no engineering estimate looks.
+
+---
+
+3/ I've watched B2B teams make a thin first move. Ship a chat box. Ship a summarizer. Whatever demoed fastest.
+
+Then quietly pay for it three ways.
+
+---
+
+4/ Direction.
+
+The first AI thing you ship becomes the thing your team defends. Roadmap, hiring, the next three quarters bend toward it.
+
+A wrong first move isn't one wasted feature. It's a wrong heading you compound on.
+
+---
+
+5/ Credibility.
+
+You get to tell users "we're an AI company now" once before they decide whether to believe you.
+
+Ship the obvious bolt-on and the next real thing inherits the skepticism.
+
+The board reads it as "they don't know what they're doing here."
+
+---
+
+6/ Position.
+
+While you ship the safe demo, the move that mattered, owning a workflow end to end instead of adding a button to it, sits on the table.
+
+Someone takes it.
+
+The cost of the wrong move is the right one you didn't make.
+
+---
+
+7/ This isn't an argument for moving slow.
+
+It's an argument for knowing which move you're making before you make it.
+
+𝗔 𝗳𝗶𝗿𝘀𝘁 𝗺𝗼𝘃𝗲 𝘆𝗼𝘂 𝗰𝗮𝗻 𝗱𝗲𝗳𝗲𝗻𝗱 𝗶𝗻 𝗼𝗻𝗲 𝘀𝗲𝗻𝘁𝗲𝗻𝗰𝗲 𝗶𝘀 𝗰𝗵𝗲𝗮𝗽.
+
+---
+
+8/ If your AI roadmap got deleted tomorrow, which single bet would you rebuild first?
+
+And could you say why in one line?
