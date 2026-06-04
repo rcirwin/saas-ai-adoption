@@ -581,3 +581,11 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - **Env (Linux container) credential change:** memory's Mac path `/Users/ryanirwin/.config/frs/...json` is gone. Creds now arrive via `FRS_GOOGLE_CREDENTIALS_B64` env var; decode to `/tmp/frs-service-account.json`; `FRS_GOOGLE_CREDENTIALS` already points there. Do NOT export the old Mac path (it errors "file missing"). Just verify `/tmp/frs-service-account.json` exists, else `printf '%s' "$FRS_GOOGLE_CREDENTIALS_B64" | base64 -d > /tmp/frs-service-account.json`.
 - `pip install --user cffi cryptography` pre-flight still required (`_cffi_backend` import panic). Standing hiccup.
 - `research_staleness_days = 90`.
+
+### 2026-06-04 — DRY_RUN (tombstone backlog unchanged, day 2 of empty real queue)
+- `read prospects status=identified` returned **39 rows, all 39 `DELETED-*` tombstones** — identical to 2026-06-03. Filtered on `id.startswith("DELETED")` → 0 real prospects → DRY_RUN. No writes performed.
+- **Prospects-tab totals (1,243 rows)**: researched 626 / not-a-fit 574 / identified 39 (all DELETED) / disqualified 3 / declined-engagement 1.
+- **Escalation tracking**: 2026-06-03 DRY (day 1), 2026-06-04 DRY (day 2). Sourcer has produced no new real `identified` rows since the 2026-06-02 directory batch (irancho→caterzen). If 2026-06-05 is also DRY, hit the 3-distinct-day escalation threshold (per 2026-05-08 / 2026-05-22 rule) and raise a pipeline-starvation alert to caller.
+- **Tombstone backlog still not purged** — same 39 `DELETED-*` rows surfacing for the 2nd straight day. Reconfirms the standing flag: sourcer/caller must give them a terminal status or remove them. Researcher surfaces, does not action (we don't own non-prospect-row status).
+- Env clean: creds already at `/tmp/frs-service-account.json` (no re-decode needed); no `_cffi_backend` panic this session; `research_staleness_days = 90`.
+- Summary file: agents/research-runs/2026-06-04-dry-run.md.
