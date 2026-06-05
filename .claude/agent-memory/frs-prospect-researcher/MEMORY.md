@@ -589,3 +589,11 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 - **Tombstone backlog still not purged** — same 39 `DELETED-*` rows surfacing for the 2nd straight day. Reconfirms the standing flag: sourcer/caller must give them a terminal status or remove them. Researcher surfaces, does not action (we don't own non-prospect-row status).
 - Env clean: creds already at `/tmp/frs-service-account.json` (no re-decode needed); no `_cffi_backend` panic this session; `research_staleness_days = 90`.
 - Summary file: agents/research-runs/2026-06-04-dry-run.md.
+
+### 2026-06-05 — DRY_RUN (ESCALATION THRESHOLD — day 3 of empty real queue)
+- `read prospects status=identified` returned **39 rows, all 39 `DELETED-*` tombstones** (32 distinct ids, `DELETED-DUP-DO-NOT-USE` collisions persist) — identical to 06-03 and 06-04. Filtered on `id.startswith("DELETED")` → 0 real prospects → DRY_RUN. No writes performed.
+- **Prospects-tab totals (1,243 rows)**: researched 626 / not-a-fit 574 / identified 39 (all DELETED) / disqualified 3 / declined-engagement 1. Unchanged from 06-04.
+- **THIRD distinct calendar day with empty real queue (06-03 day 1, 06-04 day 2, 06-05 day 3) → 3-distinct-day ESCALATION THRESHOLD hit** (per 2026-05-08 / 2026-05-22 rule). Surfaced PIPELINE STARVATION alert in returned summary. Sourcer has produced no new real `identified` rows since the 2026-06-02 directory batch (irancho→caterzen). Bottleneck is upstream sourcing.
+- **Tombstone backlog still unpurged (day 3)** — same 39 `DELETED-*` rows surfacing 3rd straight day. Standing flag reconfirmed: sourcer/caller must give them a terminal status or remove them. Researcher surfaces, does not action.
+- Env: `_cffi_backend` panic recurred at session start (fresh container); fixed with `pip install --user cffi cryptography`. Creds already at `/tmp/frs-service-account.json`. `research_staleness_days = 90`.
+- Summary file: agents/research-runs/2026-06-05-dry-run.md.
