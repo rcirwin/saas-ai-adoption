@@ -1,4 +1,16 @@
 ---
+SUPERSEDED: This email draft was written by a crashed/partial earlier pass on 2026-06-05.
+It is NOT sendable. Reason: this prospect already had an email-outlook row marked SENT on
+2026-05-29. Drafting another email 7 days later is a same-channel re-touch that is blocked
+without response_status disposition data. The frontmatter below incorrectly claimed the
+email family was untouched (parallel-channel). The correct untouched channel is
+linkedin-connect, which was drafted instead on 2026-06-05 (see
+2026-06-05-clockwork-recruiting-linkedin-connect.md). Do not send this email. Kept only as an audit record.
+status: superseded
+---
+
+<!-- ORIGINAL CRASHED-PASS DRAFT BELOW (NOT FOR SENDING) -->
+---
 prospect_id: clockwork-recruiting
 channel: email
 template_used: email-short-question
