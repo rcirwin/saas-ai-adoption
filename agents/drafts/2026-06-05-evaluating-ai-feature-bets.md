@@ -1,0 +1,31 @@
+---
+pillar: behind-the-process
+angle: A framework for evaluating AI feature bets
+date_drafted: 2026-06-05
+status: draft
+length_tier: medium
+template: saveable-framework
+linkedin_style: one-line
+---
+
+Most AI feature bets get killed by the wrong question.
+
+Teams ask "can we build this?" The model says yes to almost anything now, so the answer is always yes. That's not a filter. That's a green light on every idea you have.
+
+The question that actually sorts good bets from expensive ones is "what happens to this feature when the model gets twice as good next year?"
+
+Here's the 4-part test I run on any AI feature bet before it gets a roadmap slot.
+
+1. **Does it complete a job, or just suggest one?** A suggestion makes the user do the work with help. A completed job hands them the result. Suggestions get ignored once the novelty wears off. Completed jobs get paid for.
+
+2. **Does it encode judgment the model doesn't already have?** If the value is raw model capability, the model swallows it next release. If the value is your domain SOPs, routing, and escalation rules, it compounds when the model improves. The harness is the bet, not the model.
+
+3. **How much of the workflow does it own?** Owning 1 of 7 steps gets commoditized. Owning 7 of 7 and delivering the outcome makes you the service. Bet on the bets that let you own more of the workflow, not fewer.
+
+4. **Can you price it by the outcome?** If you can only charge per seat, you built a tool. If you can charge per result delivered, you built something agents and contractors compete with directly, and lose to.
+
+A bet that passes all four is worth a roadmap slot. A bet that passes one is a demo.
+
+**Stop scoring AI bets by what's possible. Score them by what survives the next model.**
+
+Which of the four does your current AI roadmap fail on?
