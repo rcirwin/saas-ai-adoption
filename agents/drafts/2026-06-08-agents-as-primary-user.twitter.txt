@@ -1,0 +1,67 @@
+1/ Your product was designed for a user who is about to stop showing up.
+
+Not because they churned. Because they sent an agent in their place.
+
+---
+
+2/ For 20 years we built B2B software around a human at a screen.
+
+Reading the dashboard. Clicking the flow. Holding the context in their head.
+
+Every design decision assumed that person.
+
+---
+
+3/ An agent needs none of it.
+
+It doesn't read your dashboard, it reads your data.
+It doesn't follow your flow, it calls your endpoints.
+It doesn't get nudged by your tooltip, it gets blocked by your missing API.
+
+---
+
+4/ Three things change the moment the agent becomes the primary user.
+
+---
+
+5/ Interface.
+
+The screen stops being where value is delivered. It becomes a place humans go to supervise.
+
+The real surface is your data and your actions, exposed cleanly enough that a non-human can finish the job without a guided tour.
+
+---
+
+6/ Judgment.
+
+A human brought their own judgment to your tool. The agent doesn't.
+
+Whatever it needs to know about your domain has to live in the product now, encoded. Or the agent improvises and gets it wrong.
+
+---
+
+7/ The model is the engine. The harness is the product.
+
+---
+
+8/ Loyalty.
+
+A human picks a tool and sticks with it through the rough edges.
+
+An agent re-evaluates every call. Own 1 of 7 steps and it routes around you the moment something completes more of the job.
+
+---
+
+9/ Glean didn't win enterprise search by adding a chat box.
+
+It won by being the thing an agent can query and trust across every system.
+
+---
+
+10/ The shift isn't "add an agent to your product."
+
+It's deciding whether your product survives once the agent is the user reading it.
+
+---
+
+11/ If your product can only be used by a human, who is your real buyer once the human delegates the work?
