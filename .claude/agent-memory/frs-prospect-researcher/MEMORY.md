@@ -49,6 +49,23 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-06-09 — all-identified (9 prospects, vertical-saas directory batch: starlight-software→datawing)
+- See `agents/research-runs/2026-06-09-9-prospects.md` — 9 researched / 0 cache hits / 7 fit3+ / 2 not-a-fit / avg 3.11 / dist 1:0 2:2 3:4 4:3 5:0. No fit-5.
+- Top fit-4: starlight-software (roll-off waste hauling ops, $3-5M, AI-empty vs AI-native TrashLab, practitioner founder Bill Bradley also runs 5280 Waste), vts-systems (towing/impound/storage, $1-3M, AI-empty, MP Nigel Pestell ex-Crown Castle — mirrors towbook fit-4), cleanguru (janitorial bidding/workloading).
+- **New fit-4 pattern: explicitly-rules-based estimation engine (NOT AI) = cleanest none posture.** CleanGuru states its price/time recommendations come from "proprietary 25-yr production rates" — deterministic, not AI. Cleaner what-to-build signal than mere AI-absence because the founder has articulated the estimation logic AI would improve. Pair with content-creator founder (Dan Liebrecht, 15K cleaning businesses watch his weekly videos) = strong reachability. Score 4.
+- **Towing/impound vertical reconfirmed fit-4** (vts-systems mirrors towbook from 2026-05-19 batch 8). Abandoned-vehicle lien/certified-mail/notification workflow is a textbook AI-acts target; category AI-empty (Towbook bootstrapped incumbent).
+- **Practitioner-founder-who-built-software-from-own-operating-business = recurring strong hook** this batch: Bill Bradley (5280 Waste→Starlight), Ashley Leonard (every winery role→InnoVint), Gavin Wade (wedding photographer→CloudSpot). Same Pool Brain/Maidily/Sweft pattern.
+- **InnoVint reconfirms shipped-AI bolt-on cap-at-3** even with textbook ICP ($3.1M Latka, bootstrapped, 4.1K customers, practitioner founder, podcast guest). Ships AI Analysis Import (photo-of-notes→inventory) + "weaving AI throughout" roadmap → capped at 3 with agent-readiness angle. Pure ICP/founder strength does NOT override the AI-already-shipped cap.
+- **Photographer gallery/CRM = creative/B2C-facing thin-workflow downgrade to 3** (CloudSpot, $1.2M Latka, reachable founder) despite in-band ARR. AI disruption sits in adjacent culling/editing layer (Aftershoot/Imagen/Narrative), not CloudSpot's gallery+CRM surface. Same downgrade as openbay.
+- **Studio/class-mgmt small-operator cluster extended** — classjuggler (dance/gym/swim, $5/mo per 150 students) = fit 2, joins teachworks/mymusicstaff/studiogrowth/myrec/bookamat. Per-student micro-pricing = sub-ICP revenue regardless of 30-emp claim.
+- **Above-ICP + AI-shipped + no-contact stacks to fit 2** — argos-software (ABECAS 3PL/ag ERP, ~$5.6M above cap, ships customer-portal AI Assistant, no named founder). Sourcer's "borderline, confirm fit" note resolved to not-a-fit.
+- **Regulated bereavement/death-care vertical = fit 3-4 (hospice/funeral-EMR pattern)** — datawing (UK crematorium/cemetery SaaS, 24 yrs, AI-empty). Capped at 3 by opaque ARR + no named contact (Osiris/Hospice Tools reachability ceiling).
+- **Queue-pollution flag for sourcer:** 39 of 48 `status=identified` rows are sourcer-flagged `DELETED-DUP`/`DELETED` rows (notes say ignore/remove/Skip); several share identical IDs (`DELETED-DUP-DO-NOT-USE-referralcandy-2` x7, `-linkinize` x2). They consume the limit budget. Sourcer should hard-delete. Researcher correctly excluded all IDs prefixed `DELETED`.
+- **Env note (new machine):** creds NOT at old `/Users/ryanirwin/...` path. Container provides `FRS_GOOGLE_CREDENTIALS_B64` (base64 service-account JSON) + `FRS_PROSPECTS_SHEET_ID` in env. Pre-flight: `echo "$FRS_GOOGLE_CREDENTIALS_B64" | base64 -d > /tmp/frs-service-account.json && export FRS_GOOGLE_CREDENTIALS=/tmp/frs-service-account.json`. Sheet ID unchanged.
+- **All 9 websites returned HTTP 403** (bot block on directory-sourced vertical SaaS). WebSearch + getlatka/Crunchbase/ZoomInfo/Companies-House triangulation gave confident scores. getlatka confirmed ARR for innovint ($3.1M) + cloudspot ($1.2M).
+- All 18 writes (9 cache + 9 prospects) succeeded with 5s pacing, single researcher, no 429s. Dropped `fit_score` from cache upserts per schema-bug memory — no tracebacks.
+
+
 ### 2026-05-28 — explicit-slice batch (49 prospects, instatus→schedulista, parallel to slice C and paw-partner slice)
 - See agents/research-runs/2026-05-28-explicit-slice-49-prospects.md — 33 unique researched / 16 not-a-fit / 1 cache-hit (plerdy 2026-05-15) / avg 3.04 / dist 1:6 2:10 3:17 4:17 5:1.
 - Top fit-5: **showit** ($4.6M ARR 2024, 31 emp, Todd Watson Practical Founders Podcast #101 guest, zero VC, zero AI, Squarespace/Wix/Framer AI existential threat for photographer-niche site builder). Cleanest 5-trigger this month.
