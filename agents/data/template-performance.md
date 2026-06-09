@@ -2,7 +2,7 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-06-04 (frs-outreach-writer run).
+Last updated: 2026-06-09 (frs-outreach-writer run).
 
 ## Active email variants (A/B set)
 
@@ -14,8 +14,8 @@ Last updated: 2026-06-04 (frs-outreach-writer run).
 
 A scored send = an `outreach_log` row where `status = sent` AND `response_status` is non-blank.
 
-- Total `outreach_log` rows: 1458
-- `sent` rows: 331
+- Total `outreach_log` rows: 1565
+- `sent` rows: 374
 - **Scored sends: 0** (no `response_status` dispositioned yet)
 
 Because zero variants have reached `MIN_SCORED_PER_VARIANT = 20` scored sends, the
@@ -44,22 +44,17 @@ No scored sends exist, so reply_rate and call_rate are undefined for every
 (template_used, category, ai_posture) cell. Ranking is not yet possible.
 Falling back to even-split exploration (email) and default templates (LinkedIn).
 
-## This run's email variant assignments (2026-06-04)
+## This run's email variant assignments (2026-06-09)
 
-Even-split deterministic assignment for the 7 prospects drafted an email this run:
+Even-split deterministic assignment for the 2 prospects drafted an email this run:
 
 | Prospect | Variant |
 |---|---|
-| bugherd | email-proof-led |
-| bugfender | email-short-question |
-| powercode-isp | email-short-question |
-| oases-online | email-proof-led |
-| studio-ninja | email-short-question |
-| contactpigeon | email-short-question |
-| hospice-tools | hyper-personalized-email |
+| refnow | hyper-personalized-email |
+| saber-feedback | email-short-question |
 
 ## Note
 
-331 sent rows are accumulating but none carry a `response_status`. When Ryan
+374 sent rows are accumulating but none carry a `response_status`. When Ryan
 backfills dispositions on the sent cohort, template-performance ranking becomes
 usable for the first time and the email channel can flip to exploitation.
