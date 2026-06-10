@@ -1,0 +1,41 @@
+1/ I spent years building software for Amazon sellers.
+
+The smartest ones never used the feature we were proudest of.
+
+They kept a spreadsheet instead.
+
+---
+
+2/ We'd ship a clean dashboard for a decision they made every week. Repricing, restock timing, which SKUs to kill.
+
+Power sellers would nod, say it was nice, then go back to a spreadsheet with twelve tabs and a macro nobody else could read.
+
+---
+
+3/ I thought it was a UX problem. Build it cleaner, they'll switch.
+
+Then I mapped what was actually in the spreadsheet.
+
+It wasn't data. It was judgment.
+
+---
+
+4/ Seasonality learned the hard way. A supplier who slips every Chinese New Year. The keyword that cannibalizes another. Refund patterns that mean a listing is about to get suppressed.
+
+Our dashboard answered the easy 80%. The spreadsheet carried the 20% that moved money.
+
+---
+
+5/ That 20% lived in their head. No tool ever captured it, because the expert never wrote it down.
+
+A model can do the 80%. So can your dashboard.
+
+---
+
+6/ 𝗧𝗵𝗲 𝘄𝗶𝗻 𝗶𝘀 𝗰𝗮𝗽𝘁𝘂𝗿𝗶𝗻𝗴 𝘁𝗵𝗲 𝟮𝟬% 𝘁𝗵𝗲 𝗲𝘅𝗽𝗲𝗿𝘁 𝗻𝗲𝘃𝗲𝗿 𝘄𝗿𝗼𝘁𝗲 𝗱𝗼𝘄𝗻.
+
+Point AI at the clean, visible step and you're rebuilding the dashboard they already ignored.
+
+---
+
+7/ What's the spreadsheet your best users keep instead of your product?
