@@ -49,6 +49,13 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-06-10 — all-identified — DRY_RUN (queue-pollution blocked, 0 researched)
+- See `agents/research-runs/2026-06-10-0-prospects.md`. 39 `status=identified` rows, **0 non-DELETED**. Every identified row is a sourcer-flagged `DELETED`-prefixed / `DELETED-DUPLICATE` dup row with notes saying ignore/skip/remove. Researcher correctly excluded all and returned DRY_RUN.
+- **Second consecutive run blocked by the SAME 39-row pollution flagged on 2026-06-09.** Count unchanged -> sourcer has not hard-deleted. Standing pipeline alert now, not a one-off. When `all-identified` returns only DELETED rows two runs running, escalate to caller in the returned summary (Outreach Writer starves downstream).
+- Repeat-offender id collisions: `DELETED-DUP-DO-NOT-USE-referralcandy-2` wraps ~7 distinct companies (marker.io/stripo/contentstudio/vbout/engagebay/coresignal/helpcrunch); `-linkinize` x2; bare `DELETED-DUP-DO-NOT-USE` for wpfusion. Sourcer must hard-delete + resolve id collisions.
+- Several flagged rows wrap *real, potentially-in-ICP* companies (canny.io/Sarah Hum, survicate, paperform, referralcandy, rivo) -- researcher does NOT resurrect flagged rows; sourcer must re-create as clean `identified` rows if wanted.
+- Env pre-flight reconfirmed: fresh container needed `pip install --user cffi cryptography` (cffi missing on import). Creds via `FRS_GOOGLE_CREDENTIALS_B64` base64 -> `/tmp/frs-service-account.json`; `FRS_PROSPECTS_SHEET_ID` present. No sheet writes this run.
+
 ### 2026-06-09 — all-identified (9 prospects, vertical-saas directory batch: starlight-software→datawing)
 - See `agents/research-runs/2026-06-09-9-prospects.md` — 9 researched / 0 cache hits / 7 fit3+ / 2 not-a-fit / avg 3.11 / dist 1:0 2:2 3:4 4:3 5:0. No fit-5.
 - Top fit-4: starlight-software (roll-off waste hauling ops, $3-5M, AI-empty vs AI-native TrashLab, practitioner founder Bill Bradley also runs 5280 Waste), vts-systems (towing/impound/storage, $1-3M, AI-empty, MP Nigel Pestell ex-Crown Castle — mirrors towbook fit-4), cleanguru (janitorial bidding/workloading).
