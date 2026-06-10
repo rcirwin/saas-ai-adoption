@@ -49,6 +49,13 @@ Append-only observations. Caller or outreach writer can flag mis-scoring; reflec
 
 ## Run Log
 
+### 2026-06-10 (run #2) — all-identified — DRY_RUN (queue-pollution blocked, 0 researched) — STARVATION CONTINUES
+- See `agents/research-runs/2026-06-10-0-prospects-dryrun.md`. `read prospects status=identified` returned the SAME 39 `DELETED-*` tombstone rows (company_name null on all 39). Filtered on `id.startswith("DELETED")` -> 0 real prospects -> DRY_RUN. No sheet writes.
+- **Empty-real-queue streak is now long-running**: 06-03, 06-04, 06-05 (escalation threshold), 06-09, 06-10 run#1, 06-10 run#2. Same 39-row tombstone backlog unpurged the entire time. Sourcer has produced NO new real `identified` rows since the 2026-06-02 directory batch (irancho->caterzen). Outreach Writer (~3h downstream) starves again. Standing PIPELINE STARVATION alert — well past the 3-distinct-day threshold.
+- Collisions persist unchanged: `-referralcandy-2` x7 (each wraps a distinct real company), `-linkinize` x2, bare `DELETED-DUP-DO-NOT-USE` (wp-fusion). Sourcer must hard-delete + resolve id collisions; researcher does NOT resurrect flagged rows.
+- Several tombstones wrap real, possibly in-ICP companies (canny/paperform/referralcandy/rivo/cratejoy/survicate/refiner/pabbly/bookwhen/booqable/reditus/vendoo/repurpose-io/affilimate). If wanted, sourcer must re-create as CLEAN `identified` rows.
+- Env: fresh container; `pip install --user cffi cryptography` pre-flight (pycparser already satisfied). Creds via `FRS_GOOGLE_CREDENTIALS_B64` -> /tmp/frs-service-account.json, exported FRS_GOOGLE_CREDENTIALS. `research_staleness_days = 90`. No writes.
+
 ### 2026-06-10 — all-identified — DRY_RUN (queue-pollution blocked, 0 researched)
 - See `agents/research-runs/2026-06-10-0-prospects.md`. 39 `status=identified` rows, **0 non-DELETED**. Every identified row is a sourcer-flagged `DELETED`-prefixed / `DELETED-DUPLICATE` dup row with notes saying ignore/skip/remove. Researcher correctly excluded all and returned DRY_RUN.
 - **Second consecutive run blocked by the SAME 39-row pollution flagged on 2026-06-09.** Count unchanged -> sourcer has not hard-deleted. Standing pipeline alert now, not a one-off. When `all-identified` returns only DELETED rows two runs running, escalate to caller in the returned summary (Outreach Writer starves downstream).
