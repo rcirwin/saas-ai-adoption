@@ -2,14 +2,16 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-06-10 (frs-outreach-writer run).
+Last updated: 2026-06-11 (frs-outreach-writer run).
 
-- Policy mode: **EXPLORATION**
-- Scored sends (status=sent AND response_status non-blank): **0 of 388 sent rows**
+## Policy Mode: EXPLORATION
 
-Because zero sends have been scored, no template ranking is possible. All LinkedIn channels fall back to `linkedin-connect-default`, and the email A/B set runs in even-split exploration mode.
+Scored sends to date: **0** (a scored send = `status=sent` AND `response_status` non-blank).
+All 388 `sent` rows in `outreach_log` still have blank `response_status`, so no template bias is possible. Channel defaults apply.
 
-## Email A/B variant scored-send counts (MIN_SCORED_PER_VARIANT = 20)
+## Email A/B Variant Scored-Send Counts
+
+`MIN_SCORED_PER_VARIANT = 20`. Exploration continues until every active variant clears 20 scored sends.
 
 | Variant | Scored sends | Status |
 |---|---|---|
@@ -17,16 +19,15 @@ Because zero sends have been scored, no template ranking is possible. All Linked
 | email-short-question | 0 | below threshold |
 | email-proof-led | 0 | below threshold |
 
-All three variants are below the 20-scored-send threshold, so exploration (deterministic even split via `idx = sum(ord(c) for c in prospect_id) % 3`) continues for every email.
+Since all three are below 20, email assignment uses the deterministic even-split:
+`idx = (sum of ord(c) for c in prospect_id) % 3`, then `active_variants[idx]`.
 
-## This run's email variant assignment (2026-06-10)
+## LinkedIn Channel Selection
 
-15 emails drafted, split: 4 hyper-personalized-email / 5 email-short-question / 6 email-proof-led.
+No scored sends → highest-call_rate lookup is null → fall back to default templates:
+- `linkedin-connect` → `linkedin-connect-default`
+- `linkedin-dm` → `linkedin-dm-default`
 
-## Ranking table
+## Ranking Table
 
-No scored data. Ranking unavailable. LinkedIn channels use `linkedin-connect-default`; email uses the even-split assignment.
-
-## Note
-
-`outreach_log` now holds 388 `sent` rows and 1008 `drafted` rows, none with `response_status` populated. Template-performance bias becomes possible the moment Ryan backfills `response_status` on any sent cohort.
+Empty. Zero scored sends means `reply_rate` and `call_rate` are undefined for every (template, category, ai_posture) cell. No ranking is possible until Ryan backfills `response_status` on the sent cohort.
