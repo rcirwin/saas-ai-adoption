@@ -1,0 +1,69 @@
+1/ The workflow your users describe is not the workflow they actually run.
+
+The version they walk you through is the clean one. The one that fits the demo.
+
+The real one lives in the gaps between your features.
+
+---
+
+2/ The real workflow is the spreadsheet they export to.
+
+The Slack message to double-check a number.
+
+The screenshot pasted into a doc.
+
+The step they do at 11pm because the tool can't.
+
+---
+
+3/ You will never find any of it by asking "how do you use the product?"
+
+You have to map the workflow underneath the workflow.
+
+Four questions get you there.
+
+---
+
+4/ 1. Where do you leave the product to get this done?
+
+The export, the copy-paste, the second tab.
+
+That's where the job actually continues.
+
+---
+
+5/ 2. What do you check before you trust this number?
+
+The double-check reveals the real decision they're making.
+
+And the anxiety attached to it.
+
+---
+
+6/ 3. What part do you redo every single time?
+
+Repeated manual work is the highest-leverage friction.
+
+It's also where users have stopped expecting better.
+
+---
+
+7/ 4. What did you do right before you opened the tool, and right after you closed it?
+
+The job starts before your product and ends after it.
+
+Most of the pain lives in those edges.
+
+---
+
+8/ The point isn't to add AI to the steps inside your product.
+
+It's to find the steps your product made the user do somewhere else, and complete them.
+
+---
+
+9/ 𝗪𝗼𝗿𝗸𝗳𝗹𝗼𝘄 𝗳𝗶𝗿𝘀𝘁. 𝗔𝗜 𝘀𝗲𝗰𝗼𝗻𝗱. 𝗧𝗵𝗲 𝗺𝗮𝗽 𝗶𝘀 𝘁𝗵𝗲 𝘄𝗵𝗼𝗹𝗲 𝗴𝗮𝗺𝗲.
+
+---
+
+10/ Which of these four questions would change your roadmap if you actually asked it this week?
