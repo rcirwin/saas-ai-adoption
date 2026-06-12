@@ -2,32 +2,33 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-06-11 (frs-outreach-writer run).
+Last updated: 2026-06-12 (frs-outreach-writer run).
 
-## Policy Mode: EXPLORATION
+- Policy mode: **EXPLORATION** (active)
+- Scored sends (status=sent AND response_status non-blank): **0 of 1651 log rows**
+- Sent rows (status=sent, response_status still blank): 388
 
-Scored sends to date: **0** (a scored send = `status=sent` AND `response_status` non-blank).
-All 388 `sent` rows in `outreach_log` still have blank `response_status`, so no template bias is possible. Channel defaults apply.
+## Why exploration persists
 
-## Email A/B Variant Scored-Send Counts
+Ranking requires scored sends. A scored send needs `status = sent` AND a non-blank `response_status`. Today every `response_status` is blank, so there are zero scored sends and no template can be ranked. All channels fall back to defaults and the email A/B set runs an even deterministic split.
 
-`MIN_SCORED_PER_VARIANT = 20`. Exploration continues until every active variant clears 20 scored sends.
+## Email A/B variant scored-send counts
 
-| Variant | Scored sends | Status |
+`MIN_SCORED_PER_VARIANT = 20`. Exploration continues until every variant clears 20 scored sends.
+
+| Variant | Role | Scored sends |
 |---|---|---|
-| hyper-personalized-email (control) | 0 | below threshold |
-| email-short-question | 0 | below threshold |
-| email-proof-led | 0 | below threshold |
+| `hyper-personalized-email` | control | 0 |
+| `email-short-question` | challenger | 0 |
+| `email-proof-led` | challenger | 0 |
 
-Since all three are below 20, email assignment uses the deterministic even-split:
-`idx = (sum of ord(c) for c in prospect_id) % 3`, then `active_variants[idx]`.
+All three are below threshold, so the writer assigns variants by the deterministic even-split rule
+`idx = (sum(ord(c) for c in prospect_id)) % 3`.
 
-## LinkedIn Channel Selection
+## LinkedIn channel selection
 
-No scored sends → highest-call_rate lookup is null → fall back to default templates:
-- `linkedin-connect` → `linkedin-connect-default`
-- `linkedin-dm` → `linkedin-dm-default`
+No scored data, so `linkedin-connect` uses `linkedin-connect-default` from `outreach.md` for every prospect.
 
-## Ranking Table
+## Ranking table
 
-Empty. Zero scored sends means `reply_rate` and `call_rate` are undefined for every (template, category, ai_posture) cell. No ranking is possible until Ryan backfills `response_status` on the sent cohort.
+Not computable. Zero scored sends. Backfilling `response_status` on the 388 sent rows would make this table usable for the first time.
