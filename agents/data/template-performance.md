@@ -2,11 +2,11 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-06-12 (frs-outreach-writer run).
+Last updated: 2026-06-16 (frs-outreach-writer run).
 
 - Policy mode: **EXPLORATION** (active)
-- Scored sends (status=sent AND response_status non-blank): **0 of 1651 log rows**
-- Sent rows (status=sent, response_status still blank): 388
+- Scored sends (status=sent AND response_status non-blank): **0 of 1722 log rows**
+- Sent rows (status=sent, response_status still blank): 418
 
 ## Why exploration persists
 
@@ -31,4 +31,4 @@ No scored data, so `linkedin-connect` uses `linkedin-connect-default` from `outr
 
 ## Ranking table
 
-Not computable. Zero scored sends. Backfilling `response_status` on the 388 sent rows would make this table usable for the first time.
+Not computable. Zero scored sends. Backfilling `response_status` on the 418 sent rows would make this table usable for the first time.
