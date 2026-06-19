@@ -2,36 +2,34 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-06-18 (frs-outreach-writer run).
+Last updated: 2026-06-19 (frs-outreach-writer run).
 
-**Policy mode:** EXPLORATION
+## Policy Mode: EXPLORATION
 
-## Scored sends
+Scored sends = rows where `status = sent` AND `response_status` is non-blank.
 
-A scored send = `status = sent` AND `response_status` non-blank.
+**Scored sends: 0 of 448 sent rows.** Every `response_status` is still blank, so there are zero scored sends. Template ranking by reply/call rate is not yet possible.
 
-- Total log rows: 1786
-- Sent rows: 442
-- **Scored sends: 0** (every `response_status` is blank)
+Because no active email variant has reached `MIN_SCORED_PER_VARIANT = 20` scored sends (all sit at 0), the email channel stays in **exploration**: each prospect is assigned a variant deterministically and evenly via `idx = (sum of ord(c) for c in prospect_id) % 3`, which splits the batch roughly evenly and keeps assignment reproducible per prospect.
 
-With zero scored sends, no reply_rate or call_rate can be computed. Template ranking is impossible. All channels fall back to defaults, and the email A/B set stays in exploration (even split).
+LinkedIn channels use `linkedin-connect-default` (the template from `outreach.md`), since there is no call_rate signal to rank against.
 
-## Email A/B variants (active set)
+## Active Email Variants (A/B set)
 
-`MIN_SCORED_PER_VARIANT = 20`. Every active variant is below threshold, so exploration continues: each prospect is assigned a variant deterministically by `idx = sum(ord(c) for c in prospect_id) % 3` (reproducible, ~even split).
-
-| Variant | Role | Scored sends |
+| Variant | Scored sends | Role |
 |---|---|---|
-| hyper-personalized-email | control | 0 |
-| email-short-question | challenger | 0 |
-| email-proof-led | challenger | 0 |
+| hyper-personalized-email (control) | 0 | full structure: mirror hook, tension bridge, 20-min call ask |
+| email-short-question | 0 | under 90 words, one genuine question, no offer |
+| email-proof-led | 0 | proof or category insight first, then soft low-commitment ask |
 
-This run's 13 emails split: 6 email-short-question, 6 email-proof-led, 1 hyper-personalized-email.
+## This run's email assignment (2026-06-19)
 
-## LinkedIn channels
+9 parallel-channel emails: 3 hyper-personalized (softcomply, passage-technology, easyfeedback), 2 short-question (rivo, statusbrew), 4 proof-led (trafft, reviewpush, trackdesk, outfunnel).
 
-No scored sends, so the highest-call-rate lookup is null. Falls back to `linkedin-connect-default` from `outreach.md` for all (category, ai_posture) cells.
+## Ranking Table
 
-## Ranking table
+Not computable. All variants have 0 scored sends. No (template, category, ai_posture) cell has any disposition data.
 
-Not computable until `response_status` is backfilled on the 442 sent rows. This remains the single standing blocker on template-performance learning for the project.
+## Standing Blocker
+
+Template ranking, exploitation-mode variant selection, and same-channel second-touch are all blocked until the human backfills `response_status` on the 448 sent rows in `outreach_log`. Until then every run stays in exploration, and second-touch relies on the parallel-channel mechanic (drafting an untouched channel family rather than re-touching a sent one).
