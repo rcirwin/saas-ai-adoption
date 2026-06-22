@@ -1,0 +1,65 @@
+1/ "Add AI to everything" is the reason your retention is flat.
+
+Not the cure for it.
+
+---
+
+2/ Every screen got a sparkle icon. Every workflow got a copilot.
+
+And the churn curve didn't move.
+
+That's not a coincidence.
+
+---
+
+3/ When you bolt AI onto a tool, you make the tool slightly faster.
+
+You don't change what the user still has to finish themselves.
+
+---
+
+4/ I see the same pattern when I map these products.
+
+A founder shows me their AI features, then their retention dashboard.
+
+The two have nothing to do with each other.
+
+---
+
+5/ The "AI" summarizes the report the user still has to act on.
+
+The copilot drafts the thing the user still has to verify.
+
+The assistant suggests the step the user still has to take.
+
+---
+
+6/ The user is doing the same job.
+
+You just gave them a faster way to start it.
+
+---
+
+7/ 𝗥𝗲𝘁𝗲𝗻𝘁𝗶𝗼𝗻 𝗱𝗼𝗲𝘀𝗻'𝘁 𝗺𝗼𝘃𝗲 𝗯𝗲𝗰𝗮𝘂𝘀𝗲 𝘁𝗵𝗲 𝘄𝗼𝗿𝗸 𝗱𝗶𝗱𝗻'𝘁 𝗺𝗼𝘃𝗲.
+
+It's still sitting on your customer's desk.
+
+---
+
+8/ The teams whose numbers recovered did the harder thing.
+
+They picked one workflow users dreaded, and finished it. End to end.
+
+The user gets a result, not a head start.
+
+---
+
+9/ That's the difference between AI-flavored and AI that earns its renewal.
+
+One decorates the job. The other completes it.
+
+Stop building the tool. Start completing the job.
+
+---
+
+10/ Which workflow in your product still hands the user a draft instead of a finished result?
