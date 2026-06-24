@@ -2,7 +2,7 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-06-19 (frs-outreach-writer run).
+Last updated: 2026-06-24 (frs-outreach-writer run).
 
 ## Policy Mode: EXPLORATION
 
@@ -12,7 +12,7 @@ Scored sends = rows where `status = sent` AND `response_status` is non-blank.
 
 Because no active email variant has reached `MIN_SCORED_PER_VARIANT = 20` scored sends (all sit at 0), the email channel stays in **exploration**: each prospect is assigned a variant deterministically and evenly via `idx = (sum of ord(c) for c in prospect_id) % 3`, which splits the batch roughly evenly and keeps assignment reproducible per prospect.
 
-LinkedIn channels use `linkedin-connect-default` (the template from `outreach.md`), since there is no call_rate signal to rank against.
+LinkedIn channels use `linkedin-connect-default` (the template from `outreach.md`, observation-first ordering per the 2026-06-23 voice update), since there is no call_rate signal to rank against.
 
 ## Active Email Variants (A/B set)
 
@@ -22,9 +22,9 @@ LinkedIn channels use `linkedin-connect-default` (the template from `outreach.md
 | email-short-question | 0 | under 90 words, one genuine question, no offer |
 | email-proof-led | 0 | proof or category insight first, then soft low-commitment ask |
 
-## This run's email assignment (2026-06-19)
+## This run's email assignment (2026-06-24)
 
-9 parallel-channel emails: 3 hyper-personalized (softcomply, passage-technology, easyfeedback), 2 short-question (rivo, statusbrew), 4 proof-led (trafft, reviewpush, trackdesk, outfunnel).
+12 parallel-channel emails: 5 hyper-personalized (dux-software, easy-subscriptions, fera, float-cash-flow, getform), 3 short-question (dmarc-advisor, easy-lms, eddy-hr), 4 proof-led (desktime, dreamclass, encuadrado, findthatlead).
 
 ## Ranking Table
 
