@@ -1,0 +1,31 @@
+---
+pillar: founders-dilemma
+angle: Why clarity is the rarest asset right now (the constraint isn't speed or budget, it's knowing which AI bet is real)
+date_drafted: 2026-06-24
+status: draft
+length_tier: medium
+template: legibility-hook
+linkedin_style: paragraph
+---
+
+The scarcest thing in B2B SaaS right now isn't AI talent or budget. It's clarity.
+
+Most founders I talk to aren't stuck because they can't build. They're stuck because they can't tell which bet is real.
+
+The pressure is everywhere. The board wants an AI story. Competitors are shipping. The team is sending Loom demos of the latest model. And underneath all of it sits one quiet, unanswered question: which of these actually matters for our product?
+
+So the default move is to ship something. Add a chat box. Bolt on a "summarize" button. Put "AI-powered" in the release notes. It feels like progress. It buys a quarter of cover.
+
+But shipping motion is not the same as shipping a bet. A feature that doesn't sit on real workflow friction doesn't move retention. It just adds surface area to maintain and a label that's starting to read as a red flag.
+
+Here's what I keep seeing. The founders who feel calm right now aren't the ones moving fastest. They're the ones who got clear first:
+
+- They named the one workflow where AI changes the economics, not the ten where it's cosmetic.
+- They decided what they're NOT building this year, out loud.
+- They can say in one sentence what their product does that an agent couldn't route around.
+
+Clarity is rarer than speed because speed is cheap now. Anyone can ship an AI feature in a weekend. Knowing which one is worth owning end-to-end is the hard part, and it's the part that compounds.
+
+**The constraint was never the technology. It's the decision.**
+
+What's the one AI bet you'd defend to your board, and what makes it the right one?

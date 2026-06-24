@@ -1,0 +1,51 @@
+1/ The scarcest thing in B2B SaaS right now isn't AI talent or budget.
+
+It's clarity.
+
+---
+
+2/ Most founders I talk to aren't stuck because they can't build.
+
+They're stuck because they can't tell which bet is real.
+
+---
+
+3/ The pressure is everywhere. The board wants an AI story. Competitors are shipping. The team keeps sending demos of the latest model.
+
+Underneath it all: which of these actually matters for our product?
+
+---
+
+4/ So the default move is to ship something.
+
+A chat box. A "summarize" button. "AI-powered" in the release notes.
+
+It feels like progress. It buys a quarter of cover.
+
+---
+
+5/ But shipping motion isn't shipping a bet.
+
+A feature that doesn't sit on real workflow friction doesn't move retention. It just adds surface area to maintain, and a label that's starting to read as a red flag.
+
+---
+
+6/ The founders who feel calm aren't moving fastest. They got clear first:
+
+- Named the one workflow where AI changes the economics, not the ten where it's cosmetic.
+- Said out loud what they're NOT building this year.
+- Can name what an agent couldn't route around.
+
+---
+
+7/ Clarity is rarer than speed because speed is cheap now.
+
+Anyone can ship an AI feature in a weekend. Knowing which one is worth owning end-to-end is the hard part. That's the part that compounds.
+
+---
+
+8/ 𝗧𝗵𝗲 𝗰𝗼𝗻𝘀𝘁𝗿𝗮𝗶𝗻𝘁 𝘄𝗮𝘀 𝗻𝗲𝘃𝗲𝗿 𝘁𝗵𝗲 𝘁𝗲𝗰𝗵𝗻𝗼𝗹𝗼𝗴𝘆. 𝗜𝘁'𝘀 𝘁𝗵𝗲 𝗱𝗲𝗰𝗶𝘀𝗶𝗼𝗻.
+
+---
+
+9/ What's the one AI bet you'd defend to your board, and what makes it the right one?
