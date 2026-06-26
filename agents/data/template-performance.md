@@ -2,41 +2,40 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-06-25 (frs-outreach-writer run).
+Last updated: 2026-06-26 (frs-outreach-writer run).
 
 ## Policy Mode: EXPLORATION
 
-A scored send = `status = sent` AND non-blank `response_status`. Ranking counts scored sends only.
+Scored sends (status = sent AND response_status non-blank): **0 of 463 sent rows** (1889 total log rows).
 
-**Scored sends across all variants: 0 of 448 sent rows.** Every `response_status` is still blank, so there is zero attributable signal. The standing blocker persists: until the human dispositions sent rows, template ranking and the move to EXPLOITATION stay blocked.
+No row in `outreach_log` has a dispositioned `response_status` yet, so there are zero scored sends. Template ranking is impossible and the email A/B set stays in EXPLORATION mode (deterministic even-split, `idx = sum(ord(c) for c in prospect_id) % 3`). This is the standing blocker: until `response_status` is backfilled on the sent cohort, no template can be ranked and the system cannot move to EXPLOITATION.
 
-### Email A/B variant scored-send counts (MIN_SCORED_PER_VARIANT = 20)
+## Email A/B Variant Scored-Send Counts (MIN_SCORED_PER_VARIANT = 20)
 
-| Variant | Scored sends | Status |
+| Variant | Scored sends | At threshold? |
 |---|---|---|
-| hyper-personalized-email (control) | 0 | below threshold |
-| email-short-question | 0 | below threshold |
-| email-proof-led | 0 | below threshold |
+| hyper-personalized-email (control) | 0 | no |
+| email-short-question | 0 | no |
+| email-proof-led | 0 | no |
 
-Because at least one active variant is below 20 scored sends, the writer stays in **EXPLORATION**: each emailed prospect is assigned a variant deterministically and evenly via `idx = (sum of ord(c) for c in prospect_id) % 3`, so future outcomes stay attributable per variant.
+All three active variants are below the 20-scored-send threshold, so exploration continues.
 
-This run's email A/B split (9 emails, even by construction):
-- hyper-personalized-email: nocrm, productable, ticketnology
-- email-short-question: testimonial-to, schedulista, paywhirl
-- email-proof-led: velocity-worldwide, saaslogic, quaderno
+## Ranking Table
 
-### LinkedIn channel selection
+No scored sends, so no reply_rate or call_rate can be computed for any (template_used, category, ai_posture) cell. LinkedIn channels fall back to `linkedin-connect-default`. Email channels use the deterministic even-split assignment.
 
-No scored sends, so LinkedIn channels fall back to the default template from `outreach.md` (`linkedin-connect-default`). All 6 connect drafts this run used it.
+## This Run's Email A/B Assignment (2026-06-26)
 
-## Ranking table
-
-| template_used | category | ai_posture | scored | reply_rate | call_rate |
-|---|---|---|---|---|---|
-| (none) | (all) | (all) | 0 | n/a | n/a |
-
-No ranking is computable until sent rows are dispositioned with `response_status` and `led_to_call`.
-
-## Action for the human
-
-Backfill `response_status` (accepted / replied / no-response / bounced) and `led_to_call` on the 448 `status = sent` rows in `outreach_log`. That unblocks variant ranking and the move from EXPLORATION to EXPLOITATION.
+| prospect_id | variant assigned |
+|---|---|
+| geti-solutions | email-proof-led |
+| glasscubes | hyper-personalized-email |
+| gleam | email-proof-led |
+| groupapp | email-proof-led |
+| heatmap | email-short-question |
+| hellotax | email-short-question |
+| hirebook | email-proof-led |
+| hurdlr | hyper-personalized-email |
+| icypeas | hyper-personalized-email |
+| inboxally | hyper-personalized-email |
+| invoiceberry | email-short-question |
