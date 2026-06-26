@@ -1,0 +1,65 @@
+1/ Not every workflow is ready for an agent.
+
+Most "add AI here" ideas die because the workflow underneath isn't a fit yet.
+
+The friction is real. The structure isn't there.
+
+---
+
+2/ When I run a workflow audit, I'm not hunting for the most painful step.
+
+I'm hunting for the step that's actually ready to hand off.
+
+5 questions tell me which is which.
+
+---
+
+3/ 1. Is it repeated?
+
+A one-off never pays back the cost of encoding judgment into a harness.
+
+High frequency does.
+
+---
+
+4/ 2. Is the judgment encodable?
+
+Can a human explain the decision rule out loud?
+
+If the logic lives in someone's head as "I just know," that's exactly the part worth capturing.
+
+---
+
+5/ 3. Where does the data already live?
+
+Scattered across five tools and three inboxes? The bottleneck isn't the model. It's context.
+
+Fix the surface first.
+
+---
+
+6/ 4. Is there a clear definition of done?
+
+Agents need a result to deliver, not a vibe.
+
+If nobody can say what "finished" looks like, the workflow isn't ready.
+
+---
+
+7/ 5. What's the cost of a wrong call?
+
+Low cost: let the model run, correct later.
+
+High cost: design escalation rules before anything ships.
+
+---
+
+8/ Score a workflow across these five and the ready ones separate fast.
+
+The painful step everyone points to is rarely the one to automate first.
+
+The ready step sits one row above or below it.
+
+---
+
+9/ Which of these five does your highest-friction workflow fail on right now?
