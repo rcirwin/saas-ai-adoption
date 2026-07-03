@@ -2,7 +2,7 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-07-02 (frs-outreach-writer run).
+Last updated: 2026-07-03 (frs-outreach-writer run).
 
 ## Policy mode: EXPLORATION
 
@@ -10,7 +10,7 @@ Email A/B assignment is deterministic even-split (`idx = sum(ord(c) for c in pro
 
 A **scored send** = `status = sent` AND non-blank `response_status`. Drafts, skips, bounces, and unsent rows never count.
 
-- Scored sends: **0** of 512 `sent` rows (2026 total log rows).
+- Scored sends: **0** of 512 `sent` rows (2056 total log rows after this run).
 - Every `response_status` is blank. Zero attributable signal.
 - STANDING BLOCKER: template ranking and the EXPLORATION to EXPLOITATION switch stay blocked until Ryan dispositions sent rows with `response_status`.
 
@@ -21,6 +21,12 @@ A **scored send** = `status = sent` AND non-blank `response_status`. Drafts, ski
 | hyper-personalized-email (control) | 0 | n/a | n/a |
 | email-short-question | 0 | n/a | n/a |
 | email-proof-led | 0 | n/a | n/a |
+
+## This run's email variant split (13 emails, deterministic even-split)
+
+- email-short-question (8): mailosaur, reach-reporting, moonclerk, learn-it-live, junip, signaturely, salonist, timekeeper-uk
+- hyper-personalized-email (3): sharetribe, workamajig, uxtweak
+- email-proof-led (2): mergify, vivahr
 
 ## LinkedIn channels
 
