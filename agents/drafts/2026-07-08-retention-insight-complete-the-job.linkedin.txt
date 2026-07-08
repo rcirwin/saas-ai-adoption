@@ -1,0 +1,28 @@
+Our most-requested feature shipped. Adoption looked great.
+
+Retention didn't move an inch.
+
+This was years ago, at an Amazon seller analytics tool. Sellers kept asking for more data. More charts, more metrics, more filters.
+
+So we built it. They used it. And they still churned at the same rate.
+
+I pulled the cohorts to figure out why.
+
+The sellers who stayed weren't the ones using the most features. They were the ones who let the product make the decision for them.
+
+Restock this SKU. Reprice here. Kill this listing.
+
+The churned cohort used us as a dashboard. They exported the data and made the call somewhere else. The moment a cheaper dashboard showed up, they left.
+
+The retained cohort didn't use us to see the data. They used us to finish the job.
+
+That was the insight that changed how I build: 𝗿𝗲𝘁𝗲𝗻𝘁𝗶𝗼𝗻 𝗱𝗼𝗲𝘀𝗻'𝘁 𝘁𝗿𝗮𝗰𝗸 𝗳𝗲𝗮𝘁𝘂𝗿𝗲 𝘂𝘀𝗮𝗴𝗲. 𝗜𝘁 𝘁𝗿𝗮𝗰𝗸𝘀 𝗵𝗼𝘄 𝗺𝘂𝗰𝗵 𝗼𝗳 𝘁𝗵𝗲 𝗷𝗼𝗯 𝘆𝗼𝘂 𝗮𝗰𝘁𝘂𝗮𝗹𝗹𝘆 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗲.
+
+A tool people consult is replaceable.
+A tool that owns the outcome is the outcome.
+
+I stopped asking "what feature do they want next?" I started asking "how much of their decision are we actually making?"
+
+Every product I've scoped since starts from that question.
+
+What's one job your product helps with but doesn't finish?
