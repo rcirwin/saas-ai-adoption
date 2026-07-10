@@ -1,0 +1,66 @@
+1/ Not all workflow friction is worth solving with AI.
+
+Most of it is just bad UX in a costume.
+
+---
+
+2/ A slow screen, one extra click, a confusing label.
+
+That's a design fix. Not an AI opportunity.
+
+---
+
+3/ The friction worth building around is rarer.
+
+It's the moment the workflow leaves your product and a human quietly applies judgment you never captured.
+
+That's where a harness compounds. Everything else is polish.
+
+---
+
+4/ Here's the test I run to find it. Four questions.
+
+---
+
+5/ Does it repeat?
+
+Encode judgment where the loop runs weekly, not once a quarter.
+
+Rare pain isn't worth a harness. Frequent pain pays back every cycle.
+
+---
+
+6/ Does it end in an export?
+
+Where users dump your data into a spreadsheet is where your product stops and their real work starts.
+
+Follow the export. Whatever they do in that sheet is the job you're not completing.
+
+---
+
+7/ Is it a decision or just clicks?
+
+Too many steps is a UX problem.
+A choice they dread making is a harness problem.
+
+Fix one with design. Fix the other by encoding how your best users decide.
+
+---
+
+8/ Do they own the outcome after?
+
+If finishing this step still hands them a half-done job, you automated 1 of 7.
+
+Find the friction that lets you complete all 7 and hand back the result.
+
+---
+
+9/ Run those four before you build anything.
+
+Three yeses means you found real leverage. One yes means you found a design ticket.
+
+𝗪𝗼𝗿𝗸𝗳𝗹𝗼𝘄 𝗳𝗶𝗿𝘀𝘁. 𝗔𝗜 𝘀𝗲𝗰𝗼𝗻𝗱.
+
+---
+
+10/ Which workflow in your product ends in an export you've never followed?
