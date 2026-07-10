@@ -2,7 +2,7 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-07-09 (frs-outreach-writer run).
+Last updated: 2026-07-10 (frs-outreach-writer run).
 
 ## Policy mode: EXPLORATION
 
@@ -10,8 +10,8 @@ Email A/B even-split is still active. Exploitation unlocks only once EVERY activ
 
 Scored send = a row where `status = sent` AND `response_status` is non-blank. Drafts, skips, bounces and unsent rows never count.
 
-- Total `outreach_log` rows: 2115
-- Sent rows: 530
+- Total `outreach_log` rows: 2132 (pre-run count; +15 appended this run)
+- Sent rows: 532
 - **Scored sends: 0** (every `response_status` is still blank)
 
 With zero scored sends, template ranking is impossible.
@@ -33,8 +33,8 @@ Not computable. 0 scored sends across all (template, category, ai_posture) cells
 
 ## Standing blocker
 
-0 of 530 sent rows have `response_status` filled. Until Ryan dispositions sent rows (accepted / replied / no-response), template performance ranking and the EXPLORATION -> EXPLOITATION transition remain blocked. Standing blocker for ~10+ weeks.
+0 of 532 sent rows have `response_status` filled. Until Ryan dispositions sent rows (accepted / replied / no-response), template performance ranking and the EXPLORATION -> EXPLOITATION transition remain blocked. Standing blocker for ~10+ weeks.
 
-## This run (2026-07-09)
+## This run (2026-07-10)
 
-15 `linkedin-connect` first-touch drafts (truly-never-touched cohort, all connect-only: LinkedIn present, no `contact_email`). No emails drafted this run, so no A/B assignment was exercised.
+15 `linkedin-connect` first-touch drafts (truly-never-touched cohort, all connect-only: LinkedIn resolvable via named founder, no `contact_email`). No emails drafted this run, so no A/B assignment was exercised.
