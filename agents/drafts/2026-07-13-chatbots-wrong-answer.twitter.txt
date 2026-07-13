@@ -1,0 +1,37 @@
+1/ A chatbot is what most teams build when they don't want to solve the actual problem.
+---
+2/ It feels like progress. A box, a cursor, a fast answer.
+
+Then a real user shows up, and it just suggests. It hands back a paragraph and sends them back into the same workflow to do the thing themselves.
+---
+3/ The question a user actually has is almost never "tell me what to do."
+
+It's "do it."
+---
+4/ Open your product and there's a job to finish. A report to reconcile. A campaign to fix. A queue to clear.
+
+A chatbot answers a question about that job. It doesn't move the job one inch closer to done.
+---
+5/ That's the gap buyers feel now.
+
+They've stopped asking "can this help my team do X?" They ask "does this just do X?"
+
+A chat box lands on the wrong side of that line almost every time.
+---
+6/ Three tells a chatbot is standing in for real product work:
+
+- It outputs advice, not a finished step.
+- It makes the user turn the answer into action.
+- Delete it tomorrow and the workflow doesn't change.
+---
+7/ Chat isn't useless. For open-ended exploration it's fine.
+
+But most product questions aren't open-ended. They're a job that needs finishing, and a suggestion isn't a finish.
+---
+8/ The better move is quieter and harder.
+
+Pick the workflow users hate most. Take the input, do the work, hand back the result. No paragraph to interpret. No next step to figure out.
+---
+9/ 𝗦𝘁𝗼𝗽 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝘁𝗵𝗲 𝘁𝗼𝗼𝗹. 𝗦𝘁𝗮𝗿𝘁 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗶𝗻𝗴 𝘁𝗵𝗲 𝗷𝗼𝗯.
+---
+10/ What's one workflow a chatbot "helps" with in your product today that it could actually finish instead?
