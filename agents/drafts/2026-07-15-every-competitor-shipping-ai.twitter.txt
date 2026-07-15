@@ -1,0 +1,43 @@
+1/ Every competitor in your space shipped an AI feature last quarter. You didn't.
+
+That feels like falling behind. Usually it isn't.
+
+---
+
+2/ Look at what most of those features actually are.
+
+A chat box bolted onto a screen.
+A "summarize" button.
+A suggestion the user still has to go verify.
+
+Shipping fast looks like progress. In the market it's noise until it changes what the product does.
+
+---
+
+3/ The panic move: copy the feature so you're not the only one without it.
+
+The clarity move: ask what job your users are trying to finish, and whether any of those features finish it.
+
+---
+
+4/ The buyer's question is shifting.
+
+From "can this help my team do X?" to "does this just do X?"
+
+A me-too AI feature loses on both. It barely helps, and it doesn't do the job.
+
+---
+
+5/ I'd take one feature that completes a workflow end to end in six months over five that suggest and summarize by Friday.
+
+Shipping the wrong thing isn't neutral. It burns engineering time, a roadmap slot, and board credibility.
+
+---
+
+6/ 𝗖𝗹𝗮𝗿𝗶𝘁𝘆 𝗶𝘀 𝘁𝗵𝗲 𝗿𝗮𝗿𝗲𝘀𝘁 𝗮𝘀𝘀𝗲𝘁 𝗶𝗻 𝘁𝗵𝗲 𝗿𝗼𝗼𝗺 𝗿𝗶𝗴𝗵𝘁 𝗻𝗼𝘄. Not speed.
+
+You're not behind for skipping the feature everyone copied. You're behind if you can't name the job your product should own.
+
+---
+
+7/ What's the one workflow your users would pay you to finish for them, not just help them do?
