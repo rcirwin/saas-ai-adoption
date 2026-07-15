@@ -1,32 +1,41 @@
-# Email Template Performance & A/B Policy
+# Template Performance Snapshot
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-07-14 (frs-outreach-writer run).
+- **Last updated:** 2026-07-15 (frs-outreach-writer run)
+- **Policy mode:** EXPLORATION (email A/B)
+- **Total outreach_log rows:** 2162
+- **Rows with status = sent:** 532
+- **Scored sends (status = sent AND response_status non-blank):** 0
 
-- Policy mode: **EXPLORATION**
-- Total outreach_log rows: 2147
-- Sent rows: 532
-- **Scored sends (status=sent AND response_status non-blank): 0**
+## Why exploration is still active
 
-## Why exploration persists
+A scored send requires `status = sent` AND a non-blank `response_status`. Every `response_status` in the log is currently blank, so there are **0 scored sends**. Ranking (reply_rate / call_rate) and the exploration to exploitation flip are both blocked until the human dispositions sent rows. `MIN_SCORED_PER_VARIANT = 20`; all active variants sit at 0.
 
-A scored send requires `status = sent` AND a non-blank `response_status`. Today every `response_status` in `outreach_log` is blank, so there are **0 scored sends**. Ranking by reply/call rate is not yet possible. Email A/B assignment stays on the deterministic even-split; LinkedIn channels use the default template.
+## Email A/B variants (active set)
 
-## Email A/B variants (active set) scored-send counts
+| Variant | Role | Scored sends | Status |
+|---|---|---|---|
+| `hyper-personalized-email` | control | 0 | below MIN (20) |
+| `email-short-question` | brevity + curiosity | 0 | below MIN (20) |
+| `email-proof-led` | credibility first | 0 | below MIN (20) |
 
-`MIN_SCORED_PER_VARIANT = 20`. All three variants are below threshold, so exploration continues.
+Assignment during exploration is deterministic and even: `idx = (sum of ord(c) for c in prospect_id) % 3`.
 
-| Variant | Role | Scored sends | Reply rate | Call rate |
-|---|---|---|---|---|
-| hyper-personalized-email | control | 0 | n/a | n/a |
-| email-short-question | challenger | 0 | n/a | n/a |
-| email-proof-led | challenger | 0 | n/a | n/a |
+### This run's email assignment (12 emails)
 
-## LinkedIn template ranking
+- hyper-personalized-email (3): beds24, fastbill, lifterlms
+- email-short-question (7): clockwork-recruiting, foxy-io, libraryworld, monkeypod, paykickstart, showit, abara-lms
+- email-proof-led (2): profitbooks, smarterselect
 
-No scored sends, so no (category, ai_posture) ranking is computable. LinkedIn channels fall back to the default connect template (`linkedin-connect-default`). This run: 15 of 15 drafts were `linkedin-connect-default`.
+## LinkedIn channel selection
+
+Highest `call_rate` template for (category, ai_posture), else the default from `outreach.md`. With 0 scored sends there is no ranking signal, so LinkedIn connects use the default observation-first connect template (per the 2026-06-23 human correction: observation-first, no FRS naming, identity-by-focus close).
+
+## Ranking table
+
+Empty. Zero scored sends means no (template, category, ai_posture) cell has a computable reply_rate or call_rate yet.
 
 ## Standing blocker
 
-0 of 532 sent rows have a dispositioned `response_status`. Until the human backfills outcomes, template ranking and the EXPLORATION to EXPLOITATION transition remain blocked for every channel.
+0 of 532 sent rows have been dispositioned. Template ranking and the exploration to exploitation transition remain blocked until the human fills `response_status` / `led_to_call` on sent rows.
