@@ -1,2 +1,7 @@
 google-api-python-client>=2.100.0
 google-auth>=2.23.0
+# cryptography ships with google-auth's service-account signing path and needs
+# the cffi C backend at runtime. On the ephemeral cloud sandbox cffi is not
+# always present, so pin it explicitly — otherwise scripts/sheet.py crashes on
+# a fresh boot with "No module named '_cffi_backend'".
+cffi>=1.15.0
