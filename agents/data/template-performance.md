@@ -2,10 +2,10 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-07-14 (frs-outreach-writer run).
+Last updated: 2026-07-16 (frs-outreach-writer run).
 
 - Policy mode: **EXPLORATION**
-- Total outreach_log rows: 2147
+- Total outreach_log rows: 2192 (2177 pre-run + 15 appended this run)
 - Sent rows: 532
 - **Scored sends (status=sent AND response_status non-blank): 0**
 
@@ -23,9 +23,14 @@ A scored send requires `status = sent` AND a non-blank `response_status`. Today 
 | email-short-question | challenger | 0 | n/a | n/a |
 | email-proof-led | challenger | 0 | n/a | n/a |
 
+This run's email assignment (deterministic even-split, idx = sum(ord(c)) % 3):
+- hyper-personalized-email (6): tutorware, findymail, equinegenie, landlord-studio, noterro, clockodo
+- email-short-question (5): crystal-pm, ownerrez, senturo, heysummit, anchorpoint
+- email-proof-led (2): localyser, loop-subscriptions
+
 ## LinkedIn template ranking
 
-No scored sends, so no (category, ai_posture) ranking is computable. LinkedIn channels fall back to the default connect template (`linkedin-connect-default`). This run: 15 of 15 drafts were `linkedin-connect-default`.
+No scored sends, so no (category, ai_posture) ranking is computable. LinkedIn channels fall back to the default connect template (`linkedin-connect-default`). This run: 2 of 2 connect drafts were `linkedin-connect-default` (storagepug, bookwhen).
 
 ## Standing blocker
 
