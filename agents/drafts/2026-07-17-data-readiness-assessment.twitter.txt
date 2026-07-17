@@ -1,0 +1,53 @@
+1/ Most founders think a data readiness assessment checks whether they have enough data.
+
+That's not what it checks.
+
+---
+
+2/ The question that decides your AI moat is quieter, and almost nobody measures it:
+
+Can a machine actually reach the judgment that makes your product good?
+
+---
+
+3/ When I run the data readiness work, it's three passes. Here's what each one surfaces.
+
+---
+
+4/ Pass 1: Where the data lives.
+
+Not how much you have. Where it sits.
+
+Scattered across a CRM, four spreadsheets, and two Slack threads? The model was never your bottleneck. The context surface is.
+
+---
+
+5/ Most "we're not AI-ready" problems are really "our data has no reachable shape" problems.
+
+---
+
+6/ Pass 2: What's written down, and what isn't.
+
+The most valuable logic in a SaaS business is usually undocumented.
+
+It lives in the support lead who just knows which accounts will churn. AI can't pattern-match to a strategy it's never seen the output of.
+
+---
+
+7/ Pass 3: What of that is actually yours.
+
+Judgment already in the training data isn't a moat. Every model has it.
+
+The moat is the judgment built from years of trial and error, locked in your team's heads. That's what's worth encoding into a harness.
+
+---
+
+8/ By the end there's no tidy data-quality score.
+
+There's a map: what's reachable today, what's trapped inside people, and which trapped part is the actual moat.
+
+The messiest corner of the business is usually where the durable advantage hides.
+
+---
+
+9/ If an AI had to run your hardest workflow tomorrow, which piece of it lives only in one person's head?
