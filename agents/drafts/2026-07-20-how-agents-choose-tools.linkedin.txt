@@ -1,0 +1,23 @@
+The most important buyer in your funnel is about to stop being a person.
+
+Increasingly the user hands the job to an agent, and the agent decides which tools it actually invokes to get that job done. It picks on criteria your product was never built to win.
+
+For 20 years, winning a category meant winning a human. Better UI, faster onboarding, cleaner dashboards. You competed for attention and clicks.
+
+That's the part that should worry you: the agent doesn't care about any of the things you optimized for.
+
+It doesn't see your onboarding flow. It doesn't read your marketing page. It doesn't feel loyal to your brand. It asks three questions:
+
+- Can I call this directly, or do I have to drive a human interface to use it?
+- Does the output finish the job, or does it hand me back a half-step I still have to complete myself?
+- Is invoking this tool cheaper and more reliable than just doing the work myself?
+
+If your product owns 1 of 7 steps and needs a human to drive it, the agent routes around you. It stitches together the pieces it can call and rebuilds your thin slice in-house.
+
+This is the competition claim, one layer deeper. You're not competing with the other SaaS in your category. 𝗬𝗼𝘂'𝗿𝗲 𝗰𝗼𝗺𝗽𝗲𝘁𝗶𝗻𝗴 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗮𝗴𝗲𝗻𝘁'𝘀 𝗼𝗽𝘁𝗶𝗼𝗻 𝘁𝗼 𝘀𝗸𝗶𝗽 𝘆𝗼𝘂 𝗲𝗻𝘁𝗶𝗿𝗲𝗹𝘆.
+
+The products that survive won't be the ones with the best interface. They'll be the ones an agent can call, that return a finished result, priced on the outcome instead of the seat.
+
+𝗦𝘁𝗼𝗽 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝘁𝗵𝗲 𝘁𝗼𝗼𝗹 𝗮 𝗵𝘂𝗺𝗮𝗻 𝗽𝗶𝗰𝗸𝘀. 𝗦𝘁𝗮𝗿𝘁 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗶𝗻𝗴 𝘁𝗵𝗲 𝗷𝗼𝗯 𝗮𝗻 𝗮𝗴𝗲𝗻𝘁 𝗰𝗮𝗻 𝗱𝗲𝗹𝗲𝗴𝗮𝘁𝗲.
+
+When an agent evaluates your product tomorrow, which of those three questions do you fail?
