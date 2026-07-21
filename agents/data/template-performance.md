@@ -2,39 +2,33 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-07-17 (frs-outreach-writer run).
+Last updated: 2026-07-21 (frs-outreach-writer run).
 
-- Policy mode: **EXPLORATION** (email A/B even-split)
-- Scored sends (status=sent AND response_status non-blank): **0 of 532 sent rows** (2192 total log rows)
-
-## Why exploration persists
-
-Every active email variant has fewer than `MIN_SCORED_PER_VARIANT` (20) scored sends. All variants have **zero** scored sends because `response_status` is blank on all 532 sent rows. Until Ryan dispositions sent rows (accepted / replied / led_to_call), template ranking is impossible and the run stays in exploration: emails are assigned deterministically and evenly via `idx = (sum of ord(c) for c in prospect_id) % 3`.
-
-## Active email variants (the A/B set) — scored-send counts
-
-| Variant | Role | Scored sends | Reply rate | Call rate |
-|---|---|---|---|---|
-| `hyper-personalized-email` | control | 0 | n/a | n/a |
-| `email-short-question` | brevity + curiosity | 0 | n/a | n/a |
-| `email-proof-led` | credibility first | 0 | n/a | n/a |
-
-## LinkedIn channels
-
-No scored sends, so `best_template(category, ai_posture)` falls back to the default `linkedin-connect` template from `outreach.md` (observation-first ordering per the 2026-06-23 human correction; no FRS naming in the cold connect).
-
-## This run's email A/B assignment (7 emails, even-split)
-
-| Prospect | Variant (idx=sum(ord)%3) |
-|---|---|
-| akita | hyper-personalized-email |
-| almabase | hyper-personalized-email |
-| apimio | hyper-personalized-email |
-| apploye | hyper-personalized-email |
-| appbot | email-short-question |
-| anymailfinder | email-proof-led |
-| appstle | email-proof-led |
+- Policy mode: **EXPLORATION** (email A/B)
+- Reason: a scored send = a row with `status = sent` AND non-blank `response_status`. Today there are **0 scored sends** across all 532 sent rows (every `response_status` is blank). Every active email variant is below `MIN_SCORED_PER_VARIANT = 20`, so exploration continues and email variants are assigned by even deterministic split `idx = sum(ord(c) for c in prospect_id) % 3`.
 
 ## Standing blocker
 
-Template ranking + the EXPLORATION -> EXPLOITATION transition remain blocked until `response_status` is backfilled on the sent cohort. Flagged every run since the email A/B went live.
+Template ranking and the EXPLORATION -> EXPLOITATION transition are blocked until a human dispositions sent rows (fills `response_status` / `led_to_call`). 0 of 532 sent rows are dispositioned. Until then no `reply_rate` or `call_rate` can be computed, so email selection stays exploration and LinkedIn selection stays default-template.
+
+## Active email variants (A/B set)
+
+| Variant (`template_used`) | Scored sends | Sent rows | Total log rows |
+|---|---|---|---|
+| hyper-personalized-email (control) | 0 | 187 | 284 |
+| email-short-question | 0 | 0 | 86 |
+| email-proof-led | 0 | 0 | 87 |
+
+All three are below the 20 scored-send threshold. No variant can be ranked yet. This run added 6 email drafts (2 short-question, 1 hyper, 2 proof-led... see run summary), all `status: drafted`, none scored.
+
+## Ranking table
+
+Empty by design. `reply_rate` and `call_rate` are undefined while scored sends = 0. Once a human begins dispositioning sent rows, this table will populate grouped by (`template_used`, `category`, `ai_posture`).
+
+## LinkedIn channels
+
+No scored data, so LinkedIn connect selection uses the default template from `outreach.md`, applied observation-first per the 2026-06-23 human correction (see inconsistency note below).
+
+## Reported inconsistency (re-flagged)
+
+`agents/templates/outreach.md` still hard-rules the LinkedIn connect template to "always name Future Ready Studio" and "always include the AI-readiness assessments clause." This contradicts the 2026-06-23 human correction captured in agent memory (observation-first connect, mirror first, no FRS naming), which every run since 2026-06-24 has followed. Flagged for template reconciliation.
