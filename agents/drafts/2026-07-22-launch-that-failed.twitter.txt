@@ -1,0 +1,35 @@
+1/ We spent a quarter building the feature our users kept asking for.
+
+It launched. Almost nobody touched it.
+
+---
+
+2/ Analytics tool for Amazon sellers, years ago.
+
+The ask was loud and consistent: a custom report builder. Any metric, any date range, build your own view.
+
+---
+
+3/ So we built it. Flexible, powerful, exactly what they described.
+
+Usage spiked on launch week, then flatlined near the floor.
+
+---
+
+4/ I got a dozen of them on calls.
+
+They didn't want to build reports. They wanted to know what to reprice, what to restock, where margin was bleeding.
+
+---
+
+5/ We gave them a better way to do the work. They were paying us to get it done.
+
+The feature they asked for and the job they hired us for were two different things. That's why I now start from the workflow, not the request.
+
+---
+
+6/ 𝗔 𝘁𝗼𝗼𝗹 𝗴𝗶𝘃𝗲𝘀 𝗮 𝗯𝗲𝘁𝘁𝗲𝗿 𝘃𝗶𝗲𝘄 𝗼𝗳 𝘁𝗵𝗲 𝗽𝗿𝗼𝗯𝗹𝗲𝗺. 𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗶𝗻𝗴 𝘁𝗵𝗲 𝗷𝗼𝗯 𝗵𝗮𝗻𝗱𝘀 𝗼𝘃𝗲𝗿 𝘁𝗵𝗲 𝗱𝗲𝗰𝗶𝘀𝗶𝗼𝗻.
+
+---
+
+7/ What's a feature you shipped exactly as requested that still missed the job underneath it?
