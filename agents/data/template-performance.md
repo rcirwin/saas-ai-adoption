@@ -2,9 +2,9 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-07-22 (frs-outreach-writer run).
+Last updated: 2026-07-23 (frs-outreach-writer run).
 
-- Total `outreach_log` rows: 2222
+- Total `outreach_log` rows: 2237 (pre-run)
 - Rows with `status = sent`: 532
 - **Scored sends** (status=sent AND response_status non-blank): **0**
 - Policy mode: **EXPLORATION**
@@ -23,11 +23,11 @@ A scored send requires `status = sent` AND a non-blank `response_status`. All 53
 
 All three variants are at 0 scored sends, below the 20 threshold, so email assignment stays in **exploration**: each prospect is assigned deterministically and evenly via `idx = (sum of ord(c) for c in prospect_id) % 3`.
 
-This run's email assignments: boomerangme -> hyper-personalized-email; boords -> email-short-question; brandkit -> email-short-question; brilliant-directories -> hyper-personalized-email; bryq -> email-proof-led; buddy-punch -> email-short-question. Distribution 2 hyper / 3 short-question / 1 proof-led (deterministic).
+This run's email assignments: bugbug -> hyper-personalized-email; caelor -> hyper-personalized-email; callbi -> hyper-personalized-email; callgate -> email-short-question; chatterbox-language -> email-short-question; clearout -> email-proof-led. Distribution 3 hyper / 2 short-question / 1 proof-led (deterministic per policy).
 
 ## LinkedIn template ranking
 
-Not computable (0 scored sends). Falling back to the default observation-first connect template for all LinkedIn channels regardless of (category, ai_posture).
+Not computable (0 scored sends). Falling back to the default observation-first connect template for all LinkedIn channels regardless of (category, ai_posture). 9 linkedin-connect drafted this run.
 
 ## Ranking table
 
