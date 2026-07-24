@@ -1,0 +1,59 @@
+1/ The "AI assistant" is the most popular AI pattern in B2B SaaS.
+
+It's also usually the wrong one.
+
+---
+
+2/ Not because assistants are bad.
+
+Because of what the word "assistant" quietly commits you to.
+
+---
+
+3/ An assistant suggests.
+
+It drafts, recommends, surfaces, then hands the work back to your user to finish.
+
+The human still completes the job.
+
+---
+
+4/ I've watched a few teams ship the assistant version of a feature. The pattern rhymes every time:
+
+The sidebar suggests. The user still does the task.
+The chat answers. The user still decides.
+The "AI draft" gets rewritten by hand anyway.
+
+---
+
+5/ Usage spikes in week one. Then it settles into "nice to have."
+
+Retention doesn't move.
+
+---
+
+6/ A suggestion is one of seven steps in the workflow.
+
+You're still only owning that one.
+
+---
+
+7/ Wrong question: "where can we add an assistant?"
+
+Right question: "which job can we complete end to end and hand back finished?"
+
+---
+
+8/ That's the line between a tool and a service.
+
+An assistant keeps the user driving, and charges per seat.
+
+Completing the job delivers an outcome, and can charge for it.
+
+---
+
+9/ 𝗦𝘁𝗼𝗽 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝘁𝗵𝗲 𝗮𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁. 𝗦𝘁𝗮𝗿𝘁 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗶𝗻𝗴 𝘁𝗵𝗲 𝗷𝗼𝗯.
+
+---
+
+10/ Which feature in your product suggests something today that it could actually finish?
