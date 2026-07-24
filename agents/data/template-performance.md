@@ -2,9 +2,9 @@
 
 Derived snapshot. **Source of truth is the `outreach_log` Sheet tab.** The outreach writer overwrites this file at the end of every run (step 5 of `.claude/agents/frs-outreach-writer.md`). Do not hand-edit the ranking table; it is regenerated each run.
 
-Last updated: 2026-07-23 (frs-outreach-writer run).
+Last updated: 2026-07-24 (frs-outreach-writer run).
 
-- Total `outreach_log` rows: 2237 (pre-run)
+- Total `outreach_log` rows: 2252 (pre-run)
 - Rows with `status = sent`: 532
 - **Scored sends** (status=sent AND response_status non-blank): **0**
 - Policy mode: **EXPLORATION**
@@ -23,11 +23,11 @@ A scored send requires `status = sent` AND a non-blank `response_status`. All 53
 
 All three variants are at 0 scored sends, below the 20 threshold, so email assignment stays in **exploration**: each prospect is assigned deterministically and evenly via `idx = (sum of ord(c) for c in prospect_id) % 3`.
 
-This run's email assignments: bugbug -> hyper-personalized-email; caelor -> hyper-personalized-email; callbi -> hyper-personalized-email; callgate -> email-short-question; chatterbox-language -> email-short-question; clearout -> email-proof-led. Distribution 3 hyper / 2 short-question / 1 proof-led (deterministic per policy).
+This run's email assignments (10 emails): cloudamqp -> hyper-personalized-email; coupontools -> hyper-personalized-email; culcha -> hyper-personalized-email; content-snare -> email-short-question; designmodo-postcards -> email-short-question; cloudpano -> email-proof-led; condens -> email-proof-led; dash-app -> email-proof-led; datagma -> email-proof-led; devsamurai -> email-proof-led. Distribution 3 hyper / 2 short-question / 5 proof-led (deterministic per policy).
 
 ## LinkedIn template ranking
 
-Not computable (0 scored sends). Falling back to the default observation-first connect template for all LinkedIn channels regardless of (category, ai_posture). 9 linkedin-connect drafted this run.
+Not computable (0 scored sends). Falling back to the default observation-first connect template for all LinkedIn channels regardless of (category, ai_posture). 5 linkedin-connect drafted this run.
 
 ## Ranking table
 
