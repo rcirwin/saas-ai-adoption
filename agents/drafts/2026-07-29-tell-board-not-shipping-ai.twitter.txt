@@ -1,0 +1,67 @@
+1/ Your board asked about AI on the last call. You said you're evaluating. They wrote it down.
+
+That answer works once. It doesn't work twice.
+
+---
+
+2/ Here's what I'd say on the next call instead.
+
+Not a stall. A position.
+
+---
+
+3/ Name the bet you ruled out.
+
+Boards don't lose confidence because you haven't shipped. They lose it when you can't say what you decided against.
+
+---
+
+4/ "We're not shipping a copilot this year, and here's the reasoning" lands better than "we're exploring a few directions."
+
+Ruling something out is proof the work happened.
+
+---
+
+5/ Bring the workflow, not the feature.
+
+Your customer's job has seven steps. Your product owns one or two. That's the number your board should hear.
+
+---
+
+6/ It's the number that decides whether you get routed around.
+
+"We own 2 of 7, and the plan gets us to 6" is a strategy.
+"We're adding AI summaries" is a roadmap slot.
+
+---
+
+7/ Commit to a decision date, not a ship date.
+
+"By October we'll know whether this workflow supports outcome-based pricing."
+
+Real deadline. Falsifiable. Not a demo.
+
+---
+
+8/ Most founders hear the AI question as "what are you shipping?"
+
+It's usually closer to "do you understand where the value in your category is moving?"
+
+---
+
+9/ One of those you answer with a demo.
+The other you answer with a thesis.
+
+---
+
+10/ 𝗬𝗼𝘂𝗿 𝗯𝗼𝗮𝗿𝗱 𝗶𝘀𝗻'𝘁 𝘂𝗻𝗱𝗲𝗿𝘄𝗿𝗶𝘁𝗶𝗻𝗴 𝗮 𝗳𝗲𝗮𝘁𝘂𝗿𝗲. 𝗧𝗵𝗲𝘆'𝗿𝗲 𝘂𝗻𝗱𝗲𝗿𝘄𝗿𝗶𝘁𝗶𝗻𝗴 𝘆𝗼𝘂𝗿 𝗷𝘂𝗱𝗴𝗺𝗲𝗻𝘁 𝗮𝗯𝗼𝘂𝘁 𝘄𝗵𝗲𝗿𝗲 𝘁𝗵𝗲 𝗰𝗮𝘁𝗲𝗴𝗼𝗿𝘆 𝗶𝘀 𝗴𝗼𝗶𝗻𝗴.
+
+---
+
+11/ This doesn't buy unlimited time, to be clear.
+
+Two quarters of "we're still deciding" without a decision is its own answer.
+
+---
+
+12/ What's the AI bet you've already ruled out, and does your board know why you ruled it out?
