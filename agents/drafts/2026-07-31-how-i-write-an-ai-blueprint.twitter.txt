@@ -1,0 +1,86 @@
+1/
+An AI blueprint that names a model on page one is already out of date.
+
+The model is the most replaceable decision in the document. It's also the one everyone wants to start with.
+
+Here's the structure I actually use.
+
+---
+
+2/
+Four parts, with one example running through all of them.
+
+The example: an analytics product whose users do a weekly repricing pass by hand.
+
+---
+
+3/
+Part 1. The job, written as a result.
+
+Not "help users reprice faster."
+
+It's "every Monday morning, the week's price changes are drafted and waiting for approval."
+
+If nobody can write the definition of done in one sentence, nothing else holds up.
+
+---
+
+4/
+Part 2. The decision map.
+
+Every judgment call in the workflow, with who makes it today and on what basis.
+
+Then two columns: what's a rule, and what's actually judgment.
+
+---
+
+5/
+"Never price below floor margin" is a rule.
+
+"This SKU's dip is seasonal, hold the price" is judgment.
+
+The second column doesn't exist in any training data. That's the moat.
+
+---
+
+6/
+Part 3. The escalation rules.
+
+What the system is not allowed to decide alone, written before anything ships.
+
+A price change that drops a SKU under its historical floor gets held for a human, every time.
+
+---
+
+7/
+Most teams write escalation rules after the first bad output.
+
+That's too late, and it's expensive.
+
+---
+
+8/
+Part 4. The feedback loop.
+
+Where corrections get captured and what happens to them. Every held or edited change gets logged with the reason.
+
+Otherwise the same human fixes the same mistake forever and the harness never compounds.
+
+---
+
+9/
+There's no model recommendation anywhere in it.
+
+Models change every few months. A decision map and a set of escalation rules don't.
+
+---
+
+10/
+A blueprint isn't a plan for a feature. It's the written-down version of the judgment your product already runs on.
+
+---
+
+11/
+Take your hardest workflow.
+
+Can you write its definition of done in one sentence right now?
