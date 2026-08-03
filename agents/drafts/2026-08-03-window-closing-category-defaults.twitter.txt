@@ -1,0 +1,71 @@
+1/ Your category's defaults are being written right now.
+
+Not by you. By whatever agents can reach today.
+
+---
+
+2/ Most founders are still asking whether agents will show up in their market.
+
+Wrong question. They're already there, and they're learning how the job gets done.
+
+---
+
+3/ The default path.
+
+When an agent picks up a job in your category, it takes the cheapest reliable route to a finished result.
+
+Whatever works the first few times becomes the route it repeats. That pattern is forming now, without your input.
+
+---
+
+4/ The vocabulary.
+
+An agent reasons about your category in the language it can find. Docs, APIs, schemas, public write-ups.
+
+If a competitor named the steps of the workflow and you didn't, the agent inherits their model of the work.
+
+---
+
+5/ The escalation rule.
+
+For every step, the agent decides between calling a tool and doing it itself.
+
+Once "do it myself" becomes the default for a step, winning it back is a much harder sale.
+
+---
+
+6/ You're not competing to be chosen anymore.
+
+You're competing to be reconsidered.
+
+---
+
+7/ This is the timing argument at the category level.
+
+Arbitrage 1, pointing a raw model at a task and trusting it, is closing as models commoditize.
+
+---
+
+8/ Arbitrage 2, encoding real domain judgment into a harness, is open right now.
+
+It compounds. Every model improvement makes the harness better.
+
+---
+
+9/ The window isn't "will agents matter."
+
+It's the gap between agents being able to work in your category and agents settling on how.
+
+That gap is where defaults get set. It doesn't stay open long.
+
+---
+
+10/ I could be early on the exact timing. I don't think I'm wrong about the direction.
+
+---
+
+11/ 𝗪𝗵𝗼𝗲𝘃𝗲𝗿 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗲𝘀 𝘁𝗵𝗲 𝗷𝗼𝗯 𝗳𝗶𝗿𝘀𝘁 𝘀𝗲𝘁𝘀 𝘁𝗵𝗲 𝗽𝗮𝘁𝘁𝗲𝗿𝗻 𝗲𝘃𝗲𝗿𝘆𝗼𝗻𝗲 𝗲𝗹𝘀𝗲 𝗴𝗲𝘁𝘀 𝗺𝗲𝗮𝘀𝘂𝗿𝗲𝗱 𝗮𝗴𝗮𝗶𝗻𝘀𝘁.
+
+---
+
+12/ Which step in your workflow would an agent already choose to do itself rather than call you for?
