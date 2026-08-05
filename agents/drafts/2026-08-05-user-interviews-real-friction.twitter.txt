@@ -1,0 +1,59 @@
+1/ The worst question you can ask in a user interview is "what's frustrating about this?"
+
+Users answer it honestly. That's the problem.
+
+---
+
+2/ You get a tidy answer about a slow load or a missing filter.
+
+Real friction isn't there. It's what they've routed around so many times they stopped registering it as friction.
+
+---
+
+3/ I've run these across three data-heavy SaaS products, mostly Amazon seller tools. Long workflows, real money on every step.
+
+Three questions do most of the work.
+
+---
+
+4/ Ask for the last time, not the usual time.
+
+"Walk me through the last time you did this."
+
+The "usually" version is a story they've told before. The specific one has the alt-tabs and the coworker they messaged to double-check.
+
+---
+
+5/ Follow the workaround, not the complaint.
+
+"What did you do right before that, and right after?"
+
+A complaint tells you what annoys someone. A workaround tells you what cost them enough to build a system around it. The workaround is a receipt.
+
+---
+
+6/ Ask what they check before they trust it.
+
+"Before you act on this number, what do you look at?"
+
+Most interviews skip this. The answer is the judgment step, and it's almost never written down anywhere.
+
+---
+
+7/ The first two questions find the friction.
+
+The third finds the expertise.
+
+---
+
+8/ That third answer is where the AI work actually starts.
+
+The bottleneck was never model intelligence. It's that the domain context you need sits in your users' heads, undocumented, and nobody has asked for it directly.
+
+---
+
+9/ 𝗬𝗼𝘂 𝗰𝗮𝗻'𝘁 𝗲𝗻𝗰𝗼𝗱𝗲 𝗷𝘂𝗱𝗴𝗺𝗲𝗻𝘁 𝘆𝗼𝘂 𝗻𝗲𝘃𝗲𝗿 𝗰𝗼𝗹𝗹𝗲𝗰𝘁𝗲𝗱.
+
+---
+
+10/ What's the last thing a user told you they double-check before they trust a number in your product?
