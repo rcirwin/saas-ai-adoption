@@ -1,0 +1,21 @@
+Your AI feature isn't underused. It's pointed at the wrong problem.
+
+Usage dashboards won't tell you the difference. Three behaviors will.
+
+I've been going through AI features with B2B SaaS teams, features that shipped last year and never found a second gear. The adoption numbers look survivable. The behavior underneath them doesn't.
+
+𝗧𝗵𝗲𝘆 𝗰𝗵𝗲𝗰𝗸 𝗶𝘁𝘀 𝘄𝗼𝗿𝗸. Every output gets read line by line before anyone acts on it. That isn't trust building slowly. That's a review step you added to a workflow that used to have one less. If the user has to verify the answer, you moved the work, you didn't remove it.
+
+𝗧𝗵𝗲 𝗱𝗲𝗺𝗼 𝗹𝗮𝗻𝗱𝘀, 𝘁𝗵𝗲 𝗿𝗲𝗻𝗲𝘄𝗮𝗹 𝗱𝗼𝗲𝘀𝗻'𝘁. It wins the room on a sales call. Then it shows up in zero renewal conversations. A feature that sells but doesn't renew was built for the buyer's curiosity, not the user's Tuesday.
+
+𝗬𝗼𝘂𝗿 𝗽𝗼𝘄𝗲𝗿 𝘂𝘀𝗲𝗿𝘀 𝗿𝗼𝘂𝘁𝗲 𝗮𝗿𝗼𝘂𝗻𝗱 𝗶𝘁. This one is the loudest and the most ignored. New users try it. Your most sophisticated users skip it. Usually that means you automated the part that was already easy, and the judgment they'd actually pay to hand off is still sitting with them.
+
+All three are the same signal wearing different clothes. You automated a step. They needed the job finished.
+
+Owning 1 of 7 steps in a workflow doesn't feel like help. It feels like homework with an extra login. The user still owns the outcome, so they still own the anxiety.
+
+The fix isn't a better model or a sharper prompt. It's picking a smaller workflow and owning all of it, end to end, until you can hand back a result instead of a draft.
+
+𝗦𝘁𝗼𝗽 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝘁𝗵𝗲 𝘁𝗼𝗼𝗹. 𝗦𝘁𝗮𝗿𝘁 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗶𝗻𝗴 𝘁𝗵𝗲 𝗷𝗼𝗯.
+
+Which of your AI features do your power users quietly route around?
