@@ -1,0 +1,24 @@
+The AI roadmap deck you paid for could be handed to your closest competitor tomorrow. Nobody would need to change a slide.
+
+That's the tell. Not that the advice is wrong. That it's portable.
+
+Open one up and you'll find the same four artifacts every time:
+
+- A maturity curve with five stages and an arrow pointing right
+- A use case matrix: summarization, search, recommendations, a chatbot
+- A build vs. buy slide
+- A three horizon timeline where the hard part lands in horizon 3
+
+None of it required looking at your data. None of it required sitting with your users. You could produce all four from your category name and a public pricing page.
+
+𝗧𝗵𝗲 𝗯𝗼𝘁𝘁𝗹𝗲𝗻𝗲𝗰𝗸 𝗶𝗻 𝗔𝗜 𝗿𝗶𝗴𝗵𝘁 𝗻𝗼𝘄 𝗶𝘀𝗻'𝘁 𝗺𝗼𝗱𝗲𝗹 𝗶𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲. 𝗜𝘁'𝘀 𝘁𝗵𝗲 𝗮𝗯𝘀𝗲𝗻𝗰𝗲 𝗼𝗳 𝗱𝗼𝗺𝗮𝗶𝗻 𝗰𝗼𝗻𝘁𝗲𝘅𝘁. The models are already smarter than most of the work you'd point them at. What they don't have is the judgment your team built up over years of watching customers do the job badly.
+
+A deck that never touched your workflow can't tell you which judgment to encode. So it sells you the generic capability instead, which is the one thing you were always going to get for free as the models improve.
+
+𝗧𝗵𝗲 𝘁𝗲𝘀𝘁. I sell strategy work, so discount this appropriately. But it's cheap and you can run it today. Swap your logo for your competitor's on the title slide and read it again. If most of it still holds, you didn't buy a strategy. You bought a summary of the public internet with your name on the cover.
+
+𝗦𝘁𝗿𝗮𝘁𝗲𝗴𝘆 𝗶𝘀 𝘄𝗵𝗮𝘁'𝘀 𝗹𝗲𝗳𝘁 𝗮𝗳𝘁𝗲𝗿 𝘆𝗼𝘂 𝗿𝗲𝗺𝗼𝘃𝗲 𝗲𝘃𝗲𝗿𝘆𝘁𝗵𝗶𝗻𝗴 𝘁𝗵𝗮𝘁 𝘄𝗼𝘂𝗹𝗱 𝗯𝗲 𝘁𝗿𝘂𝗲 𝗳𝗼𝗿 𝗮𝗻𝘆𝗼𝗻𝗲 𝗲𝗹𝘀𝗲.
+
+What's one line in your AI roadmap that would be wrong for your closest competitor?
+
+#B2BSaaS #ProductManagement #AIStrategy
