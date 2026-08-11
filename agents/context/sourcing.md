@@ -99,6 +99,7 @@ Detailed per-run notes live in `agents/sourcing-runs/<YYYY-MM-DD>-<source>.md`. 
 | 2026-07-21 | all | 7 | 16 |
 | 2026-07-28 | all | 12 | 19 |
 | 2026-08-04 | all | 15 | 24 |
+| 2026-08-11 | all | 15 | 26 |
 
 ## Categories Already Well-Sampled (reduce weight in future runs)
 
@@ -113,6 +114,11 @@ Tracking so we don't keep returning to the same category repeatedly:
 - Document automation (Docupilot, Papermark) — 2 added
 
 **Under-sampled** (prioritize next run): devtools, observability, data pipelines/ETL, vertical SaaS for legal/healthcare/finance, B2B marketplaces, e-commerce ops tools.
+
+**Category veins closed as of 2026-08-11** (added this run — consolidated or sub-floor): commercial
+beekeeping/apiary, bowling center mgmt, axe-throwing/paintball venue software, cattle feedlot & dairy
+herd, fenestration (window/door) manufacturing, driving-school mgmt, 811/utility-locate ticketing,
+repossession/recovery, police RMS & municipal court. See `agents/sourcing-runs/2026-08-11-all.md`.
 
 **Category veins closed as of 2026-08-04** (fully consolidated — don't re-walk): marina/boatyard mgmt,
 pet boarding/daycare/pet-sitting, camp management, volunteer management, process serving, propane &
