@@ -1,0 +1,61 @@
+1/ Your team isn't scared AI will replace them.
+
+They're scared the thing they're best at stops counting.
+
+Different fears. Different answers.
+
+---
+
+2/ Most founders answer the first one. "Your job is safe."
+
+Meant kindly, lands badly. Everyone knows you can't promise that.
+
+Now they've learned you say comfortable things when you're unsure.
+
+---
+
+3/ The second fear, anonymized.
+
+A support lead spent four years learning which refund requests are real. No SOP. It lives in her head.
+
+The AI pilot gets announced and she hears: the hard-to-copy part of my job is the part nobody wrote down.
+
+---
+
+4/ Right about the first half. Wrong about the second.
+
+What's in her head is exactly what the model doesn't have.
+
+Model capability is getting cheap. Domain context isn't. That's the bottleneck on almost every AI project I've seen.
+
+---
+
+5/ So the sentence isn't "you're safe."
+
+It's "you're the input."
+
+Then make it concrete the same week. Pick one workflow. Ask the person who's best at it to write down what they check before they sign off.
+
+Every exception. Every "it depends."
+
+---
+
+6/ That document is the start of a harness.
+
+It's also the most credible way to tell someone their judgment is the asset. You're not auditing them. You're asking them to design the thing that scales them.
+
+---
+
+7/ Not a promise nothing changes. Some roles compress. Pretending otherwise is the same comfortable answer in a different shirt.
+
+But the people who write the rules of the system are rarely the ones it routes around.
+
+---
+
+8/ 𝗬𝗼𝘂𝗿 𝘁𝗲𝗮𝗺 𝗶𝘀𝗻'𝘁 𝗯𝗲𝗶𝗻𝗴 𝗿𝗲𝗽𝗹𝗮𝗰𝗲𝗱. 𝗧𝗵𝗲𝘆'𝗿𝗲 𝗯𝗲𝗶𝗻𝗴 𝗿𝗲𝗽𝗼𝘀𝗶𝘁𝗶𝗼𝗻𝗲𝗱 𝗮𝘀 𝗮𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘀 𝗼𝗳 𝘁𝗵𝗲 𝘀𝘆𝘀𝘁𝗲𝗺𝘀 𝘁𝗵𝗮𝘁 𝘀𝗰𝗮𝗹𝗲 𝘁𝗵𝗲𝗶𝗿 𝗷𝘂𝗱𝗴𝗺𝗲𝗻𝘁.
+
+Most have never been told that. Say it out loud.
+
+---
+
+9/ What's one judgment call in your product's workflow that currently only lives in a single person's head?
